@@ -47,3 +47,6 @@ If you'd like to set up a meeting with me, click here to schedule a meeting base
   <input type="hidden" name="_next" value="?message=Your message was sent successfully, thanks!" />
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>
+
+If you'd like to get in touch and are very old-school, you can send a letter to:
+Trettåsen 50, 2008 Fjerdingby, Norway
