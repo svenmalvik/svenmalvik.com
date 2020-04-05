@@ -1,6 +1,6 @@
 ---
 layout: post
-title: \#7 Azure API Management Deployment
+title: #7 Azure API Management Deployment
 subtitle: ... with Terraform
 tags: [Azure, Terraform]
 ---
@@ -27,3 +27,6 @@ resource "azurerm_api_management" "rg" {
     sku_name            = "Developer_1"
 }
 ```
+
+We notice that the SKU we deploy is one unit of Developer, not Consumption. The latest version of Terraform doesn't support this yet, and probably many other configurations either. In this case, we could create a pull request and add Consumption in this section of the open source project on GitHub.
+
