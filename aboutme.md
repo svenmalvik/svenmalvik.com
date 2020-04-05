@@ -27,6 +27,10 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 ## Contact
 
+You can [mailto:sven@malvik.de](email me) or find me on [https://www.linkedin.com/in/svenmalvik/](LinkedIn) if you want to get in touch. I love meeting new people so don't hesitate to send a message!
+
+If you'd like to set up a meeting with me, click here to schedule a meeting based on your availability.
+
 <form action="https://formspree.io/sven@malvik.de" method="POST" class="form" id="contact-form">
   <p>You can also send me a quick message using the form below:</p>
   <div class="row">
