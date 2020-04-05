@@ -25,7 +25,7 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 |05/19  |**Microsoft Build 2019**           |How Azure Powered Vipps to Become the Number 1 Payment Service in Norway.  |
 |04/19  |**Global Azure Bootcamp**          |API development with Azure Api-M and AKS in a DevOps environment.  |
 
-## Contact
+# Contact
 
 You can [email me](sven@malvik.de) or find me on [LinkedIn](https://www.linkedin.com/in/svenmalvik/) if you want to get in touch. I love meeting new people so don't hesitate to send a message!
 
