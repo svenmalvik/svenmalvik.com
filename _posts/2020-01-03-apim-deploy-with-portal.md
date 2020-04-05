@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure API Management with Portal
+title: Azure API Management from the Portal
 subtitle: Deployment Option &#35;3
 tags: [Azure, Portal]
 ---
