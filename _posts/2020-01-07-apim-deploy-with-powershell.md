@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure API Management with PowerShell
-subtitle: Deployment Option &#35;5
+subtitle: Deployment Option &#35;3
 tags: [Azure, API Management, PowerShell]
 ---
 

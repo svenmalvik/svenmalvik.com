@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure API Management with Terraform
-subtitle: Deployment Option &#35;7
+subtitle: Deployment Option &#35;5
 tags: [Azure, API Management, Terraform]
 ---
 

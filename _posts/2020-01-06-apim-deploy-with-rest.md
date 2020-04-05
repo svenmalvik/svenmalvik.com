@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure API Management with REST
-subtitle: Deployment Option &#35;4
+subtitle: Deployment Option &#35;2
 tags: [Azure, API Management, REST]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure API Management with ARM
-subtitle: Deployment Option &#35;6
+subtitle: Deployment Option &#35;4
 tags: [Azure, API Management, ARM]
 ---
 
