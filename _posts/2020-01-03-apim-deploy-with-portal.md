@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Azure API Management with Portal
