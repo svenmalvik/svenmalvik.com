@@ -30,7 +30,7 @@ resource "azurerm_api_management" "rg" {
 
 We notice that the SKU we deploy is one unit of Developer, not Consumption. The latest version of Terraform doesn't support this yet, and probably many other configurations either. In this case, we could create a pull request and add Consumption in this section of the open source project on GitHub.
 
-```Golang
+```go
 const (
 	// SkuTypeBasic Basic SKU of Api Management.
 	SkuTypeBasic SkuType = "Basic"
