@@ -10,7 +10,7 @@ My name is Sven Malvik, and I am a developer who ...
 - loves to speak at tech conferences
 - ... and listens to techno music while coding :)
 
-What else do you need?
+At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.no), a Norwegian Payment Service.
 
 ### my Speaking Engagements
 
