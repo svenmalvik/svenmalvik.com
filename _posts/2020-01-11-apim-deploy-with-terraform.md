@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure API Management with Terraform
+title: Azure API Management<br>with Terraform
 subtitle: Deployment Option Number 7
 tags: [Azure, Terraform]
 ---
@@ -44,11 +44,13 @@ const (
 ```
 
 When first starting to use Terraform, you need to run `terraform init` to tell Terraform to scan the code, figure out what providers you’re using, and download the code for them. Then we run `terraform plan` to create an execution plan. Besides syntax check, the execution plan specifies what actions Terraform will take to achieve the desired state defined in the configuration, and the order in which the actions occur.
+
 ![terraform plan](https://media-exp1.licdn.com/dms/image/C4D12AQEKID7nTK5QFg/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=MdAebDHxqTOfeWs66lxUJlavxdzUJrOZtTeBjBO0OmY)
 
 We see lots of `+` prior to configurations which means Terraform will add these features, not change. Terraform is great when we would like to know what will change before we will change anything.
 
 Finally, we need to apply the plan with `terraform apply` to make any changes in Azure.
+
 ![terraform apply](https://media-exp1.licdn.com/dms/image/C4D12AQEeaG8bBG2f0Q/article-inline_image-shrink_1000_1488/0?e=1591833600&v=beta&t=C2AweouNsvV_DnRPcpC5I6DhKHLmnEdzvSLYW-P0EYA)
 
 We have now deployed a new instance of API Management to our Azure subscription.
