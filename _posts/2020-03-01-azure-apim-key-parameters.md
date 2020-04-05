@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Azure API Management Parameters
+title: Azure API Management Key Parameters
 subtitle: Why they are important.
 tags: [Azure, API Management]
 ---
