@@ -14,6 +14,10 @@ What else do you need?
 
 ### my Speaking Engagements
 
+|Date   |Place  |Title  |
+|---    |---    |---
+|04/19  |Global Azure Bootcamp  |API development with Azure Api-M and AKS in a DevOps environment.
+
 - 04/19 - **Global Azure Bootcamp**: API development with Azure Api-M and AKS in a DevOps environment.
 - 05/19 - **Microsoft Build 2019**: How Azure Powered Vipps to Become the Number 1 Payment Service in Norway.
 - 06/19 - **Azure Meetup Oslo**: We Build an Intelligent Azure Q&A Bot and deep dive into Cognitive Services.
