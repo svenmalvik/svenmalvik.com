@@ -5,7 +5,7 @@ subtitle: Deployment Option &#35;7
 tags: [Azure, Terraform]
 ---
 
-After downloading and installing Terraform, we will create a folder with a configuration file telling that we use Azure as our provider, and telling it what we want to deploy. We do this either in HashiCorp Configuration Language (HCL) which ends with .tf, or as Json. We will use the HCL language as it's easier to read, and because we get more documentation and examples we might use. Take a look at this terraform-file for creating a resource group and deploying API Management.
+In this post, I will create an Azure API management instance with Terraform. After [downloading and installing Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html), we will create a folder with a configuration file telling that we use Azure as our provider, and telling it what we want to deploy. We do this either in HashiCorp Configuration Language (HCL) which ends with .tf, or as Json. We will use the HCL language as it's easier to read, and because we get more documentation and examples we might use. Take a look at this terraform-file for creating a resource group and deploying API Management.
 
 ```terraform
 provider "azurerm" {
