@@ -5,7 +5,9 @@ subtitle: Deployment Option &#35;7
 tags: [Azure, Terraform]
 ---
 
-In this post, I will create an Azure API management instance with Terraform. After [downloading and installing Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html), we will create a folder with a configuration file telling that we use Azure as our provider, and telling it what we want to deploy. We do this either in [HashiCorp Configuration Language (HCL)](https://github.com/hashicorp/hcl) which ends with `.tf`, or as Json. We will use the HCL language as it's easier to read, and because we get more documentation and examples we might use. Take a look at this terraform-file for creating a resource group and deploying API Management.
+__Terraform is a popular tool for managing infrastructure resources. I counted about 120 supported providers. Azure is one of them. In this episode we will provision Azure API Management with Terraform.__
+
+After [downloading and installing Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html), we will create a folder with a configuration file telling that we use Azure as our provider, and telling it what we want to deploy. We do this either in [HashiCorp Configuration Language (HCL)](https://github.com/hashicorp/hcl) which ends with `.tf`, or as Json. We will use the HCL language as it's easier to read, and because we get more documentation and examples we might use. Take a look at this terraform-file for creating a resource group and deploying API Management.
 
 ```terraform
 provider "azurerm" {
