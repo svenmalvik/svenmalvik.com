@@ -42,3 +42,4 @@ const (
 	SkuTypeStandard SkuType = "Standard"
 )
 ```
+When first starting to use Terraform, you need to run `terraform init` to tell Terraform to scan the code, figure out what providers you’re using, and download the code for them. Then we run `terraform plan` to create an execution plan. Besides syntax check, the execution plan specifies what actions Terraform will take to achieve the desired state defined in the configuration, and the order in which the actions occur.
