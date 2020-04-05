@@ -6,7 +6,7 @@ subtitle: Why you'd want to get in touch with me
 
 My name is Sven Malvik, and I am a developer who ...
 
-- is super interested in Microsoft Azure technology
+- is interested in Microsoft Azure technology
 - loves to speak at tech conferences
 - ... and listens to techno music while coding :)
 
