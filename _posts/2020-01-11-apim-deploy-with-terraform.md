@@ -2,7 +2,7 @@
 layout: post
 title: Azure API Management with Terraform
 subtitle: Deployment Option &#35;7
-tags: [Azure, Terraform]
+tags: [Azure, API Management, Terraform]
 ---
 
 *Terraform is a popular tool for managing infrastructure resources. I counted about 120 supported providers. Azure is one of them. In this episode we will provision Azure API Management with Terraform.*
