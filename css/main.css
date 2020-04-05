@@ -630,6 +630,7 @@ footer .theme-by {
 
 table {
   padding: 0;
+  margin-bottom: 50px;
 }
 table tr {
   border-top: 1px solid #cccccc;
