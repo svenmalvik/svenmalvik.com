@@ -5,7 +5,7 @@ subtitle: Deployment Option &#35;7
 tags: [Azure, Terraform]
 ---
 
-In this post, I will create an Azure API management instance with Terraform. After [downloading and installing Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html), we will create a folder with a configuration file telling that we use Azure as our provider, and telling it what we want to deploy. We do this either in HashiCorp Configuration Language (HCL) which ends with .tf, or as Json. We will use the HCL language as it's easier to read, and because we get more documentation and examples we might use. Take a look at this terraform-file for creating a resource group and deploying API Management.
+In this post, I will create an Azure API management instance with Terraform. After [downloading and installing Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html), we will create a folder with a configuration file telling that we use Azure as our provider, and telling it what we want to deploy. We do this either in [HashiCorp Configuration Language (HCL)](https://github.com/hashicorp/hcl) which ends with `.tf`, or as Json. We will use the HCL language as it's easier to read, and because we get more documentation and examples we might use. Take a look at this terraform-file for creating a resource group and deploying API Management.
 
 ```terraform
 provider "azurerm" {
@@ -28,7 +28,7 @@ resource "azurerm_api_management" "rg" {
 }
 ```
 
-We notice that the SKU we deploy is one unit of Developer, not Consumption. The latest version of Terraform doesn't support this yet, and probably many other configurations either. In this case, we could create a pull request and add Consumption in this section iin the [Terraform project](https://github.com/terraform-providers/terraform-provider-azurerm/blob/d1ddff03ce3371ee3beeca5c548cf409437841a4/vendor/github.com/Azure/azure-sdk-for-go/services/apimanagement/mgmt/2018-01-01/apimanagement/models.go#L480-L489).
+We notice that the SKU we deploy is one unit of Developer, not Consumption. The latest version of Terraform doesn't support this yet, and probably many other configurations either. In this case, we could create a pull request and add Consumption in this section in the [Terraform project](https://github.com/terraform-providers/terraform-provider-azurerm/blob/d1ddff03ce3371ee3beeca5c548cf409437841a4/vendor/github.com/Azure/azure-sdk-for-go/services/apimanagement/mgmt/2018-01-01/apimanagement/models.go#L480-L489).
 
 ```go
 const (
