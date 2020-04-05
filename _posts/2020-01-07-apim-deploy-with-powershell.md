@@ -56,6 +56,7 @@ We will cover this in depth in a later post.
 ## The final PowerShell-code
 
 [![Deploying APIM with PowerShell](https://media-exp1.licdn.com/dms/image/C4E12AQFBqwOQVOjmnA/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=izc42z6W1dNY4_pbBphUtb8fcMlyf2Irpwg22pH-Vpc)](https://gist.github.com/svenmalvik/97f5b86651b3db8e23223b5926d5e746)
+*Click to go to the code*
 
 ## Conclusion
 We used PowerShell to create an instance of API Management. As mentioned above, PowerShell is actually a great tool for working with API Management. But there are lots of other options to choose of when provisioning APIM. Some of the did we already cover in a previous post, and many more will be discussion of a later post like ARM, Terraform or Pulumi.
