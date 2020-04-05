@@ -15,7 +15,7 @@ What else do you need?
 ### my Speaking Engagements
 
 |Date   |Place  |Title  |
-|---    |---    |---
+|---    |---    |---    |
 |04/19  |Global Azure Bootcamp  |API development with Azure Api-M and AKS in a DevOps environment.
 
 - 04/19 - **Global Azure Bootcamp**: API development with Azure Api-M and AKS in a DevOps environment.
