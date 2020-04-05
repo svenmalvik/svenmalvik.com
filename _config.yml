@@ -20,7 +20,7 @@ description: My Azure Blog
 
 # List of links in the navigation bar
 navbar-links:
-  About Me / Contacts: "aboutme"
+  About Me / Contact: "aboutme"
   Resources:
     - Azure: "https://azure.microsoft.com/"
   Author's home: "http://svenmalvik.com"
