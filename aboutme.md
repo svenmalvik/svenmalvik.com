@@ -1,13 +1,14 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Why you'd want to get in touch with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Sven Malvik, and I am a developer who ...
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- is super interested in Microsoft Azure technology
+- loves to speak at tech conferences
+- ... and listens to techno music while coding
 
 What else do you need?
 
