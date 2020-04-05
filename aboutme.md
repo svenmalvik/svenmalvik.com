@@ -42,7 +42,7 @@ If you'd like to set up a meeting with me, click here to schedule a meeting base
     </div>
   </div>
   <input type="hidden" name="_subject" value="New submission from svenmalvik.com">
-  <textarea type="text" name="content" class="form-control input-lg" style="margin-top: 10px;" placeholder="Message" title="Message" required="required" rows="3"></textarea>
+  <textarea type="text" name="content" class="form-control input-lg" style="margin-top: 10px; margin-bottom:10px;" placeholder="Message" title="Message" required="required" rows="3"></textarea>
   <input type="text" name="_gotcha" style="display:none">
   <input type="hidden" name="_next" value="?message=Your message was sent successfully, thanks!" />
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
