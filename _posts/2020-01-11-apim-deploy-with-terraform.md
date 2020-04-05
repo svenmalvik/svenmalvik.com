@@ -1,7 +1,7 @@
 ---
 layout: post
-title: #7 Azure API Management Deployment
-subtitle: ... with Terraform
+title: Azure API Management with Terraform
+subtitle: Deployment Option Number 7
 tags: [Azure, Terraform]
 ---
 
@@ -30,3 +30,15 @@ resource "azurerm_api_management" "rg" {
 
 We notice that the SKU we deploy is one unit of Developer, not Consumption. The latest version of Terraform doesn't support this yet, and probably many other configurations either. In this case, we could create a pull request and add Consumption in this section of the open source project on GitHub.
 
+```Go
+const (
+	// SkuTypeBasic Basic SKU of Api Management.
+	SkuTypeBasic SkuType = "Basic"
+	// SkuTypeDeveloper Developer SKU of Api Management.
+	SkuTypeDeveloper SkuType = "Developer"
+	// SkuTypePremium Premium SKU of Api Management.
+	SkuTypePremium SkuType = "Premium"
+	// SkuTypeStandard Standard SKU of Api Management.
+	SkuTypeStandard SkuType = "Standard"
+)
+```
