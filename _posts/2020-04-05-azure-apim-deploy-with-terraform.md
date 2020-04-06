@@ -53,15 +53,15 @@ We see lots of `+` prior to configurations which means Terraform will add these 
 
 Finally, we need to apply the plan with `terraform apply` to make any changes in Azure.
 
-![terraform apply](https://media-exp1.licdn.com/dms/image/C4D12AQEeaG8bBG2f0Q/article-inline_image-shrink_1000_1488/0?e=1591833600&v=beta&t=C2AweouNsvV_DnRPcpC5I6DhKHLmnEdzvSLYW-P0EYA)
+![terraform apply](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-1.png)
 
 We have now deployed a new instance of API Management to our Azure subscription.
 
-![new instance of API Management](https://media-exp1.licdn.com/dms/image/C4D12AQG6mqGHhCep3A/article-inline_image-shrink_1000_1488/0?e=1591833600&v=beta&t=ihnodhOKIj0niAOa9Q1Cyz3KF1zWHQZNwHwdEMXT5BU)
+![new instance of API Management](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-2.png)
 
 There is one more important information we need to know about, the Terraform state file. When Terraform created our resource group and deployed an APIM instance, it also wrote data into a state file which we can see with `terraform show`.
 
-![terraform show](https://media-exp1.licdn.com/dms/image/C4D12AQH_eDkTe27oVQ/article-inline_image-shrink_1000_1488/0?e=1591833600&v=beta&t=rXlQ_1R_eHOT-G2ATio2hyV8uf89e8IVSeqWCbOQZ68)
+![terraform show](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-3.png)
 
 Terraform must store state about your managed infrastructure and configuration. This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance for large infrastructures. The state file is used for performance improvements, dependency management and syncing between teams.
 
