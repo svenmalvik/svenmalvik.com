@@ -16,12 +16,12 @@ The Json response gives us two information that we need. Id which is our subscri
 
 The Json response gives us two information that we need. Id which is our subscriptionId and the tenantId.
 
-![az login](https://media-exp1.licdn.com/dms/image/C4D12AQEh57gXx86QuQ/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=m5HiLpls2OV1aN1raTdfZeMoIOhI-_i-83t6EUR26MI)
+![az login](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-0.png)
 
 Then, we create the service principal and give it a name.
 
 
-![Create service sprinciple](https://media-exp1.licdn.com/dms/image/C4D12AQHYn_I2XauKSA/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=Mn6mdEkRl925WSZhuIgB9foWKBqoHzyNEobR76mMDnc)
+![Create service sprinciple](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-1.png)
 
 We got now also the password of the service principal that we'll need for retrieving the access token.
 
@@ -30,19 +30,19 @@ We will need Postman, so great if you can [download and install Postman](https:/
 
 When you have installed Postman, you can simply [load a collection of requests into Postman](https://app.getpostman.com/run-collection/41b9fa3b957c297f283d#?env%5BAzure%20REST%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5IjoidGVuYW50SWQiLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJjbGllbnRJZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImNsaWVudFNlY3JldCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InJlc291cmNlIiwidmFsdWUiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJzdWJzY3JpcHRpb25JZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifV0=). You should now see this in Postman.
 
-![Postman Collection](https://media-exp1.licdn.com/dms/image/C4D12AQE8JV1lnLFbpA/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=eJKkmBWsV0q48Z7TGJSdl4dTZkm0iGJXpV3HatLRHzw)
+![Postman Collection](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-2.png)
 
 Click on the Settings icon of the "Azure REST"-collection in the top-right corner for setting the parameters like `TenantId`, `ClientId` (AppId), `ClientSecret` (Password) and `SubscriptionId`.
 
-![Postman Environment Variables](https://media-exp1.licdn.com/dms/image/C4D12AQGxhhJXMtauWw/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=PgpZ3oAoqVVRUGv9S4HFItoxl2TFBD5G51HpEobJRAU)
+![Postman Environment Variables](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-3.png)
 
 We can now send the first request for retrieving an access token.
 
-![Azure Access Token in Postman](https://media-exp1.licdn.com/dms/image/C4D12AQGfZ4aRmJ1Hrg/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=K548hr3Fm3WEBu9_-AbTswAYvJBseroNdLQFAjI08z4)
+![Azure Access Token in Postman](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-4.png)
 
 There we are. Actually, there is a **simpler way of retrieving an access token** through the Azure CLI directly. This works fine in case you just want to try out some API endpoints.
 
-![az account get-access-token](https://media-exp1.licdn.com/dms/image/C4D12AQFqw_0xPkePeQ/article-inline_image-shrink_1000_1488/0?e=1591833600&v=beta&t=pBmlEpNIa9dorrZd443h3yetm8rxkLmBo7RSC4fh3KM)
+![az account get-access-token](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-5.png)
 
 It's now time to create an instance of API Management.
 
@@ -77,11 +77,11 @@ Last, put this json payload inside the body:
 
 Let's now send the request.
 
-![Postman send request](https://media-exp1.licdn.com/dms/image/C4D12AQEe7zUUGWAWGw/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=5GRDbrLDeL1GyGSSTXzLjtw-mwM1BYT5VkALndyKtq0)
+![Postman send request](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-6.png)
 
 That was a success and we can see the result in the portal.
 
-![Created Azure API Management instance from Postman](https://media-exp1.licdn.com/dms/image/C4D12AQEVFpw2IjMt8A/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=B2bMTiJ0aZK8WgoTTPNCtJJxUUVDkVLC3xSm8BBzchI)
+![Created Azure API Management instance from Postman](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-7.png)
 
 ## Conclusion
 Provisioning an instance of API Management with REST is a pretty straightforward process. The only complicated task was to create a service principal (spn). This spn is not configured yet, and we should do this, but it's content for another post.

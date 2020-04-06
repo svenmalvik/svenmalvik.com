@@ -9,15 +9,15 @@ tags: [Azure, API Management, Portal]
 
 The first thing we will do is to "Create a resource", type "Api Management" and click the resource that is shown in the drop down menu.
 
-![Search Azure API Management in the Portal](https://media-exp1.licdn.com/dms/image/C4D12AQGRqng25YmgTQ/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=5KyMOYtS59idaS1YFbIJ_oWdWsodBDHJCXW2G1MrXx4)
+![Search Azure API Management in the Portal](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-0.png)
 
 Then click `create`.
 
-![Select Azure API Management in the Portal](https://media-exp1.licdn.com/dms/image/C4D12AQG7hqLDzdqhnQ/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=DZDkmIGFYzsUlCWsItcBj_DjvnH2Gho2D2XmagrN3Nc)
+![Select Azure API Management in the Portal](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-1.png)
 
 You will now see the pane where you set some important parameters.
 
-![Azure API Management Form](https://media-exp1.licdn.com/dms/image/C4D12AQGErFG5ZeIHIQ/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=Zporq3hABjs_BMHPLMFbekaVqDn4MHpD-I_GqGQVwWw)
+![Azure API Management Form](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-2.png)
 
 Chose the subscription you want to provision you instance to and a resource group. We will talk about resource groups later because they are interesting when it comes to global services that we spin up. They also need the resource group which gets a region.
 
@@ -27,11 +27,11 @@ Do want to monitor your instance? If you just want to play with Azure API Manage
 
 We got now a our first instance of Azure API Management!
 
-![Azure API Management created](https://media-exp1.licdn.com/dms/image/C4D12AQG_MqHdYhydPg/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=j6fJiuwWhqCzox8A0Rw_asnHaUL-Fx3Oga__fEjDt9s)
+![Azure API Management created](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-0.png)
 
 You know already all values that we see in the Overview of it. There is just one value that is new "Gateway URL". It's the Url that we the clients will use to access APIs. Let's try it out.
 
-![Response from a test call to Azure API Management](https://media-exp1.licdn.com/dms/image/C4D12AQHlpYgPZKbAWw/article-inline_image-shrink_1000_1488/0?e=1591833600&v=beta&t=ny_2ft0wPdvGroBWwU3ntRKInFLLoy1eo1vaRsBW9qA)
+![Response from a test call to Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-1.png)
 
 We have no API yet, so we won't get a meaningful result back. But we will get to that part in a bit. For now we are just happy and wonder how we can provision an instance with either real code or with a proper REST call.
 

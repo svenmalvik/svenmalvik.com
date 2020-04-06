@@ -51,7 +51,7 @@ Finally, we can import the API by defining the url of our swagger file, a path t
 Import-AzApiManagementApi -Context $apimContext -SpecificationFormat "Swagger" -SpecificationUrl $SwaggerfileUrl -Path $Path -ApiId $ApiId
 ```
 
-[![Deploying APIM with PowerShell](https://media-exp1.licdn.com/dms/image/C4E12AQFBqwOQVOjmnA/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=izc42z6W1dNY4_pbBphUtb8fcMlyf2Irpwg22pH-Vpc)](https://gist.github.com/svenmalvik/97f5b86651b3db8e23223b5926d5e746)
+[![Deploying APIM with PowerShell](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-powershell-0.png)](https://gist.github.com/svenmalvik/97f5b86651b3db8e23223b5926d5e746)
 [*Click for the final PowerShell-code*](https://gist.github.com/svenmalvik/97f5b86651b3db8e23223b5926d5e746)
 
 ## Conclusion
