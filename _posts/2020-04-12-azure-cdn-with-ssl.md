@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How To Serve Images on a Website from Azure CDN
-subtitle: 
+title: Getting Started with Azure CDN
+subtitle: Serving images from Azure CDN with SSL enabled
 tags: [Azure, Azure CDN, Azure Storage Account]
 published: false
 ---
