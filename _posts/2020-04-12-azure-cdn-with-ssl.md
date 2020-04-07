@@ -3,7 +3,6 @@ layout: post
 title: Getting Started with Azure CDN
 subtitle: Serving images from Azure CDN with SSL enabled
 tags: [Azure, Azure CDN, Azure Storage Account]
-published: false
 ---
 
 *In this post I will show you step by step how to serve images on a website from Azure CDN with SSL enabled. My blog has a couple of Azure API Management posts that I previously posted to LinkedIn. When I launched this website, I copied all these posts in here but kept the images in LinkedIn. My website is hosted on GitHub pages. I could have posted all the images also to GitHub and serve them directly from there, and everything would be work just fine. Well, since I work a lot with Azure, I thought it would be a great Idea to try out [Azure Content Delivery Network (CDN)](https://azure.microsoft.com/en-us/services/cdn/) with SSL.*
