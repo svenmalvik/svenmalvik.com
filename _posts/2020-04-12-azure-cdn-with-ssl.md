@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Azure CDN
-subtitle: Serving images from Azure CDN with SSL enabled
+subtitle: Serving images from Azure CDN with SSL
 tags: [Azure, Azure CDN, Azure Storage Account]
 ---
 
