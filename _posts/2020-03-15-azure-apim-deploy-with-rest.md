@@ -2,7 +2,7 @@
 layout: post
 title: Azure API Management with REST
 subtitle: Deployment Option &#35;2
-tags: [Azure, API Management, REST]
+tags: [Azure, Azure API Management, REST]
 ---
 
 *Today, we will provision Azure API Management by using Postman as an API client, sending plain web requests to Azure. We already provisioned an APIM instance in the last post from within the Azure Portal. This is the fastest way of getting an instance up and running to try out APIM. But if you want to put an instance into production, we should be able to automate this process. Provisioning with REST can be one step in that direction.*

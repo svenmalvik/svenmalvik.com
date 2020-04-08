@@ -2,7 +2,7 @@
 layout: post
 title: Azure API Management from the Portal
 subtitle: Deployment Option &#35;1
-tags: [Azure, API Management, Portal]
+tags: [Azure, Azure API Management, Azure Portal]
 ---
 
 *We will provision Azure API management. Creating an instance of it is just a click in the Azure Portal. We'll do it once to show how easy it is before we move forward to some other ways that enable us to automate it.*
