@@ -16,17 +16,17 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 |Date   |Place  |
 |---    |---    |
-|UPCOMING |NDC Oslo                             |
-|UPCOMING |DecompileD Dresden                   |
-|UPCOMING |Dublin Tech Summit                   |
-|03/20    |itSMF Conference Norway              |
-|02/20    |Azure Meetup Oslo                    |
-|01/20    |Azure Meetup Oslo                    |
-|11/19    |Microsoft TechX Oslo (Keynote Guest) |
-|09/19    |JavaZone Norway                      |
-|06/19    |Azure Meetup Oslo                    |
-|05/19    |Microsoft Build 2019 Seattle         |
-|04/19    |Global Azure Bootcamp Norway         |
+|*Upcoming*     |NDC Oslo                             |
+|*Upcoming*     |DecompileD Dresden                   |
+|*Upcoming*     |Dublin Tech Summit                   |
+|Mars 2020      |itSMF Conference Norway              |
+|February 2020  |Azure Meetup Oslo                    |
+|January 2020   |Azure Meetup Oslo                    |
+|November 2019  |Microsoft TechX Oslo (Keynote Guest) |
+|September 2019 |JavaZone Norway                      |
+|June 2019      |Azure Meetup Oslo                    |
+|Mai 2019       |Microsoft Build 2019 Seattle         |
+|April 2019     |Global Azure Bootcamp Norway         |
 
 # Contact
 
