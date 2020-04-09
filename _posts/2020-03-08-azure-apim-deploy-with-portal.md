@@ -27,11 +27,11 @@ Do want to monitor your instance? If you just want to play with Azure API Manage
 
 We got now a our first instance of Azure API Management!
 
-![Azure API Management created](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-0.png)
+![Azure API Management Overview](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-3.png)
 
 You know already all values that we see in the Overview of it. There is just one value that is new "Gateway URL". It's the Url that we the clients will use to access APIs. Let's try it out.
 
-![Response from a test call to Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-1.png)
+![Response from a test call to Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-4.png)
 
 We have no API yet, so we won't get a meaningful result back. But we will get to that part in a bit. For now we are just happy and wonder how we can provision an instance with either real code or with a proper REST call.
 
