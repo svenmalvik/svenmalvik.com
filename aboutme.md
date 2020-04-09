@@ -16,14 +16,14 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 |Date   |Place  |
 |---    |---    |
-|03/20  |**itSMF Confenerence**             |
-|02/20  |**Azure Meetup Oslo**              |
-|01/20  |**Azure Meetup Oslo**              |
-|11/19  |**Microsoft TechX** (Keynote Guest)|
-|09/19  |**JavaZone Norway**                |
-|06/19  |**Azure Meetup Oslo**              |
-|05/19  |**Microsoft Build 2019**           |
-|04/19  |**Global Azure Bootcamp**          |
+|03/20  |itSMF Confenerence             |
+|02/20  |Azure Meetup Oslo              |
+|01/20  |Azure Meetup Oslo              |
+|11/19  |Microsoft TechX (Keynote Guest)|
+|09/19  |JavaZone Norway                |
+|06/19  |Azure Meetup Oslo              |
+|05/19  |Microsoft Build 2019           |
+|04/19  |Global Azure Bootcamp          |
 
 # Contact
 
