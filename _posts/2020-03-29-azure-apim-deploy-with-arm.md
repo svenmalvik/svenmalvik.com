@@ -9,15 +9,15 @@ tags: [Azure, Azure API Management, ARM]
 
 The Microsoft Azure API Management Product Team has provided some ARM templates with a nice button that let us with a click load some settings into Azure. What's missing are some parameters like email address, name and SKU that we have to set manually. We want to automate this of course, and we'll do that in a minute. First, we'll look at how this manual process works.
 
-![Azure API Management Templates](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-arm-0.png)
+![Azure API Management Templates](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-arm-0.png)*Azure API Management Templates*
 
 Let's "Deploy to Azure", and see what happens.
 
-![Create Azure API Management in the portal](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-arm-1.png)
+![Create Azure API Management in the portal](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-arm-1.png)*Create Azure API Management in the portal*
 
 Since we have used a public available ARM template, we need to set some parameters. An interesting observation is that the default Sku is Developer. We know that from previous deployments. But if we want to change it to Consumption, we'll see that it's not available. This template is from 2017 where Consumption was not available. What I've done now is to fork the repo and made some changes in the ARM template.
 
-![azuredeploy.json](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-arm-2.png)
+![azuredeploy.json](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-arm-2.png)*azuredeploy.json*
 
 I've not only added two SKUs, but I've also added "0" to skuCount as an allowed value. "0" is the value we have to set for Consumption. Deploying from my fork *svenmalvik/azure-quickstart-templates/101-azure-api-management-create* will make it possible to choose Consumption as well. But this approach can't get fully automated since we need to set some parameters when we deploy. Deploying fully automated with ARM means that we need to make some more changes in the ARM template that will allow us to deploy from command-line with all necessary parameters.
 

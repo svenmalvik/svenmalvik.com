@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Logging from Azure API Management
+title: Logging in Azure API Management
 subtitle: Sending logs to Azure Event Hub
 tags: [Azure, Azure API Management, Azure Event Hub, Azure Application Insights, PowerShell]
 ---
 
-*This post is a complete step-by-step guide on how to send logs from Azure API Management to Azure Event Hub with PowerShell. We start by creating an instance of APIM, Event Hub Namespace together with an Event Hub, and finish by watching incoming events with the help of a VS Code Plugin.*
+*This post is a complete step-by-step guide on how to send logs from Azure API Management to Azure Event Hub with PowerShell. We start by creating an instance of APIM, Event Hubs Namespace together with an Event Hub, and finish by watching incoming events with help of a VS Code Plugin.*
 
 ---
 
@@ -26,7 +26,7 @@ tags: [Azure, Azure API Management, Azure Event Hub, Azure Application Insights,
 ## Connecting to Azure
 There are many ways we can use to connect to Azure like using [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest), [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview), or PowerShell. In this post, I'm using Azure Cloud Shell from within [VS Code](https://code.visualstudio.com/), but it doesn't really matter if we just focus on logging from APIM to Event Hub.
 
-![Azure Cloud Shell in Azure Portal](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-0.png)
+![Azure Cloud Shell in Azure Portal](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-0.png)*Azure Cloud Shell in Azure Portal*
 
 ## Create Resource Group
 
@@ -55,7 +55,7 @@ Import-AzApiManagementApi -Context $apimCtx -SpecificationFormat "Swagger" -Spec
 ```
 We have an instance of Azure API Management up and running, and we have an API with a backend deployed. We can now check if everything works as expected by clicking APIs in the menu of the instance from within the Azure portal.
 
-![Test API in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-1.png)
+![Test API in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-1.png)*Test API in Azure API Management*
 
 ## Deploy Azure Event Hub
 
@@ -92,7 +92,7 @@ We haven't talked about policies in Azure API Management. Policies are a powerfu
 
 We can either deploy a policy with PowerShell, or we open the policy for our API in the portal and add the logger from there. For simplicity reason and to focus on adding the logger, I will add the logger from within the Azure portal.
 
-![Azure API Management API policy](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-3.png)
+![Azure API Management API policy](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-3.png)*Azure API Management API policy*
 
 Add the xml code you see below to the `inbound`-section of the policy.
 
@@ -107,11 +107,11 @@ Add the xml code you see below to the `inbound`-section of the policy.
 
 We have set up everything we needed, and the only remaining task we have to do now is to test if logging to the Event Hub is working. For that, I will install the `Azure Event Hub Explorer` plugin to VS Code.
 
-![VS Code Plugin Azure Event Hub Explorer](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-4.png)
+![VS Code Plugin Azure Event Hub Explorer](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-4.png)*VS Code Plugin Azure Event Hub Explorer*
 
 Configure now the plugin to manage the newly created Event Hub and start monitoring.
 
-![Configure Azure Event Hub Explorer](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-5.png)
+![Configure Azure Event Hub Explorer](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-5.png)*Configure Azure Event Hub Explorer*
 
 When we now send a request to the API, we'll need to wait some seconds for the plugin to read from the Event Hub.
 

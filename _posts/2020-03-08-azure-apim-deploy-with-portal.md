@@ -9,15 +9,15 @@ tags: [Azure, Azure API Management, Azure Portal]
 
 The first thing we will do is to "Create a resource", type "Api Management" and click the resource that is shown in the drop down menu.
 
-![Search Azure API Management in the Portal](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-0.png)
+![Search Azure API Management in the Portal](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-0.png)*Search Azure API Management in the Portal*
 
 Then click `create`.
 
-![Select Azure API Management in the Portal](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-1.png)
+![Select Azure API Management in the Portal](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-1.png)*Select Azure API Management in the Portal*
 
 You will now see the pane where you set some important parameters.
 
-![Azure API Management Form](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-2.png)
+![Azure API Management Form](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-2.png)*Azure API Management Form*
 
 Chose the subscription you want to provision you instance to and a resource group. We will talk about resource groups later because they are interesting when it comes to global services that we spin up. They also need the resource group which gets a region.
 
@@ -27,11 +27,11 @@ Do want to monitor your instance? If you just want to play with Azure API Manage
 
 We got now a our first instance of Azure API Management!
 
-![Azure API Management Overview](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-3.png)
+![Azure API Management Overview](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-3.png)*Azure API Management Overview*
 
 You know already all values that we see in the Overview of it. There is just one value that is new "Gateway URL". It's the Url that we the clients will use to access APIs. Let's try it out.
 
-![Response from a test call to Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-4.png)
+![Response from a test call to Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-4.png)*Response from a test call to Azure API Management*
 
 We have no API yet, so we won't get a meaningful result back. But we will get to that part in a bit. For now we are just happy and wonder how we can provision an instance with either real code or with a proper REST call.
 

@@ -16,12 +16,11 @@ The Json response gives us two information that we need. Id which is our subscri
 
 The Json response gives us two information that we need. Id which is our subscriptionId and the tenantId.
 
-![az login](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-0.png)
+![az login](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-0.png)*az login*
 
 Then, we create the service principal and give it a name.
 
-
-![Create service sprinciple](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-1.png)
+![Create service principal](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-1.png)*Create service principal*
 
 We got now also the password of the service principal that we'll need for retrieving the access token.
 
@@ -30,19 +29,19 @@ We will need Postman, so great if you can [download and install Postman](https:/
 
 When you have installed Postman, you can simply [load a collection of requests into Postman](https://app.getpostman.com/run-collection/41b9fa3b957c297f283d#?env%5BAzure%20REST%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5IjoidGVuYW50SWQiLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJjbGllbnRJZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImNsaWVudFNlY3JldCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InJlc291cmNlIiwidmFsdWUiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJzdWJzY3JpcHRpb25JZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifV0=). You should now see this in Postman.
 
-![Postman Collection](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-2.png)
+![Postman Collection](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-2.png)*Postman Collection*
 
 Click on the Settings icon of the "Azure REST"-collection in the top-right corner for setting the parameters like `TenantId`, `ClientId` (AppId), `ClientSecret` (Password) and `SubscriptionId`.
 
-![Postman Environment Variables](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-3.png)
+![Postman Environment Variables](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-3.png)*Postman Environment Variables*
 
 We can now send the first request for retrieving an access token.
 
-![Azure Access Token in Postman](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-4.png)
+![Azure Access Token in Postman](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-4.png)*Azure Access Token in Postman*
 
 There we are. Actually, there is a **simpler way of retrieving an access token** through the Azure CLI directly. This works fine in case you just want to try out some API endpoints.
 
-![az account get-access-token](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-5.png)
+![az account get-access-token](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-5.png)*az account get-access-token*
 
 It's now time to create an instance of API Management.
 
@@ -77,11 +76,11 @@ Last, put this json payload inside the body:
 
 Let's now send the request.
 
-![Postman send request](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-6.png)
+![Postman send request](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-6.png)*Postman send request*
 
 That was a success and we can see the result in the portal.
 
-![Created Azure API Management instance from Postman](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-7.png)
+![Created Azure API Management instance from Postman](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-7.png)*Created Azure API Management instance from Postman*
 
 ## Conclusion
 Provisioning an instance of API Management with REST is a pretty straightforward process. The only complicated task was to create a service principal (spn). This spn is not configured yet, and we should do this, but it's content for another post.

@@ -16,7 +16,7 @@ tags: [Azure, Azure CDN, Azure Storage Account]
 ## Create Azure Storage Account
 We start by searching `Storage Account` from within the Azure portal, and click the `Create` button.
 
-![Create Azure Storage Account](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-0.png)
+![Create Azure Storage Account](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-0.png)*Create Azure Storage Account*
 
 I put the storage account in a new resource group called `svenmalvikdotcom-rg` so I can delete the entire resource group in case I change my mind later, and decide to keep the images at GitHub. I'm also unsure about how many visits this blog will have, and how the cost will be in a year. [More about Azure CDN billing](https://docs.microsoft.com/en-us/azure/cdn/cdn-billing). 
 
@@ -27,19 +27,19 @@ I also choose `Storage V2` for images as recommended in the [Azure Storage Accou
 I set the `Access tier` to cool since it is optimized for storing data that is infrequently accessed, like this blog :smile:.
 
 
-![Create Azure Storage Account Basics](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-1.png)
+![Create Azure Storage Account Basics](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-1.png)*Create Azure Storage Account Basics*
 
 In the `Networking`-section I choose `Public endpoint (all networks)` because I want my images access directly from this website. In case I'd chosen `Private endpont`, I would need to put a public available service like Application Gateway or Front door in front.
 
-![Create Azure Storage Account Networking](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-2.png)
+![Create Azure Storage Account Networking](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-2.png)*Create Azure Storage Account Networking*
 
 Now that we have a Storage Account, the next thing is to create a container where we put all images. I could have chosen `Blob`, but since I'm not sure if I also will put static pages there, I choose `Container` that is accessible by anybody.
 
-![Azure Storage Account Container](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-4.png)
+![Azure Storage Account Container](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-4.png)*Azure Storage Account Container*
 
 I can now upload my images, and have them publicly available and ready to use. The overview of the storage account gives us the endpoint for retrieving the images.
 
-![Azure Storage Account Images](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-5.png)
+![Azure Storage Account Images](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-5.png)*Azure Storage Account Images*
 
 ## Create Azure CDN
 
@@ -51,11 +51,11 @@ From the menu in the storage account, we can click on `Azure CDN` and fill out t
 - `CDN endpoint name`: It's the host for accessing the images. We will later create a CNAME that will point to this address.
 - `Origin hostname`: The address where your images live. This field has already the correct value, if you added the CDN from the menu in the storage account.
 
-![Create Azure CDN](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-6.png)
+![Create Azure CDN](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-6.png)*Create Azure CDN*
 
 After some minutes we can try to retrieve an image from the storage account via Azure CDN. We use the `<CDN endpoint name>.azureedge.net<PATH TO IMAGE IN STORAGE ACCOUNT>`.
 
-![Azure CDN Image request](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-8.png)
+![Azure CDN Image request](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-8.png)*Azure CDN Image request*
 
 ## Create Custom Domain
 
@@ -63,30 +63,30 @@ The endpoint we just used to retrieve the image can at some point change. I migh
 
 First, I create a CNAME entry in the portal of my domain provider and point it to my newly created CDN endpoint.
 
-![CNAME to CDN](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-9.png)
+![CNAME to CDN](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-9.png)*CNAME to CDN*
 
 We will now create a custom domain from the CDN endpoint menu and fill in the CNAME we just created.
 
-![Azure CDN Custom Domain](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-11.png)
-![Add Azure CDN Custom Domain](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-12.png)
+![Azure CDN Custom Domain](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-11.png)*Azure CDN Custom Domain*
+![Add Azure CDN Custom Domain](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-12.png)*Add Azure CDN Custom Domain*
 
 We also set `Custom domains HTTPS` to `On` and choose `CDN managed`. Azure partnered with DigiCert which means that we get certificates for *free*. We know that nothing is free, and that the costs are baked into the usage of CDN. Anyway, it makes it very simple for us to enable SSL.
 
 This process takes a while to finish. In my case it took about an hour.
 
-![Request SSL Certificate for Azure CDN Custom Domain](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-15.png)
+![Request SSL Certificate for Azure CDN Custom Domain](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-15.png)*Request SSL Certificate for Azure CDN Custom Domain*
 
 We can now test to retrieve the image with `https`.
 
-![Secure Image Request from Azure CDN](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-16.png)
+![Secure Image Request from Azure CDN](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-16.png)*Secure Image Request from Azure CDN*
 
 Now that everything works, we can change all URLs in on all websites. In case you wonder about the code, I use `Jekyll` that renders Markdown files to html files.
 
-![Changing website code](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-17.png)
+![Changing website code](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-17.png)*Changing website code*
 
 Finally, we can test the website and check that the images get fetched from the CDN with SSL enabled.
 
-![svenmalvik.com image in browser](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-18.png)
+![svenmalvik.com image in browser](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-18.png)*svenmalvik.com image in browser*
 
 ## Conclusion
 

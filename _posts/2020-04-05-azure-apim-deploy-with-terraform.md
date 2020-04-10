@@ -47,21 +47,21 @@ const (
 
 When first starting to use Terraform, you need to run `terraform init` to tell Terraform to scan the code, figure out what providers you’re using, and download the code for them. Then we run `terraform plan` to create an execution plan. Besides syntax check, the execution plan specifies what actions Terraform will take to achieve the desired state defined in the configuration, and the order in which the actions occur.
 
-![terraform plan](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-0.png)
+![terraform plan](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-0.png)*terraform plan*
 
 We see lots of `+` prior to configurations which means Terraform will add these features, not change. Terraform is great when we would like to know what will change before we will change anything.
 
 Finally, we need to apply the plan with `terraform apply` to make any changes in Azure.
 
-![terraform apply](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-1.png)
+![terraform apply](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-1.png)*terraform apply*
 
 We have now deployed a new instance of API Management to our Azure subscription.
 
-![new instance of API Management](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-2.png)
+![New instance of API Management](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-2.png)*New instance of API Management*
 
 There is one more important information we need to know about, the Terraform state file. When Terraform created our resource group and deployed an APIM instance, it also wrote data into a state file which we can see with `terraform show`.
 
-![terraform show](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-3.png)
+![terraform show](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-3.png)*terraform show*
 
 Terraform must store state about your managed infrastructure and configuration. This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance for large infrastructures. The state file is used for performance improvements, dependency management and syncing between teams.
 

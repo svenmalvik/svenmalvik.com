@@ -10,7 +10,7 @@ tags: [Azure, Azure API Management]
 ## Explain those API-M parameters that are key.
 The most important parameter you need to set when provisioning API-M is the type of instance you want to provision, SKU. SKU stands for Stock Keeping Unit. There are 5 different SKUs to choose of.
 
-![Azure API Management SKU](https://cdn.svenmalvik.com/images/azure-apim-key-parameters-0.png)
+![Azure API Management SKU](https://cdn.svenmalvik.com/images/azure-apim-key-parameters-0.png)*Azure API Management SKU*
 
 **Developer** and Premium are pretty similar. Both can be put into an own private virtual network. It means we can set up a network security group and filter network traffic based on rules we set. We could for example say that we only allow traffic from another defined virtual network where an Application Gateway lives. We will talk about this service later, but in short, it is a load balancer operating on layer-7 with a public ip address. The main differences between those two SKUs is the capacity and the scaling option. Scaling is missing in the developer SKU -why would we need that :)
 
