@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding Policies in Azure API Management
-subtitle: 
+subtitle: A 
 tags: [Azure, Azure API Management]
 ---
 
@@ -13,7 +13,8 @@ tags: [Azure, Azure API Management]
 
 - What Azure API Management Policies are
 - How to define Azure API Management Policies
-- Best practices
+- Example of a complete Azure API Management Policy
+- Debugging Azure API Management Policies
 
 ---
 
@@ -21,15 +22,13 @@ tags: [Azure, Azure API Management]
 
 ## How to write Azure API Management Policies
 
-```
-Error in element 'backend' on line XX, column XX: backend section allows only one policy to be specified
-```
+## Example of a complete Azure API Management Policy
 
-## Best practices
+## Debugging Azure API Management Policies
 
 ## Conclusion
 
-## Resources
+## _Resources
 
 ![Core Concept of Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-0.png)*Core Concept of Azure API Management*
 
