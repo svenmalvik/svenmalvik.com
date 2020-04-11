@@ -15,7 +15,7 @@ tags: [Azure, Azure API Management, Azure Event Hub, Azure Application Insights,
 - Create Resource Group
 - Deploy Azure API Management
 - Add API
-- Deploy Azure Event Hub namespace
+- Deploy Azure Event Hubs namespace
 - Deploy Azure Event Hub
 - Add Azure API Management EventHub logger
 - Add Event Hub logger to API policy
