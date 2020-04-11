@@ -16,7 +16,6 @@ tags: [Azure, Azure API Management]
 - How to define Azure API Management Policies
 - Examples
 - Aggregated Azure API Management Policy
-- Debugging Azure API Management Policies
 
 ---
 
