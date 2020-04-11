@@ -8,17 +8,19 @@ tags: [Azure, Azure CDN, Azure Storage Account]
 *In this post I will show you step by step how to serve images on a website from Azure CDN with SSL enabled. My blog has a couple of Azure API Management posts that I previously posted to LinkedIn. When I launched this website, I copied all these posts in here but kept the images in LinkedIn. My website is hosted on GitHub pages. I could have posted all the images also to GitHub and serve them directly from there, and everything would be work just fine. Well, since I work a lot with Azure, I thought it would be a great Idea to try out [Azure Content Delivery Network (CDN)](https://azure.microsoft.com/en-us/services/cdn/) with SSL.*
 
 ## Agenda
+
 - Create Azure Storage Account
 - Create Azure CDN
 - Create Custom Domain [cdn.svenmalvik.com](https://cdn.svenmalvik.com)
 - Enable SSL and create certificate
 
 ## Create Azure Storage Account
+
 We start by searching `Storage Account` from within the Azure portal, and click the `Create` button.
 
 ![Create Azure Storage Account](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-0.png)*Create Azure Storage Account*
 
-I put the storage account in a new resource group called `svenmalvikdotcom-rg` so I can delete the entire resource group in case I change my mind later, and decide to keep the images at GitHub. I'm also unsure about how many visits this blog will have, and how the cost will be in a year. [More about Azure CDN billing](https://docs.microsoft.com/en-us/azure/cdn/cdn-billing). 
+I put the storage account in a new resource group called `svenmalvikdotcom-rg` so I can delete the entire resource group in case I change my mind later, and decide to keep the images at GitHub. I'm also unsure about how many visits this blog will have, and how the cost will be in a year. [More about Azure CDN billing](https://docs.microsoft.com/en-us/azure/cdn/cdn-billing).
 
 I also choose `Storage V2` for images as recommended in the [Azure Storage Account documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
 
@@ -26,10 +28,9 @@ I also choose `Storage V2` for images as recommended in the [Azure Storage Accou
 
 I set the `Access tier` to cool since it is optimized for storing data that is infrequently accessed, like this blog :smile:.
 
-
 ![Create Azure Storage Account Basics](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-1.png)*Create Azure Storage Account Basics*
 
-In the `Networking`-section I choose `Public endpoint (all networks)` because I want my images access directly from this website. In case I'd chosen `Private endpont`, I would need to put a public available service like Application Gateway or Front door in front.
+In the `Networking`-section I choose `Public endpoint (all networks)` because I want my images access directly from this website. In case I'd chosen `Private endpoint`, I would need to put a public available service like Application Gateway or Front door in front.
 
 ![Create Azure Storage Account Networking](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-2.png)*Create Azure Storage Account Networking*
 
@@ -47,7 +48,7 @@ Azure storage account is a great place for storing my images, but not so great f
 
 From the menu in the storage account, we can click on `Azure CDN` and fill out the fields as suggested. There are 3 parameters that are interesting.
 
--  `Pricing tier`: I selected "Standard Microsoft" because it seems to have better a more advanced rules engine. [Compare Azure CDN product features](https://docs.microsoft.com/en-us/azure/cdn/cdn-features)
+ `Pricing tier`: I selected "Standard Microsoft" because it seems to have better a more advanced rules engine. [Compare Azure CDN product features](https://docs.microsoft.com/en-us/azure/cdn/cdn-features)
 - `CDN endpoint name`: It's the host for accessing the images. We will later create a CNAME that will point to this address.
 - `Origin hostname`: The address where your images live. This field has already the correct value, if you added the CDN from the menu in the storage account.
 
