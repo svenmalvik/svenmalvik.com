@@ -3,6 +3,7 @@ layout: post
 title: Logging in Azure API Management
 subtitle: Sending logs to Azure Event Hub
 tags: [Azure, Azure API Management, Azure Event Hub, Azure Application Insights, PowerShell]
+comments: true
 ---
 
 *This post is a complete step-by-step guide on how to send logs from Azure API Management to Azure Event Hub with PowerShell. We start by creating an instance of APIM, Event Hubs Namespace together with an Event Hub, and finish by watching incoming events with help of a VS Code Plugin.*
