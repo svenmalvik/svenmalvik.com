@@ -3,7 +3,7 @@ layout: post
 title: Understanding Policies in Azure API Management
 subtitle: Working with global, product, api, and operation policies
 tags: [Azure, Azure API Management]
-comments: true
+comments: false
 ---
 
 *HERE GOES THE ABSTRACT*
