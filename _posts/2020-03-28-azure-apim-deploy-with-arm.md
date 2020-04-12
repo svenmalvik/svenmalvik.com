@@ -7,6 +7,8 @@ tags: [Azure, Azure API Management, ARM]
 
 *Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Management, BUT - there are a couple of things we need to be aware of.*
 
+## Deploy Azure API Management with ARM from GitHub
+
 The Microsoft Azure API Management Product Team has provided some ARM templates with a nice button that let us with a click load some settings into Azure. What's missing are some parameters like email address, name and SKU that we have to set manually. We want to automate this of course, and we'll do that in a minute. First, we'll look at how this manual process works.
 
 ![Azure API Management Templates](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-arm-0.png)*Azure API Management Templates*
