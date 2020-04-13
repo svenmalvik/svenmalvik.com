@@ -39,6 +39,6 @@ Backup-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-src-srv" -Storag
 Restore-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-dest-srv" -StorageContext $storageAccount.Context -SourceContainerName "apim-backups" -SourceBlobName "apim-backup-1"
 ```
 
-## Restoring to different cluster?? NamedValues, Application Insights??
+## Restoring to different cluster NamedValues, Application Insights
 
 ## Repository

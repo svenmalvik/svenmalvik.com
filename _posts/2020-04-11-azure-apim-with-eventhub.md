@@ -68,9 +68,6 @@ I will first create an Azure Event Hubs namespace. An Event Hubs namespace provi
 # Create Event Hub namespace
 New-AzEventHubNamespace -ResourceGroupName "apim101-rg" -Name "svenmalvik-eh-ns" -Location "West Europe" -SkuName "Basic" -SkuCapacity 1
 
-# Add Access to Event Hubs namespace
-New-AzEventHubAuthorizationRule -ResourceGroupName "apim101-rg" -NamespaceName "svenmalvik-eh-ns" -AuthorizationRuleName "svenmalvik-eh-auth-rule" -Rights @("Listen", "Send")
-
 # Create Event Hub
 New-AzEventHub -ResourceGroupName "apim101-rg" -NamespaceName "svenmalvik-eh-ns" -Name "svenmalvik-eh"
 ```
@@ -80,6 +77,9 @@ New-AzEventHub -ResourceGroupName "apim101-rg" -NamespaceName "svenmalvik-eh-ns"
 Now that we have Azure API Management and Azure Event Hub in place, we need to tell APIM where to send logs to. We do this by creating a logger. We can add as many loggers to Azure API Management as we want. We could use one logger for sending logs to Event Hub and another logger for sending logs to Azure Application Insights.
 
 ```powershell
+# Add Access to Event Hubs namespace
+New-AzEventHubAuthorizationRule -ResourceGroupName "apim101-rg" -NamespaceName "svenmalvik-eh-ns" -AuthorizationRuleName "svenmalvik-eh-auth-rule" -Rights @("Listen", "Send")
+
 # Get the connectionString to the Event Hubs namespace
 $ehConnection = (Get-AzEventHubKey -ResourceGroupName "apim101-rg" -NamespaceName "svenmalvik-eh-ns" -AuthorizationRuleName "svenmalvik-eh-auth-rule").PrimaryConnectionString
 

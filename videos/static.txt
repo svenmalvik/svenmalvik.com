@@ -1,0 +1,20 @@
+Hello my friends.
+It's Sven Malvik here, and I have a blog.
+
+The address is svenmalvik.com.
+I post step-by-step guides about various Azure services.
+
+Today I talk about Azure API Management and
+how we can send logs from there to Azure Event Hub.
+
+As my guide, I've chosen a post from my blog - that you can see in the background.
+
+---
+
+I think that went pretty ok, and I have some final words to you that may help both of us.
+
+First: Please Like the video if you did so! This helps me.
+Second: I give online-workshops about Azure API Management. Please reach out to me if you are interested.
+And last: Maybe we can even become real LinkedIn-friends. Just add me and I will click accept.
+
+See you!
