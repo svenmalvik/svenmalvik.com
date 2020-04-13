@@ -11,9 +11,7 @@ comments: false
 Let's start by connecting to our Azure account by executing this PowerShell code:
 
 ```powershell
-Connect-AzAccount `
-    -SubscriptionId "<SUBSCRIPTION_ID>" `
-    -Tenant "<TENANT_ID>"
+Connect-AzAccount -SubscriptionId "<SUBSCRIPTION_ID>" -Tenant "<TENANT_ID>"
 ```
 
 You will be redirected to Microsoft within your browser to login. When everything is correct, you can proceed in your PowerShell editor.
@@ -21,9 +19,7 @@ You will be redirected to Microsoft within your browser to login. When everythin
 Whenever we provision a resource, we need to add it to a resource group. In case you didn't create one previously, you run this code:
 
 ```powershell
-New-AzResourceGroup `
-    -Name "apim-rg" `
-    -Location "West Europe"
+New-AzResourceGroup -Name "apim-rg" -Location "West Europe"
 ```
 It's always a good idea to tag your resources. We'll cover this in a later post.
 
@@ -33,12 +29,7 @@ Now it's time to deploy an instance by executing this PowerShell code:
 
 ```powershell
 New-AzApiManagement `
-    -ResourceGroupName "apim-rg" `
-    -Name "apim-service" `
-    -Sku "Consumption" `
-    -Location "West Europe" `
-    -Organization "<ORGANIZATION>" `
-    -AdminEmail "sven@malvik.de"
+    -ResourceGroupName "apim-rg" -Name "apim-service" -Location "West Europe" -Organization "<ORGANIZATION>" -AdminEmail "sven@malvik.de"
 ```
 
 The deployment takes about 2 minutes. In case we'd deployed with SKU `Developer`, we'd need to wait up to an hour. You can verify this by going into your portal and navigate to your new instance.
@@ -54,20 +45,13 @@ $SwaggerfileUrl = "https://conferenceapi.azurewebsites.net?format=json"
 We need to create a context. We are basically telling what instance of APIM we want to use. Specify the resource group and the name of your instance.
 
 ```powershell
-$apimContext = New-AzApiManagementContext `
-    -ResourceGroupName "apim-rg" `
-    -ServiceName "apim-service"
+$apimContext = New-AzApiManagementContext -ResourceGroupName "apim-rg" -ServiceName "apim-service"
 ```
 
 Finally, we can import the API by defining the url of our swagger file, a path that a request will use to reach the API, and an ApiId that you can choose yourself.
 
 ```powershell
-Import-AzApiManagementApi   ´
-    -Context $apimContext `
-    -SpecificationFormat "Swagger" `
-    -SpecificationUrl $SwaggerfileUrl `
-    -Path "conference" `
-    -ApiId "conferenceAPI"
+Import-AzApiManagementApi -Context $apimContext -SpecificationFormat "Swagger" -SpecificationUrl $SwaggerfileUrl -Path "conference" -ApiId "conferenceAPI"
 ```
 
 [![Deploying APIM with PowerShell](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-powershell-0.png)](https://gist.github.com/svenmalvik/97f5b86651b3db8e23223b5926d5e746)
