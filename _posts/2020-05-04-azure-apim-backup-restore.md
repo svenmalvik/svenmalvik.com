@@ -10,14 +10,10 @@ comment: false
 
 
 # ...
-$storageKey = (Get-AzStorageAccountKey `
-                -ResourceGroupName "apim--rg" `
-                -StorageAccountName "apim-sa")[0].Value
+$storageKey = (Get-AzStorageAccountKey -ResourceGroupName "apim--rg" -StorageAccountName "apim-sa")[0].Value
 
 # ...
-$storageContext = New-AzStorageContext `
-                    -StorageAccountName "apim-sa" `
-                    -StorageAccountKey $storageKey
+$storageContext = New-AzStorageContext -StorageAccountName "apim-sa" -StorageAccountKey $storageKey
 ```
 
 ```powershell
@@ -25,9 +21,5 @@ $storageContext = New-AzStorageContext `
 Set-AzContext -SubscriptionId "<SOURCE_APIM_SUBSCRIPTION_ID>"
 
 # Start backup
-Backup-AzApiManagement  -ResourceGroupName "apim-rg" `
-                        -Name "apim-srv" `
-                        -StorageContext $storageContext `
-                        -TargetContainerName "apim-backups" `
-                        -TargetBlobName "apim-backup-1"
+Backup-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-srv" -StorageContext $storageContext -TargetContainerName "apim-backups" -TargetBlobName "apim-backup-1"
 ```

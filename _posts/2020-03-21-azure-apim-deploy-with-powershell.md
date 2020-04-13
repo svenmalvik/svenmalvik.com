@@ -28,8 +28,7 @@ It's always a good idea to tag your resources. We'll cover this in a later post.
 Now it's time to deploy an instance by executing this PowerShell code:
 
 ```powershell
-New-AzApiManagement `
-    -ResourceGroupName "apim-rg" -Name "apim-service" -Location "West Europe" -Organization "<ORGANIZATION>" -AdminEmail "sven@malvik.de"
+New-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-service" -Location "West Europe" -Organization "<ORGANIZATION>" -AdminEmail "sven@malvik.de"
 ```
 
 The deployment takes about 2 minutes. In case we'd deployed with SKU `Developer`, we'd need to wait up to an hour. You can verify this by going into your portal and navigate to your new instance.
