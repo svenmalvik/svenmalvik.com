@@ -12,14 +12,10 @@ comments: false
 
 ## Agenda
 
-- Connecting to Azure
-- Create Resource Group
 - Deploy Azure API Management
 - Add API
-- Deploy Azure Event Hubs namespace
 - Deploy Azure Event Hub
-- Add Azure API Management EventHub logger
-- Add Event Hub logger to API policy
+- Add logger to APIM
 - Install Azure Event Hub Plugin in VSCode
 
 ---
