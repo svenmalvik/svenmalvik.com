@@ -42,7 +42,7 @@ I want to log requests from an API that we first need to deploy. A simple way of
 
 ```powershell
 # Deploy new instance of Azure API Management
-New-AzApiManagement -ResourceGroupName "apim101-rg" -Name "svenmalvik-apim" -Sku "Developer" -Location "West Europe" -Organization "svenmalvik.com" -AdminEmail "sven@malvik.de"
+New-AzApiManagement -ResourceGroupName "apim101-rg" -Name "svenmalvik-apim" -Sku "Consumption" -Capacity 0 -Location "West Europe" -Organization "svenmalvik.com" -AdminEmail "sven@malvik.de"
 
 # The context tells us what instance of APIM we're working with
 $apimCtx = New-AzApiManagementContext -ResourceGroupName "apim101-rg" -ServiceName "svenmalvik-apim"
