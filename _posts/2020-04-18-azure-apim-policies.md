@@ -6,7 +6,7 @@ tags: [Azure, Azure API Management]
 comments: false
 ---
 
-*HERE GOES THE ABSTRACT*
+*Policies are the heart of Azure API Management. They let you change the behavior of your APIs in a very flexible manner. Before we dive in to policies, we will discuss the core concept of Azure API Management. At the end, we go through some examples.*
 
 ---
 
