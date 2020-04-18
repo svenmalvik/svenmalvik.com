@@ -30,7 +30,7 @@ Before we start implementing some examples, it is important to understand where 
 
 Many APIs are specified in Swagger-files like the [Conference API](https://conferenceapi.azurewebsites.net/?format=json). This API bundles those endpoints - we call them **Operation** in Azure API Management - that together make up the conference service - in this case the API bundles endpoints like `/sessions`, `/topics`, `/speakers`, and some more. Companies like [Vipps](https://vipps.no), a Norwegian payment service, have many APIs, and not all its costumers need access to all of them. The Vipps App needs access to APIs that are specifically developed for it. Merchants that want to use Vipps as a payment service for their customers need some other services than the Vipps App. To make this distinction, and to provide clients access to only a subset of available APIs, Azure API Management has the concept of **Products**. To use a product, a **User**/Client has to **Subscribe** to a Product.
 
-![Core Concept of Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-0.png)*Core Concept of Azure API Management*
+![Core Concept of Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-0.png "Core Concept of Azure API Management")*Core Concept of Azure API Management*
 
 When it comes to Azure API Management policies, we can define them at every level. Every endpoint/operation can define its own policy and change requests and responses. The same is true for all APIs, and products. We can also define a policy that applies to all requests and responses.
 
@@ -38,7 +38,7 @@ When it comes to Azure API Management policies, we can define them at every leve
 
 An Azure API Management Policy defines 4 sections, `inbound`, `backend`, `outbound`, and `on-error`. As the diagram below shows, changes to the request are implemented in the inbound section. Changes to the request before forwarded to the backend service in the backend section, and responses can be changed in the outbound section. In case the backend can't be reached, and a timeout happens, the on-error section is triggered. It's probably a good idea to handle errors as well.
 
-![Azure API Management Policy Definition](https://cdn.svenmalvik.com/images/azure-apim-policies-1.png)*Azure API Management Policy Definition*
+![Azure API Management Policy Definition](https://cdn.svenmalvik.com/images/azure-apim-policies-1.png "Azure API Management Policy Definition")*Azure API Management Policy Definition*
 
 The following code shows a bare policy where you can add headers to requests and responses, or validate requests and responses, or convert a response body from xml to json. These are just a few out of many [examples of Azure API Management Policies](https://docs.microsoft.com/en-us/azure/api-management/api-management-policies).
 
@@ -65,7 +65,7 @@ The following code shows a bare policy where you can add headers to requests and
 
 You can change a policy directly in the portal. In the example below, we change the policy of the endpoint `GetTopics` of the Conference API.
 
-![Open API Management Policy in Azure portal](https://cdn.svenmalvik.com/images/azure-apim-policies-5.png)*Open API Management Policy in Azure portal*
+![Open API Management Policy in Azure portal](https://cdn.svenmalvik.com/images/azure-apim-policies-5.png "Open API Management Policy in Azure portal")*Open API Management Policy in Azure portal*
 
 ## Examples
 
@@ -84,19 +84,19 @@ In the following code snippet, I added a mock response to the inbound section of
 
 Let's now add a header to the outbound section of the Echo API. That means that any calls to this API will have the header in its response.
 
-![Adding header to API response in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-6.png)*Adding header to API response in Azure API Management*
+![Adding header to API response in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-6.png "Adding header to API response in Azure API Management")*Adding header to API response in Azure API Management*
 
 ### Examples 3: Adding rate limiting on product-level in Azure API Management
 
 On the product-level, we will protect our backend from excessive calls.
 
-![Adding rate limiting on product-level in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-7.png)*Adding rate limiting on product-level in Azure API Management*
+![Adding rate limiting on product-level in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-7.png "Adding rate limiting on product-level in Azure API Management")*Adding rate limiting on product-level in Azure API Management*
 
 ### Examples 4: Adding global policy
 
 The global policy applies to all endpoints. I have added an ip filter to the inbound section telling that only I am allowed to send requests.
 
-![Adding global policy to Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-8.png)*Adding global policy to Azure API Management*
+![Adding global policy to Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-8.png "Adding global policy to Azure API Management")*Adding global policy to Azure API Management*
 
 ## Aggregated Azure API Management Policy
 
@@ -118,7 +118,7 @@ Earlier, I told about endpoint-, API-, product- and global-policies. When I defi
 
 We can imagine that implementing code in each section at every level might result in many lines of code. To get the complete Azure API Management Policy for your endpoint - or another level - we can aggregate them by calculating it from within the Azure portal.
 
-![Calculate complete Azure API Management Policy](https://cdn.svenmalvik.com/images/azure-apim-policies-4.png)*Calculate complete Azure API Management Policy*
+![Calculate complete Azure API Management Policy](https://cdn.svenmalvik.com/images/azure-apim-policies-4.png "Calculate complete Azure API Management Policy")*Calculate complete Azure API Management Policy*
 
 ```xml
 <policies>
