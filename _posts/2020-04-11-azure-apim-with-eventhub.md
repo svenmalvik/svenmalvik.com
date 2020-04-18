@@ -10,7 +10,7 @@ comments: false
 
 ---
 
-[![Logging from Azure API Management to Azure Event Hub](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg "Logging from Azure API Management to Azure Event Hub")](https://www.youtube.com/watch?v=xS_KGuCXVVw)*Logging from Azure API Management to Azure Event Hub*
+[![Logging from Azure API Management to Azure Event Hub](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg "Logging from Azure API Management to Azure Event Hub")](https://www.youtube.com/watch?v=xS_KGuCXVVw)*Watch this post on YouTube: Logging from Azure API Management to Azure Event Hub*
 
 ## Agenda
 
