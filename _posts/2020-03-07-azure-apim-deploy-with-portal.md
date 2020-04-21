@@ -44,3 +44,5 @@ We have now created an instance of Azure API Management that does nothing. But i
 *Warning: This is a warning box.*{:.box-warning}
 
 This *is*{:.box-warning} some `code`{:#id}{:.class}.
+
+{:.box-error}*Warning: This is an error box.*
