@@ -41,5 +41,6 @@ We have now created an instance of Azure API Management that does nothing. But i
 
 {% include note.html %}
 
-
 {: .box-warning} Warning: This is a warning box.
+
+This *is*{:.underline} some `code`{:#id}{:.class}.
