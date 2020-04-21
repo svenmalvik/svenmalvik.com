@@ -55,7 +55,7 @@ In the final step, we just restore the backup.
 Restore-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-dest" -StorageContext $storageAccount.Context -SourceContainerName "apim-backups" -SourceBlobName "apim-src-backup"
 ```
 
-{% include note.html %}
+*Warning: This is a warning box.*{:.box-warning}
 
 - Don't hard-code in policies
 - NamedValues
