@@ -55,7 +55,7 @@ In the final step, we just restore the backup.
 Restore-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-dest" -StorageContext $storageAccount.Context -SourceContainerName "apim-backups" -SourceBlobName "apim-src-backup"
 ```
 
-*Be careful with hostnames in Named Values. In case you are preparing an entire new cluster, you might need to be change hostnames.*{:.box-warning}
+> **_NOTE:_**  *Be careful with hostnames in Named Values. In case you are preparing an entire new cluster, you might need to be change hostnames.*
 
 - Don't hard-code in policies
 - NamedValues
