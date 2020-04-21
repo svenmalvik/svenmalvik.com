@@ -40,3 +40,6 @@ We have no API yet, so we won't get a meaningful result back. But we will get to
 We have now created an instance of Azure API Management that does nothing. But it seems to work. Before we will dive into all the menus on the left side, we should look at some better options to create an instance. Options that we can use to automate our set up.
 
 {% include note.html %}
+
+---
+{: .box-warning} Warning: This is a warning box.
