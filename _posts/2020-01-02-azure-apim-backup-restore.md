@@ -55,7 +55,9 @@ In the final step, we just restore the backup.
 Restore-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-dest" -StorageContext $storageAccount.Context -SourceContainerName "apim-backups" -SourceBlobName "apim-src-backup"
 ```
 
-> **_NOTE:_**  *Be careful with hostnames in Named Values. In case you are preparing an entire new cluster, you might need to be change hostnames.*
+Azure API Management is now restored in a different instance. Depending on your infrastructure, you might need to make some adjustments.
+
+> **_NOTE:_**  *Be careful with hostnames in Named Values. In case you are preparing an entire new cluster, you might need to change them.*
 
 - Don't hard-code in policies
 - NamedValues
