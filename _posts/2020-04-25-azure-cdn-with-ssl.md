@@ -17,7 +17,7 @@ comments: false
 
 ## Create Azure Storage Account
 
-We start by searching `Storage Account` from within the Azure portal, and click the `Create` button
+We start by searching `Storage Account` from within the Azure portal, and click the `Create` button.
 
 ![Create Azure Storage Account](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-0.png)*Create Azure Storage Account*
 
