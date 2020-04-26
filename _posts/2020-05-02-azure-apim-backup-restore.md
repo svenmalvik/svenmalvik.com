@@ -57,12 +57,6 @@ Restore-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-dest" -StorageC
 
 Azure API Management is now restored in a different instance. Depending on your infrastructure, you might need to make some adjustments.
 
-> **_NOTE:_**  *Be careful with hostnames in Named Values. In case you are preparing an entire new cluster, you might need to change them.*
-
-- Don't hard-code in policies
-- NamedValues
-- Application Insights
-
-## Logic Apps
+> **NOTE:** Be careful with hostnames in Named Values. In case you are preparing an entire new cluster, you might need to change them.
 
 ## Conclusion
