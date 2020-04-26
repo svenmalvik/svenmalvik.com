@@ -25,7 +25,7 @@ I put the storage account in a new resource group called `svenmalvikdotcom-rg` s
 
 I also choose `Storage V2` for images as recommended in the [Azure Storage Account documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
 
-> **NOTE:** Microsoft recommends using a general-purpose v2 storage account for most scenarios. You can easily upgrade a general-purpose v1 or Blob storage account to a general-purpose v2 account with no downtime and without the need to copy data.
+> **NOTE:** Microsoft recommends using a general-purpose v2 storage account.
 
 I set the `Access tier` to cool since it is optimized for storing data that is infrequently accessed, like this blog :smile:.
 
