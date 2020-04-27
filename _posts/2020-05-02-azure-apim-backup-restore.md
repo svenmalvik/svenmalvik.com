@@ -19,10 +19,10 @@ Before we start taking a backup, we will [deploy two instances of Azure API Mana
 New-AzResourceGroup -Name "apim-rg" -Location "West Europe"
 
 # Create source Azure API Management
-New-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-src" -Location "West Europe" -Sku "Consumption" -Organization "svenmalvik.com" -AdminEmail "sven@malvik.de"
+New-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-src" -Location "West Europe" -Organization "svenmalvik.com" -AdminEmail "sven@malvik.de"
 
 # Create target Azure API Management
-New-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-dest" -Location "West Europe" -Sku "Consumption" -Organization "svenmalvik.com" -AdminEmail "sven@malvik.de"
+New-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-dest" -Location "West Europe" -Organization "svenmalvik.com" -AdminEmail "sven@malvik.de"
 ```
 
 ## Storage for the Backup
@@ -31,7 +31,7 @@ When taking a backup from Azure API Management, we need to provide a storage con
 
 ```powershell
 # Create storage account for backups
-$storageAccount = New-AzStorageAccount -ResourceGroupName "apim-rg" -Name "apim-sa" -SkuName Standard_LRS -Location "West Europe"
+$storageAccount = New-AzStorageAccount -ResourceGroupName "apim-rg" -Name "apimsvenmalviksa" -SkuName Standard_LRS -Location "West Europe"
 
 # Create container for backups
 New-AzStorageContainer -Name "apim-backups" -Context $storageAccount.Context -Permission blob
