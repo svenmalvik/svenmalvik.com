@@ -10,6 +10,8 @@ comment: false
 
 ---
 
+[![Backup and Restore in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-backup-restore.jpg "Backup and Restore in Azure API Management")](https://www.youtube.com/watch?v=AtIuwD23Mhw)*Watch this post on YouTube: Backup and Restore in Azure API Management*
+
 ## Create Source and Target Instances of Azure API Management
 
 Before we start taking a backup, we will [deploy two instances of Azure API Management](azure-apim-deploy-with-powershell) (`apim-src` and `apim-dest`), one we will take the backup from, and one we will restore the backup to. We put both instances in the same resource group so we can easily delete everything later.
