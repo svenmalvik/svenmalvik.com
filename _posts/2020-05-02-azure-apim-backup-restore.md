@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  Immutable Infrastructure with Azure API Management
-subtitle: How To Backup and Restore
+title:  Backup and Restore in Azure API Management
+subtitle: Step-by-Step Guide with PowerShell
 tags: [Azure, Azure API Management, Immutable Infrastructure]
 comment: false
-image: https://cdn.svenmalvik.com/images/azure-apim-backup-restore-feature.jpg
 ---
 
-*As infrastructure gets more complex, more parts will eventually break. This is even more true as we make frequently changes. Sometimes we upgrade the infrastructure, and other times we just shuffle things around to fulfill new requirements. One question is how we can test these changes. The safest but probably most expensive choice is by provisioning an entirely new infrastructure. We won't make changes to the existing one, but instead apply changes to a new one and test before putting it into production. This post will show how we can provision Azure API Management and copy all data from a running instance over to another instance, and make sure that everything in regards to Azure API Management works as before.*
+*As infrastructure gets more complex, more parts will eventually break. This is even more true as we make frequently changes. Sometimes we upgrade the infrastructure, and other times we just shuffle things around to fulfill new requirements. One question is how we can do this without too much complexity. The safest but probably most expensive choice is by provisioning an entirely new infrastructure. We won't make changes to the existing one, but instead apply changes to a new one and test before putting it into production. This post will show how we can provision Azure API Management and copy all data from a running instance over to another instance, and make sure that everything in regards to Azure API Management works as before.*
 
 ---
 
