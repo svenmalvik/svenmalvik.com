@@ -43,7 +43,7 @@ New-AzStorageContainer -Name "apim-backups" -Context $storageAccount.Context -Pe
 
 We can now run the backup command. We take two backups. One for the source instance of Azure API Management, and one for the target instance. The reason I'm doing this is because I tend to mix parameters easily. Instead of taking a backup from the source, I eventually take a backup from the target and restore it to the source. If this happens and I overwrote the source, I would still have the backup that I can restore if I have to.
 
-> **NOTE:** This is not possible in `Consumption`.
+> **NOTE:** Backup is not possible in `Consumption`.
 
 ```powershell
 # Take backup from source
