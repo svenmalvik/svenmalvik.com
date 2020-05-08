@@ -15,7 +15,6 @@ comment: false
 * We will provision Azure App Configuration with Azure CLI
 * Test to get a config-entry with Postman
 * Discuss other features
-* Dive into Feature Flags with Spring Boot
 
 ## Deploy Azure App Configuration with Azure CLI
 
