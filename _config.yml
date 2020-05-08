@@ -22,7 +22,7 @@ future: false
 
 # List of links in the navigation bar
 navbar-links:
-  About Me / Contact: "aboutme"
+  Me / Engagements / Contact: "aboutme"
   Resources:
     - Azure: "https://azure.microsoft.com/"
   Author's home: "http://svenmalvik.com"
