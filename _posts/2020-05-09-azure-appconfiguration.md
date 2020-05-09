@@ -36,7 +36,7 @@ We can now deploy a new instance of Azure App Configuration Service.
 
 > [Complete list of all Azure CLI commands for Azure App Configuration](https://docs.microsoft.com/en-us/cli/azure/appconfig?view=azure-cli-latest)
 
-```Bash
+```bash
 # We'll put our resources into a new resource group.
 az group create --name "svenmalvik-rg" --location westeurope
 
@@ -54,7 +54,7 @@ Common practice to organize keys is into a hierarchical namespace by using a cha
 
 Before we can read anything, we need to set at least one configuration. We'll do this also with Azure CLI in its most simplistic way.
 
-```Bash
+```bash
 # Deploy a key-value pair
 az appconfig kv set --name "spaceship-appc" --key "target" --value "space"
 ```
@@ -65,7 +65,7 @@ Let's check it out in the portal.
 
 The [REST interface for retrieving a key-value pair from Azure App Configuration](https://github.com/Azure/AppConfiguration/blob/master/docs/REST/kv.md) is well described. In short, we are going to create a `GET` request to this address: `https://spaceship-appc.azconfig.io/kv/target`. Before we can send anything, we need to get a credential identifier and the secret that we will *hide* in a request header. All your configuration data stored in App Configuration is encrypted at rest and in transit.
 
-```Bash
+```bash
 # It lists 4 entries (Primary/Secondary & Read-Only/Write)
 az appconfig credential list --resource-group svenmalvik-rg --name spaceship-appc
 ```

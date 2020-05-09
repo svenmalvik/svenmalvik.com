@@ -26,7 +26,7 @@ We will soon build a spaceship with Spring Boot. As spaceships tend to be quit c
 
 As in part one, we are going to work inside Azure Cloud Shell with Bash. Make sure you are in the right subscription and that you have access to your instance of Azure App Configuration.
 
-```Bash
+```bash
 # Make sure you are in the correct subscription
 az account show
 
@@ -41,7 +41,7 @@ When everything looks fine, we can deploy our `beta` flag that we will need late
 
 > **NOTE:** The `appconfig feature` command is still in preview. Azure App Configuration is in GA.
 
-```Bash
+```bash
 # Creates a new feature flag without asking us for confirmation (--yes)
 az appconfig feature set --name "spaceship-appc" --feature "beta" --yes
 ```
@@ -69,14 +69,14 @@ I started by following the instructions on [Create a Spring Boot app](https://do
 
 Before we start the spaceship, we need to set the `connection-string` of the App Configuration instance as an environment variable. I have a Mac, so I set it as shown below.
 
-```Bash
+```bash
 # I showed how to get the connection-string in the previous post
 export APP_CONFIGURATION_CONNECTION_STRING="Endpoint=https://spaceship-appc.azconfig.io;Id=UCUX-l9-s0:3mLEfWlVSlM29Y6SAecu;Secret=QTbtHe75woUi+UerdNVvJWB+E5XQZ9kdrm9xYIcwaVI="
 ```
 
 Before we discuss how feature flags are implemented into the spaceship, we will look at the behavior by starting it.
 
-```Bash
+```bash
 # Maven 3.x and Java 8 required
 mvn clean install && mvn spring-boot:run
 ```
