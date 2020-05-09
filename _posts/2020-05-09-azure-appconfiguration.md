@@ -24,7 +24,7 @@ We will deploy an instance of Azure App Configuration Service from Azure Cloud S
 
 Before we start, we have to make sure that we are in the correct subscription.
 
-```Bash
+```bash
 # Make sure you are in the correct subscription
 az account show
 
