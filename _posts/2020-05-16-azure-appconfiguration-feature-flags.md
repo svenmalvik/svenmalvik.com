@@ -99,6 +99,7 @@ It's [one line that makes this happen](https://github.com/svenmalvik/spaceship-a
 ```Java
 @GetMapping(value = {"", "/", "/welcome"})
 public String mainWithParam(Model model) {
+    // We prefix our flag with featureManagement.
     model.addAttribute("Beta", featureManager.isEnabledAsync("featureManagement.beta").block());
     return "welcome";
 }
