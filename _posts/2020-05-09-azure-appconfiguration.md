@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Introduction to Azure App Configuration (part 1)
+title:  Azure App Configuration Introduction (Part 1)
 subtitle: Accessing application configurations with REST
 tags: [Azure, Azure App Configuration, Azure Key Vault]
 comment: false
