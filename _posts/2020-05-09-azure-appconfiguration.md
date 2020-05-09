@@ -85,7 +85,7 @@ We pick the *primary / readOnly* credential. We need the `id` and the `value`. B
 ...
 ```
 
-Open Postman and create a new `GET` request with your `endpoint`. I told that the `id` and `value` will be *hidden* in a header. To do so, we copy the code below into the `Pre-request Script` and replace my `credential` with your `id`, and my `secret` with your `value`.
+Open Postman and create a new `GET` request with your `endpoint`. I told that the `id` and `value` will be *hidden* in a header. To do so, we copy the code below (Click on the image to get the code.) into the `Pre-request Script` and replace my `credential` with your `id`, and my `secret` with your `value`.
 
 [![Pre-request Script in Postman](https://cdn.svenmalvik.com/images/azure-appconfiguration-6.png "Pre-request Script in Postman")](https://gist.github.com/svenmalvik/1fafc314ce589d4ce6145bc08f29ec0e)*https://gist.github.com/svenmalvik/1fafc314ce589d4ce6145bc08f29ec0e*
 
