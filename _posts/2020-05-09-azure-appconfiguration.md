@@ -50,7 +50,7 @@ The name of your instance must be globally unique, since it will get a public en
 
 ## Read a key-value from Azure App Configuration with Postman
 
-Common practice to organize keys is into a hierarchical namespace by using a character delimiter, such as `/` or `:` that is based on component services, deployment regions. We could store the hostName of our Azure Container Registries (ACRs) with this key `docker:acr:hostName`. To distinguish two ACRs, one for test and one for production, we can label each configuration in unicode.
+Common practice to organize keys is into a hierarchical namespace by using a character delimiter, such as `/` or `:` that is based on component services, deployment regions. We could store the hostName of let's say a Azure Container Registries (ACRs) with a key called `docker:acr:hostName`. To distinguish two ACRs, one for test and one for production, we could then label each configuration with `test` and `prod`.
 
 Before we can read anything, we need to set at least one configuration. We'll do this also with Azure CLI in its most simplistic way.
 
