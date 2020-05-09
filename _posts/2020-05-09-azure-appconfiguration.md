@@ -70,7 +70,7 @@ The [REST interface for retrieving a key-value pair from Azure App Configuration
 az appconfig credential list --resource-group svenmalvik-rg --name spaceship-appc
 ```
 
-We pick primary *readOnly* credential. We need the `id` and the `value`. Below is an example that I created previously. It won't work for you as it won't exist anymore.
+We pick the *primary / readOnly* credential. We need the `id` and the `value`. Below is an example that I created previously. It won't work for you as it won't exist anymore.
 
 ```json
 ...
