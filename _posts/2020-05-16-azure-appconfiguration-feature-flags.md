@@ -94,7 +94,7 @@ az appconfig feature enable --name "spaceship-appc" --feature "beta" --yes
 
 ![Spring Boot Web App with Azure App Configuration feature flag #2](https://cdn.svenmalvik.com/images/azure-appconfiguration-feature-flags-2.png)*Spring Boot Web App with Azure App Configuration feature flag #2*
 
-It's [one line that makes this happen](https://github.com/svenmalvik/spaceship-azure-app-config-demo/blob/master/src/main/java/com/svenmalvik/spaceship/HelloController.java#L24) `featureManager.isEnabledAsync()`. 
+It's [one line that makes this happen](https://github.com/svenmalvik/spaceship-azure-app-config-demo/blob/master/src/main/java/com/svenmalvik/spaceship/HelloController.java#L24) `featureManager.isEnabledAsync()`.
 
 ```Java
 @GetMapping(value = {"", "/", "/welcome"})
@@ -109,4 +109,4 @@ Responsible for this simplistic code is the [microsoft/spring-cloud-azure](https
 
 ## Conclusion
 
-We have discussed the main point of feature flags in Azure App Configuration Service. We didn't talk about filters. Feature filters let us enable a feature for oly a subset of users. This is great for canary-testing/AB-testing.
+We have discussed the main point of feature flags in Azure App Configuration Service. We didn't talk about filters. Feature filters let us enable a feature for only a subset of users. This is great for canary-testing/AB-testing.
