@@ -91,7 +91,7 @@ Open Postman and create a new `GET` request with your `endpoint`. I told that th
 
 ## Conclusion
 
-Azure App Configuration complements Azure Key Vault by managing its configuration easier. A good example is comparing two settings across multiple environments as in the example below where we store the hostName of our Azure Container Registry for test and production.
+Azure App Configuration complements Azure Key Vault by managing its configuration easier. A good example is by comparing settings across multiple environments as in the example below where we store the hostName of our Azure Container Registry for test and production.
 
 ![Comparing configurations in Azure App Configuration](https://cdn.svenmalvik.com/images/azure-appconfiguration-7.png)*Comparing configurations in Azure App Configuration*
 
