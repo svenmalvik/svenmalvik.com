@@ -10,6 +10,8 @@ comment: false
 
 ---
 
+[![Azure App Configuration Introduction](https://cdn.svenmalvik.com/images/azure-app-configuration-yt.jpg "Azure App Configuration Introduction")](https://youtu.be/hbCWI9PSsAQ)*Watch this post on YouTube: Azure App Configuration Introduction*
+
 ## Agenda
 
 * We will provision Azure App Configuration with Azure CLI
