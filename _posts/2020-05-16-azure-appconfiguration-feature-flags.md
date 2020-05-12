@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Azure App Configuration Introduction - Part2
-subtitle: Using feature flags in Spring Boot
+subtitle: Using feature flags in Spring Boot - with Video
 tags: [Azure, Azure App Configuration, Spring Boot]
 comment: false
 ---
