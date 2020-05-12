@@ -97,7 +97,7 @@ az appconfig feature enable --name "spaceship-appc" --feature "beta" --yes
 
 It's [one line that makes this happen](https://github.com/svenmalvik/spaceship-azure-app-config-demo/blob/master/src/main/java/com/svenmalvik/spaceship/HelloController.java#L24) `featureManager.isEnabledAsync()`.
 
-```Java
+```java
 @GetMapping(value = {"", "/", "/welcome"})
 public String mainWithParam(Model model) {
     // We prefix our flag with featureManagement.
