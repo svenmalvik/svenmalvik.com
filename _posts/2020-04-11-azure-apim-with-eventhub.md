@@ -129,4 +129,4 @@ There were a lot of steps involved in setting up everything from the ground to l
 
 ## Extra
 
-* [Logging all headers and the body of a request from Azure API Management to Azure Event Hub](https://gist.github.com/svenmalvik/f86a80e252fe502cb55d3f4fa97d4e08)
+- [Logging all headers and the body of a request from Azure API Management to Azure Event Hub](https://gist.github.com/svenmalvik/f86a80e252fe502cb55d3f4fa97d4e08)
