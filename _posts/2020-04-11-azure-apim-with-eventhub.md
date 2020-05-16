@@ -126,3 +126,7 @@ Azure Event Hub Explorer > Stop monitoring event hub
 ## Conclusion
 
 There were a lot of steps involved in setting up everything from the ground to logging to Azure Event Hub, and I hope this post could help you. Let me know if you have any questions regarding one of the previous steps or some other questions about Azure API Management, and I will try to answer them.
+
+## Extra
+
+* [Logging all headers and the body of a request from Azure API Management to Azure Event Hub](https://gist.github.com/svenmalvik/f86a80e252fe502cb55d3f4fa97d4e08)
