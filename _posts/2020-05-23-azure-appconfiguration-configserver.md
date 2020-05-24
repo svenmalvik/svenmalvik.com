@@ -60,9 +60,10 @@ The controller defines the endpoint(s) the Azure Config Server needs to listen t
 ```java
 @GetMapping(value = { "/{application}/*/test/{file}" }, produces = MediaType.TEXT_PLAIN_VALUE)
 public String getMessage(@PathVariable String application, @PathVariable String file) {
-    // The core of the code you would put here will convert the HashMap ConfigApiProperties.config
-    // into one String with new lines so that the returning String looks like a real
-    // properties file.
+    // The core of the code you would put here will
+    // convert the HashMap ConfigApiProperties.config
+    // into one String with new lines so that the
+    // returning String looks like a real properties file.
 }
 ```
 
