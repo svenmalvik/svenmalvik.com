@@ -2,7 +2,7 @@
 layout: post
 title: Azure App Service with NodeJS
 subtitle: How to automate provisioning with Azure App Configuration integration 
-tags: [Azure, Azure App Configuration, NodeJS]
+tags: [Azure, Azure App Configuration, NodeJS, ARM, Azure App Service]
 comment: false
 ---
 
