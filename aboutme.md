@@ -16,12 +16,9 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 |Date   |Place  |
 |---    |---    |
-|*Upcoming*     |Confer Conf 2020                     |
-|*Upcoming*     |Azure Meetup Oslo                    |
-|*Upcoming*     |NDC Oslo                             |
-|*Upcoming*     |DecompileD Dresden                   |
-|*Cancelled*    |European Identity & Cloud Conference |
-|*Upcoming*     |Dublin Tech Summit                   |
+|*Upcoming*     |NDC Minisota                         |
+|June           |NDC Oslo                             |
+|June           |Confer Conf 2020                     |
 |Mars 2020      |itSMF Conference Norway              |
 |February 2020  |Azure Meetup Oslo                    |
 |January 2020   |Azure Meetup Oslo                    |
