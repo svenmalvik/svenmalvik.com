@@ -6,7 +6,7 @@ tags: [Azure, Azure App Configuration, NodeJS]
 comment: false
 ---
 
-*A Web App in Azure contains several resources that need to be provisioned. We ned an App Service Plan where we define the underlying compute power, an App Service that runs the application, and we need the application itself which might need a database. In this post I will use Azure App Configuration service where I store configurations that I want my NodeJS application to publish as pure Json.*
+*A Web App in Azure contains several resources that need to be provisioned. We need an App Service Plan where we define the underlying compute power, an App Service that runs the application, and we need the application itself which might need a database. In this post I will use Azure App Configuration service where I store configurations that I want my NodeJS application to publish as pure Json.*
 
 We can provision the App Service Plan and App Service from the portal, and then setup deployment of a GitHub repository for the NodeJS application. But I wanted it to be 100% automated without setting up anything, so I decided to try ARM templates.
 
