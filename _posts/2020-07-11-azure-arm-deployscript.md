@@ -79,6 +79,8 @@ In this ARM template we do not provision anything. This ARM template shows the d
 az deployment group create --name "deployscript-test" --resource-group "deployscript-test-rg" --template-file PATH_TO_ARM_FILE | jq .properties.outputs.result.value.Result
 ```
 
+## Output
+
 ```json
 [
   {
