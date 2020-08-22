@@ -6,7 +6,7 @@ tags: [Azure, Weekly]
 comment: false
 ---
 
-*This post is about my reflections on various topics around Azure, and what I have learned and worked on over the past week.*
+*This blog post is about my reflections on various topics around Azure, and what I have learned and worked on over the past week.*
 
 ## The 10X Rule, and why I started to post Azure content on LinkedIn
 
