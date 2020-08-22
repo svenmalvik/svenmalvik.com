@@ -18,7 +18,7 @@ Some months ago, I read about a service called Azure App Configuration. Somehow 
 
 ## Learning ARM
 
-ARM templates seemed to me always a bit weird. I think it's because it feels so different than what I am used to. I've been using PowerShell for most of the tasks when managing resources in Azure. But this time, I wanted to -or had to- provision a NodeJS Web App on App Service with App Configuration that I developed with ARM -so I throw myself into the unknown. I liked it. I think I liked it because I saw that it isn't hard to learn. I continued to do more with ARM and experimented with `Deployment Scripts` for executing code from within ARM. The possibilities are endless which makes it so interesting.
+ARM templates seemed to me always a bit weird. I think it's because it feels so different than what I am used to. I've been using PowerShell for most of the tasks when managing resources in Azure. But this time, I wanted to -or had to- provision a NodeJS Web App on App Service with App Configuration that I deployed with ARM -so I throw myself into the unknown. I liked it. I think I liked it because I saw that it isn't hard to learn. I continued to do more with ARM and experimented with `Deployment Scripts` for executing code from within ARM. The possibilities are endless which makes it so interesting.
 
 ## My very first NodeJS web app
 
