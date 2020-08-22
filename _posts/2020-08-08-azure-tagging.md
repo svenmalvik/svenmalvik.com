@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resource Tagging in Azure
-subtitle: Why it is important.
+subtitle: Why it is important
 tags: [Azure, Tagging]
 comment: false
 ---
