@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Azure Week :1
-subtitle: My personal reflections on the past week in Azure, and what made me think and act the most.
+subtitle: My personal reflections on the past week with Azure, and what made me think and act the most.
 tags: [Azure, Weekly]
 comment: false
 ---
