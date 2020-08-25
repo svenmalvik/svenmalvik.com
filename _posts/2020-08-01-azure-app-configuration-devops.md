@@ -6,8 +6,8 @@ tags: [Azure, Azure App Configuration, Azure DevOps]
 comments: false
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
-#image: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
-featured-image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
+image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
+#featured-image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 #header-img: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
 ---
 
