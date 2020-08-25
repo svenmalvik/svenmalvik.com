@@ -4,7 +4,7 @@ title: Azure API Management Key Parameters
 subtitle: Why they are important.
 tags: [Azure, Azure API Management]
 comments: false
-published: false
+published: true
 #share-img: 
 ---
 
