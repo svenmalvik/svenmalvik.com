@@ -16,6 +16,7 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 |Date   |Place  |
 |---    |---    |
+|*Upcoming*     |Azure Meetup Oslo/New York           |
 |*Upcoming*     |NDC Minisota                         |
 |June           |NDC Oslo                             |
 |June           |Confer Conf 2020                     |
