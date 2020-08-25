@@ -7,7 +7,8 @@ comments: false
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
 #image: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
-featured-image: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
+featured-image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
+#header-img: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
 ---
 
 *Application deployments dependent often on environment specific data like the name of a resource group, location or flags for certain use cases. Azure DevOps has the concept of variables which is a list of key/value pairs stored together with the release pipeline. This blog post shows how to use key/value pairs in an Azure DevOps Release Pipeline that are stored in Azure App Configuration.*
