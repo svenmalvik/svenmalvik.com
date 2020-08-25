@@ -4,6 +4,8 @@ title: Azure API Management Key Parameters
 subtitle: Why they are important.
 tags: [Azure, Azure API Management]
 comments: false
+published: false
+#share-img: 
 ---
 
 *This post will start to discuss provisioning API Management. The simplest way of doing so is simply by signing into the portal and create it - we'll do so in a minute - but this is not the only way we can and should provision API Management. There are other ways that are more effective depending on your environment. Before we can do all this, we need first take a look at some key parameters when creating an instance.*
