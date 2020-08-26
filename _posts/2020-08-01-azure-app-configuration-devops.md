@@ -56,7 +56,7 @@ After I have added the missing role everything worked, and the value `value` is 
 
 ## Referencing Secrets from Azure Key Vault
 
-Azure DevOps Variables support secrets, and so does App Configuration. In App Configuration we can reference secrets. The secret value gets resolved by the Azure DevOps task, and is accessible within other tasks the same way as secrets in Azure DevOps Variables.
+Azure DevOps Variables support secrets, and so does App Configuration, indirectly via references to Azure Key Vault. The secret value gets then resolved by the Azure DevOps task, and is accessible within other tasks the same way as secrets in Azure DevOps Variables. What happens behind the scenes is that the Azure DevOps task (or App Configuration client) reads the reference to the secret in Key Vault, and then talks to Key Vault. That means that we need to add reader role to the service principle for Azure Key Vault as well.
 
 ## Next steps
 
