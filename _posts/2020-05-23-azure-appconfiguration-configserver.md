@@ -3,7 +3,11 @@ layout: post
 title: Azure App Configuration Introduction - Part3
 subtitle: Replacing Spring Cloud Config Server
 tags: [Azure, Spring, Azure App Configuration, Spring Cloud Config Server]
-comment: false
+comments: false
+published: true
+share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
+image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
+featured-image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 ---
 
 *After playing around with Azure App Configuration Service and how to read a configuration entry with REST, and then using feature flags in a Spring Boot application, I got hooked I must admit. I wanted to know if it's possible to replace the Spring Cloud Config Server with Azure App Configuration without changing the client services. This post will explain every step I took to build a first version of an Azure Spring Boot Config Server.*
