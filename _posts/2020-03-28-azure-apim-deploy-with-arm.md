@@ -4,6 +4,10 @@ title: Azure API Management with ARM
 subtitle: Deployment Option &#35;4
 tags: [Azure, Azure API Management, ARM, GitHub]
 comments: false
+published: true
+share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.pn
+image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
+featured-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
 ---
 
 *Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Management, BUT - there are a couple of things we need to be aware of.*
