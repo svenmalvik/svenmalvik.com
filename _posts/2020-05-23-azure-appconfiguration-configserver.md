@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure App Configuration Introduction - Part3
+title: Azure App Configuration Introduction &#35;3
 subtitle: Replacing Spring Cloud Config Server
 tags: [Azure, Spring, Azure App Configuration, Spring Cloud Config Server]
 comments: false
