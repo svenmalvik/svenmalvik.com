@@ -3,7 +3,7 @@ layout: post
 title: Azure API Management Key Parameters
 subtitle: Why they are important.
 tags: [Azure, Azure API Management]
-comments: false
+comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.pn
 image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
