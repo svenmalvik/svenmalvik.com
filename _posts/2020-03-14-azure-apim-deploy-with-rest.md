@@ -3,7 +3,7 @@ layout: post
 title: Azure API Management with REST
 subtitle: Deployment Option &#35;2
 tags: [Azure, Azure API Management, REST]
-comments: false
+comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.pn
 image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg

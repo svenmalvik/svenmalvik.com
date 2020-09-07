@@ -3,7 +3,7 @@ layout: post
 title: Azure App Configuration Introduction &#35;3
 subtitle: Replacing Spring Cloud Config Server
 tags: [Azure, Spring, Azure App Configuration, Spring Cloud Config Server]
-comments: false
+comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png

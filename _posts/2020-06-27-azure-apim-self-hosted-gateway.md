@@ -3,7 +3,7 @@ layout: post
 title: Using Azure API Management APIs with Docker 
 subtitle: How to move APIs closer to the services with a self-hosted gateway
 tags: [Azure, Azure API Management]
-comments: false
+comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.pn
 image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg

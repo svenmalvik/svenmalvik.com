@@ -3,7 +3,7 @@ layout: post
 title: Sync Azure App Configuration with GitHub Actions
 subtitle: Combining the old and the new way of configuration management
 tags: [Azure, Azure App Configuration, GitHub Actions, DevOps]
-comments: false
+comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png

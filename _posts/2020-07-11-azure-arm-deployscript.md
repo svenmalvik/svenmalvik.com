@@ -3,7 +3,7 @@ layout: post
 title: Running Scripts from ARM Templates
 subtitle: 
 tags: [Azure, ARM]
-comment: false
+comment: true
 ---
 
 *Why would we want t execute code within an ARM template? Sometimes we need some value in an ARM template that we don't want to copy and paste around, like secrets. Evgeny Borzenin describes in one of his blog posts [how to create a password in ARM, and then create a database with this password](https://borzenin.com/use-scripts-in-arm-templates/). This post will show how we can use the deploymentScript in ARM in its purest form.*

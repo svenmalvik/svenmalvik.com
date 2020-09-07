@@ -3,7 +3,7 @@ layout: post
 title: My Azure Week 34
 subtitle: Personal reflections on the past week with Azure
 tags: [Azure, Weekly]
-comment: false
+comment: true
 ---
 
 *This blog post is about my reflections on various topics around Azure, and what I have learned and worked on over the past week.*

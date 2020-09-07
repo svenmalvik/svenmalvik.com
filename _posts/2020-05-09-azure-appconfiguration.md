@@ -3,7 +3,7 @@ layout: post
 title:  Azure App Configuration Introduction &#35;1
 subtitle: Accessing application configurations with REST - with Video
 tags: [Azure, Azure App Configuration, Azure Key Vault]
-comments: false
+comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png

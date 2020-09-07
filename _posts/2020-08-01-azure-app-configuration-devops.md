@@ -3,7 +3,7 @@ layout: post
 title: Using App Configuration in Azure DevOps
 subtitle: I tried the new extension in a release pipeline
 tags: [Azure, Azure App Configuration, Azure DevOps]
-comments: false
+comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
