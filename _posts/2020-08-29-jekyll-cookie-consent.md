@@ -14,7 +14,7 @@ featured-image: https://cdn.svenmalvik.com/images/jekyll-logo.png
 
 ## Download the cookie consent code
 
-Download this file [cookie-consent.html](https://raw.githubusercontent.com/jhvanderschee/jekyllcodex/gh-pages/_includes/cookie-consent.html) to the folder `_include`.
+Download the file [cookie-consent.html](https://raw.githubusercontent.com/jhvanderschee/jekyllcodex/gh-pages/_includes/cookie-consent.html) and move it into the `_include`-folder of your Jekyll project.
 
 ## Placing the code for cookie consent
 
