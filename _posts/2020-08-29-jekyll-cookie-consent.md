@@ -22,7 +22,7 @@ Add the line of code at the end of your `<body>` section
 ```html
 <body>
     ...
-    {% include cookie-consent.html content=content %}
+    < !-- *{% include cookie-consent.html %}* --/>
 </body>
 ```
 
