@@ -32,8 +32,8 @@ The code for the cookie-consent requires two files, `ga.js` and `chatbutton.js`.
 
 ```html
     if(readCookie('cookie-notice-dismissed')=='true') {
-        < !-- {% include ga.js %} --/>
-        < !-- {% include chatbutton.js %} --/>
+        <!-- {% include ga.js %} -->
+        <!-- {% include chatbutton.js %} -->
     }
 ```
 
