@@ -22,7 +22,7 @@ Add the line of code at the end of your `<body>` section
 ```html
 <body>
     ...
-    - {% include cookie-consent.html %}
+    - [{% include cookie-consent.html %}]
 </body>
 ```
 
@@ -32,8 +32,8 @@ The code for the cookie-consent requires two files, `ga.js` and `chatbutton.js`.
 
 ```html
     if(readCookie('cookie-notice-dismissed')=='true') {
-        - {% include ga.js %}
-        - {% include chatbutton.js %}
+        - [{% include ga.js %}]
+        - [{% include chatbutton.js %}]
     }
 ```
 
