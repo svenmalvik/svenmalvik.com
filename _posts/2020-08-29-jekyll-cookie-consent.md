@@ -19,22 +19,14 @@ Download this file [cookie-consent.html](https://raw.githubusercontent.com/jhvan
 ## Placing the code for cookie consent
 
 Add the line of code at the end of your `<body>` section
-```html
-<body>
-    ...
-    {% include cookie-consent.html %}
-</body>
-```
+
+![Include cookie-consent.html](https://cdn.svenmalvik.com/images/jekyll-cookie-consent-1.png)*Include cookie-consent.html*
 
 ## Fix the downloaded code
 
 The code for the cookie-consent requires two files, `ga.js` and `chatbutton.js`. Otherwise the build will fail. What I did was removing the code section entirely from `cookie-consent.html`.
 
-```html
-    if(readCookie('cookie-notice-dismissed')=='true') {
-        ...
-    }
-```
+![Remove code for cookie found](https://cdn.svenmalvik.com/images/jekyll-cookie-consent-2.png)*Remove code for cookie found*
 
 ## Add privacy page
 
