@@ -10,7 +10,7 @@ image: https://cdn.svenmalvik.com/images/jekyll-logo.png
 featured-image: https://cdn.svenmalvik.com/images/jekyll-logo.png
 ---
 
-*Today, I was asked how I integrated the cookie consent on my Azure Blog. I need it to add a Facebook comment plugin, and Google Analytics. Instead of helping this one person, I thought I may help others as well with this short post.*
+*Today, I was asked how I integrated the cookie consent on my Azure Blog that is based on [Jekyll](https://jekyllrb.com/). Jekyll transforms plain text into a static websites or blogs. I needed to add cookie consent to my Azure Blog because I wanted to add a Facebook comment plugin together with Google Analytics. Instead of helping this one person, I thought I may help others as well with this short post.*
 
 ## Download the cookie consent code
 
