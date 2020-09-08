@@ -19,10 +19,10 @@ Download this file [cookie-consent.html](https://raw.githubusercontent.com/jhvan
 ## Placing the code for cookie consent
 
 Add the line of code at the end of your `<body>` section
-```
+```html
 <body>
     ...
-    {% include cookie-consent.html %}
+    - {% include cookie-consent.html %}
 </body>
 ```
 
@@ -30,10 +30,10 @@ Add the line of code at the end of your `<body>` section
 
 The code for the cookie-consent requires two files, `ga.js` and `chatbutton.js`. Otherwise the build will fail. What I did was removing the code section entirely from `cookie-consent.html`.
 
-```
+```html
     if(readCookie('cookie-notice-dismissed')=='true') {
-        {% include ga.js %}
-        {% include chatbutton.js %}
+        - {% include ga.js %}
+        - {% include chatbutton.js %}
     }
 ```
 
