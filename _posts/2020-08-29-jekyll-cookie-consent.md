@@ -5,9 +5,9 @@ subtitle: How I added cookie consent to my Jekyll site
 tags: [Jekyll, Cookie Consent]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/jekyl-logo.png
-image: https://cdn.svenmalvik.com/images/jekyl-logo.png
-featured-image: https://cdn.svenmalvik.com/images/jekyl-logo.png
+share-img: https://cdn.svenmalvik.com/images/jekyll-logo.png
+image: https://cdn.svenmalvik.com/images/jekyll-logo.png
+featured-image: https://cdn.svenmalvik.com/images/jekyll-logo.png
 ---
 
 *Today, I was asked how I added cookie consent to my Azure Blog. I need it to add a Facebook comment plugin, and Google Analytics. Instead of helping this one person, I thought I may help others as well with this short post.*
