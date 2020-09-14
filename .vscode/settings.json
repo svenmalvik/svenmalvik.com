@@ -5,6 +5,7 @@
         "dynatrace",
         "minecraft",
         "rbac",
+        "runbooks",
         "splunk"
     ],
     "cSpell.ignoreWords": [
