@@ -12,7 +12,7 @@ featured-image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-
 
 *Azure App Configuration is great for externalizing application configurations. What we also can use it for is for updating infrastructure. At [Vipps](https://vipps.no) we have two AKS clusters. Only one cluster is active at any given time. We use the second cluster to test AKS upgrades. In front of AKS is Azure API Management that routes the traffic either to AKS-blue or AKS-green. The information of what cluster is active and what is inactive is stored in Azure App Configuration. In this post, I will show you how we automated a switch from one AKS cluster to the other cluster with Azure Event Grid.*
 
-![Event flow diagram of how Azure App Configuration events trigger Azure API Management deployments](https://cdn.svenmalvik.com/images/apim-aks-blue-green.png){: style="max-width: 300px"}*Event flow diagram of how Azure App Configuration events trigger Azure API Management deployments*
+![Event flow diagram of how Azure App Configuration events trigger Azure API Management deployments](https://cdn.svenmalvik.com/images/apim-aks-blue-green.png){: style="max-width: 300px"}
 
 ## Agenda
 
