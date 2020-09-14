@@ -5,7 +5,7 @@ subtitle: Triggering Azure API Management Deployments
 tags: [Azure, Azure App Configuration, Azure Event Grid, Azure Automation Runbooks]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
+share-img: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid.png
 image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
 featured-image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
 ---
