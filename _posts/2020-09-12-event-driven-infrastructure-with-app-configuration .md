@@ -19,7 +19,7 @@ featured-image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-
 * [Overview](#overview)
 * [Deploy App Configuration](#deploy-azure-app-configuration)
 * [Deploy API Management](#deploy-azure-api-management)
-* [Azure Automation](#azure-automation)
+* [Deploy Azure Automation](#deploy-azure-automation)
 * [Get key/value pairs from App Configuration](#get-key-value-pairs-from-azure-app-configuration)
 * [Event subscription from Azure App Configuration](#event-subscription-from-azure-app-configuration)
 * [Testing](#testing)
@@ -80,7 +80,7 @@ In this section we will deploy a random value as named value to Azure API Manage
 
 As mentioned previously, Az.AppConfiguration PowerShell Module does not provide a `Get-`-function to read configurations from Azure App Configuration yet. This requires from us to use the REST interface of App Configuration instead. In a previous post, I write about [how to use Postman to read from Azure App Configuration](https://www.svenmalvik.com/azure-appconfiguration/). As we are using PowerShell in our runbook, we would need to convert the code from Javascript to PowerShell. I haven't done this yet.
 
-## <a name="azure-automation"></a>Azure Automation
+## <a name="deploy-azure-automation"></a>Deploy Azure Automation
 
 Now that we have Azure App Configuration and Azure API Management in place, we need to tie them together. First, we create an Azure Automation Account.
 
