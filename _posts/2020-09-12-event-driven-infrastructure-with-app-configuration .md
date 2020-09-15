@@ -20,7 +20,6 @@ featured-image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-
 * [Deploy App Configuration](#deploy-azure-app-configuration)
 * [Deploy API Management](#deploy-azure-api-management)
 * [Deploy Azure Automation](#deploy-azure-automation)
-* [Get from App Configuration](#get-from-azure-app-configuration)
 * [Create Event Subscription](#create-event-subscription)
 * [Testing](#testing)
 * [Resources](#resources)
@@ -71,15 +70,6 @@ Now run the following command to create an instance of Azure API Management. Thi
 New-AzApiManagement -ResourceGroupName "appc2apim-rg" -Name "appc2apim-apim-service" -Location "westeurope" -Organization "<ORGANIZATION>" -AdminEmail "<YOUR_EMAIL" --Sku "Consumption"
 ```
 
-### Deploy named value to Azure API Management
-
-In this section we will deploy a random value as named value to Azure API Management from our runbook. Copy the code into your runbook and test it.
-[update-apim-nv-from-runbook.ps1](https://gist.githubusercontent.com/svenmalvik/a3fec9487aa82948d46f45f87ae805dc/raw/3d27e0513452bb66f81ed19a0a918a1cffb5f9ee/update-apim-nv-from-runbook.ps1)
-
-## <a name="get-from-azure-app-configuration"></a>Get from Azure App Configuration
-
-As mentioned previously, Az.AppConfiguration PowerShell Module does not provide a `Get-`-function to read configurations from Azure App Configuration yet. This requires from us to use the REST interface of App Configuration instead. In a previous post, I write about [how to use Postman to read from Azure App Configuration](https://www.svenmalvik.com/azure-appconfiguration/). As we are using PowerShell in our runbook, we would need to convert the code from Javascript to PowerShell. I haven't done this yet.
-
 ## <a name="deploy-azure-automation"></a>Deploy Azure Automation
 
 Now that we have Azure App Configuration and Azure API Management in place, we need to tie them together. First, we create an Azure Automation Account.
@@ -104,14 +94,6 @@ Then I created a runbook with type PowerShell. This will be empty and we will wr
 
 ![Create Runbook](https://cdn.svenmalvik.com/images/azure-automation-6.png)*Create Runbook*
 
-### Create Webhook
-
-To be able to trigger this runbook, we need a webhook that Azure Event Grid can request.
-
-![Create Webhook in Runbook](https://cdn.svenmalvik.com/images/azure-automation-13.png)*Create Webhook in Runbook*
-
-What we then get is a URL that we need to copy immediately and save somewhere. We will need it in the next section where we create an event subscription.
-
 ![URL in Webhook in Runbook](https://cdn.svenmalvik.com/images/azure-automation-14.png)*URL in Webhook in Runbook*
 
 ### Importing Az modules into Azure Automation Account
@@ -131,6 +113,23 @@ We also need the Az.AppConfiguration PowerShell Module to read the key/value pai
 At this time the Az.AppConfiguration PowerShell Module does not provide a `Get-`-function to read configurations from Azure App Configuration. This is of course a problem and requires to use the REST interface of App Configuration instead.
 
 ![Az.AppConfiguration Functions Available](https://cdn.svenmalvik.com/images/azure-automation-12.png)*Az.AppConfiguration Functions Available*
+
+### Deploy named value to Azure API Management
+
+Now we will deploy a random value as named value to Azure API Management from our runbook. Copy the code into your runbook and test it.
+[update-apim-nv-from-runbook.ps1](https://gist.githubusercontent.com/svenmalvik/a3fec9487aa82948d46f45f87ae805dc/raw/3d27e0513452bb66f81ed19a0a918a1cffb5f9ee/update-apim-nv-from-runbook.ps1)
+
+### Read from Azure App Configuration
+
+As mentioned previously, Az.AppConfiguration PowerShell Module does not provide a `Get-`-function to read configurations from Azure App Configuration yet. This requires from us to use the REST interface of App Configuration instead. In a previous post, I write about [how to use Postman to read from Azure App Configuration](https://www.svenmalvik.com/azure-appconfiguration/). As we are using PowerShell in our runbook, we would need to convert the code from Javascript to PowerShell. I haven't done this yet.
+
+### Create Webhook
+
+To be able to trigger this runbook, we need a webhook that Azure Event Grid can request.
+
+![Create Webhook in Runbook](https://cdn.svenmalvik.com/images/azure-automation-13.png)*Create Webhook in Runbook*
+
+What we then get is a URL that we need to copy immediately and save somewhere. We will need it in the next section where we create an event subscription.
 
 ## <a name="create-event-subscription"></a>Create Event Subscription
 
