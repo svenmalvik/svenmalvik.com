@@ -20,7 +20,7 @@ featured-image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-
 * [Deploy App Configuration](#deploy-azure-app-configuration)
 * [Deploy API Management](#deploy-azure-api-management)
 * [Deploy Azure Automation](#deploy-azure-automation)
-* [Get key/value pairs from App Configuration](#get-key-value-pairs-from-azure-app-configuration)
+* [Get from App Configuration](#get-from-azure-app-configuration)
 * [Create Event Subscription](#create-event-subscription)
 * [Testing](#testing)
 * [Resources](#resources)
@@ -76,7 +76,7 @@ New-AzApiManagement -ResourceGroupName "appc2apim-rg" -Name "appc2apim-apim-serv
 In this section we will deploy a random value as named value to Azure API Management from our runbook. Copy the code into your runbook and test it.
 [update-apim-nv-from-runbook.ps1](https://gist.githubusercontent.com/svenmalvik/a3fec9487aa82948d46f45f87ae805dc/raw/3d27e0513452bb66f81ed19a0a918a1cffb5f9ee/update-apim-nv-from-runbook.ps1)
 
-## <a name="get-key-value-pairs-from-azure-app-configuration"></a>Get key/value pairs from Azure App Configuration
+## <a name="get-from-azure-app-configuration"></a>Get from Azure App Configuration
 
 As mentioned previously, Az.AppConfiguration PowerShell Module does not provide a `Get-`-function to read configurations from Azure App Configuration yet. This requires from us to use the REST interface of App Configuration instead. In a previous post, I write about [how to use Postman to read from Azure App Configuration](https://www.svenmalvik.com/azure-appconfiguration/). As we are using PowerShell in our runbook, we would need to convert the code from Javascript to PowerShell. I haven't done this yet.
 
