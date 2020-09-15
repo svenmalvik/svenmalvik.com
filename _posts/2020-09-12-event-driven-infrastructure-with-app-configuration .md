@@ -21,7 +21,7 @@ featured-image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-
 * [Deploy API Management](#deploy-azure-api-management)
 * [Deploy Azure Automation](#deploy-azure-automation)
 * [Get key/value pairs from App Configuration](#get-key-value-pairs-from-azure-app-configuration)
-* [Event subscription from Azure App Configuration](#event-subscription-from-azure-app-configuration)
+* [Create Event Subscription](#create-event-subscription)
 * [Testing](#testing)
 * [Resources](#resources)
 
@@ -132,7 +132,7 @@ At this time the Az.AppConfiguration PowerShell Module does not provide a `Get-`
 
 ![Az.AppConfiguration Functions Available](https://cdn.svenmalvik.com/images/azure-automation-12.png)*Az.AppConfiguration Functions Available*
 
-## <a name="event-subscription-from-azure-app-configuration"></a>Event subscription from Azure App Configuration
+## <a name="create-event-subscription"></a>Create Event Subscription
 
 The only service we are missing is an Event Subscription in Azure Event Grid. One way of creating it is from our Azure App Configuration service.
 
