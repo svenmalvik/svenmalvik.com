@@ -10,7 +10,7 @@ image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
 featured-image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
 ---
 
-*Azure App Configuration is great for externalizing application configurations. What if an application is our infrastructure? How could we dynamically change our infrastructure based on updates in Azure App Configuration? To give you an idea of what I have in mind ... At [Vipps](https://vipps.no) we have two AKS clusters. Only one cluster is active at any given time. We use the second cluster to test AKS upgrades. In front of AKS is Azure API Management that can route traffic to AKS-blue or AKS-green. The information of what cluster is active and what is inactive can be stored in Azure App Configuration, and then being send to API Management that uses the value in a policy. In this post, I will show you how we can automate a switch from one AKS cluster to another cluster with Azure Event Grid. This scenario was a study that i did to find out how we can use Azure App Configuration for an Event-Driven Infrastructure.*
+*Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How could we dynamically update our infrastructure based on a change in Azure App Configuration? To give you an idea of what I have in mind ... At [Vipps](https://vipps.no) we have two AKS clusters. Only one cluster is active at any given time. We use the second cluster to test AKS upgrades. In front of AKS is Azure API Management that can route traffic to AKS-blue or AKS-green. The information of what cluster is active and what is inactive can be stored in Azure App Configuration, and then being send to API Management that uses the value in a policy. In this post, I will show how to automate a switch from one AKS cluster to another cluster with Azure Event Grid. This scenario was a study that i did to find out how to use Azure App Configuration for an Event-Driven Infrastructure.*
 
 ![Event flow diagram of how Azure App Configuration events trigger Azure API Management deployments](https://cdn.svenmalvik.com/images/apim-aks-blue-green.png){: style="max-width: 300px"}
 
@@ -27,13 +27,13 @@ featured-image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-
 
 ## <a name="overview"></a>Overview
 
-Before we start, I will give a high-level overview of the event flow between the services we use. The data of what cluster is active is stored in Azure App Configuration. Whenever we change this value, meaning we set the other AKS cluster as active, a change event is send to Azure Event Grid. Azure Automation subscribes to Event Grid and triggers an update in Azure API Management that routes the traffic to either AKS-blue or AKS-green. You find more information about [Policies in Azure API Management](https://www.svenmalvik.com/azure-apim-policies/) in a previous post.
+Before we start, I will give a high-level overview of the event flow between the services I used. The data of what cluster is active is stored in Azure App Configuration. Whenever I change this value, meaning I set the other AKS cluster as active, a change event is published to Azure Event Grid. Azure Automation subscribes to Event Grid and triggers an update in Azure API Management that routes the traffic to either AKS-blue or AKS-green. More information about [Policies in Azure API Management](https://www.svenmalvik.com/azure-apim-policies/) in a previous post.
 
 ![Event flow diagram of how Azure App Configuration events trigger Azure API Management deployments](https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid.png)*Event flow diagram of how Azure App Configuration events trigger Azure API Management deployments*
 
 ## <a name="deploy-azure-app-configuration"></a>Deploy Azure App Configuration
 
-We will deploy an instance of Azure App Configuration Service from Azure Cloud Shell with Azure CLI. To do so we select `Bash` as shown below.
+We can deploy an instance of Azure App Configuration Service from Azure Cloud Shell with Azure CLI. To do so we select `Bash` as shown below.
 
 ![Azure Cloud Shell for Bash](https://cdn.svenmalvik.com/images/azure-appconfiguration-0.png)*Azure Cloud Shell for Bash*
 
