@@ -72,7 +72,7 @@ The feature flag is disabled by default, and we have to explicitly enable it. We
 
 ## We build a spaceship with Spring Boot using feature flags
 
-I started by following the instructions on [Create a Spring Boot app](https://docs.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot#create-a-spring-boot-app). The problem was that some instructions were wrong, and used libraries old. So I created pull requests that were quickly merged by Microsoft into the master branch of the Azure Documentation. As a side note, that was super fun and super rewarding. Anyway, I simplified the example, updated the libraries, and put it on GitHub - [spaceship-azure-app-config-demo](https://github.com/svenmalvik/spaceship-azure-app-config-demo).
+I started by following the instructions on [Create a Spring Boot app](https://docs.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot#create-a-spring-boot-app). The problem was that some instructions were wrong, and used very old libraries. So I created pull requests that were quickly merged by Microsoft into the master branch of the Azure Documentation. As a side note, that was super fun and super rewarding. Anyway, I simplified the example, updated the libraries, and put it on GitHub - [spaceship-azure-app-config-demo](https://github.com/svenmalvik/spaceship-azure-app-config-demo).
 
 Before we start the spaceship, we need to set the `connection-string` of the App Configuration instance as an environment variable. I have a Mac, so I set it as shown below.
 
