@@ -97,7 +97,7 @@ Then I created a runbook with type PowerShell. This will be empty and we will wr
 ### Importing Az modules into Azure Automation Account
 
 We need the Az.ApiManagement PowerShell Module to update named values in API Management. The named value that we are going to update is a key/value pair telling about what AKS cluster currently is active. We'll get this from Azure App Configuration.
- 
+
 ![Az.ApiManagement PowerShell Module](https://cdn.svenmalvik.com/images/azure-automation-8.png)*Az.ApiManagement PowerShell Module*
 
 Click import to make this module available.
@@ -129,7 +129,7 @@ Now we will deploy a random value as named value to Azure API Management from ou
 
 ### Read from Azure App Configuration
 
-As mentioned previously, Az.AppConfiguration PowerShell Module does not provide a `Get-`-function to read configurations from Azure App Configuration yet. This requires from us to use the REST interface of App Configuration instead. In a previous post, I write about [how to use Postman to read from Azure App Configuration](https://www.svenmalvik.com/azure-appconfiguration/). As we are using PowerShell in our runbook, we would need to convert the code from Javascript to PowerShell. I haven't done this yet.
+As mentioned previously, Az.AppConfiguration PowerShell Module does not provide a `Get-`-function to read configurations from Azure App Configuration yet. This requires from us to use the REST interface of App Configuration instead. In a previous post, I write about [how to use Postman to read from Azure App Configuration](https://www.svenmalvik.com/azure-appconfiguration/). As we are using PowerShell in our runbook, we would need to convert the code from Javascript to PowerShell. Take a look at the [code for reading a key/value from Azure App Configuration that came in as a parameter in powershell and update the same named value in Azure API Management](https://gist.github.com/svenmalvik/5a09f29cd766dd87a0e70b408172afce).
 
 ## <a name="create-event-subscription"></a>Create Event Subscription
 
