@@ -4,6 +4,8 @@ title: Workshop
 subtitle: Understanding Professional Websites for Entrepreneurs
 ---
 
+[Register](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)
+
 ## Date and time
 Module 1: 05.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 Module 2: 12.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
@@ -50,8 +52,12 @@ I have split this workshop into 5 modules á 3 hours over a course of 10 weeks. 
 - Maintenance
 - Wrap up
 
+[Register](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)
+
 ## About the instructor
 Sven Malvik is a Developer, Software Engineer, Software Architect, and Engineering Manager with 15 years of experience in building, maintaining and operating small, medium, and large websites and software systems.
 He works currently as a Microsoft Azure Cloud Expert at Vipps, Norwegians number one payment service. Sven has talked at large conferences like Microsoft Build, JavaZone, NDC and many more. He has also hold many workshops for companies and at Meetups about various software technologies.
 
 If you have questions regarding this workshop, or just want to connect, send a message to [Sven Malvik](https://www.linkedin.com/in/svenmalvik)
+
+[Register](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)
