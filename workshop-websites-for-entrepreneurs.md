@@ -63,16 +63,16 @@ If you have questions regarding this workshop, or just want to connect, send a m
 
 **[Register now](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
 
-<ul class="actions">
-    <li><a class="button next" id="order1">Reserve Seat</a><div id="error-message7"></div></li>
-</ul>
+<div>
+    <div><a id="order1">Reserve Seat</a>
+    </div><div id="error-message7"></div>
+</div>
+
 
 <script>
     var PUBLISHABLE_KEY = "pk_live_51GzhkJBdwAYDhgLkVSdDCucmD1dWeeQqQGElrYeLcPztDoj1JSNdGMbVcpzmiqnsDzEeyneqcMyfjJPNbQQCvMlx00veKZZaoh";
     var DOMAIN = window.location.origin;
     var PRICE_ID = "price_1GzolQBdwAYDhgLkcfn24Okr";
-
-
     var stripe = Stripe(PUBLISHABLE_KEY);
 
     for (i = 1; i <= 1; i++) {
