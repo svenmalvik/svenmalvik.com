@@ -62,3 +62,6 @@ He works currently as a Microsoft Azure Cloud Expert at Vipps, Norwegians number
 If you have questions regarding this workshop, or just want to connect, send a message to [Sven Malvik](https://www.linkedin.com/in/svenmalvik)
 
 **[Register now](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
+
+
+console.log("Test")
