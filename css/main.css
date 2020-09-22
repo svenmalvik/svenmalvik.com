@@ -789,3 +789,16 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
+
+.btn-action {
+  cursor: default; 
+  width: 150px; 
+  text-align: center; 
+  background-color: #008aff; 
+  color: white; 
+  padding: 10px;
+}
+.link-action {
+  text-decoration: none;
+  color: white;
+}

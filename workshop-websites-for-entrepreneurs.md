@@ -63,11 +63,10 @@ If you have questions regarding this workshop, or just want to connect, send a m
 
 **[Register now](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
 
-<div style="cursor: default;">
-    <div><a id="order1">Reserve Seat</a></div>
-<div id="error-message7"></div>
+<div class="btn-action">
+    <div><a id="order1" class="link-action">Reserve Seat</a></div>
+    <div id="error-message1"></div>
 </div>
-
 
 <script>
     var PUBLISHABLE_KEY = "pk_live_51GzhkJBdwAYDhgLkVSdDCucmD1dWeeQqQGElrYeLcPztDoj1JSNdGMbVcpzmiqnsDzEeyneqcMyfjJPNbQQCvMlx00veKZZaoh";
