@@ -75,7 +75,7 @@ If you have questions regarding this workshop, or just want to connect, send a m
 <script>
     var PUBLISHABLE_KEY = "pk_live_51GzhkJBdwAYDhgLkVSdDCucmD1dWeeQqQGElrYeLcPztDoj1JSNdGMbVcpzmiqnsDzEeyneqcMyfjJPNbQQCvMlx00veKZZaoh";
     var DOMAIN = window.location.origin;
-    var PRICE_ID = "price_1GzolQBdwAYDhgLkcfn24Okr";
+    var PRICE_ID = "price_1HUIIQBdwAYDhgLkbgaQberh";
     var stripe = Stripe(PUBLISHABLE_KEY);
 
     for (i = 1; i <= 1; i++) {
