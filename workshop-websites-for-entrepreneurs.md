@@ -4,7 +4,7 @@ title: Understanding Professional Websites
 subtitle: Workshop for Entrepreneurs
 ---
 
-*A professional website for an entrepreneur can be expensive. At the same time a professional website can be cheap, even for free. Why is that so? Why don’t you necessarily need specialized knowledge in programming or design to create an awesome website for your company?*
+*A professional website for an entrepreneur can be expensive, cheap, and even for free. Why is that so? Why don’t you necessarily need specialized knowledge in programming or design to create a professional website for your company? This workshop will teach you everything you need to know to get a professional website from a web agency to a price that is fair and you can agree on. Maybe you even want to build one on your own and save money. This workshop will tech you how and without any programming knowledge.*
 
 ## Date and time
 - Module 1: 05.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
