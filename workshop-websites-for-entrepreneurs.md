@@ -13,8 +13,7 @@ _[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormI
 - Module 4: 26.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 - Module 5: 03.12.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 
-## Price
-500€
+_Price: 500€_
 
 A professional website for an entrepreneur can be expensive. At the same time a professional website can be cheap, even for free. Why is that so? Why don’t you necessarily need specialized knowledge in programming or design to create an awesome website for your company?
 
