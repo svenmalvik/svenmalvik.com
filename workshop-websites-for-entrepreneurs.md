@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Workshop
-subtitle: Understanding Professional Websites for Entrepreneurs
+title: Workshop for Entrepreneurs
+subtitle: Understanding Professional Websites
 ---
 
-_[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)_
+*A professional website for an entrepreneur can be expensive. At the same time a professional website can be cheap, even for free. Why is that so? Why don’t you necessarily need specialized knowledge in programming or design to create an awesome website for your company?*
+
+**[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
 
 ## Date and time
 - Module 1: 05.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
@@ -13,7 +15,7 @@ _[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormI
 - Module 4: 26.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 - Module 5: 03.12.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 
-_Price: 500€_
+**Price: 500€**
 
 A professional website for an entrepreneur can be expensive. At the same time a professional website can be cheap, even for free. Why is that so? Why don’t you necessarily need specialized knowledge in programming or design to create an awesome website for your company?
 
