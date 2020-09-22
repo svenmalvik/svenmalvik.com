@@ -63,9 +63,9 @@ If you have questions regarding this workshop, or just want to connect, send a m
 
 **[Register now](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
 
-<div>
-    <div><a id="order1">Reserve Seat</a>
-    </div><div id="error-message7"></div>
+<div style="cursor: default;">
+    <div><a id="order1">Reserve Seat</a></div>
+<div id="error-message7"></div>
 </div>
 
 
