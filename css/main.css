@@ -803,3 +803,8 @@ pre {
   text-decoration: none;
   color: white;
 }
+.link-action:hover {
+  text-decoration: none;
+  color: #cccccc;
+  cursor: pointer;
+}
