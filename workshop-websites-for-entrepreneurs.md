@@ -93,7 +93,7 @@ If you have questions regarding this workshop, or just want to connect, send a m
             lineItems: [{ price: PRICE_ID, quantity: 1 }],
             successUrl:
                 DOMAIN + "/success.html?session_id={CHECKOUT_SESSION_ID}",
-            cancelUrl: DOMAIN + "/canceled.html"
+            cancelUrl: DOMAIN + "/workshop-websites-for-entrepreneurs"
             })
             .then(handleResult);
         });
