@@ -795,7 +795,8 @@ pre {
   width: 150px; 
   text-align: center; 
   background-color: #008aff; 
-  color: white; 
+  color: white;
+  font-family: sans-serif;
   padding: 10px;
 }
 .link-action, .link-action:visited, .link-action:hover {
