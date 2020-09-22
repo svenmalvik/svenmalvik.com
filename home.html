@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1 style="line-height: 1.2em;">{{ page.landing-title }}</h1>
+            </header>
+            <div class="content">
+                <p style="text-transform: uppercase; font-size: 1.2em;">{{ site.description }}</p>
+                <ul class="actions">
+                    <li><a class="button next" id="order1">Reserve Seat</a><div id="error-message1"></div></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+
+        
+        <!-- Two -->
+        <section id="two" class="spotlights">
+
+            <section>
+                <a class="image">
+                    <img src="{% link assets/images/msstudio2.jpg %}" alt="" data-position="center center" />
+                </a>
+                <div class="content">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Who should participate</h3>
+                        </header>
+                        <p>
+                            In this workshop you will learn everything you need to know about 
+                            Azure API Management, so you can run this service in production efficiently and securely. 
+                            My name is Sven Malvik, and I will be the instructor of this workshop. 
+                            The workshop is for developer, engineers, and for people from business that want to 
+                            understand the service itself, as well as what value it has for organizations.
+                        </p>
+                        <ul class="actions">
+                            <li><a class="button next" id="order2">Reserve Seat</a><div id="error-message2"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <a class="image">
+                    <img src="{% link assets/images/smallgroup.jpg %}" alt="" data-position="top center" />
+                </a>
+                <div class="content">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Small Groups</h3>
+                        </header>
+                        <p>For many people, it's more fun to learn in small groups. It's also easier to ask questions. 
+                            The same is true for me as the instructor. I will understand your challenges better, 
+                            and I can give you better answers. This workshop has a limitation of 5 participants.
+                            Drop me a message in case you are a team of more than 5 people.
+                        </p>
+                        <ul class="actions">
+                            <li><a class="button next" id="order3">Reserve Seat</a><div id="error-message3"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <a class="image">
+                    <img src="{% link assets/images/msbuild1.jpg %}" alt="" data-position="25% 25%" />
+                </a>
+                <div class="content">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Why I love Azure API Management</h3>
+                        </header>
+                        <p>
+                            bla bla
+                        </p>
+                        <ul class="actions">
+                            <li><a class="button next" id="order4">Reserve Seat</a><div id="error-message4"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <a class="image">
+                    <img src="{% link assets/images/group.jpg %}" alt="" data-position="25% 25%"/>
+                </a>
+                <div class="content">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Summary of Workshop Content</h3>
+                        </header>
+                        <p>
+                            <ul>
+                                <li>Core concepts</li>
+                                <li>Policies</li>
+                                <li>Logging to Azure Event Hub</li>
+                            </ul>
+                        </p>
+                        <ul class="actions">
+                            <li><a class="button next" id="order5">Reserve Seat</a><div id="error-message5"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <a class="image">
+                    <img src="{% link assets/images/covid19.jpg %}" alt="" data-position="25% 25%" />
+                </a>
+                <div class="content">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Hi, I'm Sven</h3>
+                        </header>
+                        <p>
+                            I've worked with Azure API Management in production
+                            for the last two years at Vipps AS. Vipps is the number one payments service in Norway, and also the 
+                            most successful digital wallet in the world as almost the entire population of Norway is using this service. 
+                            <br>How our developers interact with Azure API Management has impressed Microsoft  
+                            so much that they invited me to Seattle and give a talk at Microsoft Build 2019.
+                            What a great experience. Since then, I've been so lucky to talk about Azure API Management at many large conferences.
+                            I truly belief in this service, and I'd like to share with you everything about it.
+                        </p>
+                        <ul class="actions">
+                            <li><a class="button next" id="order6">Reserve Seat</a><div id="error-message6"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+            
+        <section class="major">
+                
+            <div class="inner">
+                <header class="major">
+                    <h1>Next Workshop</h1>
+                </header>
+        
+        <!-- Content -->
+        <div class="row">
+            <div class="4u 12u$(medium)">
+                <h3>Date</h3>
+                <p>8. July 2020</p>
+            </div>
+            <div class="4u 12u$(medium)">
+                <h3>Time</h3>
+                <p>15:00 CEST (Oslo/Berlin)</p>
+            </div>
+            <div class="4u$ 12u$(medium)">
+                <h3>Price</h3>
+                <p>50€/student</p>
+            </div>
+        </div>
+        <ul class="actions">
+            <li><a class="button next" id="order7">Reserve Seat</a><div id="error-message7"></div></li>
+        </ul>
+
+        </section>
+    </div>
+
+    {% include footer.html %}
+
+    <script>
+        var PUBLISHABLE_KEY = "pk_test_51GzhkJBdwAYDhgLkn9rkfBbxzEiyb1UrfMo9gPvUWcEkmDR2OOjcTmiUlzvQ6xg8qrWeiflQehBxkRlzF7AbkdeN00miAAkg7w";
+        var DOMAIN = window.location.origin;
+        var PRICE_ID = "price_1GznsZBdwAYDhgLkkZpUndJt";
+
+  
+        var stripe = Stripe(PUBLISHABLE_KEY);
+  
+        for (i = 1; i <= 7; i++) {
+            var handleResult = function(result) {
+            if (result.error) {
+                var displayError = document.getElementById("error-message" + i);
+                displayError.textContent = result.error.message;
+            }
+            };
+            var order = document.getElementById("order" + i);
+            order.addEventListener("click", function() {
+            stripe
+                .redirectToCheckout({
+                mode: 'payment',
+                lineItems: [{ price: PRICE_ID, quantity: 1 }],
+                successUrl:
+                    DOMAIN + "/success.html?session_id={CHECKOUT_SESSION_ID}",
+                cancelUrl: DOMAIN + "/canceled.html"
+                })
+                .then(handleResult);
+            });
+        }
+      </script>
+</body>
+
+</html>
+
+
+
