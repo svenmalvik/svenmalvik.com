@@ -64,7 +64,7 @@ If you have questions regarding this workshop, or just want to connect, send a m
 **[Register now](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
 
 <ul class="actions">
-    <li><a class="button next" id="order7">Reserve Seat</a><div id="error-message7"></div></li>
+    <li><a class="button next" id="order1">Reserve Seat</a><div id="error-message7"></div></li>
 </ul>
 
 <script>
