@@ -78,7 +78,7 @@ If you have questions regarding this workshop, or just want to connect, send a m
     var PRICE_ID = "price_1HUIIQBdwAYDhgLkbgaQberh";
     var stripe = Stripe(PUBLISHABLE_KEY);
 
-    for (i = 1; i <= 1; i++) {
+    for (i = 1; i <= 3; i++) {
         var handleResult = function(result) {
         if (result.error) {
             var displayError = document.getElementById("error-message" + i);
