@@ -799,6 +799,9 @@ pre {
   font-family: sans-serif;
   padding: 10px;
 }
+.btn-action:hover {
+  background-color: #0069ff;
+}
 .link-action, .link-action:visited, .link-action:hover {
   text-decoration: none;
   color: white;
