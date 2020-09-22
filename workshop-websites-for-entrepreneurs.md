@@ -30,6 +30,11 @@ We will talk about concepts, web agencies, and today’s technologies, how they 
 
 I have split this workshop into 5 modules á 3 hours over a course of 10 weeks. 15 hours where we will learn everything that I think is important for an entrepreneur to start a professional website, and where you can ask any question.
 
+<div class="btn-action">
+    <div><a id="order2" class="link-action">Reserve Seat</a></div>
+    <div id="error-message2"></div>
+</div>
+
 ## Module 1 (How web agencies operate): 
 - Overview
 - Understanding Content Management Systems like WordPress
@@ -57,8 +62,8 @@ I have split this workshop into 5 modules á 3 hours over a course of 10 weeks. 
 - Wrap up
 
 <div class="btn-action">
-    <div><a id="order2" class="link-action">Reserve Seat</a></div>
-    <div id="error-message2"></div>
+    <div><a id="order3" class="link-action">Reserve Seat</a></div>
+    <div id="error-message3"></div>
 </div>
 
 ## About the instructor
@@ -68,8 +73,8 @@ He works currently as a Microsoft Azure Cloud Expert at Vipps, Norwegians number
 If you have questions regarding this workshop, or just want to connect, send a message to [Sven Malvik](https://www.linkedin.com/in/svenmalvik)
 
 <div class="btn-action">
-    <div><a id="order3" class="link-action">Reserve Seat</a></div>
-    <div id="error-message3"></div>
+    <div><a id="order4" class="link-action">Reserve Seat</a></div>
+    <div id="error-message4"></div>
 </div>
 
 <script>
@@ -78,7 +83,7 @@ If you have questions regarding this workshop, or just want to connect, send a m
     var PRICE_ID = "price_1HUIZYBdwAYDhgLk7vjpfjoh";
     var stripe = Stripe(PUBLISHABLE_KEY);
 
-    for (i = 1; i <= 3; i++) {
+    for (i = 1; i <= 4; i++) {
         var handleResult = function(result) {
         if (result.error) {
             var displayError = document.getElementById("error-message" + i);
