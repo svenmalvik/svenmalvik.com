@@ -6,11 +6,6 @@ subtitle: Workshop for Entrepreneurs
 
 *A professional website for an entrepreneur can be expensive. At the same time a professional website can be cheap, even for free. Why is that so? Why don’t you necessarily need specialized knowledge in programming or design to create an awesome website for your company?*
 
-<div class="btn-action">
-    <div><a id="order1" class="link-action">Reserve Seat</a></div>
-    <div id="error-message1"></div>
-</div>
-
 ## Date and time
 - Module 1: 05.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 - Module 2: 12.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
@@ -19,6 +14,11 @@ subtitle: Workshop for Entrepreneurs
 - Module 5: 03.12.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 
 **Price: 50€**
+
+<div class="btn-action">
+    <div><a id="order1" class="link-action">Reserve Seat</a></div>
+    <div id="error-message1"></div>
+</div>
 
 A professional website for an entrepreneur can be expensive. At the same time a professional website can be cheap, even for free. Why is that so? Why don’t you necessarily need specialized knowledge in programming or design to create an awesome website for your company?
 
