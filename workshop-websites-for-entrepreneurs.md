@@ -4,14 +4,14 @@ title: Workshop
 subtitle: Understanding Professional Websites for Entrepreneurs
 ---
 
-[Register](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)
+_[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)_
 
 ## Date and time
-Module 1: 05.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
-Module 2: 12.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
-Module 3: 19.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
-Module 4: 26.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
-Module 5: 03.12.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
+- Module 1: 05.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
+- Module 2: 12.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
+- Module 3: 19.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
+- Module 4: 26.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
+- Module 5: 03.12.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 
 ## Price
 500€
@@ -52,7 +52,7 @@ I have split this workshop into 5 modules á 3 hours over a course of 10 weeks. 
 - Maintenance
 - Wrap up
 
-[Register](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)
+[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)
 
 ## About the instructor
 Sven Malvik is a Developer, Software Engineer, Software Architect, and Engineering Manager with 15 years of experience in building, maintaining and operating small, medium, and large websites and software systems.
@@ -60,4 +60,4 @@ He works currently as a Microsoft Azure Cloud Expert at Vipps, Norwegians number
 
 If you have questions regarding this workshop, or just want to connect, send a message to [Sven Malvik](https://www.linkedin.com/in/svenmalvik)
 
-[Register](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)
+[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)
