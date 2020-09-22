@@ -6,7 +6,7 @@ subtitle: Workshop for Entrepreneurs
 
 *A professional website for an entrepreneur can be expensive. At the same time a professional website can be cheap, even for free. Why is that so? Why don’t you necessarily need specialized knowledge in programming or design to create an awesome website for your company?*
 
-**[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
+**[Register now](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
 
 ## Date and time
 - Module 1: 05.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
@@ -53,7 +53,7 @@ I have split this workshop into 5 modules á 3 hours over a course of 10 weeks. 
 - Maintenance
 - Wrap up
 
-**[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
+**[Register now](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
 
 ## About the instructor
 Sven Malvik is a Developer, Software Engineer, Software Architect, and Engineering Manager with 15 years of experience in building, maintaining and operating small, medium, and large websites and software systems.
@@ -61,4 +61,4 @@ He works currently as a Microsoft Azure Cloud Expert at Vipps, Norwegians number
 
 If you have questions regarding this workshop, or just want to connect, send a message to [Sven Malvik](https://www.linkedin.com/in/svenmalvik)
 
-**[Register now](https://forms.microsoft.com/Pages/DesignPage.aspx?fromAR=1#FormId=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
+**[Register now](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAQFTWSZUMElIVTdBN0NaWkdVUFBQM0MyVU5RVEFOSC4u)**
