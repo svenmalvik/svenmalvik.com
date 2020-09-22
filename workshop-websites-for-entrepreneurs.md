@@ -13,7 +13,7 @@ subtitle: Workshop for Entrepreneurs
 - Module 4: 26.11.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 - Module 5: 03.12.2020, 9am - 12am CEST (Amsterdam/Berlin/Oslo)
 
-**Price: 50€**
+**Price: 120€**
 
 <div class="btn-action">
     <div><a id="order1" class="link-action">Reserve Seat</a></div>
@@ -75,7 +75,7 @@ If you have questions regarding this workshop, or just want to connect, send a m
 <script>
     var PUBLISHABLE_KEY = "pk_live_51GzhkJBdwAYDhgLkVSdDCucmD1dWeeQqQGElrYeLcPztDoj1JSNdGMbVcpzmiqnsDzEeyneqcMyfjJPNbQQCvMlx00veKZZaoh";
     var DOMAIN = window.location.origin;
-    var PRICE_ID = "price_1HUIIQBdwAYDhgLkbgaQberh";
+    var PRICE_ID = "price_1HUIZYBdwAYDhgLk7vjpfjoh";
     var stripe = Stripe(PUBLISHABLE_KEY);
 
     for (i = 1; i <= 3; i++) {
