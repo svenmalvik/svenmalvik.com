@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Workshop for Entrepreneurs
-subtitle: Understanding Professional Websites
+title: Understanding Professional Websites
+subtitle: Workshop for Entrepreneurs
 ---
 
 *A professional website for an entrepreneur can be expensive. At the same time a professional website can be cheap, even for free. Why is that so? Why don’t you necessarily need specialized knowledge in programming or design to create an awesome website for your company?*
