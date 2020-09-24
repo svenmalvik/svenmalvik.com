@@ -16,14 +16,14 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 |Date   |Title    |Attendees    |Place  |
 |---    |---    |---      |---    |
-|November 2020  |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/273477740/) *online*           |--    |Azure Meetup Oslo/Mumbai                 |
-|October 2020   |[Introduction to Farmer](https://www.meetup.com/Infrastructure-As-Code-User-Group-Oslo/events/273116797/)                          |--    |Infrastructure as Code User Group Oslo   |
-|September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/NNUGOslo/events/273290043/)           |--    |NNUG                                     |
-|September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/272787237/)           |30    |Azure Meetup Oslo/New York/Mumbai        |
-|September 2020 |[Workshop: Understanding Azure API Management](https://ndcminnesota.com/agenda/understanding-azure-api-management-0q2l/0rj0je5brqe)    |5     |NDC Minnesota                            |
-|June 2020      |[From Traditional Ops to Cloud-Native in Azure](https://ndcoslo.com/talk/from-traditional-ops-to-cloud-native-in-azure-a-real-world-scenario/)   |40    |NDC Oslo                                 |
-|June 2020      |[From Traditional Ops to Cloud-Native in Azure](https://confer.no/program/?talk=KSYB-DEHT-OQJJ)   |20    |Confer Conf 2020                         |
-|Mai 2020       |[How Vipps uses Azure API Management](https://www.meetup.com/azure-meetup-oslo/events/270363493/)             |50    |Azure Meetup Oslo                        |
+|November 2020  |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/273477740/) *(online)*           |--    |Azure Meetup Oslo/Mumbai                 |
+|October 2020   |[Introduction to Farmer](https://www.meetup.com/Infrastructure-As-Code-User-Group-Oslo/events/273116797/) *(online)*                          |--    |Infrastructure as Code User Group Oslo   |
+|September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/NNUGOslo/events/273290043/) *(online)*           |--    |NNUG                                     |
+|September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/272787237/) *(online)*           |30    |Azure Meetup Oslo/New York/Mumbai        |
+|September 2020 |[Workshop: Understanding Azure API Management](https://ndcminnesota.com/agenda/understanding-azure-api-management-0q2l/0rj0je5brqe) *(online)*    |5     |NDC Minnesota                            |
+|June 2020      |[From Traditional Ops to Cloud-Native in Azure](https://ndcoslo.com/talk/from-traditional-ops-to-cloud-native-in-azure-a-real-world-scenario/) *(online)*   |40    |NDC Oslo                                 |
+|June 2020      |[From Traditional Ops to Cloud-Native in Azure](https://confer.no/program/?talk=KSYB-DEHT-OQJJ) *(online)*   |20    |Confer Conf 2020                         |
+|Mai 2020       |[How Vipps uses Azure API Management](https://www.meetup.com/azure-meetup-oslo/events/270363493/) *(online)*             |50    |Azure Meetup Oslo                        |
 |Mars 2020      |From Traditional Ops to Cloud-Native in Azure   |100   |itSMF Conference Norway                  |
 |January 2020   |[Workshop: Azure API management 101](https://www.meetup.com/azure-meetup-oslo/events/264452427/) |30 |Azure Meetup Oslo                        |
 |November 2019  |[The Rise of the Citizen Developer](https://www.microsoftevents.com/profile/web/index.cfm?PKwebID=0x1469423f223&varPage=agenda)  |950    |Microsoft TechX Oslo (Keynote Guest)     |
