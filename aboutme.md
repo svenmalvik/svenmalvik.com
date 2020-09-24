@@ -14,23 +14,23 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 ## my Speaking Engagements
 
-|Date   |Title    |Place  |
-|---    |---    |---      |
-|November 2020  |Understanding Azure App Configuration           |Azure Meetup Oslo/Mumbai                 |
-|October 2020   |Introduction to Farmer                          |Infrastructure as Code User Group Oslo   |
-|September 2020 |Understanding Azure App Configuration           |NNUG                                     |
-|September 2020 |Understanding Azure App Configuration           |Azure Meetup Oslo/New York/Mumbai        |
-|September 2020 |Understanding Azure API Management              |NDC Minnesota                            |
-|June 2020      |From Traditional Ops to Cloud-Native in Azure   |NDC Oslo                                 |
-|June 2020      |From Traditional Ops to Cloud-Native in Azure   |Confer Conf 2020                         |
-|Mai 2020       |How Vipps uses Azure API Management             |Azure Meetup Oslo                        |
-|Mars 2020      |From Traditional Ops to Cloud-Native in Azure   |itSMF Conference Norway                  |
-|January 2020   |Workshop: Azure API management 101              |Azure Meetup Oslo                        |
-|November 2019  |The Rise of the Citizen Developer (Part of Keynote)                 |Microsoft TechX Oslo (Keynote Guest)     |
-|September 2019 |How Vipps uses Azure to become the No.1 payment service in Norway   |JavaZone Norway                          |
-|June 2019      |We Build an Intelligent Azure Q&A Bot                               |Azure Meetup Oslo                        |
-|Mai 2019       |[How Azure powered Vipps to become the &#35;1 payment service in Norway](https://azure.microsoft.com/nb-no/resources/videos/build-2019-from-monolith-to-microservice-how-azure-powered-vipps-to-become-the-no-1-payment-service-in-norway/) |Microsoft Build 2019 Seattle          |
-|April 2019     |API development with Azure Api-M and AKS in a DevOps environment    |Global Azure Bootcamp Norway             |
+|Date   |Title    |Attendees    |Place  |
+|---    |---    |---      |---    |
+|November 2020  |Understanding Azure App Configuration           |--    |Azure Meetup Oslo/Mumbai                 |
+|October 2020   |Introduction to Farmer                          |--    |Infrastructure as Code User Group Oslo   |
+|September 2020 |Understanding Azure App Configuration           |--    |NNUG                                     |
+|September 2020 |Understanding Azure App Configuration           |30    |Azure Meetup Oslo/New York/Mumbai        |
+|September 2020 |Workshop: Understanding Azure API Management    |5     |NDC Minnesota                            |
+|June 2020      |From Traditional Ops to Cloud-Native in Azure   |40    |NDC Oslo                                 |
+|June 2020      |From Traditional Ops to Cloud-Native in Azure   |20    |Confer Conf 2020                         |
+|Mai 2020       |How Vipps uses Azure API Management             |20    |Azure Meetup Oslo                        |
+|Mars 2020      |From Traditional Ops to Cloud-Native in Azure   |100   |itSMF Conference Norway                  |
+|January 2020   |Workshop: Azure API management 101              |30    |Azure Meetup Oslo                        |
+|November 2019  |The Rise of the Citizen Developer (Part of Keynote)                 |950    |Microsoft TechX Oslo (Keynote Guest)     |
+|September 2019 |How Vipps uses Azure to become the No.1 payment service in Norway   |260    |JavaZone Norway                          |
+|June 2019      |We Build an Intelligent Azure Q&A Bot                               |30     |Azure Meetup Oslo                        |
+|Mai 2019       |[How Azure powered Vipps to become the &#35;1 payment service in Norway](https://azure.microsoft.com/nb-no/resources/videos/build-2019-from-monolith-to-microservice-how-azure-powered-vipps-to-become-the-no-1-payment-service-in-norway/) |680    |Microsoft Build 2019 Seattle          |
+|April 2019     |API development with Azure Api-M and AKS in a DevOps environment    |40    |Global Azure Bootcamp Norway             |
 
 # Contact
 
