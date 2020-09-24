@@ -29,7 +29,7 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 |November 2019  |The Rise of the Citizen Developer (Part of Keynote)                 |Microsoft TechX Oslo (Keynote Guest)     |
 |September 2019 |How Vipps uses Azure to become the No.1 payment service in Norway   |JavaZone Norway                          |
 |June 2019      |We Build an Intelligent Azure Q&A Bot                               |Azure Meetup Oslo                        |
-|Mai 2019       |How Azure powered Vipps to become the &#35;1 payment service in Norway |Microsoft Build 2019 Seattle          |
+|Mai 2019       |[How Azure powered Vipps to become the &#35;1 payment service in Norway](https://azure.microsoft.com/nb-no/resources/videos/build-2019-from-monolith-to-microservice-how-azure-powered-vipps-to-become-the-no-1-payment-service-in-norway/) |Microsoft Build 2019 Seattle          |
 |April 2019     |API development with Azure Api-M and AKS in a DevOps environment    |Global Azure Bootcamp Norway             |
 
 # Contact
