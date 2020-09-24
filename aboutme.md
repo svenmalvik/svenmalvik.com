@@ -16,6 +16,7 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 |Date   |Place  |
 |---    |---    |
+|November 2020  |Azure Meetup Oslo/Mumbai                 |
 |October 2020   |Infrastructure as Code User Group Oslo   |
 |September 2020 |Azure User Group Norway                  |
 |September 2020 |Azure Meetup Oslo/New York/Mumbai        |
