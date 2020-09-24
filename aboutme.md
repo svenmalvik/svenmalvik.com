@@ -14,23 +14,23 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 ## my Speaking Engagements
 
-|Date   |Place  |
-|---    |---    |
-|November 2020  |Azure Meetup Oslo/Mumbai                 |
-|October 2020   |Infrastructure as Code User Group Oslo   |
-|September 2020 |Azure User Group Norway                  |
-|September 2020 |Azure Meetup Oslo/New York/Mumbai        |
-|September 2020 |NDC Minnesota                            |
-|June 2020      |NDC Oslo                                 |
-|June 2020      |Confer Conf 2020                         |
-|Mars 2020      |itSMF Conference Norway                  |
-|February 2020  |Azure Meetup Oslo                        |
-|January 2020   |Azure Meetup Oslo                        |
-|November 2019  |Microsoft TechX Oslo (Keynote Guest)     |
-|September 2019 |JavaZone Norway                          |
-|June 2019      |Azure Meetup Oslo                        |
-|Mai 2019       |Microsoft Build 2019 Seattle             |
-|April 2019     |Global Azure Bootcamp Norway             |
+|Date   |Title    |Place  |
+|---    |---    |---      |
+|November 2020  |Understanding Azure App Configuration    |Azure Meetup Oslo/Mumbai                 |
+|October 2020   ||Infrastructure as Code User Group Oslo   |
+|September 2020 ||Azure User Group Norway                  |
+|September 2020 ||Azure Meetup Oslo/New York/Mumbai        |
+|September 2020 ||NDC Minnesota                            |
+|June 2020      ||NDC Oslo                                 |
+|June 2020      ||Confer Conf 2020                         |
+|Mars 2020      ||itSMF Conference Norway                  |
+|February 2020  ||Azure Meetup Oslo                        |
+|January 2020   ||Azure Meetup Oslo                        |
+|November 2019  ||Microsoft TechX Oslo (Keynote Guest)     |
+|September 2019 ||JavaZone Norway                          |
+|June 2019      ||Azure Meetup Oslo                        |
+|Mai 2019       ||Microsoft Build 2019 Seattle             |
+|April 2019     ||Global Azure Bootcamp Norway             |
 
 # Contact
 
