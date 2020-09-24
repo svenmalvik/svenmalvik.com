@@ -26,7 +26,7 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 |Mai 2020       |[How Vipps uses Azure API Management](https://www.meetup.com/azure-meetup-oslo/events/270363493/)             |50    |Azure Meetup Oslo                        |
 |Mars 2020      |From Traditional Ops to Cloud-Native in Azure   |100   |itSMF Conference Norway                  |
 |January 2020   |[Workshop: Azure API management 101](https://www.meetup.com/azure-meetup-oslo/events/264452427/) |30 |Azure Meetup Oslo                        |
-|November 2019  |The Rise of the Citizen Developer                 |950    |Microsoft TechX Oslo (Keynote Guest)     |
+|November 2019  |[The Rise of the Citizen Developer](https://www.microsoftevents.com/profile/web/index.cfm?PKwebID=0x1469423f223&varPage=agenda)  |950    |Microsoft TechX Oslo (Keynote Guest)     |
 |September 2019 |[How Vipps uses Azure to become the No.1 payment service in Norway](https://2019.javazone.no/program/422fef66-780e-4f27-a921-6dbfaf852ae7)   |260    |JavaZone Norway                          |
 |June 2019      |[We Build an Intelligent Azure Q&A Bot](https://www.meetup.com/azure-meetup-oslo/events/261460415/) |30     |Azure Meetup Oslo                        |
 |Mai 2019       |[How Azure powered Vipps to become the &#35;1 payment service in Norway](https://azure.microsoft.com/nb-no/resources/videos/build-2019-from-monolith-to-microservice-how-azure-powered-vipps-to-become-the-no-1-payment-service-in-norway/) |680    |Microsoft Build 2019 Seattle          |
