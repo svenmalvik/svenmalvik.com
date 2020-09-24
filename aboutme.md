@@ -16,7 +16,7 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 |Date   |Title    |Attendees    |Place  |
 |---    |---    |---      |---    |
-|November 2020  |Understanding Azure App Configuration           |--    |Azure Meetup Oslo/Mumbai                 |
+|November 2020  |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/273477740/)           |--    |Azure Meetup Oslo/Mumbai                 |
 |October 2020   |[Introduction to Farmer](https://www.meetup.com/Infrastructure-As-Code-User-Group-Oslo/events/273116797/)                          |--    |Infrastructure as Code User Group Oslo   |
 |September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/NNUGOslo/events/273290043/)           |--    |NNUG                                     |
 |September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/272787237/)           |30    |Azure Meetup Oslo/New York/Mumbai        |
