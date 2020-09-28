@@ -36,7 +36,7 @@ dotnet run
 ```
 
 ```bash
-dotnet new Farmer --location WestEurope --azureSubscription Pay-As-You-Go --force
+dotnet new Farmer --location WestEurope --ci devops --azureSubscription farmer-rg-sc --force
 export RESOURCE_GROUP_NAME=farmer-rg
 dotnet run
 ```
