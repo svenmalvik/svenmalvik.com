@@ -16,11 +16,12 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 
 |Date   |Title    |Attendees    |Place  |
 |---    |---    |---      |---    |
+|February 2021  |Azure API Management: What's new. *(online)* |--    |Azure Austin                 |
 |December 2020  |Azure API Management: What's new. *(online)* |--    |Azure Meetup Oslo                 |
 |November 2020  |Azure Communication Services *(online)* |--    |Azure Meetup Oslo                 |
 |November 2020  |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/273477740/) *(online)* |--    |Azure Meetup Oslo/Mumbai                 |
 |October 2020   |[Introduction to Farmer](https://www.meetup.com/Infrastructure-As-Code-User-Group-Oslo/events/273116797/) *(online)* |--    |Infrastructure as Code User Group Oslo   |
-|September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/NNUGOslo/events/273290043/) *(online)*  |--    |NNUG                                     |
+|September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/NNUGOslo/events/273290043/) *(online)*  |35    |NNUG                                     |
 |September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/272787237/) *(online)*  |30    |Azure Meetup Oslo/New York/Mumbai     |
 |September 2020 |[Workshop: Understanding Azure API Management](https://ndcminnesota.com/agenda/understanding-azure-api-management-0q2l/0rj0je5brqe) *(online)* |5     |NDC Minnesota                            |
 |June 2020      |[From Traditional Ops to Cloud-Native in Azure](https://ndcoslo.com/talk/from-traditional-ops-to-cloud-native-in-azure-a-real-world-scenario/) *(online)* |40    |NDC Oslo                                 |
