@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Farmer Project
+title: My First Farmer Project
 subtitle: Introduction to Farmer
 tags: [Azure, Farmer, ARM]
 comments: true
