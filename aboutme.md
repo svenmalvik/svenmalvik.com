@@ -20,7 +20,7 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 |December 2020  |Azure API Management: What's new. *(online)* |--    |Azure Meetup Oslo                 |
 |November 2020  |Azure Communication Services *(online)* |--    |Azure Meetup Oslo                 |
 |November 2020  |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/273477740/) *(online)* |--    |Azure Meetup Oslo/Mumbai                 |
-|October 2020   |Azure API Management *(online)* |--    |Azure User Group Denmark   |
+|October 2020   |Azure API Management *(online)* |--    |Azure User Group Denmark (CNUG)   |
 |October 2020   |[Introduction to Farmer](https://www.meetup.com/Infrastructure-As-Code-User-Group-Oslo/events/273116797/) *(online)* |--    |Infrastructure as Code User Group Oslo   |
 |September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/NNUGOslo/events/273290043/) *(online)*  |35    |NNUG                                     |
 |September 2020 |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/272787237/) *(online)*  |30    |Azure Meetup Oslo/New York/Mumbai     |
