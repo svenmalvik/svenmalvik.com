@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My First Farmer Project
-subtitle: Introduction to Farmer
+subtitle: Introduction to IaC with Farmer
 tags: [Azure, Farmer, ARM]
 comments: true
 published: true
