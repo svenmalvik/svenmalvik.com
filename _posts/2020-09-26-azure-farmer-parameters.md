@@ -10,7 +10,7 @@ image: https://cdn.svenmalvik.com/images/farmer-4x4.jpg
 featured-image: https://cdn.svenmalvik.com/images/farmer-4x4.jpg
 ---
 
-*This is part 2 of my learning adventure of Farmer for Azure resource deployments. This time, I wanted to look at variables, outputs and expressions.*
+*This is part 2 of my learning adventure of Farmer for Azure resource deployments. This time, I wanted to look at parameters, variables, outputs and expressions.*
 
 ## Passing Outputs to another Resource
 

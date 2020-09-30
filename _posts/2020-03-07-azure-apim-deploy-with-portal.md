@@ -10,7 +10,7 @@ image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
 featured-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
 ---
 
-*We will provision Azure API management. Creating an instance of it is just a click in the Azure Portal. We'll do it once to show how easy it is before we move forward to some other ways that enable us to automate it.*
+*We will provision Azure API Management. Creating an instance of it is just a click in the Azure Portal. We'll do it once to show how easy it is before we move forward to some other ways that enable us to automate it.*
 
 The first thing we will do is to "Create a resource", type "Api Management" and click the resource that is shown in the drop down menu.
 
