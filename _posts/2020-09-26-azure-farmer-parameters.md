@@ -53,7 +53,7 @@ let webAppConfig = webApp {
 /Users/sma/git/farmer-demo1/Program.fs(12,5): error FS0041: No overloads match for method 'DependsOn'.Known types of arguments: WebAppConfig * StorageAccountConfig listAvailable overloads: - member WebAppBuilder.DependsOn : state:WebAppConfig * builder:CoreTypes.IBuilder -> WebAppConfig // Argument 'builder' doesn't match - member WebAppBuilder.DependsOn : state:WebAppConfig * resource:CoreTypes.IArmResource -> WebAppConfig // Argument 'resource' doesn't match - member WebAppBuilder.DependsOn : state:WebAppConfig * resourceName:CoreTypes.ResourceName -> WebAppConfig // Argument 'resourceName' doesn't match [/Users/sma/git/farmer-demo1/FarmerApp.fsproj]
 ```
 
-I do not know F# yet, so this error might be obvious for others. But I have an idea how to solve this (part of a later post). For me it was just painful because my example is directly from the documentation.
+I do not know F# yet, so this error might be obvious for others, but I have an idea how to solve this (part of a later post). For me it was just painful because my example is directly from the documentation.
 
 Anyway, the storage key was successfully set under Application Settings.
 
