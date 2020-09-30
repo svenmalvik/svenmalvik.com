@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Farmer - IaC for Azure
+title: Introduction to Farmer - IaC with Azure
 subtitle: My Learning Journey with Farmer - &#35;1
 tags: [Azure, Farmer, ARM]
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Parameters in Farmer for Azure
+title: Parameters in Farmer - IaC with Azure
 subtitle: My Learning Journey with Farmer - &#35;2
 tags: [Azure, Farmer, ARM]
 comments: true
