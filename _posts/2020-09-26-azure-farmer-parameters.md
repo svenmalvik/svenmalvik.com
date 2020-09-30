@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parameters in Farmer for Azure
-subtitle: My Learning Journey with Farmer
+subtitle: My Learning Journey with Farmer - &#35;2
 tags: [Azure, Farmer, ARM]
 comments: true
 published: true
