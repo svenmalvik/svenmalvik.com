@@ -29,7 +29,6 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 |June 2020      |[From Traditional Ops to Cloud-Native in Azure](https://confer.no/program/?talk=KSYB-DEHT-OQJJ) *(online)*  |20    |Confer Conf 2020    |
 |Mai 2020       |[How Vipps uses Azure API Management](https://www.meetup.com/azure-meetup-oslo/events/270363493/) *(online)*             |50    |Azure Meetup Oslo    |
 |April 2020   |Workshop: Azure API Management 101 *(online)* |20 |*Company*     |
-|Mars 2020  |Workshop: Azure API Management 101 |15 |*Company*    |
 |Mars 2020      |[From Traditional Ops to Cloud-Native in Azure](https://itsmfkonferansen.no/wp-content/uploads/2020/02/itSMF-Konferansen-2020_Program-v0.8.docx-4.pdf)   |100   |itSMF Conference Norway    |
 |February 2020  |Workshop: Azure API Management 101 |5 |*Company*    |
 |January 2020   |Workshop: Azure API Management 101 |7 |*Company*    |
