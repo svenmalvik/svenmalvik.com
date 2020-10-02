@@ -29,9 +29,10 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 |June 2020      |[From Traditional Ops to Cloud-Native in Azure](https://confer.no/program/?talk=KSYB-DEHT-OQJJ) *(online)*  |20    |Confer Conf 2020    |
 |Mai 2020       |[How Vipps uses Azure API Management](https://www.meetup.com/azure-meetup-oslo/events/270363493/) *(online)*             |50    |Azure Meetup Oslo    |
 |April 2020   |Workshop: Azure API Management 101 *(online)* |20 |BKK (private)    |
+|Mars 2020  |Workshop: Azure API management 101 |15 |*Company*    |
 |Mars 2020      |From Traditional Ops to Cloud-Native in Azure   |100   |itSMF Conference Norway    |
-|February 2020   |Workshop: Azure API management 101 |30 |Azure Meetup Oslo    |
-|January 2020   |Workshop: Azure API management 101 |30 |Azure Meetup Oslo    |
+|February 2020  |Workshop: Azure API management 101 |5 |*Company*    |
+|January 2020   |Workshop: Azure API management 101 |7 |*Company*    |
 |January 2020   |[Workshop: Azure API management 101](https://www.meetup.com/azure-meetup-oslo/events/264452427/) |30 |Azure Meetup Oslo    |
 |November 2019  |[The Rise of the Citizen Developer](https://www.microsoftevents.com/profile/web/index.cfm?PKwebID=0x1469423f223&varPage=agenda)  |950    |Microsoft TechX Oslo (Keynote Guest)     |
 |September 2019 |[How Vipps uses Azure to become the No.1 payment service in Norway](https://2019.javazone.no/program/422fef66-780e-4f27-a921-6dbfaf852ae7)   |260    |JavaZone Norway                          |
