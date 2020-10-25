@@ -2,7 +2,7 @@
 layout: post
 title: Infrastructure as Code (IaC) in Azure
 subtitle: Learnings and experiences from Vipps
-tags: [Azure]
+tags: [Azure, ARM, IaC, Pulumi, Farmer, Bicep]
 comments: true
 published: true
 featured-image: https://cdn.svenmalvik.com/images/vipps-logo1.svg
