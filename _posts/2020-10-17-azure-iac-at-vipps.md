@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Infrastructure as Code in Azure
+title: Infrastructure as Code (IaC) in Azure
 subtitle: Learnings and experiences from Vipps
 tags: [Azure]
 comments: true
