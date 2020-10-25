@@ -12,7 +12,7 @@ share-img: https://cdn.svenmalvik.com/images/azure-iac-yt.jpg
 
 *Infrastructure as code (IaC) is a hot topic, also at Vipps. This video is the recording of an internal event where development teams tell about their experiences with different technologies to deploy to Microsoft Azure. The video dives also into some newcomers like Pulumi, Farmer, and Bicep.*
 
-[![Infrastructure as Code in Azure - Learnings from Vipps.](https://cdn.svenmalvik.com/images/azure-iac-yt.jpg "Infrastructure as Code in Azure - Learnings from Vipps.")](https://www.youtube.com/watch?v=OhGLefi43Kk)*[Watch the full episode:](https://www.youtube.com/watch?v=OhGLefi43Kk)*
+[![Infrastructure as Code in Azure - Learnings from Vipps.](https://cdn.svenmalvik.com/images/azure-iac-yt.jpg "Infrastructure as Code in Azure - Learnings from Vipps.")](https://www.youtube.com/watch?v=OhGLefi43Kk)*[Watch the full episode: Infrastructure as Code (IaC) in Azure](https://www.youtube.com/watch?v=OhGLefi43Kk)*
 
 Two years ago, we worked from this office that you can see in the picture above. We started with Azure from there. Most of our interactions with Azure at that time were right from the Portal which is a great tool for testing, and learning, and getting started. That’s what we did two years ago. We created resources more randomly than structured because we tested, and we learned, and we started Our journey with Azure.
 
