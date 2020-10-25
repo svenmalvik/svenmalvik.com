@@ -5,6 +5,8 @@ subtitle: Learnings and experiences from Vipps
 tags: [Azure]
 comments: true
 published: true
+featured-image: https://cdn.svenmalvik.com/images/vipps-logo1.svg
+image: https://cdn.svenmalvik.com/images/vipps-logo1.svg
 share-img: https://cdn.svenmalvik.com/images/azure-iac-vipps.png
 ---
 
