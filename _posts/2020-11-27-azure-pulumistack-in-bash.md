@@ -26,12 +26,13 @@ _BOLD=$(tput bold)
 # Print stack name
 pulumiinfo() {
         FILE=./Pulumi.yaml
-        pulumistack=""          
-        if [ -f "$FILE" ]; then                         
-                pulumistack="(p.$(pulumi stack --show-name))"   
-        fi                                                              
-        echo $pulumistack
+        output=""
+        if [ -f "$FILE" ]; then
+                output="(p.$(pulumi stack --show-name))"
+        fi
+        echo $output
 }
+
 
 # Print git branch
 gitinfo() {
