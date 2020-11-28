@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pulumi Stack in Bash Custom Prompt
-subtitle: Showing custom information in the console
+title: Pulumi Stack in Bash Prompt
+subtitle: Showing custom information in the bash prompt
 tags: [Pulumi, Bash]
 comments: true
 published: true
