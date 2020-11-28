@@ -48,4 +48,4 @@ export PS1='${_BLUE}\w ${_RED}$(gitinfo)${_YELLOW}$(pulumiinfo) ${_GREEN} ${_BOL
 ```
 
 ## Next steps
-The problem here is that it doesn't print any information if we aren't in the root directory of a git or Pulumi project.
+The problem here might be for some that it doesn't print any information if we aren't in the root directory of a Git or Pulumi project. Personally, I want to be reminded of that I'm not in the root directory, so this is fine for me.
