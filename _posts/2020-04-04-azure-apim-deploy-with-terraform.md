@@ -5,7 +5,7 @@ subtitle: Deployment Option &#35;5
 tags: [Azure, Azure API Management, Terraform]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.pn
+share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.png
 image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
 featured-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
 ---
