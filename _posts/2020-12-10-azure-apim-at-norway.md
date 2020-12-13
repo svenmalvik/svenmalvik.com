@@ -16,6 +16,10 @@ This event was split into 3 sections. In the first section the speakers told bri
 
 [![Azure API Management at Norway](https://cdn.svenmalvik.com/images/devreal-apim-yt.png "Azure API Management at Norway")](https://www.youtube.com/watch?v=N2qGQU3GAh4)*Watch this DEVREAL episode on YouTube: Azure API Management at Norway*
 
-## Next Steps
+## DEVREAL means Real Developers, Real Experiences 
 
-This event was a real success. 90 minutes, 8 speakers, and a lot of great insights from companies using Azure API Management, and from Microsoft. I got messages, comments, and direct feedback the days after, and everyone liked this different format. 
+This event was a real success. 90 minutes, 8 speakers, and a lot of great insights from companies using Azure API Management, and from Microsoft. I got messages, comments, and direct feedback the days after, and everyone loved this so different format. Instead of havinng long sessions, we had short ones. Instead of talking about different services, we talked about the same one. Instead of pretending all speakers are experts, we focused on experiences and what we maybe didn't do so well. Our one expert was the product manager of Azure API Management, and we could ask him questions, what we did. 
+
+## Nest Step
+
+We will definitely continue in 2021 with more services, and more topics. If you have any suggestions, let me know.
