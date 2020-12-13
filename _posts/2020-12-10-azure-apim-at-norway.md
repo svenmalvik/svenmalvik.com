@@ -18,7 +18,7 @@ This event was split into 3 sections. In the first section the speakers told bri
 
 ## DEVREAL means Real Developers, Real Experiences 
 
-This event was a real success. 90 minutes, 8 speakers, and a lot of great insights from companies using Azure API Management, and from Microsoft. I got messages, comments, and direct feedback the days after, and everyone loved this so different format. Instead of havinng long sessions, we had short ones. Instead of talking about different services, we talked about the same one. Instead of pretending all speakers are experts, we focused on experiences and what we maybe didn't do so well. Our one expert was the product manager of Azure API Management, and we could ask him questions, what we did. 
+This event was a real success. 90 minutes, 8 speakers, and a lot of great insights from companies using Azure API Management, and from Microsoft. I got messages, comments, and direct feedback the days after, and everyone loved this so different format. Instead of having long sessions, we had short ones. Instead of talking about different services, we talked about the same one. Instead of pretending all speakers are experts, we focused on experiences and what we maybe didn't do so well. Our one expert was the product manager of Azure API Management, and we could ask him questions, what we did. 
 
 ## Nest Step
 
