@@ -17,7 +17,7 @@ At daytime, I'm heading the Cloud Platform department in [Vipps](https://vipps.n
 |Date   |Title    |Attendees    |Place  |
 |---    |---    |---      |---    |
 |February 2021  |Azure API Management: What's new. *(online)* |--    |Azure Austin                 |
-|December 2020  |Azure API Management: What's new. *(online)* |--    |Azure Meetup Oslo                 |
+|December 2020  |[Azure API Management at Norway.](https://www.youtube.com/watch?v=N2qGQU3GAh4) *(online)* |100  |DEVREAL.io |
 |November 2020  |[Understanding Azure App Configuration](https://www.meetup.com/azure-meetup-oslo/events/273477740/) *(online)* |--    |Azure Meetup Oslo/Mumbai                 |
 |November 2020   |[Azure API Management (APIM) with Sven Malvik](https://www.meetup.com/AzureLATAM/events/274077221/) *(online)*  |--| Microsoft Azure Latin America (Latam) Community
 |November 2020   |Workshop: Azure API Management 101 |-- |*Company*    |
