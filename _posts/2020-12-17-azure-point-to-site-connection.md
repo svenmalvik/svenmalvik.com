@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Azure Point to Site Connection
-subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect
+title: Azure Point to Site VPN Connection
+subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - VPN Connection
 tags: [Azure, VPN, AZ-303, Azure Solution Architect]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/az-303/azure-p2s-yt.png
+share-img: https://cdn.svenmalvik.com/images/az-303/azure-p2s.png
 image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
 featured-image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
 ---
 
 *I will demonstrate how to establish a point to site connection in Azure, and connect from a Windows workstation to a virtual machine via its private IP address. Azure Point to Site Connection is part of the AZ-303 exam for becoming an Azure Solution Architect.*
 
-[![TEXT](https://cdn.svenmalvik.com/images/azure-p2s-yt.png "AZ-303: Azure Point to Site Connection")](https://www.youtube.com/watch?v=w1Sx9Jcwa0k)*Watch Azure Point to Site Connection in preparation for the AZ-303 exam*
+[![Watch Azure Point to Site VPN Connection](https://cdn.svenmalvik.com/images/azure-p2s-yt.png "AZ-303: Azure Point to Site Connection")](https://www.youtube.com/watch?v=w1Sx9Jcwa0k)*Watch Azure Point to Site Connection in preparation for the AZ-303 exam*
 
 Sometimes we need to have our workload running on a virtual machine with no public IP address. At the same time we want to connect to it from our workstation. In the picture below I created already a Windows 10 Client workstation in the West Europe region. In the Central US region I created a virtual network with another vm, Windows 2016 Datacenter. I did not assign a public IP address to it, so it has only a private IP address. I also installed the Internet Information Server (IIS) on it. Right now it's only accessible from localhost and within this virtual network.
 ![Pre-provisioned Azure resources](https://cdn.svenmalvik.com/images/az-303/az-303-p2s-1.png)*Pre-provisioned Azure resources*
