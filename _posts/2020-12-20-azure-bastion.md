@@ -33,7 +33,7 @@ Let's now create a virtual machine within the `default`-subnet that we want to l
 
 ![Create Windows Server 2016 Datacenter VM](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-5.png)*Create Windows Server 2016 Datacenter VM*
 
-We need the RDP (Remote Desktop Protocol) port 3389. It's the port for connecting to the machine. This entry will be opened inn the Network Security Group (NSG), which is another Azure resource. We'll take a look at it later, and change it a bit. NSG rules act like a firewall.
+We need the RDP (Remote Desktop Protocol) port 3389. It's the port for connecting to the machine. This entry will be opened in the Network Security Group (NSG), which is another Azure resource. We'll take a look at it later, and change it a bit. NSG rules act like a firewall.
 
 ![Configuring RDP port](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-6.png)*Configuring RDP port*
 
