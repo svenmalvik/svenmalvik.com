@@ -14,7 +14,7 @@ featured-image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
 
 [![TEXT](https://cdn.svenmalvik.com/images/azure-p2s-yt.png "AZ-303: Azure Point to Site Connection")](https://www.youtube.com/watch?v=w1Sx9Jcwa0k)*Watch Azure Point to Site Connection in preparation for the AZ-303 exam*
 
-Sometimes we need to have our workload running on a virtual machine with no public IP address. At the same time we want to connect to it from our workstation. In the picture below I created already a Windows 10 Client workstation in the West Europe region. In the Central US region I created a virtual network with another vm, Windows 2016 Datacenter. I did not assign a public IP address to it, so it has only a private IP address. I also installed the Internet Information Server (IIS) onn it. Right now it's only accessible from localhost and within this virtual network.
+Sometimes we need to have our workload running on a virtual machine with no public IP address. At the same time we want to connect to it from our workstation. In the picture below I created already a Windows 10 Client workstation in the West Europe region. In the Central US region I created a virtual network with another vm, Windows 2016 Datacenter. I did not assign a public IP address to it, so it has only a private IP address. I also installed the Internet Information Server (IIS) on it. Right now it's only accessible from localhost and within this virtual network.
 ![Pre-provisioned Azure resources](https://cdn.svenmalvik.com/images/az-303/az-303-p2s-1.png)*Pre-provisioned Azure resources*
 
 Our goal is to create what's described below.
@@ -33,7 +33,7 @@ We start by adding the subnet gateway. You find it under `Subnets` within your V
 Now that we have the subnet gateway in place, we can create a virtual network gateway.
 ![Create Virtual Network Gateway](https://cdn.svenmalvik.com/images/az-303/az-303-p2s-4.png)*Create Virtual Network Gateway*
 
-We set the gateway type as `VPN`, annd the VPNN type as `Route-based`. The subnet is set automatically to your subnet gateway. That's why the name is important.
+We set the gateway type as `VPN`, and the VPN type as `Route-based`. The subnet is set automatically to your subnet gateway. That's why the name is important.
 ![Azure Virtual Network Configuration](https://cdn.svenmalvik.com/images/az-303/az-303-p2s-5.png)*Azure Virtual Network Configuration*
 
 If we scroll down a bit a must not forget to name a public IP address that we need for establishing a VPN connection. We won't use it directly for accessing the IIS.
