@@ -10,7 +10,7 @@ image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
 featured-image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
 ---
 
-*Knowing about Azure Bastion is part of the AZ-303 exam for becoming an Azure Solution Architect. Bastion is very useful in cases where you would normally spin up a jump host towards a Virtual Machine that you want to maintain. Using Azure Bastion means you won't need to maintain a separate virtual machine (Jump Host).*
+*Knowing about Azure Bastion is part of the AZ-303 exam for becoming an Azure Solution Architect. Bastion is very useful in cases where you would normally spin up a jump host towards a Virtual Machine that you want to maintain. Using Azure Bastion means you won't need to maintain a separate virtual machine (Jump Hos).*
 
 [![Watch Azure Bastion](https://cdn.svenmalvik.com/images/az-303/azure-bastion-yt.png "AZ-303: Azure Bastion")](https://www.youtube.com/watch?v=LcTSRWKxLfg)*Watch how to use Azure Bastion in preparation for the AZ-303 exam*
 
@@ -53,7 +53,7 @@ Now as everything is in place, let's take a look at the resources that got creat
 
 ![Overview of all created Azure resources](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-8.png)*Overview of all created Azure resources*
 
-In the picture below I highlighted Bastion. We won't use this resource directly to connect to our VM. First, we take a look at the NSG resource `devreal-vm-nsg` which is connected directly to the VM. NSGs can be connected to subnets as well.
+We won't use this resource directly to connect to our VM. First, we take a look at the NSG resource `devreal-vm-nsg` which is connected directly to the VM. NSGs can be connected to subnets as well.
 
 ![Overview of all created Azure resources 2](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-9.png)*Overview of all created Azure resources 2*
 
