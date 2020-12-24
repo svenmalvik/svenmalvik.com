@@ -72,11 +72,8 @@ Here's a better overview of what we have just configured.
 
 ![Overview of changed NSG rule](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-13.jpg)*Overview of changed NSG rule*
 
-Finally, we can connect to our VM. Click into the Virtual Machine and click on *Connect*. Then choose *Bastion*.
+Finally, we can connect to our VM. Click into the Virtual Machine and click on *Connect*. Then choose *Bastion* ... give it your credentials that you have set when configuring the VM ...
 
-![Connect to VM with Bastion](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-14.jpg)*Connect to VM with Bastion*
-
-... give it your credentials that you have set when configuring the VM ...
 ![Set credentials for VM](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-15.jpg)*Set credentials for VM*
 
 ... and vóila, you have logged in to your Windows 2016 Datacenter VM without using a public IP address of the VM, but with Azure Bastion.
