@@ -14,11 +14,12 @@ featured-image: https://cdn.svenmalvik.com/images/az-303/azure-icon-route-tables
 
 [![TEXT](https://cdn.svenmalvik.com/images/az-303/azure-udr-yt.jpg "AZ-303: Azure Custom Routes")](https://www.youtube.com/watch?v=9RZEyQhwVBA)*Watch Azure Custom Routes in preparation for the AZ-303 exam*
 
-## Use Case
+## Pre-provisioned setup
 
 I have provisioned a virtual network with the default IP address range `10.0.0.0/16`. Within this range I created 4 subnets, `subnetA`, `subnetB`, `subnetC`, and `AzureBastionSubnet`, all with a small IP address range of `/29`. Azure Bastion needs at least a range of `/27`, and we use it to login to the virtual machines that I created inside the subnets. All VMs are of the same type **Windows 2016 Datacenter**. On the virtual machine that I named `c-vm`, I installed the Internet Information Service IIS.
 
 ![Pre setup of custom routes](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-1.jpg)*Pre setup of custom routes*
+## Use Case
 
 Here's want we can do, but probably shouldn't be allowed to. We send a GET request from `a-vm` to `c-vm` to access the IIS directly on port 80.
 
@@ -40,7 +41,7 @@ We will create a route table with a route that applies for the traffic within `s
 
 ## Demo
 
-To demonstrate that we can access the IIS that is running on `c-vm`, I used Azure Bastion to login to `a-vm`, and used the private IP address of `c-vm`.
+To demonstrate that we can access the IIS that is running on `c-vm`, I used Azure Bastion to login to `a-vm`, and used the private IP address of `c-vm`. This works fine as expected as we haven't done anything yet.
 
 ![Accessing IIS from a-vm](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-6.jpg)*Accessing IIS from a-vm*
 
