@@ -25,11 +25,11 @@ Here's want we can do, but probably shouldn't be allowed to. We send a GET reque
 
 ![Connection from a-vm to c-vm](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-2.jpg)*Connection from a-vm to c-vm*
 
-Imagine that we have to protect the workload or data that is on `c-vm`. Every package that is going into this virtual machine can potentially be harmful and damage what's stored there. Maybe it's a better idea not to access `c-vm` directly from `a-vm` in case we can't trust `a-vm`.
+Imagine that we have to protect the workload or data that is running on `c-vm`. Every package that is going into this virtual machine can potentially be harmful and damage what's stored there. If we can't trust `a-vm`, maybe it's a better idea to not access `c-vm` directly.
 
 ![a-vm sending harmful packages to c-vm](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-3.jpg)*a-vm sending harmful packages to c-vm*
 
-What we can do instead is to inspect the traffic on another virtual machine `b-vm` that `c-vm` can trust. This `b-vm` can run software that checks all incoming traffic before forwarding it to `c-vm`.
+What we can do instead is to inspect the traffic to another virtual machine `b-vm` that `c-vm` trusts. This `b-vm` can run software that checks all incoming traffic before forwarding it to `c-vm`.
 
 ![Using another VM to inspect packages](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-4.jpg)*Using another VM to inspect packages*
 
@@ -41,7 +41,7 @@ We will create a route table with a route that applies for the traffic within `s
 
 ## Demo
 
-To demonstrate that we can access the IIS that is running on `c-vm`, I used Azure Bastion to login to `a-vm`, and used the private IP address of `c-vm`. This works fine as expected as we haven't done anything yet.
+To demonstrate that we can (for now) access the IIS that is running on `c-vm`, I used Azure Bastion to login to `a-vm`, and send a request to the private IP address of `c-vm`. This works fine as expected as we haven't done anything yet.
 
 ![Accessing IIS from a-vm](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-6.jpg)*Accessing IIS from a-vm*
 
@@ -49,7 +49,7 @@ I will now re-route the traffic to go through `b-vm` by first creating an Azure 
 
 ![Create Azure Route table](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-7.jpg)*Create Azure Route table*
 
-The only parameters we need to set is the resource group, region, and a name. Then we click on *Create*.
+The only parameters we need to set here is the *resource group*, *region*, and a *name*. Then we click on *Create*.
 
 ![Configure Azure Route table](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-8.jpg)*Configure Azure Route table*
 
@@ -61,15 +61,15 @@ As *Next hop address*, we set the private IP address of `b-vm`.
 
 ![Configuring a route 2](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-10.jpg)*Configuring a route 2*
 
-After we have created a route, we should see it inn the route table.
+After we have created a route, we should see it in the route table.
 
 ![Route table with one route](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-11.jpg)*Route table with one route*
 
-Right now we have created a route table and a route. What's left is associate the route to subnet `subnetA` where the VM `a-vm` is.
+Right now we have created a route table and a route. What's left is to associate the route to subnet `subnetA` where the VM `a-vm` is running.
 
 ![Associate subnet to route](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-12.jpg)*Associate subnet to route*
 
-The VM `b-vm` shall forward all traffic to the IP address that was originally requested from the client, in our case `a-vm`. We do this in the *IP configurations* of the VM `b-vm`.
+If we would test again, we wouldn't be able to access `c-vm` from `a-vm` because we haven't told `b-vm` what to do yet. The VM `b-vm` shall forward all traffic to the IP address that was originally requested from the client, in our case `a-vm`. We do this in the *IP configurations* of the VM `b-vm`.
 
 ![Forward traffic in IP configurations](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-13.jpg)*Forward traffic in IP configurations*
 
