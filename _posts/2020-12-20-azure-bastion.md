@@ -66,6 +66,7 @@ As the source we allow the IP addresses range of the `AzureBastionSubnet`-subnet
 ![Configuring NSG source](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-11.jpg)*Configuring NSG source*
 
 As the destination, we set the IP address and the port of our VM.
+
 ![Configuring NSG destination](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-12.jpg)*Configuring NSG destination*
 
 Here's a better overview of what we have just configured.
