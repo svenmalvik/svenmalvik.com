@@ -2,7 +2,7 @@
 layout: post
 title: Azure ...
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect
-tags: [Azure, AZ-303, Azure Solution Architect]
+tags: [Azure, AZ-303]
 comments: true
 published: false
 share-img: https://cdn.svenmalvik.com/images/az-303/azure-XXX-yt.png
