@@ -6,8 +6,8 @@ tags: [Azure, AZ-303, Azure Solution Architect, Bastion]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/az-303/azure-bastion.png
-image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
-featured-image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
+image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
+featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 ---
 
 *Knowing about Azure Bastion is part of the AZ-303 exam for becoming an Azure Solution Architect. Bastion is very useful in cases where you would normally spin up a jump host towards a Virtual Machine that you want to maintain. Using Azure Bastion means you won't need to maintain a separate virtual machine (Jump Hos).*

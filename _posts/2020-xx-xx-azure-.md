@@ -6,8 +6,8 @@ tags: [Azure, AZ-303]
 comments: true
 published: false
 share-img: https://cdn.svenmalvik.com/images/az-303/azure-XXX-yt.png
-image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
-featured-image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
+image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
+featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 ---
 
 *xxx is part of the AZ-303 exam for becoming an Azure Solution Architect.*
