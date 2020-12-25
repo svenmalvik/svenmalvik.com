@@ -59,7 +59,7 @@ Now we can click on **Add existing virtual network** and select the subnet in wh
 
 ![Restricting access to subnet for Azure Storage Account](https://cdn.svenmalvik.com/images/az-303/az-303-sc-9.jpg)*Restricting access to subnet for Azure Storage Account*
 
-As we now have restricted the access to the Windows 2016 Datacenter VM, I am not longer allowed to access the content of the storage account.
+As we now have restricted the access to the Windows 2016 Datacenter VM, I am not longer allowed to access the content of the storage account from my own workstation.
 
 ![No access to Azure Storage Account](https://cdn.svenmalvik.com/images/az-303/az-303-sc-10.jpg)*No access to Azure Storage Account*
 
