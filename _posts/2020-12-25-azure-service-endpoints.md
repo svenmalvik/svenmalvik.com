@@ -4,7 +4,7 @@ title: Service Endpoints in Azure
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - Service Endpoints
 tags: [Azure, AZ-303]
 comments: true
-published: false
+published: true
 share-img: https://cdn.svenmalvik.com/images/az-303/azure-se-yt.png
 image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
