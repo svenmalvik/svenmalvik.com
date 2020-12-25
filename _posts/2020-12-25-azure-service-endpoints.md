@@ -51,7 +51,7 @@ After creating the service endpoint for the subnet, you should see an entry in t
 
 ![Overview of Service Endpoints](https://cdn.svenmalvik.com/images/az-303/az-303-sc-7.jpg)*Overview of Service Endpoints*
 
-We had now over to the storage account, and select *Networking*. As you see, there is o virtual network selected for now which means that the content isn't restricted to a location yet. To change this we *select networks*.
+We head now over to the storage account, and select *Networking*. As you see, there is o virtual network selected for now which means that the content isn't restricted to a location yet. To change this we *select networks*.
 
 ![Starting restricting access to networks](https://cdn.svenmalvik.com/images/az-303/az-303-sc-8.jpg)*Starting restricting access to networks*
 
