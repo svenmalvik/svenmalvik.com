@@ -23,6 +23,7 @@ The VNet comes already with a pre-defined subnet that we can change if we want t
 ![Default subnet of an Azure Virtual Network](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-2.jpg)*Default subnet of an Azure Virtual Network*
 
 If we head over to the **Security**-tab, we can see (1) `BastionHost`. We need to enable it. The address range must be at least `/27`. I stick to the default for this demonstration. Azure Bastion needs also a public IP address, so we can connect to it from outside our virtual network.
+
 ![Configuring Virtual Network](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-3.jpg)*Configuring Virtual Network*
 
 After we have created the VNet, we take a look at the subnets, and we can see that we got two. The `default`-subnet and one for Azure Bastion. This name of this subnet must be `AzureBastionSubnet`. This is important to remember in case where you set up a subnet for Azure Bastion manually.
