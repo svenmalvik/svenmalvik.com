@@ -6,8 +6,8 @@ tags: [Azure, VPN, AZ-303]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/az-303/azure-p2s.jpg
-image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
-featured-image: https://cdn.svenmalvik.com/images/az-303/az-303-exam-logo.png
+image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
+featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 ---
 
 *I will demonstrate how to establish a point to site connection in Azure, and connect from a Windows workstation to a virtual machine via its private IP address. Azure Point to Site Connection is part of the AZ-303 exam for becoming an Azure Solution Architect.*
