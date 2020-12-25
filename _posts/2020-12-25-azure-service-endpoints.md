@@ -22,7 +22,7 @@ When we create an Azure Storage Account, and store items there, we can access th
 In preparation to this step-by-step guide, I already provisioned a few resources that we will need.
 
 - Storage Account with container and an image
-- Windows 2016 Datacenter Virtual Machine with VNet/subnet
+- Windows 2016 Datacenter Virtual Machine in VNet/subnet
 - Azure Bastion and Public IP address
 
 ![Service Endpoint Resource Overview](https://cdn.svenmalvik.com/images/az-303/az-303-sc-0.jpg)*Service Endpoint Resource Overview*
