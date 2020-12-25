@@ -31,7 +31,7 @@ As you can see I have one image stored in the storage account.
 
 ![Content of container in Azure Storage Account](https://cdn.svenmalvik.com/images/az-303/az-303-sc-1.jpg)*Content of container in Azure Storage Account*
 
-To show you that the traffic is going over the internet for now, I create an URL with a SAS token as the containers access level is private as default.
+To show you that the traffic is going over the internet for now, I create an URL with a SAS token as the containers access level is private per default.
 
 ![Create URL with SAS token for item in container in Azure Storage Account](https://cdn.svenmalvik.com/images/az-303/az-303-sc-2.jpg)*Create URL with SAS token for item in container in Azure Storage Account*
 
