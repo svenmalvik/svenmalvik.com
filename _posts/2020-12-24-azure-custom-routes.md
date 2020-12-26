@@ -12,7 +12,7 @@ featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 
 *Custom Routes, or user defined routing, is part of the az-303 certification for becoming an Azure Solution Architect. In this video I tell why you would want a custom route, and then demonstrate how to create one based on a use case.*
 
-[![TEXT](https://cdn.svenmalvik.com/images/az-303/azure-udr-yt.jpg "AZ-303: Azure Custom Routes")](https://www.youtube.com/watch?v=9RZEyQhwVBA)*Watch Azure Custom Routes in preparation for the AZ-303 exam*
+[![AZ-303: Azure Custom Routes](https://cdn.svenmalvik.com/images/az-303/azure-udr-yt.jpg "AZ-303: Azure Custom Routes")](https://www.youtube.com/watch?v=9RZEyQhwVBA)*Watch Azure Custom Routes in preparation for the AZ-303 exam*
 
 ## Pre-provisioned setup
 

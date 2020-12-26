@@ -12,7 +12,7 @@ featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 
 *Sometimes we store items in a storage account and want to restrict the access to certain services or clients. I will demonstrate how to restrict the access to a subnet where a Windows Server 2016 Datacenter VM is running. Service Endpoints in Azure is part of the AZ-303 exam for becoming an Azure Solution Architect.*
 
-[![TEXT](https://cdn.svenmalvik.com/images/az-303/azure-se-yt.jpg "AZ-303: Service Endpoints in Azure")](https://www.youtube.com/watch?v=w1Sx9Jcwa0k)*Watch Service Endpoints in Azure in preparation for the AZ-303 exam*
+[![AZ-303: Service Endpoints in Azure](https://cdn.svenmalvik.com/images/az-303/azure-se-yt.jpg "AZ-303: Service Endpoints in Azure")](https://www.youtube.com/watch?v=w1Sx9Jcwa0k)*Watch Service Endpoints in Azure in preparation for the AZ-303 exam*
 
 
 When we create an Azure Storage Account, and store items there, we can access them by using the URL that is provided to us. The traffic is then going over the internet. If we want to restrict the access to certain clients, we can route the traffic over the Azure backbone by using a service connection. It's more secure and less latency.
