@@ -56,7 +56,7 @@ Click on *Add* to configure and create a peering between two Azure virtual netwo
 
 ![Add Azure virtual networks](https://cdn.svenmalvik.com/images/az-303/az-303-peering-7.jpg)*Add Azure virtual networks*
 
-Peering of two networks has two sides that we will name. I named the side where `vm1` is as `1and2`, stupid name I know - it's just a name for demo purposes :)
+Peering of two networks has two sides that we will name. I named the side where `vm1` is as `1and2`, stupid name I know - it's just a name for the purpose of this demo :)
 
 ![Naming one side of VNet peering](https://cdn.svenmalvik.com/images/az-303/az-303-peering-8.jpg)*Naming one side of VNet peering*
 
