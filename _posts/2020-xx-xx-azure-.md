@@ -12,7 +12,7 @@ featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 
 *xxx is part of the AZ-303 exam for becoming an Azure Solution Architect.*
 
-[![TEXT](https://cdn.svenmalvik.com/images/az-303/azure-p2s-yt.png "AZ-303: Azure ...")](https://www.youtube.com/watch?v=XXX)*Watch Azure XXX in preparation for the AZ-303 exam*
+[![TEXT](https://cdn.svenmalvik.com/images/az-303/azure-p2s-yt.jpg "AZ-303: Azure ...")](https://www.youtube.com/watch?v=XXX)*Watch Azure XXX in preparation for the AZ-303 exam*
 
 ![TEXT](https://cdn.svenmalvik.com/images/az-303/XXX)*TEXT*
 
