@@ -60,7 +60,7 @@ Peering of two networks has two sides that we will name. I named the side where 
 
 ![Naming one side of VNet peering](https://cdn.svenmalvik.com/images/az-303/az-303-peering-8.jpg)*Naming one side of VNet peering*
 
-We scroll down a bit and name the other side `2and1`, and set the other virtual network `vnet2`. After clicking *Create* Azure will create resources in both virtual networks.
+We scroll down a bit and name the other side `2and1`, and set the other virtual network to `vnet2`. After clicking *Create* Azure will create resources in both virtual networks.
 
 ![Setting the other side of Vet peering](https://cdn.svenmalvik.com/images/az-303/az-303-peering-9.jpg)*Setting the other side of Vet peering*
 
