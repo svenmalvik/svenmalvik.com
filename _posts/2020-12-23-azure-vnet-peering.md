@@ -52,7 +52,7 @@ To peer virtual networks, click on one of them ...
 
 ![VNet peering](https://cdn.svenmalvik.com/images/az-303/az-303-peering-6.jpg)*VNet peering*
 
-*Click* on add to configure and create a peering between two Azure virtual networks.
+Click on *Add* to configure and create a peering between two Azure virtual networks.
 
 ![Add Azure virtual networks](https://cdn.svenmalvik.com/images/az-303/az-303-peering-7.jpg)*Add Azure virtual networks*
 
