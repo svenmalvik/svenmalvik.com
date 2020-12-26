@@ -38,9 +38,9 @@ I want to show you first that both networks don't know about each other at this 
 
 ![Virtual machine overview](https://cdn.svenmalvik.com/images/az-303/az-303-peering-3.jpg)*Virtual machine overview*
 
-I login to `vm1` and try the private IP address of `vm2` inn a browser. The result we get back is *NOTHING* as `vm1` doesn't know the other address.
+I login to `vm1` and try the private IP address of `vm2` in a browser. The result we get back is *NOTHING* as `vm1` doesn't know the other address.
 
-![Try accessing VM inn another network](https://cdn.svenmalvik.com/images/az-303/az-303-peering-4.jpg)*Try accessing VM inn another network*
+![Try accessing VM from another network failed](https://cdn.svenmalvik.com/images/az-303/az-303-peering-4.jpg)*Try accessing VM from another network failed*
 
 ## Peering
 
@@ -60,11 +60,11 @@ Peering of two networks has two sides that we will name. I named the side where 
 
 ![Naming one side of VNet peering](https://cdn.svenmalvik.com/images/az-303/az-303-peering-8.jpg)*Naming one side of VNet peering*
 
-We scroll down a bit and name the other side `2and1`, and set the other virtual network `vnet2`. After clicking *Create* Azure will create resources inn both virtual networks.
+We scroll down a bit and name the other side `2and1`, and set the other virtual network `vnet2`. After clicking *Create* Azure will create resources in both virtual networks.
 
 ![Setting the other side of Vet peering](https://cdn.svenmalvik.com/images/az-303/az-303-peering-9.jpg)*Setting the other side of Vet peering*
 
-As we can see is `vnet1` nnow connected to `vnet2`.
+As we can see is `vnet1` now connected to `vnet2`.
 
 ![VNet peering overview of vnet1](https://cdn.svenmalvik.com/images/az-303/az-303-peering-10.jpg)*VNet peering overview of vnet1*
 
@@ -76,7 +76,7 @@ Taking a look on the other side as well we see that `vnet2` is connected to `vne
 
 Finally, we can repeat the test from the beginning by sending a request from `vm1` to `vm2` where the IIS is running.
 
-![TEXT](https://cdn.svenmalvik.com/images/az-303/az-303-peering-12.jpg)*TEXT*
+![Accessing VM from another network succeeded](https://cdn.svenmalvik.com/images/az-303/az-303-peering-12.jpg)*Accessing VM from another network succeeded*
 
 ## Useful links
 
