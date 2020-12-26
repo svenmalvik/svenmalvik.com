@@ -16,7 +16,7 @@ featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 
 ## Pre-provisioned setup
 
-I have provisioned a virtual network with the default IP address range `10.0.0.0/16`. Within this range I created 4 subnets, `subnetA`, `subnetB`, `subnetC`, and `AzureBastionSubnet`, all with a small IP address range of `/29`. Azure Bastion needs at least a range of `/27`, and we use it to login to the virtual machines that I created inside the subnets. All VMs are of the same type **Windows 2016 Datacenter**. On the virtual machine that I named `c-vm`, I installed the Internet Information Service IIS.
+I have provisioned a virtual network with the default IP address range `10.0.0.0/16`. Within this range I created 4 subnets, `subnetA`, `subnetB`, `subnetC`, and `AzureBastionSubnet`, all with a small IP address range of `/29`. Azure Bastion needs at least a range of `/27`, and we use it to login to the virtual machines that I created inside the subnets. All VMs are of the same type **Windows Server 2016 Datacenter**. On the virtual machine that I named `c-vm`, I installed the Internet Information Service IIS.
 
 ![Pre setup of custom routes](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-1.jpg)*Pre setup of custom routes*
 ## Use Case

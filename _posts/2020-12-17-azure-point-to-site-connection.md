@@ -14,7 +14,7 @@ featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 
 [![Watch Azure Point to Site VPN Connection](https://cdn.svenmalvik.com/images/az-303/azure-p2s-yt.jpg "AZ-303: Azure Point to Site Connection")](https://www.youtube.com/watch?v=w1Sx9Jcwa0k)*Watch Azure Point to Site Connection in preparation for the AZ-303 exam*
 
-Sometimes we need to have our workload running on a virtual machine with no public IP address. At the same time we want to connect to it from our workstation. In the picture below I created already a Windows 10 Client workstation in the West Europe region. In the Central US region I created a virtual network with another vm, Windows 2016 Datacenter. I did not assign a public IP address to it, so it has only a private IP address. I also installed the Internet Information Server (IIS) on it. Right now it's only accessible from localhost and within this virtual network.
+Sometimes we need to have our workload running on a virtual machine with no public IP address. At the same time we want to connect to it from our workstation. In the picture below I created already a Windows 10 Client workstation in the West Europe region. In the Central US region I created a virtual network with another vm, Windows Server 2016 Datacenter. I did not assign a public IP address to it, so it has only a private IP address. I also installed the Internet Information Server (IIS) on it. Right now it's only accessible from localhost and within this virtual network.
 
 ![Pre-provisioned Azure resources](https://cdn.svenmalvik.com/images/az-303/az-303-p2s-1.jpg)*Pre-provisioned Azure resources*
 

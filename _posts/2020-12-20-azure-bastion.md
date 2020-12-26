@@ -78,8 +78,8 @@ Finally, we can connect to our VM. Click into the Virtual Machine and click on *
 
 ![Set credentials for VM](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-15.jpg)*Set credentials for VM*
 
-... and vóila, you have logged in to your Windows 2016 Datacenter VM without using a public IP address of the VM, but with Azure Bastion.
-![Logged in to Windows 2016 Datacenter VM](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-16.jpg)*Logged in to Windows 2016 Datacenter VM*
+... and vóila, you have logged in to your Windows Server 2016 Datacenter VM without using a public IP address of the VM, but with Azure Bastion.
+![Logged in to Windows Server 2016 Datacenter VM](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-16.jpg)*Logged in to Windows Server 2016 Datacenter VM*
 
 ## Useful links
 

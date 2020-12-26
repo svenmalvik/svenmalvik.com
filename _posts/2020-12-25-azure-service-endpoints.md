@@ -10,7 +10,7 @@ image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 ---
 
-*Sometimes we store items in a storage account and want to restrict the access to certain services or clients. I will demonstrate how to restrict the access to a subnet where a Windows 2016 Datacenter VM is running. Service Endpoints in Azure is part of the AZ-303 exam for becoming an Azure Solution Architect.*
+*Sometimes we store items in a storage account and want to restrict the access to certain services or clients. I will demonstrate how to restrict the access to a subnet where a Windows Server 2016 Datacenter VM is running. Service Endpoints in Azure is part of the AZ-303 exam for becoming an Azure Solution Architect.*
 
 [![TEXT](https://cdn.svenmalvik.com/images/az-303/azure-se-yt.jpg "AZ-303: Service Endpoints in Azure")](https://www.youtube.com/watch?v=w1Sx9Jcwa0k)*Watch Service Endpoints in Azure in preparation for the AZ-303 exam*
 
@@ -22,7 +22,7 @@ When we create an Azure Storage Account, and store items there, we can access th
 In preparation to this step-by-step guide, I already provisioned a few resources that we will need.
 
 - Storage Account with container and an image
-- Windows 2016 Datacenter Virtual Machine in VNet/subnet
+- Windows Server 2016 Datacenter Virtual Machine in VNet/subnet
 - Azure Bastion and Public IP address
 
 ![Service Endpoint Resource Overview](https://cdn.svenmalvik.com/images/az-303/az-303-sc-0.jpg)*Service Endpoint Resource Overview*
@@ -39,11 +39,11 @@ When pasting the URL into the browser of my workstation, you can see that it's p
 
 ![Accessing item in container in Azure Storage Account from workstation](https://cdn.svenmalvik.com/images/az-303/az-303-sc-3.jpg)*Accessing item in container in Azure Storage Account from workstation*
 
-I'm now going to select *Service endpoints* in the virtual network of the Windows 2016 Datacenter VM.
+I'm now going to select *Service endpoints* in the virtual network of the Windows Server 2016 Datacenter VM.
 
 ![Service endpoints menu in virtual network](https://cdn.svenmalvik.com/images/az-303/az-303-sc-5.jpg)*Service endpoints menu in virtual network*
 
-Click on **Add** to create a service endpoint and select the service `Microsoft Storage` and the subnet of the Windows 2016 Datacenter VM.
+Click on **Add** to create a service endpoint and select the service `Microsoft Storage` and the subnet of the Windows Server 2016 Datacenter VM.
 
 ![Adding a service endpoint to subnet](https://cdn.svenmalvik.com/images/az-303/az-303-sc-6.jpg)*Adding a service endpoint to subnet*
 
@@ -59,11 +59,11 @@ Now we can click on **Add existing virtual network** and select the subnet in wh
 
 ![Restricting access to subnet for Azure Storage Account](https://cdn.svenmalvik.com/images/az-303/az-303-sc-9.jpg)*Restricting access to subnet for Azure Storage Account*
 
-As we now have restricted the access to the Windows 2016 Datacenter VM, I am not longer allowed to access the content of the storage account from my own workstation.
+As we now have restricted the access to the Windows Server 2016 Datacenter VM, I am not longer allowed to access the content of the storage account from my own workstation.
 
 ![No access to Azure Storage Account](https://cdn.svenmalvik.com/images/az-303/az-303-sc-10.jpg)*No access to Azure Storage Account*
 
-I use Azure Bastion to login to the Windows 2016 Datacenter VM.
+I use Azure Bastion to login to the Windows Server 2016 Datacenter VM.
 
 ![Login to VM with Azure Bastion](https://cdn.svenmalvik.com/images/az-303/az-303-sc-11.jpg)*Login to VM with Azure Bastion*
 
