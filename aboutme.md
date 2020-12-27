@@ -4,7 +4,7 @@ title: About me
 subtitle: Why you'd want to get in touch with me
 ---
 
-My name is [Sven Malvik, and I am an Azure MVP](https://mvp.microsoft.com/es-es/PublicProfile/5004080?fullName=Sven%20Malvik?WT.mc_id=AZ-MVP-5004080) who ...
+My name is [Sven Malvik, and I am an Azure MVP](https://mvp.microsoft.com/en-us/PublicProfile/5004080?fullName=Sven%20Malvik?WT.mc_id=AZ-MVP-5004080) who ...
 
 - loves to speak at tech conferences
 - ... and listens to techno music while coding :)
