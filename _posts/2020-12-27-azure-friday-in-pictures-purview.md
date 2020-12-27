@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Azure Purview Overview
-subtitle: Azure Friday in Pictures
+title: Azure Friday in Pictures &#35;1
+subtitle: Azure Purview Overview
 tags: [Azure, Purview]
 comments: true
 published: true
