@@ -59,4 +59,3 @@ published: true
 - [Azure Purview docs](https://aka.ms/azfr/654/02?WT.mc_id=AZ-MVP-5004080)
 - [Azure Purview blog on Tech Community](https://aka.ms/azfr/654/04?WT.mc_id=AZ-MVP-5004080)
 - [Azure Purview discussion on Tech Community](https://aka.ms/azfr/654/05?WT.mc_id=AZ-MVP-5004080)
-- [Exam AZ-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?WT.mc_id=AZ-MVP-5004080)
