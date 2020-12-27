@@ -10,7 +10,7 @@ published: true
 #featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 ---
 
-*Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data. Gaurav Malhotra joins Scott Hanselman to show how easy it is to create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage so that you can empower your data consumers to find valuable, trustworthy data. [Source](https://azure.microsoft.com/en-us/resources/videos/azure-friday-enable-unified-data-governance-with-azure-purview/)*
+*Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data. Gaurav Malhotra joins Scott Hanselman to show how easy it is to create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage so that you can empower your data consumers to find valuable, trustworthy data. [Source](https://azure.microsoft.com/en-us/resources/videos/azure-friday-enable-unified-data-governance-with-azure-purview/?WT.mc_id=AZ-MVP-5004080)*
 
 [![Azure Purview on Azure Friday](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-0.jpg "Azure Purview on Azure Friday")](https://azure.microsoft.com/en-us/resources/videos/azure-friday-enable-unified-data-governance-with-azure-purview/?WT.mc_id=AZ-MVP-5004080)*Watch Azure Purview on Azure Friday*
 
