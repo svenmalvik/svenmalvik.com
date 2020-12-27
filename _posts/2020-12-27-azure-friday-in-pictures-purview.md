@@ -14,7 +14,7 @@ published: true
 
 [![Azure Purview on Azure Friday](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-0.jpg "Azure Purview on Azure Friday")](https://azure.microsoft.com/en-us/resources/videos/azure-friday-enable-unified-data-governance-with-azure-purview/?WT.mc_id=AZ-MVP-5004080)*Watch Azure Purview on Azure Friday*
 
-## Azure Friday in Pictures
+## Azure Purview with Gaurav Malhotra
 
 ![Azure Purview 1](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-1.jpg)
 ![Azure Purview 2](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-2.jpg)
