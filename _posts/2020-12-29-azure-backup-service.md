@@ -35,7 +35,7 @@ I open the file explorer and create a text file that I name `Test`. My goal is t
 
 ![Create file](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-8.jpg)*Create file*
 
-I have opened the Azure portal from within the Windows Server because we will soon install a tool that we will download from here. But first I clicked on `Backup` innn the menu of the VM and hit on *Backup now*.
+I have opened the Azure portal from within the Windows Server because we will soon install a tool that we will download from here. But first I clicked on `Backup` in the menu of the VM and hit on *Backup now*.
 
 ![Backup VM in Azure](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-9.jpg)*Backup VM in Azure*
 
@@ -47,15 +47,15 @@ Just to show you that the backup is in progress. I clicked on *View all jobs* wh
 
 ![View all jobs in VM backup](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-11.jpg)*View all jobs in VM backup*
 
-We see that the backup is on its way. The backup took about ann hour, and I didn't install anything there, I just created a file.
+We see that the backup is on its way. The backup took about an hour, and I didn't install anything there, I just created a file.
 
 ![Backup of VM in progress](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-12.jpg)*Backup of VM in progress*
 
 Let's now switch back to the Windows Server, and into the file explorer to delete the file I just created. We want to restore the file-system and see if we get the file back.
 
-![Delete a text file inn Windows](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-13.jpg)*Delete a text file inn Windows*
+![Delete a text file in Windows](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-13.jpg)*Delete a text file in Windows*
 
-I'm back inn the portal, and ready for running a file recovery.
+I'm back in the portal, and ready for running a file recovery.
 
 ![File recovery in Azure](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-14.jpg)*File recovery in Azure*
 
