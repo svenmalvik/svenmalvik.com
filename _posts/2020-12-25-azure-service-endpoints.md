@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Service Endpoints in Azure
+title: How to configure Azure Storage Accounts to Allow Access from Specific Subnets
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - Service Endpoints
 tags: [Azure, AZ-303]
 comments: true

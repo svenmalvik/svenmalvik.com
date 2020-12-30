@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure Backup Service
+title: How to Recover a Virtual Machine with Azure Backup Service
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - Azure Backup Service
 tags: [Azure, AZ-303, VM]
 categories: [AZ-303]

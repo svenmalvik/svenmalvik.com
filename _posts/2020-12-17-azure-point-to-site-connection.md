@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure Point to Site VPN Connection
+title: How to Establish a VPN Point to Site Connection in Azure
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - VPN Connection
 tags: [Azure, VPN, AZ-303]
 comments: true

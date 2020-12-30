@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Network Peering in Azure
+title: How to Peer Virtual Networks in Azure
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - Virtual Network Peering
 tags: [Azure, AZ-303, VNet]
 comments: true
