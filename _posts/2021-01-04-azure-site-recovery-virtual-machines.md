@@ -14,7 +14,7 @@ featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
 
 [![Azure Site Recovery in part of the AZ-303 exam](https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr-yt.jpg "AZ-303: Azure Site Recovery")](https://www.youtube.com/watch?v=F9h-Fr7C-iU)*Watch Azure Site Recovery in preparation for the AZ-303 exam*
 
-I have already created a Windows Server 2016 Datacenter in Azure. Checkout a previous about hot to [Create a Windows Server 2016 Datacenter VM](https://www.svenmalvik.com/azure-vm/#cvm). After that we need the IIS Server. Here is how you can do this: [Installing Internet Information Service (IIS)](https://www.svenmalvik.com/azure-vm/#iis).
+I have already created a Windows Server 2016 Datacenter in Azure. Checkout a previous post about how to [Create a Windows Server 2016 Datacenter VM](https://www.svenmalvik.com/azure-vm/#cvm). After that we need the IIS Server. Here is how you can do this: [Installing Internet Information Service (IIS)](https://www.svenmalvik.com/azure-vm/#iis).
 
 I will first make a minor change in the IIS Server so we are sure that we did a correct failover later.
 
