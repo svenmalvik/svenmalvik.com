@@ -9,7 +9,7 @@ share-img: https://cdn.svenmalvik.com/images/reduce-it-costs.jpg
 #image: 
 #featured-image: 
 ---
-*8 Actions to Cut Infrastructure Costs in 2021 is the result of a research I did. I waned to know more about the impact of the pandemic for IT organizations. What I found were discussions and ideas about the opportunities rather than the negative impacts. This post is a collection of actions and ideas that I have divided into 3 areas, reduce costs, optimize spending and increase value.*
+*8 Actions to Cut Infrastructure Costs in 2021 is the result of a research I did. I wanted to know more about the impact of the pandemic for IT organizations. What I found were discussions and ideas about the opportunities rather than the negative impacts. This post is a collection of actions and ideas that I have divided into 3 areas, reduce costs, optimize spending and increase value.*
 
 ## Reduce Costs
 
