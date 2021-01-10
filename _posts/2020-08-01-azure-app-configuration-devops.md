@@ -3,12 +3,11 @@ layout: post
 title: Using App Configuration in Azure DevOps
 subtitle: I tried the new extension in a release pipeline
 tags: [Azure, Azure App Configuration, Azure DevOps]
+categories: [Azure App Configuration]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
-featured-image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
-#header-img: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
 ---
 
 *Application deployments dependent often on environment specific data like the name of a resource group, location or flags for certain use cases. Azure DevOps has the concept of variables which is a list of key/value pairs stored together with the release pipeline. This blog post shows how to use key/value pairs that are stored in Azure App Configuration.*

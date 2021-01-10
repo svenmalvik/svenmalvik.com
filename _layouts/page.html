@@ -1,17 +1,14 @@
 ---
-layout: base
+layout: default
 ---
 
-{% include header.html type="page" %}
-
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <div style="text-align: center;">
-        <a href="https://www.devreal.io" data-toggle="tooltip" data-placement="top" title="DevReal Tech Conversations">-- DevReal Tech Conversations --</a>
-      </div>
-      {{ content }}
-	  {% include comments.html %}
-    </div>
-  </div>
+<div class="container">
+<h3 class="font-weight-bold spanborder"><span>{{page.title}}</span></h3>
+<div class="page-content">
+{{ content }}
+<!-- Comments -->
+{% if page.comments == true %}
+{% include comments.html %}
+{% endif %}
+</div>
 </div>

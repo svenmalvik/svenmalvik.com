@@ -2,12 +2,12 @@
 layout: post
 title: How to Use Azure Bastion as a Jump Host
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - Azure Bastion
-tags: [Azure, AZ-303, Azure Solution Architect, Bastion]
+tags: [featured, Azure, Bastion]
+categories: [ AZ-303 ]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/az-303/azure-bastion.png
-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
-featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
+share-img: https://cdn.svenmalvik.com/images/az-303/azure-bastion-yt.jpg
+image: https://cdn.svenmalvik.com/images/az-303/azure-bastion-yt.jpg
 ---
 
 *Knowing about Azure Bastion is part of the AZ-303 exam for becoming an Azure Solution Architect. Bastion is very useful in cases where you would normally spin up a jump host towards a Virtual Machine that you want to maintain. Using Azure Bastion means you won't need to maintain a separate virtual machine (Jump Hos).*

@@ -3,6 +3,7 @@ layout: post
 title: Pulumi Stack Name in Bash Prompt
 subtitle: Showing custom information in the bash prompt
 tags: [Pulumi, Bash]
+categories: [IaC]
 comments: true
 published: true
 #share-img: https://cdn.svenmalvik.com/images/

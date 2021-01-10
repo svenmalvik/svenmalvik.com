@@ -3,6 +3,7 @@ layout: post
 title: My Azure Week 34
 subtitle: Personal reflections on the past week with Azure
 tags: [Azure, Weekly]
+categories: [Personal]
 comment: true
 ---
 

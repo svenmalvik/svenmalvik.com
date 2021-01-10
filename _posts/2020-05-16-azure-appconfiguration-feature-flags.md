@@ -3,12 +3,11 @@ layout: post
 title:  Azure App Configuration Introduction &#35;2
 subtitle: Using feature flags in Spring Boot - with Video
 tags: [Azure, Azure App Configuration, Spring Boot]
+categories: [Azure App Configuration]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
-featured-image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
-#header-img: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
 ---
 
 *Sometimes we would like to test a new feature of an application. Or we would like to disable code junks because they are not fully implemented. Feature toggling, or feature flags make this possible. This post will discuss how I build a spaceship from scratch with Spring Boot and the support of Azure App Configuration to enable and disable features of my spaceship.*

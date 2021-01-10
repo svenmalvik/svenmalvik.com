@@ -3,11 +3,11 @@ layout: post
 title: Sync Azure App Configuration with GitHub Actions
 subtitle: Combining the old and the new way of configuration management
 tags: [Azure, Azure App Configuration, GitHub Actions, DevOps]
+categories: [Azure App Configuration]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
-featured-image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 ---
 
 *One questions we might ask us when we move our properties files from an application to Azure App Configuration is how we can do this without introducing extra complexity when updating our configurations suddenly in a different way. GitHub Actions has an action that synchronizes properties files with Azure App Configuration automatically. It means that we can keep updating our configurations as before, in properties files that are under version control. This blog post is a preparation for my talk on Azure App Configuration and demonstrates this behavior i action.*

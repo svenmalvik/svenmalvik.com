@@ -3,11 +3,11 @@ layout: post
 title: Parameters in Farmer - IaC with Azure
 subtitle: My Learning Journey with Farmer - &#35;2
 tags: [Azure, Farmer, ARM]
+categories: [IaC]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/farmer.png
 image: https://cdn.svenmalvik.com/images/farmer-4x4.jpg
-featured-image: https://cdn.svenmalvik.com/images/farmer-4x4.jpg
 ---
 
 *This is part 2 of my learning adventure of Farmer for Azure resource deployments. This time, I wanted to look at parameters, variables, outputs and expressions.*

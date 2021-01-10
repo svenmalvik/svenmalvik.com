@@ -3,6 +3,7 @@ layout: post
 title: Introduction to Farmer - IaC with Azure
 subtitle: My Learning Journey with Farmer - &#35;1
 tags: [Azure, Farmer, ARM]
+categories: [IaC]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/farmer.png

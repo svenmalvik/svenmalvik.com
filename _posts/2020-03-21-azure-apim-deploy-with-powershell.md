@@ -3,11 +3,11 @@ layout: post
 title: Azure API Management with PowerShell
 subtitle: Deployment Option &#35;3
 tags: [Azure, Azure API Management, PowerShell]
+categories: [Azure API Management]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.pn
 image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
-featured-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
 ---
 
 *We use a lot of PowerShell to provision the Azure infrastructure that powers Vipps AS today. PowerShell is actually a great choice for using working with APIM since it great supported. The PowerShell for Azure is actually using the REST API, so you can expect to get the same support. In case you would like to see the REST API in action for provisioning API Management, you can follow the link. I will use PowerShell to provision an instance of API Management today.*

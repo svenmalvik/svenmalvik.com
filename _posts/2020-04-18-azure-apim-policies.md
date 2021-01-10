@@ -2,12 +2,12 @@
 layout: post
 title: Understanding Policies in Azure API Management
 subtitle: Working with global, product, api, and operation policies
-tags: [Azure, Azure API Management]
+tags: [featured, Azure, Azure API Management]
+categories: [Azure API Management]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.pn
-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
-featured-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
+share-img: https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png
+image: 
 ---
 
 *Policies are the heart of Azure API Management. They let you change the behavior of your APIs in a very flexible manner. Before we dive in to policies, we will discuss the core concept of Azure API Management. At the end, we'll go through some examples.*

@@ -3,6 +3,7 @@ layout: post
 title:  Backup and Restore in Azure API Management
 subtitle: Step-by-Step Guide with PowerShell - with Video
 tags: [Azure, Azure API Management, Immutable Infrastructure]
+categories: [Azure API Management]
 comment: true
 ---
 

@@ -2,12 +2,12 @@
 layout: post
 title: Infrastructure as Code (IaC) in Azure
 subtitle: Learnings and experiences from Vipps
-tags: [Azure, ARM, IaC, Pulumi, Farmer, Bicep]
+tags: [featured, Azure, ARM, IaC, Pulumi, Farmer, Bicep]
+categories: [IaC]
 comments: true
 published: true
-featured-image: https://cdn.svenmalvik.com/images/vipps-logo1.svg
-image: https://cdn.svenmalvik.com/images/vipps-logo1.svg
-share-img: https://cdn.svenmalvik.com/images/azure-iac-yt.jpg
+featured-image: https://cdn.svenmalvik.com/images/azure-iac-yt.jpg
+image: https://cdn.svenmalvik.com/images/azure-iac-yt.jpg
 ---
 
 *Infrastructure as code (IaC) is a hot topic, also at Vipps. This video is the recording of an internal event where development teams tell about their experiences with different technologies to deploy to Microsoft Azure. The video dives also into some newcomers like Pulumi, Farmer, and Bicep.*

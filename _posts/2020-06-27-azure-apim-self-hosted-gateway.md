@@ -3,11 +3,11 @@ layout: post
 title: Using Azure API Management APIs with Docker 
 subtitle: How to move APIs closer to the services with a self-hosted gateway
 tags: [Azure, Azure API Management]
+categories: [Azure API Management]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.pn
-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
-featured-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
+share-img: https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png
+image: https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png
 ---
 
 *We use Azure API Management in some cases for calling external services from Azure Kubernetes Service (AKS). Azure API Management acts in this case as a link between an internal service running on AKS and an external service running at a third-party. The third-party knows who we are, and has whitelisted our outgoing IP address which is the egress IP from Azure API Management. The problem is when redeploying Azure API Management. As we emphasize immutable infrastructure, this may happen at some point. Redeploying Azure API Management results then in a different IP address that the third-party has to whitelist again. This may take time and effort. Fortunately, Azure API Management has the concept of self-hosted gateways. This post will show how to use a self-hosted gateway with Docker.*

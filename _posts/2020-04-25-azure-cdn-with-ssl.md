@@ -2,7 +2,8 @@
 layout: post
 title: Getting Started with Azure CDN
 subtitle: Serving images from Azure CDN with SSL
-tags: [Azure, Azure CDN, Azure Storage Account]
+tags: [featured, Azure, Azure CDN, Azure Storage Account]
+categories: [Web]
 comments: true
 ---
 

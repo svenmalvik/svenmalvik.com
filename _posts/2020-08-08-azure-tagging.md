@@ -2,7 +2,8 @@
 layout: post
 title: Resource Tagging in Azure
 subtitle: Why it is important
-tags: [Azure, Tagging]
+tags: [featured, Azure, Tagging]
+categories: [Compliancy]
 comment: true
 ---
 

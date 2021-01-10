@@ -2,12 +2,12 @@
 layout: post
 title: How to configure Azure Storage Accounts to Allow Access from Specific Subnets
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - Service Endpoints
-tags: [Azure, AZ-303]
+tags: [Azure]
+categories: [AZ-303]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/az-303/azure-se-yt.png
-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
-featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
+share-img: https://cdn.svenmalvik.com/images/az-303/azure-se-yt.jpg
+image: https://cdn.svenmalvik.com/images/az-303/azure-se.jpg
 ---
 
 *Sometimes we store items in a storage account and want to restrict the access to certain services or clients. I will demonstrate how to restrict the access to a subnet where a Windows Server 2016 Datacenter VM is running. Service Endpoints in Azure is part of the AZ-303 exam for becoming an Azure Solution Architect.*

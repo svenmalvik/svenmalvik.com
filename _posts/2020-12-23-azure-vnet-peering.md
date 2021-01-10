@@ -3,11 +3,11 @@ layout: post
 title: How to Peer Virtual Networks in Azure
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - Virtual Network Peering
 tags: [Azure, AZ-303, VNet]
+categories: [AZ-303]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/az-303/azure-peerings.png
-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
-featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
+share-img: https://cdn.svenmalvik.com/images/az-303/azure-peerings.jpg
+image: https://cdn.svenmalvik.com/images/az-303/azure-peerings.jpg
 ---
 
 *When we have two services running in two different virtual networks, they cannot communicate. To fix this, both VNet's have to be peered. Virtual Network Peering is part of the AZ-303 exam for becoming an Azure Solution Architect.*

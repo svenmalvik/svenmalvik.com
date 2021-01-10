@@ -3,11 +3,11 @@ layout: post
 title: How to do a Failover of a Windows Server VM with Azure Site Recovery
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect | Azure Site Recovery
 tags: [Azure, AZ-303, Azure Site Recovery]
+categories: [AZ-303]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr.jpg
-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
-featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
+share-img: https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr-yt.jpg
+image: https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr-yt.jpg
 ---
 
 *In this post I will create a Windows Server 2016 Datacenter and then do an automatic failover to another region with Azure Site Recovery. Azure Site Recovery is part of the AZ-303 exam for becoming an Azure Solution Architect.*

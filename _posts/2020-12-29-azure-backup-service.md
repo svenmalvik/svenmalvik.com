@@ -4,11 +4,11 @@ title: How to Recover a Virtual Machine with Azure Backup Service
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - Azure Backup Service
 tags: [Azure, AZ-303, VM]
 categories: [AZ-303]
+categories: [AZ-303]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service.jpg
-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
-featured-image: https://cdn.svenmalvik.com/images/az-303/az-303.jpg
+image: https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service.jpg
 ---
 
 *This episode is about the Azure Backup Service, and how we can restore a virtual machine. I have already a Windows Server 2016 Datacenter VM created, so we will continue from there and create a file, run a backup, and then restore the file system. Azure Backup Service is part of the AZ-303 exam for becoming an Azure Solution Architect.*

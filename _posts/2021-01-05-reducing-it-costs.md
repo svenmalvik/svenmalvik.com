@@ -3,11 +3,11 @@ layout: post
 title: 8 Actions to Cut Infrastructure Costs in 2021
 subtitle: Ideas to Deliver Cost Efficiencies for Future Growth
 tags: [Azure, Costs]
+categories: [Compliancy]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/reduce-it-costs.jpg
-#image: 
-#featured-image: 
+image: https://cdn.svenmalvik.com/images/reduce-it-costs.jpg
 ---
 *8 Actions to Cut Infrastructure Costs in 2021 is the result of a research I did. I wanted to know more about the impact of the pandemic for IT organizations. What I found were discussions and ideas about the opportunities rather than the negative impacts. This post is a collection of actions and ideas that I have divided into 3 areas, reduce costs, optimize spending and increase value.*
 

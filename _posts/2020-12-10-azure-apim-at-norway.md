@@ -2,12 +2,12 @@
 layout: post
 title: Azure API Management at Norway 
 subtitle: How are Norwegian companies like Vipps, SATS, Orkla, Statsbygg, and DNV GL using Azure API Management?
-tags: [Azure, Azure API Management]
+tags: [sticky, Azure, Azure API Management]
+categories: [Azure API Management]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/devreal-apim_yt_cover.jpg
-image: https://cdn.svenmalvik.com/images/devreal-4x4.png
-featured-image: https://cdn.svenmalvik.com/images/devreal-4x4.png
+image: https://cdn.svenmalvik.com/images/devreal-apim_yt_cover.jpg
 ---
 
 *How are Norwegian companies like Vipps, SATS, Orkla, Statsbygg, and DNV GL using Azure API Management? What experiences do they have, and what do they think about the service? I wanted to know more, and organized an event with developers that use this service. In addition to that I invited the product manager for API Management Mioa Jiang to answer questions, but also to tell us about cool and new features*

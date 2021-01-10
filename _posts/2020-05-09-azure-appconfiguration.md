@@ -3,12 +3,11 @@ layout: post
 title:  Azure App Configuration Introduction &#35;1
 subtitle: Accessing application configurations with REST - with Video
 tags: [Azure, Azure App Configuration, Azure Key Vault]
+categories: [Azure App Configuration]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
-featured-image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
-#header-img: https://cdn.svenmalvik.com/images/azure-app-configuration-logo.png
 ---
 
 *We build this great application that we configure exactly the way it fits into our environments, and then we realize that changing a configuration isn't as easy as we'd like to. This post introduces Azure App Configuration Service, a service that manages non-secret configurations. This first part of a serie discusses how to setup the service and how to use the REST interface for retrieving data.*

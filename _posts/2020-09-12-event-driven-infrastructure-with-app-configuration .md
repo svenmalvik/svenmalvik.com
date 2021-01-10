@@ -3,11 +3,11 @@ layout: post
 title: Event-Driven Infrastructure with App Configuration
 subtitle: Triggering Azure API Management Deployments
 tags: [Azure, Azure App Configuration, Azure Event Grid, Azure Automation Runbooks]
+categories: [Azure App Configuration]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
 image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
-featured-image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
 ---
 
 *Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How could we dynamically update our infrastructure based on a change in Azure App Configuration? To give you an idea of what I have in mind ... At [Vipps](https://vipps.no) we have two AKS clusters. Only one cluster is active at any given time. We use the second cluster to test AKS upgrades. In front of AKS is Azure API Management that can route traffic to AKS-blue or AKS-green. The information of what cluster is active and what is inactive can be stored in Azure App Configuration, and then being send to API Management that uses the value in a policy. In this post, I will show how to automate a switch from one AKS cluster to another cluster with Azure Event Grid. This scenario was a study that i did to find out how to use Azure App Configuration for an Event-Driven Infrastructure.*
