@@ -10,7 +10,7 @@ share-img: https://cdn.svenmalvik.com/images/azure-apim-policies-0.png
 image: https://cdn.svenmalvik.com/images/azure-apim-policies-0.png
 ---
 
-*Policies are the heart of Azure API Management. They let you change the behavior of your APIs in a very flexible manner. Before we dive in to policies, we will discuss the core concept of Azure API Management. At the end, we'll go through some examples.*
+*Policies are the heart of Azure API Management. They let us change the behavior of our APIs in a very flexible manner. Before I dive in to policies, I will discuss the core concept of Azure API Management. At the end, I'll go through some examples.*
 
 ---
 
