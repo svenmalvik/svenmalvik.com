@@ -6,8 +6,8 @@ tags: [Azure, Azure API Management, Azure Portal]
 categories: [Azure API Management]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.png
-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
+share-img: https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-0.png
+image: https://cdn.svenmalvik.com/images/azure-apim-deploy-with-portal-0.png
 ---
 
 *We will provision Azure API Management. Creating an instance of it is just a click in the Azure Portal. We'll do it once to show how easy it is before we move forward to some other ways that enable us to automate it.*

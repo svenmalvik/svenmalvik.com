@@ -6,8 +6,8 @@ tags: [Azure, Azure API Management]
 categories: [Azure API Management]
 comments: true
 published: true
-share-img: https://cdn.svenmalvik.com/images/zure-apim-gw-diagram.png
-image: https://cdn.svenmalvik.com/images/azure-apim-logo.jpg
+share-img: https://cdn.svenmalvik.com/images/azure-apim-key-parameters-0.png
+image: https://cdn.svenmalvik.com/images/azure-apim-key-parameters-0.png
 ---
 
 *This post will start to discuss provisioning API Management. The simplest way of doing so is simply by signing into the portal and create it - we'll do so in a minute - but this is not the only way we can and should provision API Management. There are other ways that are more effective depending on your environment. Before we can do all this, we need first take a look at some key parameters when creating an instance.*
