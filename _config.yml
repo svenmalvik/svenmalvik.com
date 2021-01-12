@@ -23,7 +23,7 @@ authors:
       name:           Sven Malvik
       site:           https://www.svenmalvik.com
       avatar:         https://cdn.svenmalvik.com/images/svenmalvik.jpg
-      bio:            "Hello, I am Sven Malvik, a Microsoft Azure MVP."
+      #bio:            "[Sven Malvik, and I am an Azure MVP](https://mvp.microsoft.com/en-us/PublicProfile/5004080?fullName=Sven%20Malvik?WT.mc_id=AZ-MVP-5004080)"
       email: "sven@malvik.de"
       facebook: svenmalvik
       github: svenmalvik
