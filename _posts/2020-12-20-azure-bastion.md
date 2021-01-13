@@ -85,3 +85,4 @@ Finally, we can connect to our VM. Click into the Virtual Machine and click on *
 
 - [Azure Bastion Docs](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview?WT.mc_id=AZ-MVP-5004080)
 - [Exam AZ-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?WT.mc_id=AZ-MVP-5004080)
+- *Ad: *[Get now 10% off all English language books & eBooks at the Apress Shop.](https://www.tkqlhce.com/click-100299205-14411736)
