@@ -11,7 +11,7 @@ ytid: f4O66p0bGZQ
 yttxt: Avoiding the Agile Alignment Trap with DevOps
 ---
 
-*I'm very lucky, being a leader of an engineering team in a great Norwegian organization. The reason for that is simple. I can make things happen that are very important to me and where I have very strong opinions about, "Agile". What does Agile even mean? In this blog post, I want to briefly discuss why I think Scrum and Kanban make us unhappy and slow us down. The video below explains very good why I never have taken those many existing methodologies serious.*
+*I'm very lucky, being a leader of an engineering team in a great Norwegian organization. The reason for that is simple. I can make things happen that are very important to me and where I have very strong opinions about, "Agile". What does Agile even mean? In this blog post, I want to briefly discuss why I think Scrum and Kanban make us unhappy and slow us down. The video below highlights some points of this post.*
 
 {% include yt.html %}
 
@@ -50,3 +50,4 @@ Some people like to make lists, some don’t. Some work best nights, some work b
 ## Useful Links
 
 - [Characterizing people as non-linear 1st order components in software development](https://ameyakarve.wordpress.com/2012/07/22/characterizing-people-as-non-linear-1st-order-components-in-software-development-cockburn-us/)
+- [Driving Cultural Change Through Software Choices](https://skamille.medium.com/driving-cultural-change-through-software-choices-bf69d2db6539)
