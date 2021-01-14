@@ -9,11 +9,13 @@ comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service.jpg
 image: https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service.jpg
+ytid: lilq91h93ds
+yttxt: Watch Azure Backup Service in preparation for the AZ-303 exam
 ---
 
 *This episode is about the Azure Backup Service, and how we can restore a virtual machine. I have already a Windows Server 2016 Datacenter VM created, so we will continue from there and create a file, run a backup, and then restore the file system. Azure Backup Service is part of the AZ-303 exam for becoming an Azure Solution Architect.*
 
-[![Watch Azure Backup Service in preparation for the AZ-303 exam](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-yt.jpg "AZ-303: Azure Backup Service")](https://www.youtube.com/watch?v=lilq91h93ds)*Watch Azure Backup Service in preparation for the AZ-303 exam*
+{% include yt.html %}
 
 Make sure you have a Windows Server up and running. Go first into the overview of the VM and open the menu. You will find *Backup* there.
 
