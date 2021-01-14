@@ -1,6 +1,6 @@
 ---
 layout: post
-title: People as The 1st Order Project Drivers
+title: People as the 1st Order Project Drivers
 subtitle: How We Affect Software Development
 tags: [Leadership]
 comments: true
