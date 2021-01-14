@@ -27,11 +27,11 @@ I didn't like Scrum, especially those standup meetings in the morning where a te
 
 ## Kanban
 
-*"Kanban aims to manage work by balancing demands with available capacity, and by improving the handling of system-level bottlenecks."* I like Kanban better even though it doesn't even mention people. As if they don't exist. The idea is to shift prioritized tasks as fast as possible from the most left column to the right one, from *Todo* to *Done*. It implies that one column should not have too many tasks. In such case we the developers need to have out attention on those tasks. I once was in a team where the team leader made one of the developers responsible for watching the Kanban board and got the title "Work in Progress Guard". The same day I decided to leave this company.
+*"Kanban aims to manage work by balancing demands with available capacity, and by improving the handling of system-level bottlenecks."* I like Kanban better even though it doesn't even mention people. As if they don't exist. The idea is to shift prioritized tasks as fast as possible from the most left column to the right one, from *Todo* to *Done*. It implies that one column should not have too many tasks. In such a case we, the developers, need to focus our attention on those tasks. I once was in a team where the team leader made one of the developers responsible for watching the Kanban board and got the title "Work in Progress Guard". The same day I decided to leave this company.
 
 ## People
 
-The following article is a good but very dry read. It highlights the people as the 1st order project drivers. No system and no methodology gets work done. Work gets only done by the people, and work gets even faster done and in better quality when the people like to work at your place and have meaningful work tto do.
+The following article is a good but very dry read. It highlights the people as the 1st order project drivers. No system and no methodology gets work done. Work gets only done by the people, and work gets even faster done and in better quality when the people like to work at your place and have meaningful work to do.
 
 The following 3 sections are extracted out of the great article [Characterizing people as non-linear 1st order components in software development](https://ameyakarve.wordpress.com/2012/07/22/characterizing-people-as-non-linear-1st-order-components-in-software-development-cockburn-us/).
 
