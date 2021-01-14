@@ -47,6 +47,10 @@ Lack of consistency is a common *failure mode* of us developers. Methodologies t
 
 Some developers like to make lists, some don’t. Some work best nights, some work best in the morning. Some like deadlines, some don’t. Groups vary similarly. Some cultures prize public self-scrutiny, others shelter people from embarrassment, and so on. Methodologies are largely group coordination rules, and so a recommendation appropriate for one person or group will be rejected by another. What applies to a consensus-minded group might not apply to a culture in which people wait for the boss to make a pronouncement.
 
+## Conclusion
+
+These are my experiences, and I totally understand that other developers have made different experiences. We are different, and that's why there is no system that can fix everything. We are the 1st order, nothing else.
+
 ## Useful Links
 
 - [Characterizing people as non-linear 1st order components in software development](https://ameyakarve.wordpress.com/2012/07/22/characterizing-people-as-non-linear-1st-order-components-in-software-development-cockburn-us/)
