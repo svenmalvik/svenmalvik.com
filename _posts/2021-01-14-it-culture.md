@@ -15,7 +15,7 @@ yttxt: Avoiding the Agile Alignment Trap with DevOps
 
 {% include yt.html %}
 
-## Scrum
+## Why I dislike Scrum
 
 *"Scrum is a framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value."* What's funny is that the explanation of Scrum uses the word *people*. To its defence, it also sets the focus on deliveries, not the people.
 
@@ -25,7 +25,7 @@ At the end of a 2 weeks sprint, we run a demo showing stakeholders and other tea
 
 I didn't like Scrum, especially those standup meetings in the morning where a team leader ask everyone 3 questions. *What did you do yesterday*, *what are you going to do today*, and *do you have any problems where we can help you*. This is poor leadership. Instead of giving everyone the feeling of being watched, we should prefer to show trust by being interested in the people and there work. Tasks are not important. The end goal is important. But the end goal can only be accomplished when everyone is happy and feels valued and being trusted. I run daily voluntary checkins. Everyone can talk but nobody needs to. As a leader, I know what's important and I'm only interested in the status quo, not at this point.
 
-## Kanban
+## Kanban has similar challenges as Scrum
 
 *"Kanban aims to manage work by balancing demands with available capacity, and by improving the handling of system-level bottlenecks."* I like Kanban better even though it doesn't even mention people. As if they don't exist. The idea is to shift prioritized tasks as fast as possible from the most left column to the right one, from *Todo* to *Done*. It implies that one column should not have too many tasks. In such a case we, the developers, need to focus our attention on those tasks. I once was in a team where the team leader made one of the developers responsible for watching the Kanban board and got the title "Work in Progress Guard". The same day I decided to leave this company.
 
