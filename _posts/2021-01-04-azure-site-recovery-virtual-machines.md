@@ -14,7 +14,7 @@ image: https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr-yt.jpg
 
 *In this post I will create a Windows Server 2016 Datacenter and then do an automatic failover to another region with Azure Site Recovery. Azure Site Recovery is part of the AZ-303 exam for becoming an Azure Solution Architect.*
 
-{% include yt.html ytid=page.ytid yttxt=page.yttxt %}
+{% include yt.html %}
 
 I have already created a Windows Server 2016 Datacenter in Azure. Checkout a previous post about how to [Create a Windows Server 2016 Datacenter VM](https://www.svenmalvik.com/azure-vm/#cvm). After that we need the IIS Server. Here is how you can do this: [Installing Internet Information Service (IIS)](https://www.svenmalvik.com/azure-vm/#iis).
 
