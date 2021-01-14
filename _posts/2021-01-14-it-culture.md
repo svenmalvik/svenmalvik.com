@@ -31,7 +31,7 @@ I didn't like Scrum, especially those standup meetings in the morning where a te
 
 ## Developers, developers, developers
 
-The following article is a good but very dry read. It highlights the people as the 1st order project drivers. No system and no methodology gets work done. Work gets only done by the people, and work gets even faster done and in better quality when the people like to work at your place and have meaningful work to do.
+The following article is a good but very dry read. It highlights the people as the 1st order project drivers. No system and no methodology gets work done. Work gets only done by the developers and the people around, and work gets even faster done and in better quality when we like to work at your place and have meaningful work to do.
 
 The following 3 sections are extracted out of the great article [Characterizing people as non-linear 1st order components in software development](https://ameyakarve.wordpress.com/2012/07/22/characterizing-people-as-non-linear-1st-order-components-in-software-development-cockburn-us/).
 
