@@ -663,7 +663,7 @@ article {
     line-height: 1.15;
     color: #C20114;
 }
-article p,article pre,article figure,article img,article blockquote,article iframed,article embed {
+article p,article pre,article figure,article blockquote,article iframed,article embed {
 	margin-bottom:2rem;
 }
 article blockquote {
