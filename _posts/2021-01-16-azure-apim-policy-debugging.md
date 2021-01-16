@@ -9,7 +9,7 @@ image: https://cdn.svenmalvik.com/images/azure-apim-policy-debugging-cover.jpg
 categories: [Azure API Management]
 ---
 
-*In this post I want to briefly go through the Azure API Management extension for VSCode and how we can debug policies. It's one of the questions I get a lot when holding workshops on APIM. How to effective develop policies in Azure API Management. The post is a collection of screenshots that will explain in detail what you need to do step-by-step.*
+*In this post I want to briefly go through the Azure API Management extension for VSCode and how we can debug policies. It's one of the questions I get a lot when holding workshops on APIM. How to effectively develop policies in Azure API Management. The post is a collection of screenshots that will explain in detail what you need to do step-by-step.*
 
 - [Install Extensions](#ie)
 - [Testing Azure API Management Extension](#tapim)
