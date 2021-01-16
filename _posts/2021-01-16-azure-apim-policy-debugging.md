@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Step-by-Step Guide on How To Debug Policies in Azure API Management
+title: How To Debug Policies in Azure API Management. A Step-by-Step Guide.
 tags: [featured, Azure, Azure API Management]
 comments: true
 published: true
