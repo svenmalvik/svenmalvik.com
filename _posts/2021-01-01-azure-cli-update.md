@@ -20,7 +20,7 @@ Instead of going this way you can also keep the CLI up to date without having to
 
 `az config set auto-upgrade.enable=yes`
 
-Ok, not 100% correct yet because you get asked if you are really sure that you want to update. That is annoying. Keep the Azure CLI up to date without EVER being prompted:
+Ok, not 100% developer-friendly yet because you get asked if you are really sure that you want to update. That is annoying. Keep the Azure CLI up to date without EVER being prompted:
 
 `az config set auto-upgrade.prompt=no`
 
