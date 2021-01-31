@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DevReal News 4/2021
+title: Azure Updates 4/2021
 tags: [DevReal, DevOps]
-categories: [DevReal News]
+categories: [Azure Updates]
 comments: true
-published: false
-share-img: https://cdn.svenmalvik.com/images/
-image: https://cdn.svenmalvik.com/images/
-ytid: pG82RVO3mEI
+published: true
+share-img: https://cdn.svenmalvik.com/images/devrealnews-cover-421.jpg
+image: https://cdn.svenmalvik.com/images/devrealnews-cover-421.jpg
+ytid: aGYqJ9tMQnc
 yttxt: Zone to Zone Disaster Recovery with Azure Site Recovery | Azure Friday
 ---
 
