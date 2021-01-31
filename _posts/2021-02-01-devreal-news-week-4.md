@@ -11,7 +11,7 @@ ytid: aGYqJ9tMQnc
 yttxt: Azure Updates on devreal.io/news
 ---
 
-**Welcome to my first episode of DevReal News. My name is Sven Malvik and I'm recording from Oslo. I'm an Azure MVP so I'm naturally very interested in what's happening in Azure. So let me update you on what has happened last week. This post is the transcript of the video below.**
+*Welcome to my first episode of DevReal News. My name is Sven Malvik and I'm recording from Oslo. I'm an Azure MVP so I'm naturally very interested in what's happening in Azure. So let me update you on what has happened last week. This post is the transcript of the video below.*
 
 ## Azure Updates
 
