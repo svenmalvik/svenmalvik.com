@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Automatically Update Azure CLI 
-tags: [Azure]
+tags: [Azure, AzureCLI]
 comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/azure-cli-update.jpg
