@@ -28,6 +28,7 @@ Template Specs is a new resource type for storing ARM templates in resource grou
 ### Zone to Zone Disaster Recovery with Azure Site Recovery
 
 On Friday, Scott Hanselman presented a new episode of Azure Friday, Zone to Zone Disaster Recovery with Azure Site Recovery. Now you can bring the power of Availability zones to augment your Disaster Recovery story. Siddharth Deekshit shows how you can protect your Azure VMs by replicating them from one availability zone to another within the same region. This opens surly new possibilities also for improving SLAs for those that don't want to run in a different region. Let's watch what he has to say about when you would want this zone to zone DR.
+[Zone to Zone Disaster Recovery with Azure Site Recovery on Azure Friday](https://azure.microsoft.com/en-us/resources/videos/azure-friday-zone-to-zone-disaster-recovery-with-azure-site-recovery/)
 
 ### Automatic Cluster Upgrades in AKS in Public preview
 
