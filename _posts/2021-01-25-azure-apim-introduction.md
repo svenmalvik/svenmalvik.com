@@ -24,6 +24,8 @@ image: https://cdn.svenmalvik.com/images/azure-apim-introduction.jpg
 
 Hopefully, this gave you a somewhat overview of what APIM can do and what the platform has to offer. Now we’re going to dive deeper into the different tools and talk about some of the functions and advantages in detail.
 
+{% include articleAd.html %}
+
 ## Abstract your back-end implementation & API documentation
 
  Azure API Management supports several API formats. Let's take a look:
@@ -43,6 +45,8 @@ Hopefully, this gave you a somewhat overview of what APIM can do and what the pl
 <br>
 
 Azure API Management comes with a Developer Portal for you clients. It's a web portal where API clients can learn about your APIs. It contains of the APIs that are deployed in your Azure API Management instance. The content is generated based on the APIs. You have the option to customize the developer portal and adjust the look and feel so it fits better to your organization.
+
+{% include articleAd.html %}
 
 ## System groups
 
@@ -67,6 +71,8 @@ Azure API Management let you transform data like back and forth from `xml` to `j
 APIM provide metrics that may help to analyze backend calls, errors and performance by using Azure Monitor with diagnostic settings.
 
 ![Azure API Management Metrics](https://cdn.svenmalvik.com/images/azure-apim-overview-3.jpg)*Azure API Management Metrics*
+
+{% include articleAd.html %}
 
 ## Cost Management
 
