@@ -51,5 +51,4 @@ Jun 2019: <a href="https://www.meetup.com/azure-meetup-oslo/events/261460415/">W
     </div>
 </div>
 
-
-
+{% include articleAd.html %}
