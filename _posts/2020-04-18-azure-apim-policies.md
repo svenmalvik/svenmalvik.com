@@ -30,16 +30,7 @@ Azure API Management Policies let you change the behavior of APIs through a comb
 
 Before we start implementing some examples, it is important to understand where we can apply a policy. In short, we can apply a policy globally, on a product-level, one for every API, and a policy for each endpoint. If you haven't worked with Azure API Management yet, it's a great time to discuss the core concept of Azure API Management before continuing. Otherwise, you can skip the following chapter.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5867637072125128"
-     data-ad-slot="6992142934"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{% include articleAd.html %}
 
 ## Core Concept of Azure API Management
 
@@ -107,6 +98,8 @@ On the product-level, we will protect our backend from excessive calls.
 
 ![Adding rate limiting on product-level in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-7.png "Adding rate limiting on product-level in Azure API Management")*Adding rate limiting on product-level in Azure API Management*
 
+{% include tracking-header.html %}
+
 ### Examples 4: Adding global policy
 
 The global policy applies to all endpoints. I have added an ip filter to the inbound section telling that only I am allowed to send requests.
@@ -171,6 +164,8 @@ We can imagine that implementing code in each section at every level might resul
     <on-error />
 </policies>
 ```
+
+{% include tracking-header.html %}
 
 ## Conclusion
 
