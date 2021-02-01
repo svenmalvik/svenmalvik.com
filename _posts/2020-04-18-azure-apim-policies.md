@@ -30,6 +30,17 @@ Azure API Management Policies let you change the behavior of APIs through a comb
 
 Before we start implementing some examples, it is important to understand where we can apply a policy. In short, we can apply a policy globally, on a product-level, one for every API, and a policy for each endpoint. If you haven't worked with Azure API Management yet, it's a great time to discuss the core concept of Azure API Management before continuing. Otherwise, you can skip the following chapter.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5867637072125128"
+     data-ad-slot="6992142934"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Core Concept of Azure API Management
 
 Many APIs are specified in Swagger-files like the [Conference API](https://conferenceapi.azurewebsites.net/?format=json). This API bundles those endpoints - we call them **Operation** in Azure API Management - that together make up the conference service - in this case the API bundles endpoints like `/sessions`, `/topics`, `/speakers`, and some more. Companies like [Vipps](https://vipps.no), a Norwegian payment service and where I work, have many APIs, and not all its costumers need access to all of them. The Vipps App needs access to APIs that are specifically developed for it. Merchants that want to use Vipps as a payment service for their customers need some other services than the Vipps App. To make this distinction, and to provide clients access to only a subset of available APIs, Azure API Management has the concept of **Products**. To use a product, a **User**/Client has to **Subscribe** to a Product.
