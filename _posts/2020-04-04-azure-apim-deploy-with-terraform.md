@@ -56,6 +56,8 @@ When first starting to use Terraform, you need to run `terraform init` to tell T
 
 We see lots of `+` prior to configurations which means Terraform will add these features, not change. Terraform is great when we would like to know what will change before we will change anything.
 
+{% include articleAd.html %}
+
 Finally, we need to apply the plan with `terraform apply` to make any changes in Azure.
 
 ![terraform apply](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-terraform-1.png)*terraform apply*
