@@ -9,7 +9,7 @@ share-img: https://cdn.svenmalvik.com/images/azure-apim-introduction.jpg
 image: https://cdn.svenmalvik.com/images/azure-apim-introduction.jpg
 ---
 
-*Azure API Management (APIM) is a way to create consistent and modern API gateways for existing backend services. It provides an interface for your backend services and APIs while making sure they’re secured, monitored, maintained, well documented and published in the cloud. This post is a brief introduction into Azure API Management. This might be reason enough for some to get APIM. Let’s take a closer look.*
+*Azure API Management (APIM) is a way to create consistent and modern API gateways for existing backend services. It provides an interface for your backend services and APIs while making sure they’re secured, monitored, maintained, well documented and published in the cloud. This post is a brief introduction into Azure API Management.*
 
 ## An overview of what you get with APIM
 
@@ -68,7 +68,7 @@ APIM provide metrics that may help to analyze backend calls, errors and performa
 
 ![Azure API Management Metrics](https://cdn.svenmalvik.com/images/azure-apim-overview-3.jpg)*Azure API Management Metrics*
 
-## Cost management
+## Cost Management
 
 Azure API Management has 5 different pricing tiers to choose from:
 
