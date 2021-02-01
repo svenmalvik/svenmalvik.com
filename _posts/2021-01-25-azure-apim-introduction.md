@@ -40,6 +40,8 @@ Hopefully, this gave you a somewhat overview of what APIM can do and what the pl
 | App Service | APIs hosted in an App service.      |
 | Function App | Serverless code that can be triggered.      |
 
+<br>
+
 Azure API Management comes with a Developer Portal for you clients. It's a web portal where API clients can learn about your APIs. It contains of the APIs that are deployed in your Azure API Management instance. The content is generated based on the APIs. You have the option to customize the developer portal and adjust the look and feel so it fits better to your organization.
 
 ## System groups

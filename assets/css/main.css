@@ -200,7 +200,13 @@ caption {
   caption-side: bottom; }
 
 th {
-  text-align: inherit; }
+  text-align: inherit; 
+  min-width: 150px;
+}
+
+table tr {
+  border: 1px black solid;
+}
 
 label {
   display: inline-block;
