@@ -21,4 +21,5 @@ You can [email me](sven@malvik.de) or find me on [LinkedIn](https://www.linkedin
 <br>
 If you'd like to get in touch and are very old-school, you can send a letter to:
 `Trettåsen 50, 2008 Fjerdingby, Norway`
-
+<br><br>
+{% include articleAd.html %}
