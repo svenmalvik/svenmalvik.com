@@ -55,6 +55,8 @@ Some developers like to make lists, some don’t. Some work best nights, some wo
 
 ## Conclusion
 
+{% include articleAd.html %}
+
 These are my experiences, and I totally understand that other developers have made different experiences. We are different, and that's why there is no system that can fix everything. We are the 1st order, not systems.
 
 ## Useful Links
