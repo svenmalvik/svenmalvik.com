@@ -24,6 +24,7 @@ permalink: "/author-sven-malvik"
                     <img alt="{{ site.authors.svenmalvik.name }}" src="{{site.baseurl}}{{ site.authors.svenmalvik.avatar }}" class="rounded-circle" height="100" width="100">
                 </div>
             </div>
+{% include articleAd.html %}
             <h3>Speaking Engagements</h3>
 Jan 2021: <a href="https://www.meetup.com/azureaustin/events/273726067/">Azure API Management at Austin Meetup</a> (virtual)<br>
 Dec 2020: <a href="https://www.youtube.com/watch?v=N2qGQU3GAh4">Azure API Management at Norway at DEVREAL.io</a> (virtual)<br>
