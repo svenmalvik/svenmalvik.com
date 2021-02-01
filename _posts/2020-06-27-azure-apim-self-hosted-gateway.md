@@ -17,6 +17,8 @@ The diagram below shows that instead of making the round-trip from a service run
 
 ![Azure API Management Gateway diagram](https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png)*Azure API Management Gateway diagram*
 
+{% include articleAd.html %}
+
 ## Deploying a self-hosted API gateway in Docker
 
 I added two APIs to an Azure API Management instance that are public available without a subscription-key. Both APIs are hosted in the US. The Azure API Management instance is deployed in West Europe (Amsterdam).
@@ -52,6 +54,8 @@ We can finally test the same API from localhost. The IP address that the service
 ![Testing an API against the local API Gateway](https://cdn.svenmalvik.com/images/azure-apim-gw-test-gateway.png)*Testing an API against the local API Gateway*
 
 ## Changing an API in the Portal
+
+{% include articleAd.html %}
 
 The self-hosted gateway needs still to talk to Azure API Management to send metrics. Also, when we make a change in the API, we don't need to create a new Docker image. All changes are communicated to the self-hosted gateway directly and take Immediately effect.
 

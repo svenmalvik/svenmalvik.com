@@ -22,6 +22,8 @@ The VNet comes already with a pre-defined subnet that we can change if we want t
 
 ![Default subnet of an Azure Virtual Network](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-2.jpg)*Default subnet of an Azure Virtual Network*
 
+{% include articleAd.html %}
+
 If we head over to the **Security**-tab, we can see (1) `BastionHost`. We need to enable it. The address range must be at least `/27`. I stick to the default for this demonstration. Azure Bastion needs also a public IP address, so we can connect to it from outside our virtual network.
 
 ![Configuring Virtual Network](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-3.jpg)*Configuring Virtual Network*
@@ -54,6 +56,8 @@ Now as everything is in place, let's take a look at the resources that got creat
 
 ![Overview of all created Azure resources](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-8.jpg)*Overview of all created Azure resources*
 
+{% include articleAd.html %}
+
 We won't use this resource directly to connect to our VM. First, we take a look at the NSG resource `devreal-vm-nsg` which is connected directly to the VM. NSGs can be connected to subnets as well.
 
 ![Overview of all created Azure resources 2](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-9.jpg)*Overview of all created Azure resources 2*
@@ -77,6 +81,8 @@ Here's a better overview of what we have just configured.
 Finally, we can connect to our VM. Click into the Virtual Machine and click on *Connect*. Then choose *Bastion* ... give it your credentials that you have set when configuring the VM ...
 
 ![Set credentials for VM](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-15.jpg)*Set credentials for VM*
+
+{% include articleAd.html %}
 
 ... and vóila, you have logged in to your Windows Server 2016 Datacenter VM without using a public IP address of the VM, but with Azure Bastion.
 ![Logged in to Windows Server 2016 Datacenter VM](https://cdn.svenmalvik.com/images/az-303/az-303-azure-bastion-16.jpg)*Logged in to Windows Server 2016 Datacenter VM*

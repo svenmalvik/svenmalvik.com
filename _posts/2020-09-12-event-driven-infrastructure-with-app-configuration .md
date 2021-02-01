@@ -28,6 +28,8 @@ image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
 
 Before we start, I will give a high-level overview of the event flow between the services I used. The data of what cluster is active is stored in Azure App Configuration. Whenever I change this value, meaning I set the other AKS cluster as active, a change event is published to Azure Event Grid. Azure Automation subscribes to Event Grid and triggers an update in Azure API Management that routes the traffic to either AKS-blue or AKS-green. More information about [Policies in Azure API Management](https://www.svenmalvik.com/azure-apim-policies/) in a previous post.
 
+{% include articleAd.html %}
+
 ![Event flow diagram of how Azure App Configuration events trigger Azure API Management deployments](https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid.png)*Event flow diagram of how Azure App Configuration events trigger Azure API Management deployments*
 
 ## <a name="deploy-azure-app-configuration"></a>Deploy Azure App Configuration
@@ -82,6 +84,8 @@ We give it a name, subscription, a resource group. We also create a service prin
 
 We can see that a service principle was created.
 
+{% include articleAd.html %}
+
 ![Azure Automation Account Service Principle](https://cdn.svenmalvik.com/images/azure-automation-3.png)*Azure Automation Account Service Principle*
 
 ### Create Runbook
@@ -119,6 +123,8 @@ To be able to trigger this runbook, we need a webhook that Azure Event Grid can 
 ![Create Webhook in Runbook](https://cdn.svenmalvik.com/images/azure-automation-13.png)*Create Webhook in Runbook*
 
 What we then get is a URL that we need to copy immediately and save somewhere. We will need it in the next section where we create an event subscription.
+
+{% include articleAd.html %}
 
 ![URL in Webhook in Runbook](https://cdn.svenmalvik.com/images/azure-automation-14.png)*URL in Webhook in Runbook*
 
@@ -162,6 +168,8 @@ Short time later, we see that the named value in Azure API Management was update
 Looking at the details of the event, we see our key from Azure App Configuration that triggered the chain.
 
 ![Input Event to Runbook](https://cdn.svenmalvik.com/images/azure-automation-19.png)*Input Event to Runbook*
+
+{% include articleAd.html %}
 
 ## Next Step
 

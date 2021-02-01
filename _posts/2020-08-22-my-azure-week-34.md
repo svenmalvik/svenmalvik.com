@@ -13,11 +13,15 @@ comment: true
 
 I like the evenings sitting on the couch in front of the TV and relax. At the same time, I hate it. I hate it because I'm burning my time . Time that I never will get back. I will never get any smarter by watching television and doing nothing. I would rather like to burn money than time. What I really want is to become great with Azure, and build great services together with my team. So, I read the book "The 10X Rule" by Grant Cardone. First of all, I love this book. It tells the reader that success will come easy - if you follow the 10X rule. As I'm easy to convince, I gave it a shot and started to live 10X in one area - for now. Without going into the details, I started to post Azure related content on LinkedIn all day long - [please connect with me on LinkedIn](https://www.linkedin.com/in/svenmalvik/) :) At first, it was easy to find content because I could just post what I already knew. I spend 1-2 hours in the evenings and prepared the content for the next day. Then it became harder finding good content that I'd like to share. I had to read articles, news, blog posts, and watch videos on YouTube to collect all the content I think has great value. To make it short, I learned a lot about Microsoft Azure over the past week. It's also super fun to be able to share that new knowledge with others. I will definitely continue.
 
+{% include articleAd.html %}
+
 ## Preparation for my Azure App Configuration Workshop
 
 Some months ago, I read about a service called Azure App Configuration. Somehow I got super interested in this service, and started to play with it. This week I committed myself to give a talk or hold a workshop about it at my own Azure community [Azure Meetup Oslo](https://www.meetup.com/azure-meetup-oslo). I spend some evenings to prepare some tasks that I will demonstrate. There's still a lot to learn about the service and a lot to prepare. The date will be in September, right after my [workshop about Azure API Management at NDC Minnesota](https://ndcminnesota.com/agenda/understanding-azure-api-management-0q6n/0uys1pr1ayv). I will soon publish the exact date.
 
 ## Learning ARM
+
+{% include articleAd.html %}
 
 ARM templates seemed to me always a bit weird. I think it's because it feels so different than what I am used to. I've been using PowerShell for most of the tasks when managing resources in Azure. But this time, I wanted to -or had to- provision a NodeJS Web App on App Service with App Configuration that I deployed with ARM -so I throw myself into the unknown. I liked it. I think I liked it because I saw that it isn't hard to learn. I continued to do more with ARM and experimented with `Deployment Scripts` for executing code from within ARM. The possibilities are endless which makes it so interesting and fun. You can [read more about Deployment Scripts](https://www.svenmalvik.com/azure-arm-deployscript/) in my previous blog post.
 

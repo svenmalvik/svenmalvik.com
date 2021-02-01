@@ -31,6 +31,8 @@ az role assignment create --assignee-object-id $principalId --role Contributor
 YOUR_IDENTITY=$(az identity show -g sma-rg -n myUserAssignedIdentity --query id)
 ```
 
+{% include articleAd.html %}
+
 ## The ARM template
 
 In this ARM template we do not provision anything. This ARM template shows the deploymentScripts in its pure form. We use Azure CLI to list all Azure Key Vaults in our subscription.

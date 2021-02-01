@@ -28,6 +28,8 @@ We will deploy an instance of Azure App Configuration Service from Azure Cloud S
 
 ![Azure Cloud Shell for Bash](https://cdn.svenmalvik.com/images/azure-appconfiguration-0.png)*Azure Cloud Shell for Bash*
 
+{% include articleAd.html %}
+
 Before we start, we have to make sure that we are in the correct subscription.
 
 ```bash
@@ -77,6 +79,8 @@ az appconfig credential list --resource-group svenmalvik-rg --name spaceship-app
 ```
 
 We pick the *primary / readOnly* credential. We need the `id` and the `value`. Below is an example that I created previously. It won't work for you as it won't exist anymore.
+
+{% include articleAd.html %}
 
 ```json
 ...

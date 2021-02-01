@@ -28,6 +28,8 @@ The code for the cookie-consent requires two files, `ga.js` and `chatbutton.js`.
 
 ![Remove code for cookie found](https://cdn.svenmalvik.com/images/jekyll-cookie-consent-2.png)*Remove code for cookie found*
 
+{% include articleAd.html %}
+
 ## Add privacy page
 
 The cookie-consent has a button `More info` that points to a privacy page. I add an empty `/privacy.html`-file to the root folder, and then added content that I got from [PrivacyPolicyGenerator.com](https://www.privacypolicygenerator.info/). You might also want to add the privacy page to the menu which can be done in the `_config.yaml`-file.

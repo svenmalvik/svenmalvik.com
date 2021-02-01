@@ -38,6 +38,8 @@ When you have installed Postman, you can simply [load a collection of requests i
 
 Click on the Settings icon of the "Azure REST"-collection in the top-right corner for setting the parameters like `TenantId`, `ClientId` (AppId), `ClientSecret` (Password) and `SubscriptionId`.
 
+{% include articleAd.html %}
+
 ![Postman Environment Variables](https://cdn.svenmalvik.com/images/azure-apim-deploy-with-rest-3.png)*Postman Environment Variables*
 
 We can now send the first request for retrieving an access token.

@@ -22,11 +22,13 @@ image: https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-0.jpg
 ![Azure Purview 4](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-4.jpg)
 ![Azure Purview 5](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-5.jpg)
 ![Azure Purview 6](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-6.jpg)
+{% include articleAd.html %}
 ![Azure Purview 7](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-7.jpg)
 ![Azure Purview 8](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-8.jpg)
 ![Azure Purview 9](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-9.jpg)
 ![Azure Purview 10](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-10.jpg)
 ![Azure Purview 11](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-11.jpg)
+{% include articleAd.html %}
 ![Azure Purview 12](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-12.jpg)
 ![Azure Purview 13](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-13.jpg)
 ![Azure Purview 14](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-14.jpg)
@@ -35,6 +37,7 @@ image: https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-0.jpg
 ![Azure Purview 17](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-17.jpg)
 ![Azure Purview 18](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-18.jpg)
 ![Azure Purview 19](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-19.jpg)
+{% include articleAd.html %}
 ![Azure Purview 20](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-20.jpg)
 ![Azure Purview 21](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-21.jpg)
 ![Azure Purview 22](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-22.jpg)
@@ -45,13 +48,17 @@ image: https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-0.jpg
 ![Azure Purview 27](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-27.jpg)
 ![Azure Purview 28](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-28.jpg)
 ![Azure Purview 29](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-29.jpg)
+{% include articleAd.html %}
 ![Azure Purview 30](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-30.jpg)
 ![Azure Purview 31](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-31.jpg)
 ![Azure Purview 32](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-32.jpg)
 ![Azure Purview 33](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-33.jpg)
+{% include articleAd.html %}
 ![Azure Purview 34](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-34.jpg)
 ![Azure Purview 35](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-35.jpg)
 ![Azure Purview 36](https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-36.jpg)
+
+{% include articleAd.html %}
 
 ## Useful links
 

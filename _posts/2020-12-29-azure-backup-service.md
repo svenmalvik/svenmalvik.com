@@ -29,6 +29,8 @@ In this pane you can set up when you want Azure to take a backup of your VM, dai
 
 ![Backup Schedule of VM](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-3.jpg)*Backup Schedule of VM*
 
+{% include articleAd.html %}
+
 Let's now login to the Windows Server first. I got a public IP address, so I won't use Azure Bastion as I usually do.
 
 ![Login to Windows Server VM](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-7.jpg)*Login to Windows Server VM*
@@ -60,6 +62,8 @@ Let's now switch back to the Windows Server, and into the file explorer to delet
 I'm back in the portal, and ready for running a file recovery.
 
 ![File recovery in Azure](https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service-14.jpg)*File recovery in Azure*
+
+{% include articleAd.html %}
 
 We get asked about what recovery point we would like to restore. As we just have one, the choice is easy. Then we click on *Download Executable*. This takes about a minute. It's not only an executable we get, but also a password that we need to run the executable.
 

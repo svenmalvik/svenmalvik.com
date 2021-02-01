@@ -16,6 +16,8 @@ comments: true
 - Create Custom Domain [cdn.svenmalvik.com](https://cdn.svenmalvik.com)
 - Enable SSL and create certificate
 
+{% include articleAd.html %}
+
 ## Create Azure Storage Account
 
 We start by searching `Storage Account` from within the Azure portal, and click the `Create` button.
@@ -55,6 +57,8 @@ From the menu in the storage account, we can click on `Azure CDN` and fill out t
 - `Origin hostname`: The address where your images live. This field has already the correct value, if you added the CDN from the menu in the storage account.
 
 ![Create Azure CDN](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-6.png)*Create Azure CDN*
+
+{% include articleAd.html %}
 
 After some minutes we can try to retrieve an image from the storage account via Azure CDN. We use the `<CDN endpoint name>.azureedge.net<PATH TO IMAGE IN STORAGE ACCOUNT>`.
 

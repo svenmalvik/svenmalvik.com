@@ -37,6 +37,8 @@ New-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-service" -Location 
 
 The deployment takes about 2 minutes. In case we'd deployed with SKU `Developer`, we'd need to wait up to an hour. You can verify this by going into your portal and navigate to your new instance.
 
+{% include articleAd.html %}
+
 ## Importing an API
 
 It's not part of this post, but I really want to show it because it's very simple as well. What you need is a Swagger-file. There are many other options of creating an API, but that is part of a later post as well. I will use the public available Conference API and put the link to it in a variable.

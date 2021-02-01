@@ -25,6 +25,8 @@ Here's want we can do, but probably shouldn't be allowed to. We send a GET reque
 
 ![Connection from a-vm to c-vm](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-2.jpg)*Connection from a-vm to c-vm*
 
+{% include articleAd.html %}
+
 Imagine that we have to protect the workload or data that is running on `c-vm`. Every package that is going into this virtual machine can potentially be harmful and damage what's stored there. If we can't trust `a-vm`, maybe it's a better idea to not access `c-vm` directly.
 
 ![a-vm sending harmful packages to c-vm](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-3.jpg)*a-vm sending harmful packages to c-vm*
@@ -62,6 +64,8 @@ As *Next hop address*, we set the private IP address of `b-vm`.
 ![Configuring a route 2](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-10.jpg)*Configuring a route 2*
 
 After we have created a route, we should see it in the route table.
+
+{% include articleAd.html %}
 
 ![Route table with one route](https://cdn.svenmalvik.com/images/az-303/az-303-azure-udr-11.jpg)*Route table with one route*
 

@@ -28,6 +28,8 @@ Since we have used a public available ARM template, we need to set some paramete
 
 I've not only added two SKUs, but I've also added `0` to skuCount as an allowed value. `0` is the value we have to set for Consumption. Deploying from my fork [svenmalvik/azure-quickstart-templates/101-azure-api-management-create](https://github.com/svenmalvik/azure-quickstart-templates/tree/master/101-azure-api-management-create) will make it possible to choose Consumption as well. I've set *Consumption* as default. To fully automated the deployment of the ARM template, we need to set some more default values like email and name.
 
+{% include articleAd.html %}
+
 ## Deploy Azure API Management with ARM from a local machine
 
 Instead of clicking a nice blue button on GitHub, I was wondering if I just can apply the ARM template with default values and without any interactions. The code below deploys the remote ARM template that doesn't need our attention.

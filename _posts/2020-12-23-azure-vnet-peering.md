@@ -16,6 +16,8 @@ image: https://cdn.svenmalvik.com/images/az-303/azure-peerings.jpg
 
 Virtual network peering is also possible across subscriptions and tenants. In this post I will focus on VNet's that are in the same subscription as this is part of the AZ-303 exam.
 
+{% include articleAd.html %}
+
 ## Use case
 
 I provisioned two virtual networks with two subnets and two virtual machines of type Windows Server 2016 Datacenter. Both VMs have only a private IP address. The one VM `vm2` has the Internet Information Service (IIS) up and running. When we now would login to `vm1`, and try to send a request to `vm2` on port 80, we will get disappointed. `vm1` doesn't know about the other network. We'll try this out in a minute.
@@ -42,6 +44,8 @@ I login to `vm1` and try the private IP address of `vm2` in a browser. The resul
 
 ![Try accessing VM from another network failed](https://cdn.svenmalvik.com/images/az-303/az-303-peering-4.jpg)*Try accessing VM from another network failed*
 
+{% include articleAd.html %}
+
 ## Peering
 
 To peer virtual networks, click on one of them ...
@@ -67,6 +71,8 @@ We scroll down a bit and name the other side `2and1`, and set the other virtual 
 As we can see is `vnet1` now connected to `vnet2`.
 
 ![VNet peering overview of vnet1](https://cdn.svenmalvik.com/images/az-303/az-303-peering-10.jpg)*VNet peering overview of vnet1*
+
+{% include articleAd.html %}
 
 Taking a look on the other side as well we see that `vnet2` is connected to `vnet1`.
 

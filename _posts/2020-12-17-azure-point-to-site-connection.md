@@ -16,6 +16,8 @@ image: https://cdn.svenmalvik.com/images/az-303/azure-p2s.jpg
 
 Sometimes we need to have our workload running on a virtual machine with no public IP address. At the same time we want to connect to it from our workstation. In the picture below I created already a Windows 10 Client workstation in the West Europe region. In the Central US region I created a virtual network with another vm, Windows Server 2016 Datacenter. I did not assign a public IP address to it, so it has only a private IP address. I also installed the Internet Information Server (IIS) on it. Right now it's only accessible from localhost and within this virtual network.
 
+{% include articleAd.html %}
+
 ![Pre-provisioned Azure resources](https://cdn.svenmalvik.com/images/az-303/az-303-p2s-1.jpg)*Pre-provisioned Azure resources*
 
 Our goal is to create what's described below.
@@ -44,6 +46,8 @@ If we scroll down a bit a must not forget to name a public IP address that we ne
 ![Azure Virtual Network Configuration Public IP address](https://cdn.svenmalvik.com/images/az-303/az-303-p2s-6.jpg)*Azure Virtual Network Configuration Public IP address*
 
 Now we need to create some certificates. First we need a root certificate. Your organization may already have one. Out of this root certificate, we create a client certificate that we need to have on the workstation. 
+
+{% include articleAd.html %}
 
 First, login to the client workstation and open Powershell. Run the first command for the **root certificate**.
 ```powershell
@@ -84,6 +88,8 @@ Search for `VPN settings` and open it.
 ![VPN settings](https://cdn.svenmalvik.com/images/az-303/az-303-p2s-13.jpg)*VPN settings*
 
 Now we can connect to the virtual network of the server.
+
+{% include articleAd.html %}
 
 ![Connect to virtual network](https://cdn.svenmalvik.com/images/az-303/az-303-p2s-14.jpg)*Connect to virtual network*
 

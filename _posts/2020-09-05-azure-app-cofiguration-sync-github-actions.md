@@ -18,6 +18,8 @@ For this demonstration I chose a Spring Boot application that I used earlier for
 
 The repository doesn't have a properties file yet, so I will add one and set som random key/value pairs.
 
+{% include articleAd.html %}
+
 ![Adding properties file to repository](https://cdn.svenmalvik.com/images/azure-app-configuration-github-actions-sync2.png)*Adding properties file to repository*
 
 Next is the GitHub workflow that we will set up. There are lots of predefined workflows to choose from. We are going to set it up ourselves.  
@@ -31,6 +33,8 @@ We also need a connection string for the Azure App Configuration Service that we
 ![GitHub Actions Workflow file for Azure App Configuration sync](https://cdn.svenmalvik.com/images/azure-app-configuration-github-actions-sync4.png)*GitHub Actions Workflow file for Azure App Configuration sync*
 
 To test the workflow I have to trigger it with a commit. I added a new line and made some adjustments in the properties file that I then committed.
+
+{% include articleAd.html %}
 
 ![Adding entries in properties file to repository](https://cdn.svenmalvik.com/images/azure-app-configuration-github-actions-sync5.png)*Adding entries in properties file to repository*
 

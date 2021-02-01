@@ -31,6 +31,8 @@ As you can see I have one image stored in the storage account.
 
 ![Content of container in Azure Storage Account](https://cdn.svenmalvik.com/images/az-303/az-303-sc-1.jpg)*Content of container in Azure Storage Account*
 
+{% include articleAd.html %}
+
 To show you that the traffic is going over the internet for now, I create an URL with a SAS token as the containers access level is private per default.
 
 ![Create URL with SAS token for item in container in Azure Storage Account](https://cdn.svenmalvik.com/images/az-303/az-303-sc-2.jpg)*Create URL with SAS token for item in container in Azure Storage Account*
@@ -66,6 +68,8 @@ As we now have restricted the access to the Windows Server 2016 Datacenter VM, I
 I use Azure Bastion to login to the Windows Server 2016 Datacenter VM.
 
 ![Login to VM with Azure Bastion](https://cdn.svenmalvik.com/images/az-303/az-303-sc-11.jpg)*Login to VM with Azure Bastion*
+
+{% include articleAd.html %}
 
 Vóila. We have access from the subnet where this VM is provisioned to.
 

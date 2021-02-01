@@ -55,6 +55,8 @@ let webAppConfig = webApp {
 
 I do not know F# yet, so this error might be obvious for others, but I have an idea how to solve this (part of a later post). For me it was just painful because my example is directly from the documentation.
 
+{% include articleAd.html %}
+
 Anyway, the storage key was successfully set under Application Settings.
 
 ![App Service setting with storage key](https://cdn.svenmalvik.com/images/azure-farmer-3.png)*App Service setting with storage key*

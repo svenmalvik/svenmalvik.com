@@ -12,6 +12,8 @@ Here is a brief introduction on how to keep the Azure CLI up to date on your loc
 
 The Azure command-line interface (*Azure CLI*) is a set of commands used to create and manage Azure resources. The Azure CLI is available across almost all Azure services and is designed to get you working quickly with Azure.
 
+{% include articleAd.html %}
+
 The Azure CLI is simple update and you can do this by opening a PowerShell or Bash script window and type the following command:
 
 `az upgrade`

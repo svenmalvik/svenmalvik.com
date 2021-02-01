@@ -17,6 +17,8 @@ An obvious opportunity is to focus on reducing the costs and to look at the spen
 
 ### Take Inventory
 
+{% include articleAd.html %}
+
 I know from the past and my experience working in large organizations that it's not always obvious what tools and services are in place across all departments. Neither is it always clear to everyone why a tool or service was bought in the first place and if it still fulfills the same requirements and serves the purpose it was intended to. Having a list of it and its owners is a great start before asking questions about the "Why".
 
 ### Identify Tools
@@ -28,6 +30,8 @@ Knowing what tools and services you use in your organization is a first step in 
 The second step in taking inventory is to examine the tools and to check if there is some overlapping. In the previous example about CI/CD tools it's obvious that all 4 tools serve the same purpose. You need to examine how those features that aren't covered by other tools can be overcome in case you decide to go for only One of CI/CD tool. The same is true for other areas as well like Monitoring tooling. Do you use Splunk, Kibana and Azure Log Analytics? Why? What are the reasons for that?
 
 ### Check Contracts
+
+{% include articleAd.html %}
 
 It's not always the case that departments work tightly together and sign contracts in cooperation. Often they do this on their own and operate independently. The downside is that different departments may sign similar contracts and pay twice the amount of what they actual need to. Knowing what you have and then combining vendor contracts from different departments is another way of reducing costs.
 
@@ -42,6 +46,8 @@ Compared to open source, there are also open standards that are, typically, spec
 ### Adopt Cloud Native
 
 The cloud is not a mirror of your old datacenter. The cloud wants to support you. A lift and shift of your old VMs doesn't support you. The idea of the cloud is to manage infrastructure, and to take care of updates, security, and so much more. Adapting cloud native means to fully embrace the cloud and to give away some control so you have time to focus on your core business. Instead of running your services on a Kubernetes cluster that you maintain on your VMs, why not letting Azure take care of it by using Azure Kubernetes Service. That doesn't mean you don't have to do anything. Some cloud services will still need some attention of you. It always depends on the service and to what degree you want to give away control.
+
+{% include articleAd.html %}
 
 ## Optimize Spending
 

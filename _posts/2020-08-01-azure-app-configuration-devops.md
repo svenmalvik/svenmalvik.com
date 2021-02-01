@@ -31,6 +31,8 @@ Here's the result - `myValue`.
 
 With this approach, we have the challenge of maintaining these variables in a developer-friendly way as they are not stored together with the.
 
+{% include articleAd.html %}
+
 ## Reading a Key/Value Pair in a Release Pipeline from Azure App Configuration
 
 Instead of using variables in Azure DevOps, we can also store our application configuration inn Azure App Configuration. Instead of storing only pipeline related configurations, we would store all application configurations there. Azure App Configuration can easily synchronize with a GitHub repository. That means that all configuration is also under version control. More about this in a later post.

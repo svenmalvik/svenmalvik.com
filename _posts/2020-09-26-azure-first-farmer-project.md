@@ -19,6 +19,8 @@ Farmer needs [.NET Core 3.1 or higher](https://dotnet.microsoft.com/download/dot
 
 Before we start, I like to make sure that I'm logged into the right Azure tenant and the right subscription. I don't want to make the mistake of deploying to production. I test this with `az account show`.
 
+{% include articleAd.html %}
+
 To get started I executed the following statements:
 
 ```bash
@@ -60,6 +62,8 @@ The created ARM template `output.json` is empty. We haven't specified anything y
 ## Adding DevOps
 
 I will now re-create the Farmer application with `--ci devops`. This will add an `azure-pipeline.yml`-file for Azure DevOps to the project. I need to specify an `--azureSubscription` which in this case is the name of my service connection.
+
+{% include articleAd.html %}
 
 ```bash
 dotnet new Farmer --location WestEurope --ci devops --azureSubscription farmer-rg-sc --force
@@ -138,6 +142,8 @@ let deployment = arm {
     add_resource demoMaps
 }
 ```
+
+{% include articleAd.html %}
 
 The corresponding ARM template will get one additional resource `Microsoft.Maps`. Comparing only this limited F# application `Program.fs` with the printed ARM template `farmer-deploy.json`, we see that the F# application has 34 lines while the ARM template has 17.
 

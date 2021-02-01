@@ -35,6 +35,8 @@ Before I do anything I tried the VCCode Azure API Management extension first and
 
 So, I know that the extension is up and running and I check out its capabilities.
 
+{% include articleAd.html %}
+
 ## <a name="tapim"></a>Testing Azure API Management Extension
 
 I have already provisioned an instance of Azure API Management with `Developer`-SKU. The documentation says that debugging policies is supported only in this SKU.
@@ -57,6 +59,8 @@ I start by importing the public available [Conference API](https://conferenceapi
 
 ![Import API from URL into Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policy-debugging-8.jpg)*Import API from URL into Azure API Management*
 
+{% include articleAd.html %}
+
 Follow the steps 1-4 for importing an API from a URL. Step 5 is just to show you how it should look at the end.
 
 ![Import API from URL into Azure API Management 2](https://cdn.svenmalvik.com/images/azure-apim-policy-debugging-9.jpg)*Import API from URL into Azure API Management 2*
@@ -75,6 +79,8 @@ I set a variable iin the `inbound`-section that I will read in the `outbound`-se
 
 ![Changing API Operation Policy in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policy-debugging-11.jpg)*Changing API Operation Policy in Azure API Management*
 
+{% include articleAd.html %}
+
 I right-click on the operation and hit *Test Operation* and `Send Request` as I've done previously to make sure it works.
 
 ![Testing API Operation Policy](https://cdn.svenmalvik.com/images/azure-apim-policy-debugging-12.jpg)*Testing API Operation Policy*
@@ -88,6 +94,8 @@ What happens in debug-mode now is that the request is being stopped at the top i
 I set a breakpoint at line 15+7=**23**.
 
 ![Hitting Breakpoint when Debugging Policy in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policy-debugging-14.jpg)*Hitting Breakpoint when Debugging Policy in Azure API Management*
+
+{% include articleAd.html %}
 
 As we continue debugging by clicking on the *Play*-button, the request will stop at the next breakpoint. We can now see in the *Variables*-window our variable `test`.
 

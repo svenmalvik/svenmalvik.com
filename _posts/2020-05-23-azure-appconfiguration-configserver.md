@@ -16,6 +16,8 @@ Starting point of this project was my previous post where I created a basic Spri
 
 ## Motivation
 
+{% include articleAd.html %}
+
 The challenge with Spring Cloud Config Server is its dependency to a Git repository which tend to have either no SLA, or an SLA of three nines which would allow for 8h 45m 56s downtime in a year. We experienced lots of problems related to the Java Config Repo which prevented our Spring Cloud Config Server to start which further prevented our services to start. In case of an incident a pretty awful situation.
 
 ![Replacing Spring Cloud Config Server with Azure App Configuration](https://cdn.svenmalvik.com/images/azure-appconfiguration-configserver-0.png)*Replacing Spring Cloud Config Server with Azure App Configuration*
@@ -40,6 +42,8 @@ spring.cloud.azure.appconfiguration.stores[0].connection-string= ${APP_CONFIGURA
 spring.cloud.azure.appconfiguration.stores[0].label=test
 spring.cloud.azure.appconfiguration.cache-expiration=1s
 ```
+
+{% include articleAd.html %}
 
 Configurations in Azure App Configuration can be labeled with i.e. the name of the environment `dev`, `test` or `production`, or anything else. The new Azure Config Server will first run in the `test` environment. I set `cache-expiration` to one second to see changes faster, default is 30 seconds. I really don't want to wait so long while testing and playing around.
 
@@ -74,6 +78,8 @@ public String getMessage(@PathVariable String application, @PathVariable String 
 ## Configuration Prefix in Azure App Configuration
 
 Azure App Configuration let us define entries with different prefixes and labels. As I will import all configurations of all applications that have each many files defined. It probably is bad practice to even consider putting it all into one instance. I do it anyway. I will use the prefix to distinguish applications and files: `/application/config.<APPLICATION>.<FILE>.`. The default deliminator is a dot `.`.
+
+{% include articleAd.html %}
 
 - `/application/` is the prefix that `spring-cloud-azure-appconfiguration-config-web` will prefix by default. This can't be changed unless you patch the class.
 - `config` is the member of the `ConfigApiProperties`-model.

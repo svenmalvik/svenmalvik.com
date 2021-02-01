@@ -17,6 +17,8 @@ comment: true
 
 Before we start taking a backup, we will [deploy two instances of Azure API Management](azure-apim-deploy-with-powershell) (`apim-src` and `apim-dest`), one we will take the backup from, and one we will restore the backup to. We put both instances in the same resource group so we can easily delete everything later.
 
+{% include articleAd.html %}
+
 ```powershell
 # Create resource group for all resources
 New-AzResourceGroup -Name "apim-rg" -Location "West Europe"
@@ -63,6 +65,8 @@ Restore-AzApiManagement -ResourceGroupName "apim-rg" -Name "apim-dest" -StorageC
 Azure API Management is now restored in a different instance. Depending on your infrastructure, you might need to make some adjustments.
 
 > **NOTE:** Be careful with hostnames in Named Values. In case you are preparing an entire new cluster, you might need to change them.
+
+{% include articleAd.html %}
 
 ## Conclusion
 

@@ -26,6 +26,8 @@ I make a minor text change and add ` - DR` in the title.
 
 ![Minor html change in IIS Server](https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr-2.jpg)*Minor html change in IIS Server*
 
+{% include articleAd.html %}
+
 I took the public IP address that we can see in the overview of the virtual machine. If you don't have a public IP address, you can watch the [Video about Azure Site Recovery](https://www.youtube.com/watch?v=F9h-Fr7C-iU) where I will walk through this. Everything works fine.
 
 ![Testing changed IIS server](https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr-3.jpg)*Testing changed IIS server*
@@ -48,6 +50,8 @@ The *Cache storage account* is where the source VM data will be stored.
 I also set *Extension settings* with an Azure Automation Account so the entire failover flow will be managed by Azure.
 
 ![Extension settings for Azure Site Recovery](https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr-8.jpg)*Extension settings for Azure Site Recovery*
+
+{% include articleAd.html %}
 
 Now when we take a look in the *Backup Service Vault* that we use, we see that an initial job for replication is in progress.
 

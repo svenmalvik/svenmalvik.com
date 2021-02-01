@@ -22,6 +22,8 @@ image: https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png
 * How Azure App Configuration Service stores feature flags
 * We build a spaceship with Spring Boot using feature flags
 
+{% include articleAd.html %}
+
 ## Few words on trunk based development
 
 Trunk based development simply means to work as closely on the master branch as possible avoiding long-living feature branches. We will still have feature branches, but they will be merged as quickly as possible directly to the master branch. Trunk based development prefers many minor changes over few larger changes. The question then is, how can we add new features that are not fully implemented yet when we need to merge often. The answer is with feature flags. More information on trunk based development can be found at [https://trunkbaseddevelopment.com](https://trunkbaseddevelopment.com).
@@ -68,6 +70,8 @@ The feature flag is disabled by default, and we have to explicitly enable it. We
     }
 }
 ```
+
+{% include articleAd.html %}
 
 ## We build a spaceship with Spring Boot using feature flags
 

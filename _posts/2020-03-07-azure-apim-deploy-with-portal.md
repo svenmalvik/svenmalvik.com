@@ -28,6 +28,8 @@ Chose the subscription you want to provision you instance to and a resource grou
 
 The most important parameter is the Pricing Tier (SKU). The default value is Developer. In case you just want to try out the service, Consumption is a good choice as we only pay per request, and we don't need to delete it when we need a longer break. It's also a good choice in case you are impatient. Creating an instance takes about a minute compared to the other choices that take up to an hour.
 
+{% include articleAd.html %}
+
 Do want to monitor your instance? If you just want to play with Azure API Management as we do, we probably don’t need it. We will save some money not enabling it for now.
 
 We got now a our first instance of Azure API Management!

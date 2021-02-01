@@ -26,6 +26,8 @@ image: https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg
 
 ---
 
+{% include articleAd.html %}
+
 ## Connecting to Azure
 There are many ways we can use to connect to Azure like using [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest), [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview), or PowerShell. In this post, I'm using Azure Cloud Shell from within [VS Code](https://code.visualstudio.com/), but it doesn't really matter if we just focus on logging from APIM to Event Hub.
 
@@ -45,6 +47,8 @@ New-AzResourceGroup -Name "apim101-rg" -Location "West Europe"
 I have previously created 5 posts about different ways of provisioning Azure API Management. Check them out in case you want to go with another option that with PowerShell.
 
 I want to log requests from an API that we first need to deploy. A simple way of doing that is by importing a Swagger-file that specifies an online API like the the [Conference API](https://conferenceapi.azurewebsites.net?format=json).
+
+{% include articleAd.html %}
 
 ```powershell
 # Deploy new instance of Azure API Management
@@ -93,6 +97,8 @@ New-AzApiManagementLogger -Context $apimCtx -LoggerId "svenmalvik-logger" -Name 
 
 We haven't talked about policies in Azure API Management. Policies are a powerful capability of the system that allow the publisher to change the behavior of the API through configuration. Policies are a collection of Statements that are executed sequentially on the request or response of an API. You will find more information about [Azure API Management policies](https://docs.microsoft.com/en-us/azure/api-management/api-management-policies) in the documentation.
 
+{% include articleAd.html %}
+
 We can either deploy a policy with PowerShell, or we open the policy for our API in the portal and add the logger from there. For simplicity reason and to focus on adding the logger, I will add the logger from within the Azure portal.
 
 ![Azure API Management API policy](https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-3.png "Azure API Management API policy")*Azure API Management API policy*
@@ -127,6 +133,7 @@ Azure Event Hub Explorer > Message Received:
 Azure Event Hub Explorer > Stop monitoring event hub
 ```
 
+{% include articleAd.html %}
 ## Conclusion
 
 There were a lot of steps involved in setting up everything from the ground to logging to Azure Event Hub, and I hope this post could help you. Let me know if you have any questions regarding one of the previous steps or some other questions about Azure API Management, and I will try to answer them.
