@@ -98,7 +98,7 @@ On the product-level, we will protect our backend from excessive calls.
 
 ![Adding rate limiting on product-level in Azure API Management](https://cdn.svenmalvik.com/images/azure-apim-policies-7.png "Adding rate limiting on product-level in Azure API Management")*Adding rate limiting on product-level in Azure API Management*
 
-{% include tracking-header.html %}
+{% include articleAd.html %}
 
 ### Examples 4: Adding global policy
 
@@ -165,7 +165,7 @@ We can imagine that implementing code in each section at every level might resul
 </policies>
 ```
 
-{% include tracking-header.html %}
+{% include articleAd.html %}
 
 ## Conclusion
 
