@@ -8,7 +8,7 @@ published: true
 share-img: https://cdn.svenmalvik.com/images/devrealnews-cover-421.jpg
 image: https://cdn.svenmalvik.com/images/devrealnews-cover-421.jpg
 ytid: aGYqJ9tMQnc
-yttxt: Azure Updates on devreal.io/news
+yttxt: Azure Updates on devreal.io/news for week 4/2021
 ---
 
 *Welcome to my first episode of DevReal News. My name is Sven Malvik and I'm recording from Oslo. I'm an Azure MVP so I'm naturally very interested in what's happening in Azure. So let me update you on what has happened last week. This post is the transcript of the video below.*
