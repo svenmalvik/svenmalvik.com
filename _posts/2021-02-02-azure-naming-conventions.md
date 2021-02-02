@@ -10,7 +10,7 @@ share-img: https://cdn.svenmalvik.com/images/azure-naming-conventions.jpg
 image: https://cdn.svenmalvik.com/images/azure-naming-conventions.jpg
 ---
 
-*Structure helps us to be in control. That is very true also in Azure. Especially in larger organizations where many cloud engineers create, remove, update and delete (CRUD) resources all the time. One tool that supports us to keep control is Naming Standards from the time we create a resource because Azure prevents us from changing resource names. It's these three elements I want to discuss further, `Keep it Simple, Stupid - KISS`, `Prefix and Postfix` and `Azure Policies`.*
+*Structure helps us to be in control. That is very true also in Azure. Especially in larger organizations where many cloud engineers create, remove, update and delete (CRUD) resources all the time. One tool that supports us to keep control is Naming Standards. This post discusses this topic.*
 
 {% include articleAd.html %}
 
