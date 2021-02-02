@@ -4,7 +4,7 @@ title: How to Secure Azure Functions App with Azure API Management
 tags: [Azure, Azure API Management]
 categories: [Azure API Management]
 comments: true
-published: false
+published: true
 share-img: https://cdn.svenmalvik.com/images/azure-apim-function-identity.jpg
 image: https://cdn.svenmalvik.com/images/azure-apim-function-identity.jpg
 ---
