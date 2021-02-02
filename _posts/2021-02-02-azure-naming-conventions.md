@@ -20,7 +20,7 @@ Simplicity helps us to structure knowledge, ideas and thoughts better. When it c
 
 ## Use Prefix and Postfix
 
-Use prefix or suffix to add clarity to resource names. I'm a fan of having at least the following elements as part of a resource name: `environment`, `resource type` and `workload`. As infrastructure as code is nowadays a common approach to manage resources, naming conventions are easy to implement. [Get more details about how naming conventions can look like](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004080).
+One option is to use prefix or suffix to add clarity to resource names. I'm a fan of having at least the following elements as part of a resource name: `environment`, `resource type` and `workload`. Another option is to use a suffix and a randomized string that is based on the resource group. Use tags complementary for context like environment, etc. This will help for resources which needs global unique names. As infrastructure as code is nowadays a common approach to manage resources, naming conventions are easy to implement.  [Get more details about how naming conventions can look like](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004080).
 
 ## Policy
 
