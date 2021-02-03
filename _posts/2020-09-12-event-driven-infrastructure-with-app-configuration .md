@@ -12,6 +12,8 @@ image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
 
 *Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How could we dynamically update our infrastructure based on a change in Azure App Configuration? To give you an idea of what I have in mind ... At [Vipps](https://vipps.no) we have two AKS clusters. Only one cluster is active at any given time. We use the second cluster to test AKS upgrades. In front of AKS is Azure API Management that can route traffic to AKS-blue or AKS-green. The information of what cluster is active and what is inactive can be stored in Azure App Configuration, and then being send to API Management that uses the value in a policy. In this post, I will show how to automate a switch from one AKS cluster to another cluster with Azure Event Grid. This scenario was a study that i did to find out how to use Azure App Configuration for an Event-Driven Infrastructure.*
 
+{% include articleAd.html %}
+
 ![Event flow diagram of how Azure App Configuration events trigger Azure API Management deployments](https://cdn.svenmalvik.com/images/apim-aks-blue-green.png){: style="max-width: 300px"}
 
 ## Agenda
@@ -25,6 +27,8 @@ image: https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png
 * [Resources](#resources)
 
 ## <a name="overview"></a>Overview
+
+{% include articleAd.html %}
 
 Before we start, I will give a high-level overview of the event flow between the services I used. The data of what cluster is active is stored in Azure App Configuration. Whenever I change this value, meaning I set the other AKS cluster as active, a change event is published to Azure Event Grid. Azure Automation subscribes to Event Grid and triggers an update in Azure API Management that routes the traffic to either AKS-blue or AKS-green. More information about [Policies in Azure API Management](https://www.svenmalvik.com/azure-apim-policies/) in a previous post.
 
@@ -52,6 +56,8 @@ We can now deploy a new instance of Azure App Configuration Service.
 
 > [Complete list of all Azure CLI commands for Azure App Configuration](https://docs.microsoft.com/en-us/cli/azure/appconfig?view=azure-cli-latest)
 
+{% include articleAd.html %}
+
 ```bash
 # We'll put our resources into a new resource group.
 az group create --name "appc2apim-rg" --location "westeurope"
@@ -71,6 +77,8 @@ Now run the following command to create an instance of Azure API Management. Thi
 ```powershell
 New-AzApiManagement -ResourceGroupName "appc2apim-rg" -Name "appc2apim-apim-service" -Location "westeurope" -Organization "<ORGANIZATION>" -AdminEmail "<YOUR_EMAIL" --Sku "Consumption"
 ```
+
+{% include articleAd.html %}
 
 ## <a name="deploy-azure-automation"></a>Deploy Azure Automation
 
@@ -98,6 +106,7 @@ Then I created a runbook with type PowerShell. This will be empty and we will wr
 
 ![Create Runbook](https://cdn.svenmalvik.com/images/azure-automation-6.png)*Create Runbook*
 
+{% include articleAd.html %}
 ### Importing Az modules into Azure Automation Account
 
 We need the Az.ApiManagement PowerShell Module to update named values in API Management. The named value that we are going to update is a key/value pair telling about what AKS cluster currently is active. We'll get this from Azure App Configuration.
@@ -132,6 +141,8 @@ What we then get is a URL that we need to copy immediately and save somewhere. W
 
 Now we will deploy a random value as named value to Azure API Management from our runbook. Copy the code into your runbook and test it.
 [update-apim-nv-from-runbook.ps1](https://gist.githubusercontent.com/svenmalvik/a3fec9487aa82948d46f45f87ae805dc/raw/3d27e0513452bb66f81ed19a0a918a1cffb5f9ee/update-apim-nv-from-runbook.ps1)
+
+{% include articleAd.html %}
 
 ### Read from Azure App Configuration
 
