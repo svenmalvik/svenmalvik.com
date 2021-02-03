@@ -5,6 +5,7 @@ categories: [devreal]
 tags: [diversity, inclusion]
 comments: true
 published: true
+date: 2021-02-03 07:00:00
 share-img: https://cdn.svenmalvik.com/images/devreal-di-cover2.jpg
 image: https://cdn.svenmalvik.com/images/devreal-di-cover2.jpg
 ---
