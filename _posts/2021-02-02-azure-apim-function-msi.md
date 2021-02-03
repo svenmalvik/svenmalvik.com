@@ -5,6 +5,7 @@ tags: [Azure, Azure API Management]
 categories: [Azure API Management]
 comments: true
 published: true
+date: 2021-02-202T20:20:00Z
 share-img: https://cdn.svenmalvik.com/images/azure-apim-function-identity.jpg
 image: https://cdn.svenmalvik.com/images/azure-apim-function-identity.jpg
 ---
