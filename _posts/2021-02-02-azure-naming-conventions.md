@@ -6,7 +6,7 @@ tags: [Azure, Tagging]
 categories: [Azure]
 comments: true
 published: true
-date: 2021-02-202T19:20:00Z
+date: 2021-02-02 19:00:00
 share-img: https://cdn.svenmalvik.com/images/azure-naming-conventions.jpg
 image: https://cdn.svenmalvik.com/images/azure-naming-conventions.jpg
 ---
