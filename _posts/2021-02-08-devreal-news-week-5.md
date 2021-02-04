@@ -15,7 +15,7 @@ yttxt: Azure Updates on devreal.io/news for week 5/2021
 
 ## Azure Updates
 
-## Azure Security Center Updates
+### Azure Security Center Updates
 
 - Secure score for management groups is now available in preview
 - **Exempt entire recommendations from your secure score for subscriptions and management groups**
@@ -24,6 +24,13 @@ yttxt: Azure Updates on devreal.io/news for week 5/2021
 - Export weekly snapshots of secure score and regulatory compliance data with continuous export
 
 [Azure Security Center—Public preview updates for January 2021](https://azure.microsoft.com/en-us/updates/asc-january2021-2/?WT.mc_id=AZ-MVP-5004080)
+
+### Azure Event Grid for Azure Cache for Redis
+
+Azure Cache for Redis now offers support of integration with Azure Event Grid. Azure Cache for Redis events will be triggered when a client exports, imports, or scales their cache instance, as well as when Redis updates are performed. These events can be triggered using Event Grid to subscribers such as Azure Functions, Azure Logic Apps, or your own http listener.
+
+[Azure Event Grid is now in public preview for Azure Cache for Redis](https://azure.microsoft.com/en-us/updates/azure-event-grid-is-now-in-public-preview-for-azure-cache-for-redis/?WT.mc_id=AZ-MVP-5004080)
+
 
 ### Azure Friday
 
