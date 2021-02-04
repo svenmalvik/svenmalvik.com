@@ -2,7 +2,7 @@
 layout: post
 title: Azure Firewall vs Network Security Groups
 tags: [Azure, Azure Firewall, Network Security Groups]
-categories: [Azure]
+categories: [Security]
 comments: true
 published: true
 date: 2021-02-04 21:00:00
