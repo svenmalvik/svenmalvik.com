@@ -14,7 +14,7 @@ image: https://cdn.svenmalvik.com/images/azure-icons.jpg
 
 ## Updated Azure Icons
 
-Creating architecture diagrams can be fun when we manage to make them in a way that others understand them quickly. If they are at the same time pretty to look at, it's even more fun :) Earlier last year Microsoft Azure refreshed its icons and made them prettier. Now in January 2021 they added even ~26 more beautiful icons. You can [download all Azure Icons](https://docs.microsoft.com/en-us/azure/architecture/icons/?WT.mc_id=AZ-MVP-5004080) from the documentation.
+Creating architecture diagrams can be fun when we manage to make them in a way that others understand them quickly. If they are at the same time pretty to look at, it's even more fun :) Earlier last year Microsoft Azure refreshed its icons and made them prettier. Now in January 2021 they added even ~26 more beautiful icons. You can **[download all Azure Icons](https://docs.microsoft.com/en-us/azure/architecture/icons/?WT.mc_id=AZ-MVP-5004080)** from the documentation.
 
 Here is what you **CAN DO** with the icons:
 - Use the icon to illustrate how products can work together
