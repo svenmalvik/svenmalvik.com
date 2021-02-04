@@ -10,7 +10,7 @@ share-img: https://cdn.svenmalvik.com/images/azure-icons.jpg
 image: https://cdn.svenmalvik.com/images/azure-icons.jpg
 ---
 
-*One of my fellow cloud engineers in my team asked today in the morning about these pretty architecture diagrams that we nowadays have and what the secret behind is. That was great question, and easy to answer. I think that if one person asks a question, then there will be soe more people asking the same question. So here's the "Secret" behind Pretty Architecture Diagrams in Azure"*.
+*One of my fellow cloud engineers in my team asked today in the morning about these pretty architecture diagrams that we nowadays have and what the secret behind is. That was a great question, and easy to answer. I think that if one person asks a question, then there will be soe more people asking the same question. So here's the "Secret" behind Pretty Architecture Diagrams in Azure"*.
 
 ## Updated Azure Icons
 
