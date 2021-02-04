@@ -12,6 +12,8 @@ image: https://cdn.svenmalvik.com/images/azure-icons.jpg
 
 *One of my fellow cloud engineers in my team asked today in the morning about these pretty architecture diagrams that we nowadays have and what the secret behind is. That was a great question, and easy to answer. I think that if one person asks a question, then there will be soe more people asking the same question. So here's the "Secret" behind Pretty Architecture Diagrams in Azure"*.
 
+{% include articleAd.html %}
+
 ## Updated Azure Icons
 
 Creating architecture diagrams can be fun when we manage to make them in a way that others understand them quickly. If they are at the same time pretty to look at, it's even more fun :) Earlier last year Microsoft Azure refreshed its icons and made them prettier. Now in January 2021 they added even ~26 more beautiful icons. You can **[download all Azure Icons](https://docs.microsoft.com/en-us/azure/architecture/icons/?WT.mc_id=AZ-MVP-5004080)** from the documentation.
@@ -30,6 +32,8 @@ Here is what you **CAN NOT DO** with the icons:
 
 Pretty icons is just half of the story to make an Azure architecture diagrams great. Even more important is structure. A diagram should show as few elements like icons, rectangular and lines as possible. There is one thing that I see often and that should never ever be done in an Architecture Diagrams in general. That is crossing lines. When ever there are crossing lines it can be a sign of a bad architecture. I suggest to take some extra rounds and revisit a diagram where you can't get rid of crossing lines.
 
+{% include articleAd.html %}
+
 ### Examples
 
 Here are some examples of clean Azure architecture diagrams. 
@@ -41,6 +45,8 @@ Here are some examples of clean Azure architecture diagrams.
 ![Intelligent product search engine for e-commerce](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/media/architecture-ecommerce-search.png?WT.mc_id=AZ-MVP-5004080)
 
 *Image above: [Intelligent product search engine for e-commerce](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/ecommerce-search?WT.mc_id=AZ-MVP-5004080)*
+
+{% include articleAd.html %}
 
 ![Run a Jenkins server on Azure](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/media/architecture-jenkins.png?WT.mc_id=AZ-MVP-5004080)
 
