@@ -5,6 +5,7 @@ tags: [Azure, Azure API Management]
 categories: [Azure API Management]
 comments: true
 published: true
+date: 2021-02-05 18:00:00
 share-img: https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg
 image: https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg
 ---
