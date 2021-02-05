@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Getting Started with Azure CDN
-subtitle: Serving images from Azure CDN with SSL
+title: Serving Website Images from Azure CDN with SSL
 tags: [featured, Azure, Azure CDN, Azure Storage Account]
 categories: [Web]
 comments: true
+image: https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg
+share-img: https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg
 ---
 
 *In this post I will show you step by step how to serve images on a website from Azure CDN with SSL enabled. My blog has a couple of Azure API Management posts that I previously posted to LinkedIn. When I launched this website, I copied all these posts in here but kept the images in LinkedIn. My website is hosted on GitHub pages. I could have posted all the images also to GitHub and serve them directly from there, and everything would be work just fine. Well, since I work a lot with Azure, I thought it would be a great Idea to try out [Azure Content Delivery Network (CDN)](https://azure.microsoft.com/en-us/services/cdn/) with SSL.*
+
+{% include articleAd.html %}
 
 ## Agenda
 
@@ -15,8 +18,6 @@ comments: true
 - Create Azure CDN
 - Create Custom Domain [cdn.svenmalvik.com](https://cdn.svenmalvik.com)
 - Enable SSL and create certificate
-
-{% include articleAd.html %}
 
 ## Create Azure Storage Account
 
@@ -33,6 +34,8 @@ I also choose `Storage V2` for images as recommended in the [Azure Storage Accou
 I set the `Access tier` to cool since it is optimized for storing data that is infrequently accessed, like this blog :smile:.
 
 ![Create Azure Storage Account Basics](https://cdn.svenmalvik.com/images/azure-cdn-with-ssl-1.png)*Create Azure Storage Account Basics*
+
+{% include articleAd.html %}
 
 In the `Networking`-section I choose `Public endpoint (all networks)` because I want my images access directly from this website. In case I'd chosen `Private endpoint`, I would need to put a public available service like Application Gateway or Front door in front.
 
