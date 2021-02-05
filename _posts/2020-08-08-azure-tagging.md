@@ -11,11 +11,11 @@ image: https://cdn.svenmalvik.com/images/azure-resource-tagging.jpg
 
 *Moving services from on-premise to Azure cloud requires effort, technical knowledge, and some experience to make a business secure, compliant, and efficient. This post will discuss why tagging of resources plays an important role to achieve these goals.*
 
+{% include articleAd.html %}
+
 ## Click-Ops is Costly, Insecure, and it Puts Your Business at Risk
 
 Many developers like myself working for the first time in Azure, love how easy it is to get started, and to see results almost immediately. The Azure Portal simplifies this process of learning about the many different Azure services. We click a few buttons and vóila - resources are deployed. At some point, we create resources for the real world like the official test and production environment. Did we everything well and can continue with new tasks? What happens with the resources that we played with?
-
-{% include articleAd.html %}
 
 With Click-Ops, we can't consistently re-create the same resources in different environments as we will make mistakes at some point and re-create the resources again and again. Do we delete the resources that we don't need anymore? Maybe not always.
 
