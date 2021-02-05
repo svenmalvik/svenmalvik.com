@@ -27,7 +27,8 @@ The thing is that these arguments against Click-Ops are just the tip of the iceb
 
 {% include articleAd.html %}
 
-## Tagging as Part of Infrastructure as Code will make your Business more Stable
+## Tagging as Part of Infrastructure as Code Will Make Your Business More Stable
+
 As we get more experienced in Azure, we put more resource deployments into code. That code will contain tagging of resources. Tagging makes it possible to simplify resources associations, show costs per team, identify mission critical resources, classifies resources, and may make your business compliant. You may even save money because you set a tag saying that a given resource is just temporary.
 
 [Resource naming and tagging decision guide](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/) descibes these arguments in more detail. My experience says that these following tags are important: `owner`, `confidentiality`, and `temporary`.
@@ -36,7 +37,6 @@ As we get more experienced in Azure, we put more resource deployments into code.
 - `confidentiality`: Tells how to treat this resource. It may contain personal data that can't be shared.
 - `temporary`: Tells about if this resource can be deleted soon.
 
-{% include articleAd.html %}
-
 ## Conclusion
+
 Tag every resource at least with the `owner` tag. I struggled with many resources because I didn't even know whom to talk to. Analyzing a resource may only tell you half of the story. Knowing who is the owner of a resource will put you in a position of having control over all the resources at any time.
