@@ -5,11 +5,14 @@ subtitle: Why it is important
 tags: [featured, Azure, Tagging]
 categories: [Compliancy]
 comment: true
+share-img: https://cdn.svenmalvik.com/images/azure-resource-tagging.jpg
+share-img: https://cdn.svenmalvik.com/images/azure-resource-tagging.jpg
 ---
 
 *Moving services from on-premise to Azure cloud requires effort, technical knowledge, and some experience to make a business secure, compliant, and efficient. This post will discuss why tagging of resources plays an important role to achieve these goals.*
 
-## Click-Ops is Costly, Insecure, and may put your Business at Risk
+## Click-Ops is Costly, Insecure, and it Puts Your Business at Risk
+
 Many developers like myself working for the first time in Azure, love how easy it is to get started, and to see results almost immediately. The Azure Portal simplifies this process of learning about the many different Azure services. We click a few buttons and vóila - resources are deployed. At some point, we create resources for the real world like the official test and production environment. Did we everything well and can continue with new tasks? What happens with the resources that we played with?
 
 {% include articleAd.html %}
@@ -32,6 +35,8 @@ As we get more experienced in Azure, we put more resource deployments into code.
 - `owner`: Tells you whom to contact in case you have any questions.
 - `confidentiality`: Tells how to treat this resource. It may contain personal data that can't be shared.
 - `temporary`: Tells about if this resource can be deleted soon.
+
+{% include articleAd.html %}
 
 ## Conclusion
 Tag every resource at least with the `owner` tag. I struggled with many resources because I didn't even know whom to talk to. Analyzing a resource may only tell you half of the story. Knowing who is the owner of a resource will put you in a position of having control over all the resources at any time.
