@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Azure App Service with NodeJS and App Configuration
-subtitle: How to automate provisioning with Azure App Configuration integration 
+title: ARM for NodeJS Azure Web App with App Configuration Integration
 tags: [Azure, Azure App Configuration, NodeJS, ARM, Azure App Service]
 categories: [Web]
 comment: true
+share-img: https://cdn.svenmalvik.com/images/azure-appservice-nodejs.jpg
+image: https://cdn.svenmalvik.com/images/azure-appservice-nodejs.jpg
 ---
 
-*A Web App in Azure contains several resources that need to be provisioned. We need an App Service Plan where we define the underlying compute power, an App Service that runs the application, and we need the application itself which might need a database. In this post I will use Azure App Configuration service where I store configurations that I want my NodeJS application to publish as pure Json.*
+*Our Azure infrastructure has some configurations that our developers need to know like the name of the currently active AKS cluster and APIM instance. We store these configurations in an Azure App Configuration instance and expose them as an API through an Azure App Service Web App that is written in NodeJS. This post shows how we provision the NodeJS Web App with an ARM template.*
 
 We can provision the App Service Plan and App Service from the portal, and then setup deployment of a GitHub repository for the NodeJS application. But I wanted it to be 100% automated without setting up anything, so I decided to try ARM templates.
 
