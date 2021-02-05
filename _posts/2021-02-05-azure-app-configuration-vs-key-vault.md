@@ -4,45 +4,39 @@ title: How Azure Key Vault is Different to App Configuration
 tags: [Azure, Azure Key Vault, Azure App Configuration]
 categories: [Azure]
 comments: true
-published: false
+published: true
 date: 2021-02-05 22:00:00
 share-img: https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jpg
 image: https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jpg
 ---
 
-*xxx*
+*We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as well - just because it's easy and close to the secrets. This post discusses why you should use Azure App Configuration for your non-sensitive configurations instead.*
 
-Azure App Configuration is a cloud-based managed service that helps developers and infrastructure team members to centralize and manage application configurations and feature flags. Using Azure App Configuration helps to separate application configuration from code.
+{% include articleAd.html %}
 
-One of the Twelve-Factor App principles states strict separation of config from code. With Azure App configuration this can be easily achieved.
+First things first - Azure App Configuration and Azure Key Vault are complementary services that should be used side by side. Azure App Configuration stores insensitive data like key-value pairs but also references secrets in Azure Key Vault. An entry in App Configuration that references such a secret stores the URI of a Key Vault value rather than the value itself.
 
-In the modern world, applications often can run in different geographical locations, can be hosted on services like App Services, virtual machines, Serverless functions, Azure Container Instance, AKS, etc. Managing application configuration for all this type of service can be done in a centralized location using App configuration which means your operations and support team members need not go to N number of places to look for application configurations.
+{% include articleAd.html %}
 
-Additionally, you can set or access App configuration values from the Azure DevOps pipeline.
+An App Configuration client provider that comes as an SDK for your application retrieves the Key Vault value reference of an entry, just as it does for any other keys stored in App Configuration. The client provider recognizes the keys as Key Vault references based on the content-type that every App Configuration entry gets. The client provider then asks the Key Vault to retrieve their secrets. Azure App Configuration and Azure Key Vault don't communicate with each other and means that an application is still responsible for authenticating to both App Configuration and Key Vault.
 
-## Benefits of Azure App Configuration
+{% include articleAd.html %}
 
-Following are a few key benefits of Azure App Configuration
-Centralized management for application configuration for all your applications.
-Single Source of Truth
-Avoids Duplication
-Supports Feature Management provides UI for configuring it.
-Flexible key representations and mappings - supports flat and hierarchal key management.
-Dynamically change application settings without the need to redeploy or restart an application.
-Tagging with labels - support categorizing keys using labels.
-Point-in-time snapshots that can be replayed. App Configuration stores a complete timeline in key-value changes. Supports compare configuration values for different points in time 
-Built-in support for Azure Managed Identity, which means web apps, Azure functions, etc applications can easily access the application configuration without specifying credentials in code.
-Support popular framework including Java, .NET.
-Integration with Azure DevOps pipelines.
-Integration with Azure Key Vault.
-Data encryption at rest or in transit.
-A fully managed service from Azure that can be provisioned in minutes and need not worry about the underlying platform and SLA's.
-When I initially looked at the App configuration service one question that came into mind how it's different compared to the Azure Key Vault service.
+## Benefits of Azure App Configuration over Key Vault for Insensitive Data
 
-## App Configuration vs Key Vault
+Below is a list of features I came up with that distinguishes Azure App Configuration from Azure Key Vault. Compared to Azure Key Vault - App Configuration ...
 
-App Configuration doesn't replace Key Vault. Key Vault is used to store secrets (sensitive data), certificates, etc. With Key Vault you will get options for rotating passwords, certificates. App configuration is used to hold application configuration which is insensitive. App configuration is one store for application configurations for multiple applications. App configuration is well suited in a scenario like dynamically changing application settings because the application can pick changes without a restart. App configuration complements Feature Management functionality by providing feature managed user interface. App Configuration can be integrated with Azure Key Vault.
+- avoids Duplication
+- supports feature flags
+- supports flat and hierarchal key management
+- categorizing keys using labels
+- does point-in-time snapshots that can be replayed
+- stores a complete timeline in key-value changes
+- supports compare configuration values for different points in time
+- integrates with Azure DevOps
+- does data encryption at rest or in transit
 
 ## Useful Links
 
-https://docs.microsoft.com/en-gb/azure/azure-app-configuration/overview
+- [Azure App Configuration Introduction](https://www.svenmalvik.com/azure-appconfiguration/)
+- [Tutorial: Use Key Vault references in a Java Spring app](https://docs.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-spring-boot?WT.mc_id=AZ-MVP-5004080)
