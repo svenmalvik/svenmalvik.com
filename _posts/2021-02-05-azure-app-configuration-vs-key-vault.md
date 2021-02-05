@@ -16,8 +16,6 @@ image: https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jp
 
 First things first - Azure App Configuration and Azure Key Vault are complementary services that should be used side by side. Azure App Configuration stores insensitive data like key-value pairs but also references secrets in Azure Key Vault. An entry in App Configuration that references such a secret stores the URI of a Key Vault value rather than the value itself.
 
-{% include articleAd.html %}
-
 An App Configuration client provider that comes as an SDK for your application retrieves the Key Vault value reference of an entry, just as it does for any other keys stored in App Configuration. The client provider recognizes the keys as Key Vault references based on the content-type that every App Configuration entry gets. The client provider then asks the Key Vault to retrieve their secrets. Azure App Configuration and Azure Key Vault don't communicate with each other and means that an application is still responsible for authenticating to both App Configuration and Key Vault.
 
 {% include articleAd.html %}
