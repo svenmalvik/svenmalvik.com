@@ -9,7 +9,7 @@ share-img: https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg
 image: https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg
 ---
 
-*In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access to all secrets stored in named values for using in policies for JWT token validation or because for sending passwords in authentication headers. It's therefore best practice to store secrets in Azure Key Vault and not in named values. Azure API Management can then use its Managed Service Identity to access the secrets from this Azure Key Vault by referencing secrets . This post will show how to set a secret as the value in a response header.*
+*In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access to all secrets stored in named values for using in policies for JWT token validation or because for sending passwords in authentication headers. It's therefore best practice to store secrets in Azure Key Vault and not in named values. Azure API Management can then use its Managed Service Identity to access the secrets from this Azure Key Vault by referencing secrets. This post will show how to set a secret as the value in a response header.*
 
 {% include articleAd.html %}
 
