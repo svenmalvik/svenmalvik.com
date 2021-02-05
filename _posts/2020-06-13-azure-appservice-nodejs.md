@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ARM for NodeJS Azure WebApp with App Configuration Integration
+title: ARM for NodeJS Azure Web App with App Configuration Integration
 tags: [Azure, Azure App Configuration, NodeJS, ARM, Azure App Service]
 categories: [Web]
 comment: true
