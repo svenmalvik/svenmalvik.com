@@ -9,7 +9,7 @@ share-img: https://cdn.svenmalvik.com/images/azure-resource-tagging.jpg
 image: https://cdn.svenmalvik.com/images/azure-resource-tagging.jpg
 ---
 
-*Moving services from on-premise to Azure cloud requires effort, technical knowledge, and some experience to make a business secure, compliant, and efficient. This post will discuss why tagging of resources plays an important role to achieve these goals.*
+*Moving services from on-premise to Azure cloud requires effort, technical knowledge, and some experience to make a business secure, compliant, and efficient. This post will discuss why tagging of resources plays an important role to achieve these goals and how you can do this.*
 
 {% include articleAd.html %}
 
