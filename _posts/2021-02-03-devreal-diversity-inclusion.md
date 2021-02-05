@@ -10,7 +10,7 @@ share-img: https://cdn.svenmalvik.com/images/devreal-di-cover2.jpg
 image: https://cdn.svenmalvik.com/images/devreal-di-cover2.jpg
 ---
 
-*How are organizations like Vipps, Microsoft, Tata Consultancy Services (TCS) and Aker Solutions establishing a diverse and inclusive workplace? What initiatives are they driving and how can we all work together to create a positive impact? **[Join this free online event](https://www.devreal.io/)**.*
+*How are organizations like Vipps, Microsoft and Tata Consultancy Services (TCS) establishing a diverse and inclusive workplace? What initiatives are they driving and how can we all work together to create a positive impact? **[Join this free online event](https://www.devreal.io/)**.*
 
 {% include articleAd.html %}
 
