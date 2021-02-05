@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Azure Key Vault is Different to App Configuration
+title: How Azure Key Vault is Different to Azure App Configuration
 tags: [Azure, Azure Key Vault, Azure App Configuration]
 categories: [Azure]
 comments: true
