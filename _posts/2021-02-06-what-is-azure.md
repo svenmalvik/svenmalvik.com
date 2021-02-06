@@ -22,14 +22,10 @@ Azure works differently. Rather than running your own server hardware and all of
 
 ## Azure covers 4 Different Areas
 
-- [Infrastructure as a service (IaaS)](https://azure.microsoft.com/en-us/overview/what-is-iaas/?WT.mc_id=AZ-MVP-5004080)
-You deploy data onto a server in Azure that you control. Microsoft takes care of the physical hardware.
-- [Platform as a service (PaaS)](https://azure.microsoft.com/en-us/overview/what-is-paas/?WT.mc_id=AZ-MVP-5004080)
-You manage your applications and databases, while Microsoft manages all other services required to run your application like middleware, virtual machines, storage and networking.
-- [Software as a service (SaaS)](https://azure.microsoft.com/en-us/overview/what-is-saas/?WT.mc_id=AZ-MVP-5004080)
-You use an application like Office 365 or Salesforce. Microsoft manages the actual application.
-- [Serverless Computing](https://azure.microsoft.com/en-us/overview/serverless-computing/?WT.mc_id=AZ-MVP-5004080)
-You write and deploy your application code without worrying about the underlying infrastructure.
+- [Infrastructure as a service (IaaS)](https://azure.microsoft.com/en-us/overview/what-is-iaas/?WT.mc_id=AZ-MVP-5004080) - You deploy data onto a server in Azure that you control. Microsoft takes care of the physical hardware.
+- [Platform as a service (PaaS)](https://azure.microsoft.com/en-us/overview/what-is-paas/?WT.mc_id=AZ-MVP-5004080) - You manage your applications and databases, while Microsoft manages all other services required to run your application like middleware, virtual machines, storage and networking.
+- [Software as a service (SaaS)](https://azure.microsoft.com/en-us/overview/what-is-saas/?WT.mc_id=AZ-MVP-5004080) - You use an application like Office 365 or Salesforce. Microsoft manages the actual application.
+- [Serverless Computing](https://azure.microsoft.com/en-us/overview/serverless-computing/?WT.mc_id=AZ-MVP-5004080) - You write and deploy your application code without worrying about the underlying infrastructure.
 
 {% include articleAd.html %}
 
