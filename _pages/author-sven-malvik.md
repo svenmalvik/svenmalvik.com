@@ -3,6 +3,11 @@ title: "Sven Malvik"
 layout: default
 permalink: "/author-sven-malvik"
 ---
+
+<div class="container" style="margin-bottom: 10px; text-align: center;">
+	<script type="text/javascript" language="javascript" src="https://www.anrdoezrs.net/placeholder-46382047?target=_top&mouseover=N"></script>
+</div>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
