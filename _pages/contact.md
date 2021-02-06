@@ -3,8 +3,6 @@ title: "Contact"
 permalink: "/contact.html"
 ---
 
-</div>
-
 You can [email me](sven@malvik.de) or find me on [LinkedIn](https://www.linkedin.com/in/svenmalvik/) if you want to get in touch. I love meeting new people so don't hesitate to send a message!
 
 <form action="https://formspree.io/f/myybldoy" method="POST">    
