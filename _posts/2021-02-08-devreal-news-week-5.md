@@ -2,7 +2,7 @@
 layout: post
 title: Azure Updates 4/2021
 tags: [DevReal, DevOps]
-categories: [Azure Updates]
+categories: [Devreal]
 comments: true
 published: false
 share-img: https://cdn.svenmalvik.com/images/devrealnews-cover-4521.jpg
