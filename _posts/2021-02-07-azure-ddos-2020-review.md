@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insights & Trends of DDoS Attacks 2020 on Azure
+title: Insights & Trends of DDoS Attacks in 2020 on Azure
 tags: [Azure, Security]
 categories: [Azure, Security]
 comments: true
