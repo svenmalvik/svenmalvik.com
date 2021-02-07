@@ -18,7 +18,7 @@ DDoS stands for Distributed Denial-of-Service and means that multiple machines a
 
 The top targets are protocols that are used in IoT-connected devices such as DNS, NTP, CLDAP, WSD, SSDP, memcached, and OpenVPN.  The top source that start DDoS attacks are the United States with 45%. Targets are Europe, Asia, and the US.
 
-It's also observed that many DDoS attacks are initiated to cover up bigger network intrusions. If you are victim of a DDoS attack, there might be going onn something more.
+It's also observed that many DDoS attacks are initiated to cover up bigger network intrusions. If you are victim of a DDoS attack, there might be going on something more.
 
 {% include articleAd.html %}
 
