@@ -2,7 +2,7 @@
 layout: post
 title: Logging in Azure API Management
 subtitle: Sending logs to Azure Event Hub - Video included
-tags: [Azure, Azure API Management, Azure Event Hub, Azure Application Insights, PowerShell]
+tags: [featured, Azure, Azure API Management, Azure Event Hub, Azure Application Insights, PowerShell]
 categories: [Azure API Management]
 comments: true
 published: true
