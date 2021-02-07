@@ -10,7 +10,7 @@ share-img: https://cdn.svenmalvik.com/images/azure-ddos-2020-review.jpg
 image: https://cdn.svenmalvik.com/images/azure-ddos-2020-review.jpg
 ---
 
-*2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from home and the internet traffic has exploded which makes it a lot easier for an attacker to launch a DDoS attack - they simply don't need to generate as much traffic as before to bring down a service.*
+*2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from home and the internet traffic has exploded which makes it a lot easier for an attacker to launch a DDoS attack.*
 
 {% include articleAd.html %}
 
