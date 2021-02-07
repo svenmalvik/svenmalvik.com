@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Azure Blog by Sven Malvik | Microsoft MVP | Azure Blog</title>
+    <title>How to Reference Key Vault Secrets in Azure API Management | Azure Blog</title>
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Azure Blog by Sven Malvik Microsoft MVP | Azure Blog</title>
+<title>How to Reference Key Vault Secrets in Azure API Management | Azure Blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Azure Blog by Sven Malvik Microsoft MVP" />
+<meta property="og:title" content="How to Reference Key Vault Secrets in Azure API Management" />
+<meta name="author" content="svenmalvik" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My personal blog about Microsoft Azure." />
-<meta property="og:description" content="My personal blog about Microsoft Azure." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access to all secrets stored in named values for using in policies for JWT token validation or because for sending passwords in authentication headers. It’s therefore best practice to store secrets in Azure Key Vault and not in named values. Azure API Management can then use its Managed Service Identity to access the secrets from this Azure Key Vault by referencing secrets. This post will show how to set a secret as the value in a response header." />
+<meta property="og:description" content="In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access to all secrets stored in named values for using in policies for JWT token validation or because for sending passwords in authentication headers. It’s therefore best practice to store secrets in Azure Key Vault and not in named values. Azure API Management can then use its Managed Service Identity to access the secrets from this Azure Key Vault by referencing secrets. This post will show how to set a secret as the value in a response header." />
+<link rel="canonical" href="http://localhost:4000/azure-apim-key-vault/" />
+<meta property="og:url" content="http://localhost:4000/azure-apim-key-vault/" />
 <meta property="og:site_name" content="Azure Blog" />
-<link rel="next" href="http://localhost:4000/page2" />
+<meta property="og:image" content="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-05T19:00:00+01:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/","name":"Azure Blog","description":"My personal blog about Microsoft Azure.","headline":"Azure Blog by Sven Malvik Microsoft MVP","@type":"WebSite","@context":"http://schema.org"}</script>
+{"datePublished":"2021-02-05T19:00:00+01:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/azure-apim-key-vault/"},"url":"http://localhost:4000/azure-apim-key-vault/","image":"https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg","description":"In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access to all secrets stored in named values for using in policies for JWT token validation or because for sending passwords in authentication headers. It’s therefore best practice to store secrets in Azure Key Vault and not in named values. Azure API Management can then use its Managed Service Identity to access the secrets from this Azure Key Vault by referencing secrets. This post will show how to set a secret as the value in a response header.","headline":"How to Reference Key Vault Secrets in Azure API Management","dateModified":"2021-02-05T19:00:00+01:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -78,7 +81,7 @@
 
 </head>
 
-<body class=" homefirstpage ">
+<body class="">
     
 
     <!-- Navbar -->
@@ -133,12 +136,12 @@ var documents = [{
     "id": 1,
     "url": "http://localhost:4000/aboutme",
     "title": "Sven Malvik",
-    "body": "	                              Sven Malvik Connect:                       My name is Sven Malvik, and I am an Azure MVP who . . .                                 loves to speak at tech conferences            listens to techno music while coding :)                                At daytime, I'm heading the Cloud Platform department in Vipps, a Norwegian payment service.                                                         Speaking Engagements: Jan 2021: Azure API Management at Austin Meetup (virtual)Dec 2020: Azure API Management at Norway at DEVREAL. io (virtual)Nov 2020: Understanding Azure App Configuration at Azure Meetup Oslo/Mumbai (virtual)Nov 2020: Azure API Management (APIM) with Sven Malvik at Microsoft Azure Latin America (virtual)Nov 2020: Workshop: Azure API Management at an external company (virtual)Oct 2020: Understanding Azure App Configuration at Azure User Group Denmark (virtual)Sep 2020: Understanding Azure App Configuration at Norwegian . NET User Group (virtual)Sep 2020: Understanding Azure App Configuration at Azure Meetup Oslo/New York/Mumbai (virtual)Sep 2020: Workshop: Understanding Azure API Management at NDC Minnesota (virtual)Jun 2020: From Traditional Ops to Cloud-Native in Azure at NDC Oslo (virtual)Jun 2020: From Traditional Ops to Cloud-Native in Azure at Confer Conf 2020 (virtual)Mai 2020: How Vipps uses Azure API Management at Azure Meetup Oslo (virtual)Apr 2020: Workshop: Azure API Management 101 at an external company (virtual)Mar 2020: From Traditional Ops to Cloud-Native in Azure at itSMF Conference NorwayFeb 2020: Workshop: Azure API Management 101 at an external company (virtual)Jan 2020: Workshop: Azure API Management 101 at an external company (virtual)Jan 2020: Workshop: Azure API Management 101 at Azure Meetup OsloNov 2020: The Rise of the Citizen Developer at Microsoft TechX Oslo (Keynote Guest)Oct 2019: Integrating Bot Framework with external services, LUIS and a human touch at Azure Meetup OsloSep 2019: How Vipps uses Azure to become the No. 1 payment service in Norway at JavaZone NorwayJun 2019: We Build an Intelligent Azure Q&amp;A Bot at Azure Meetup Oslo at Global Azure Bootcamp Norway      "
+    "body": "	                              {{page. title}} Connect:                       My name is Sven Malvik, and I am an Azure MVP who . . .                                 loves to speak at tech conferences            listens to techno music while coding :)                                At daytime, I'm heading the Cloud Platform department in Vipps, a Norwegian payment service.                                                   {% include articleAd. html %}      Speaking Engagements: Jan 2021: Azure API Management at Austin Meetup (virtual)Dec 2020: Azure API Management at Norway at DEVREAL. io (virtual)Nov 2020: Understanding Azure App Configuration at Azure Meetup Oslo/Mumbai (virtual)Nov 2020: Azure API Management (APIM) with Sven Malvik at Microsoft Azure Latin America (virtual)Nov 2020: Workshop: Azure API Management at an external company (virtual)Oct 2020: Understanding Azure App Configuration at Azure User Group Denmark (virtual)Sep 2020: Understanding Azure App Configuration at Norwegian . NET User Group (virtual)Sep 2020: Understanding Azure App Configuration at Azure Meetup Oslo/New York/Mumbai (virtual)Sep 2020: Workshop: Understanding Azure API Management at NDC Minnesota (virtual)Jun 2020: From Traditional Ops to Cloud-Native in Azure at NDC Oslo (virtual)Jun 2020: From Traditional Ops to Cloud-Native in Azure at Confer Conf 2020 (virtual)Mai 2020: How Vipps uses Azure API Management at Azure Meetup Oslo (virtual)Apr 2020: Workshop: Azure API Management 101 at an external company (virtual)Mar 2020: From Traditional Ops to Cloud-Native in Azure at itSMF Conference NorwayFeb 2020: Workshop: Azure API Management 101 at an external company (virtual)Jan 2020: Workshop: Azure API Management 101 at an external company (virtual)Jan 2020: Workshop: Azure API Management 101 at Azure Meetup OsloNov 2020: The Rise of the Citizen Developer at Microsoft TechX Oslo (Keynote Guest)Oct 2019: Integrating Bot Framework with external services, LUIS and a human touch at Azure Meetup OsloSep 2019: How Vipps uses Azure to become the No. 1 payment service in Norway at JavaZone NorwayJun 2019: We Build an Intelligent Azure Q&amp;A Bot at Azure Meetup Oslo at Global Azure Bootcamp Norway      {% include articleAd. html %}"
     }, {
     "id": 2,
     "url": "http://localhost:4000/authors-list.html",
     "title": "Authors",
-    "body": "Authors:                                             Sven Malvik :       (View Posts)                                &nbsp;       &nbsp;                                      "
+    "body": "{{page. title}}:     {% for author in site. authors %}                                         {{ author[1]. name }} :       (View Posts)      {{ author[1]. bio }}                          &nbsp;       &nbsp;                                    {% endfor %}  "
     }, {
     "id": 3,
     "url": "http://localhost:4000/buy-me-a-coffee.html",
@@ -148,17 +151,17 @@ var documents = [{
     "id": 4,
     "url": "http://localhost:4000/categories.html",
     "title": "Categories",
-    "body": "	            Categories               Azure API Management:                                                     		How to Reference Key Vault Secrets in Azure API Management	: 		  In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access . . . 	 			Feb 05, 2021						                                 		How to Secure Azure Functions App with Azure API Management	: 		  How to use an Azure Managed Identity to authenticate against an Azure Functions app that is exposed through Azure API Management. Our Fun. . . 	 			Feb 02, 2021						                                 		Introduction to Azure API Management	: 		  Azure API Management (APIM) is a way to create consistent and modern API gateways for existing backend services. It provides an interface. . . 	 			Jan 25, 2021						                                 		How To Debug Policies in Azure API Management. A Step-by-Step Guide. 	: 		  In this post I want to briefly go through the Azure API Management extension for VSCode and how we can debug policies. It’s one of the qu. . . 	 			Jan 16, 2021						                                 		Azure API Management at Norway	: 		  How are Norwegian companies like Vipps, SATS, Orkla, Statsbygg, and DNV GL using Azure API Management? What experiences do they have, and. . . 	 			Dec 10, 2020						                                 		Using Azure API Management APIs with Docker	: 		  We use Azure API Management in some cases for calling external services from Azure Kubernetes Service (AKS). Azure API Management acts in. . . 	 			Jun 27, 2020						                                 		Backup and Restore in Azure API Management	: 		  As infrastructure gets more complex, more parts will eventually break. This is even more true as we make frequently changes. Sometimes we. . . 	 			May 02, 2020						                                 		Understanding Policies in Azure API Management	: 		  Policies are the heart of Azure API Management. They let us change the behavior of our APIs in a very flexible manner. Before I dive in t. . . 	 			Apr 18, 2020						                                 		Logging in Azure API Management	: 		  This post is a complete step-by-step guide on how to send logs from Azure API Management to Azure Event Hub with PowerShell. We start by . . . 	 			Apr 11, 2020						                                 		Azure API Management with Terraform	: 		  Terraform is a popular tool for managing infrastructure resources. I counted about 120 supported providers. Azure is one of them. In this. . . 	 			Apr 04, 2020						                                 		Azure API Management with ARM	: 		  Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Managem. . . 	 			Mar 28, 2020						                                 		Azure API Management with PowerShell	: 		  We use a lot of PowerShell to provision the Azure infrastructure that powers Vipps AS today. PowerShell is actually a great choice for us. . . 	 			Mar 21, 2020						                                 		Azure API Management with REST	: 		  Today, we will provision Azure API Management by using Postman as an API client, sending plain web requests to Azure. We already provisio. . . 	 			Mar 14, 2020						                                 		Azure API Management from the Portal	: 		  We will provision Azure API Management. Creating an instance of it is just a click in the Azure Portal. We’ll do it once to show how easy. . . 	 			Mar 07, 2020						                                 		Azure API Management Key Parameters	: 		  This post will start to discuss provisioning API Management. The simplest way of doing so is simply by signing into the portal and create. . . 	 			Feb 29, 2020						                              Web:                                                     		ARM for NodeJS Azure Web App with App Configuration Integration	: 		  Our Azure infrastructure has some configurations that our developers need to know like the name of the currently active AKS cluster and A. . . 	 			Jun 13, 2020						                                 		Serving Website Images from Azure CDN with SSL	: 		  In this post I will show you step by step how to serve images on a website from Azure CDN with SSL enabled. My blog has a couple of Azure. . . 	 			Apr 25, 2020						                              Azure App Configuration:                                                     		Event-Driven Infrastructure with App Configuration	: 		  Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How coul. . . 	 			Sep 12, 2020						                                 		Sync Azure App Configuration with GitHub Actions	: 		  One questions we might ask us when we move our properties files from an application to Azure App Configuration is how we can do this with. . . 	 			Sep 05, 2020						                                 		Using App Configuration in Azure DevOps	: 		  Application deployments dependent often on environment specific data like the name of a resource group, location or flags for certain use. . . 	 			Aug 01, 2020						                                 		Azure App Configuration Introduction &#35;3	: 		  After playing around with Azure App Configuration Service and how to read a configuration entry with REST, and then using feature flags i. . . 	 			May 23, 2020						                                 		Using Feature Flags with Azure App Configuration	: 		  Sometimes we would like to test a new feature of an application. Or we would like to disable code junks because they are not fully implem. . . 	 			May 16, 2020						                                 		Azure App Configuration Introduction	: 		  We build this great application that we configure exactly the way it fits into our environments, and then we realize that changing a conf. . . 	 			May 09, 2020						                              IaC:                                                     		Pulumi Stack Name in Bash Prompt	: 		  This post describes how we can add custom information to a bash prompt. 	 			Oct 31, 2020	                                 		Infrastructure as Code (IaC) in Azure	: 		  Infrastructure as code (IaC) is a hot topic, also at Vipps. This video is the recording of an internal event where development teams tell. . . 	 			Oct 17, 2020						                                 		Parameters in Farmer - IaC with Azure	: 		  This is part 2 of my learning adventure of Farmer for Azure resource deployments. This time, I wanted to look at parameters, variables, o. . . 	 			Oct 10, 2020						                                 		Introduction to Farmer - IaC with Azure	: 		  As many companies move their services to the cloud, the way we interact with the cloud, the tooling, becomes more important. In Azure we . . . 	 			Sep 26, 2020						                                 		Running Scripts from ARM Templates	: 		  Why would we want t execute code within an ARM template? Sometimes we need some value in an ARM template that we don’t want to copy and p. . . 	 			Jul 11, 2020	                              Compliancy:                                                     		8 Actions to Cut Infrastructure Costs in 2021	: 		  8 Actions to Cut Infrastructure Costs in 2021 is the result of a research I did. I wanted to know more about the impact of the pandemic f. . . 	 			Jan 10, 2021						                                 		Resource Tagging in Azure	: 		  Moving services from on-premise to Azure cloud requires effort, technical knowledge, and some experience to make a business secure, compl. . . 	 			Aug 08, 2020						                              Personal:                                                     		How I became a Microsoft Azure MVP	: 		  I’ve always been amazed by public speakers. The confidence, calmness, and energy that some of them transfer over to the audience has alwa. . . 	 			Dec 03, 2020						                                 		Cookie Consent on my Azure Blog	: 		  Today, I was asked how I integrated the cookie consent on my Azure Blog that is based on Jekyll. Jekyll transforms plain text into a stat. . . 	 			Aug 29, 2020						                                 		My Azure Week 34	: 		  This blog post is about my reflections on various topics around Azure, and what I have learned and worked on over the past week. 	 			Aug 22, 2020	                              AZ-303:                                                     		AZ-303 Self-Study Guide for Becoming an Azure Solution Architect	: 		  Microsoft updated it’s role based exam for AZ-300. It’s now called AZ-303 and launched last year. This certification is a great proof for. . . 	 			Feb 01, 2021						                                 		How to do a Failover of a Windows Server VM with Azure Site Recovery	: 		  In this post I will create a Windows Server 2016 Datacenter and then do an automatic failover to another region with Azure Site Recovery. . . . 	 			Jan 04, 2021						                                 		How to Recover a Virtual Machine with Azure Backup Service	: 		  This episode is about the Azure Backup Service, and how we can restore a virtual machine. I have already a Windows Server 2016 Datacenter. . . 	 			Dec 29, 2020						                                 		How To Manage Azure Virtual Machines	: 		  I will go through the first steps for managing Virtual Machines. We will create a Windows VM, start the Internet Information Service IIS,. . . 	 			Dec 26, 2020						                                 		How to configure Azure Storage Accounts to Allow Access from Specific Subnets	: 		  Sometimes we store items in a storage account and want to restrict the access to certain services or clients. I will demonstrate how to r. . . 	 			Dec 25, 2020						                                 		How to Create Custom Routes in Azure	: 		  Custom Routes, or user defined routing, is part of the az-303 certification for becoming an Azure Solution Architect. In this video I tel. . . 	 			Dec 24, 2020						                                 		How to Peer Virtual Networks in Azure	: 		  When we have two services running in two different virtual networks, they cannot communicate. To fix this, both VNet’s have to be peered. . . . 	 			Dec 23, 2020						                                 		How to Use Azure Bastion as a Jump Host	: 		  Knowing about Azure Bastion is part of the AZ-303 exam for becoming an Azure Solution Architect. Bastion is very useful in cases where yo. . . 	 			Dec 20, 2020						                                 		How to Establish a VPN Point to Site Connection in Azure	: 		  I will demonstrate how to establish a point to site connection in Azure, and connect from a Windows workstation to a virtual machine via . . . 	 			Dec 17, 2020						                              External:                                                     		Azure Friday in Pictures &#35;1	: 		  [Source: Microsoft Azure] Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multi-clo. . . 	 			Dec 27, 2020						                              AZ-304:                                                     		AZ-304 Self-Study Guide for Becoming an Azure Solution Architect Expert	: 		  Microsoft updated it’s role based exam for AZ-301. It’s now called AZ-304 and launched last year. This certification is a great proof for. . . 	 			Feb 01, 2021						                              Azure:                                                     		Insights &amp; Trends of DDoS Attacks in 2020 on Azure	: 		  2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from h. . . 	 			Feb 07, 2021						                                 		What is Azure?	: 		  When I started my career as a developer in a start up company, we build a website that we hosted on a physical server that was running in. . . 	 			Feb 06, 2021						                                 		How Azure Key Vault is Different to Azure App Configuration	: 		  We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as w. . . 	 			Feb 05, 2021						                                 		Secret Behind Pretty Azure Architecture Diagrams	: 		  One of my fellow cloud engineers in my team asked today in the morning about these pretty architecture diagrams that we nowadays have and. . . 	 			Feb 04, 2021						                                 		AZ-900 Self-Study Guide for Azure Fundamentals	: 		  There are many good reasons to become Microsoft Azure Certified and take the Microsoft Azure AZ-900 exam. If you are reading this blog po. . . 	 			Feb 03, 2021						                                 		Azure Naming Convention Best Practices	: 		  Structure helps us to be in control. That is very true also in Azure. Especially in larger organizations where many cloud engineers creat. . . 	 			Feb 02, 2021						                              devreal:                                                     		Diversity &amp; Inclusion Tech Conversation	: 		  How are organizations like Vipps, Microsoft and Tata Consultancy Services (TCS) establishing a diverse and inclusive workplace? What init. . . 	 			Feb 03, 2021						                              Security:                                                     		Insights &amp; Trends of DDoS Attacks in 2020 on Azure	: 		  2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from h. . . 	 			Feb 07, 2021						                                 		How is Azure Firewall different from Network Security Groups?	: 		  Azure provides two security features in Azure for managing inbound and outbound traffic to and from Azure resources like virtual machines. . . 	 			Feb 04, 2021						                              ARM:                                                     		How Virtual Machine Classic is Different to (Normal) VM in Azure	: 		  Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is t. . . 	 			Feb 06, 2021						                                             Featured:    				                                          Secret Behind Pretty Azure Architecture Diagrams                                                                      AZ-900 Self-Study Guide for Azure Fundamentals                                                                      Azure Naming Convention Best Practices                                                                      AZ-304 Self-Study Guide for Becoming an Azure Solution Architect Expert                                                                      AZ-303 Self-Study Guide for Becoming an Azure Solution Architect                                                                      How I became a Microsoft Azure MVP                                                                      Understanding Policies in Azure API Management                                                                      Logging in Azure API Management                                                "
+    "body": "	            Categories          {% for category in site. categories %}     {{ category[0] }}:              {% include articleAd. html %}                {% assign pages_list = category[1] %}    {% for post in pages_list %}    {% if post. title != null %}     {% if group == null or group == post. group %}           {% include main-loop-card. html %}     {% endif %}    {% endif %}    {% endfor %}    {% assign pages_list = nil %}    {% assign group = nil %}    {% endfor %}                  {% include sidebar-featured. html %}          "
     }, {
     "id": 5,
     "url": "http://localhost:4000/contact.html",
     "title": "Contact",
-    "body": "You can email me or find me on LinkedIn if you want to get in touch. I love meeting new people so don’t hesitate to send a message!     If you’d like to get in touch and are very old-school, you can send a letter to:Trettåsen 50, 2008 Fjerdingby, Norway "
+    "body": "You can email me or find me on LinkedIn if you want to get in touch. I love meeting new people so don’t hesitate to send a message!     If you’d like to get in touch and are very old-school, you can send a letter to:Trettåsen 50, 2008 Fjerdingby, Norway{% include articleAd. html %} "
     }, {
     "id": 6,
     "url": "http://localhost:4000/",
     "title": "Azure Blog by Sven Malvik | Microsoft MVP",
-    "body": "                                  Insights &amp; Trends of DDoS Attacks in 2020 on Azure  :       2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from home and the internet traffic has exploded which makes it a lot easier for an attacker to launch a DDoS attack.               Ad                                                                                                                             What is Azure?          :                       Feb 06, 2021                                                                                                                                     How Virtual Machine Classic is Different to (Normal) VM in Azure          :                       Feb 06, 2021                                                                                                                                    How Azure Key Vault is Different to Azure App Configuration          :                       Feb 05, 2021                                                                                                AdA good study guide for the Azure Fundamentals exam AZ-900: 						Microsoft Azure                                                          Azure API Management at Norway                  How are Norwegian companies like Vipps, SATS, Orkla, Statsbygg, and DNV GL using Azure API Management? What experiences do they have,. . .                 Read More            	                                            All Stories:                   		Insights &amp; Trends of DDoS Attacks in 2020 on Azure	: 		  2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from h. . . 	 			Feb 07, 2021						                  		What is Azure?	: 		  When I started my career as a developer in a start up company, we build a website that we hosted on a physical server that was running in. . . 	 			Feb 06, 2021						                  		How Virtual Machine Classic is Different to (Normal) VM in Azure	: 		  Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is t. . . 	 			Feb 06, 2021						                  		How Azure Key Vault is Different to Azure App Configuration	: 		  We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as w. . . 	 			Feb 05, 2021						                  		How to Reference Key Vault Secrets in Azure API Management	: 		  In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access . . . 	 			Feb 05, 2021						                  		How is Azure Firewall different from Network Security Groups?	: 		  Azure provides two security features in Azure for managing inbound and outbound traffic to and from Azure resources like virtual machines. . . 	 			Feb 04, 2021						                  		Secret Behind Pretty Azure Architecture Diagrams	: 		  One of my fellow cloud engineers in my team asked today in the morning about these pretty architecture diagrams that we nowadays have and. . . 	 			Feb 04, 2021						                  		AZ-900 Self-Study Guide for Azure Fundamentals	: 		  There are many good reasons to become Microsoft Azure Certified and take the Microsoft Azure AZ-900 exam. If you are reading this blog po. . . 	 			Feb 03, 2021						                  		Diversity &amp; Inclusion Tech Conversation	: 		  How are organizations like Vipps, Microsoft and Tata Consultancy Services (TCS) establishing a diverse and inclusive workplace? What init. . . 	 			Feb 03, 2021						                  		How to Secure Azure Functions App with Azure API Management	: 		  How to use an Azure Managed Identity to authenticate against an Azure Functions app that is exposed through Azure API Management. Our Fun. . . 	 			Feb 02, 2021						                                                &laquo;                              1                               2                               3                               4                               5                               6                              Next &raquo;                                          Featured:    				                                          Secret Behind Pretty Azure Architecture Diagrams                                                                      AZ-900 Self-Study Guide for Azure Fundamentals                                                                      Azure Naming Convention Best Practices                                                                      AZ-304 Self-Study Guide for Becoming an Azure Solution Architect Expert                                                                      AZ-303 Self-Study Guide for Becoming an Azure Solution Architect                                                                      How I became a Microsoft Azure MVP                                                                      Understanding Policies in Azure API Management                                                                      Logging in Azure API Management                                            "
+    "body": "  {% if page. url ==  /  %}            {% assign latest_post = site. posts[0] %}          &lt;div class= topfirstimage  style= background-image: url({% if latest_post. image contains  ://  %}{{ latest_post. image }}{% else %} {{site. baseurl}}/{{ latest_post. image}}{% endif %}); height: 250px;  background-size: cover;  background-repeat: no-repeat; &gt;&lt;/div&gt;           {{ latest_post. title }}  :       {{ latest_post. excerpt | strip_html | strip_newlines | truncate: 300 }}               Ad                             {%- assign second_post = site. posts[1] -%}                        {% if second_post. image %}                         &lt;img class= w-100  src= {% if second_post. image contains  ://  %}{{ second_post. image }}{% else %}{{ second_post. image | absolute_url }}{% endif %}  alt= {{ second_post. title }} &gt;                        {% endif %}                                    {{ second_post. title }}          :                       {{ second_post. date | date: '%b %d, %Y' }}                                    {%- assign third_post = site. posts[2] -%}                        {% if third_post. image %}                         &lt;img class= w-100  src= {% if third_post. image contains  ://  %}{{ third_post. image }}{% else %}{{site. baseurl}}/{{ third_post. image }}{% endif %}  alt= {{ third_post. title }} &gt;                        {% endif %}                                    {{ third_post. title }}          :                       {{ third_post. date | date: '%b %d, %Y' }}                                    {%- assign fourth_post = site. posts[3] -%}                        {% if fourth_post. image %}                        &lt;img class= w-100  src= {% if fourth_post. image contains  ://  %}{{ fourth_post. image }}{% else %}{{site. baseurl}}/{{ fourth_post. image }}{% endif %}  alt= {{ fourth_post. title }} &gt;                        {% endif %}                                    {{ fourth_post. title }}          :                       {{ fourth_post. date | date: '%b %d, %Y' }}                                                                                                AdA good study guide for the Azure Fundamentals exam AZ-900: 						Microsoft Azure                        {% for post in site. posts %} {% if post. tags contains  sticky  %}                    {{post. title}}                  {{ post. excerpt | strip_html | strip_newlines | truncate: 136 }}                 Read More            	             {% endif %}{% endfor %}  {% endif %}                All Stories:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Prev       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Next &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
     }, {
     "id": 7,
     "url": "http://localhost:4000/privacy-policy.html",
@@ -198,22 +201,22 @@ var documents = [{
     "id": 14,
     "url": "http://localhost:4000/azure-ddos-2020-review/",
     "title": "Insights & Trends of DDoS Attacks in 2020 on Azure",
-    "body": "2021/02/07 - 2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from home and the internet traffic has exploded which makes it a lot easier for an attacker to launch a DDoS attack.  DDoS stands for Distributed Denial-of-Service and means that multiple machines are working together to attack one target. Since we all work from home we are all helping attackers to generate traffic and bring down services. Companies can hardly distinguish between a friendly visiter and a DDoS attack. Still, the Azure DDoS Protection team mitigated an average of 500 attacks a day. In Mars and April the number was even higher and around 800 to 1000 attacks a day. The top targets are protocols that are used in IoT-connected devices such as DNS, NTP, CLDAP, WSD, SSDP, memcached, and OpenVPN.  The top source that start DDoS attacks are the United States with 45%. Targets are Europe, Asia, and the US. It’s also observed that many DDoS attacks are initiated to cover up bigger network intrusions. If you are victim of a DDoS attack, there might be going on something more.   Source: Azure DDoS Protection—2020 year in review Components of a DDoS response strategy"
+    "body": "2021/02/07 - 2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from home and the internet traffic has exploded which makes it a lot easier for an attacker to launch a DDoS attack. {% include articleAd. html %} DDoS stands for Distributed Denial-of-Service and means that multiple machines are working together to attack one target. Since we all work from home we are all helping attackers to generate traffic and bring down services. Companies can hardly distinguish between a friendly visiter and a DDoS attack. Still, the Azure DDoS Protection team mitigated an average of 500 attacks a day. In Mars and April the number was even higher and around 800 to 1000 attacks a day. The top targets are protocols that are used in IoT-connected devices such as DNS, NTP, CLDAP, WSD, SSDP, memcached, and OpenVPN.  The top source that start DDoS attacks are the United States with 45%. Targets are Europe, Asia, and the US. It’s also observed that many DDoS attacks are initiated to cover up bigger network intrusions. If you are victim of a DDoS attack, there might be going on something more. {% include articleAd. html %}  Source: Azure DDoS Protection—2020 year in review Components of a DDoS response strategy"
     }, {
     "id": 15,
     "url": "http://localhost:4000/what-is-azure/",
     "title": "What is Azure?",
-    "body": "2021/02/06 - When I started my career as a developer in a start up company, we build a website that we hosted on a physical server that was running in a separate room with all of its infrastructure. That’s what we did back then, all companies did this. A business had its web server running on its own server hardware. When a business got more users onto their website more power was needed. The business would have to purchase more server hardware. More server hardware means more people that can maintain the server hardware and administrate all of its software running on the servers hardware. Another option was (still is - don’t know why), to outsource everything to a hosting company and pay them for their services.  Azure works differently. Rather than running your own server hardware and all of its infrastructure by yourself, you use the massive pool of computing resources that Azure provides. Azure got everything, virtual machines, databases, storage, and 200+ more products and services that you can use out of the box. The best, you pay only for what you need at a given time. If you need one virtual machine and one database today you will just pay for these instances. Tomorrow, when you run 10 instances you pay for 10 instances. You can decommission all your resources whenever you want and pay only for the time they where up and running. Azure is the name of Microsoft’ cloud platform. It was first announced under the name Windows Azure in 2008 but was renamed to Microsoft Azure in 2014. Today, Azure provides over 200 products and cloud services for building, managing and deploying your applications. Azure cloud is essentially a set of physical servers that run in over 150 data centers around the globe. You choose where you want to run your workload. Simplified, Azure is a large collection of servers and networking hardware running a complex set of distributed applications. These applications orchestrate the configuration and operation of virtualized hardware and software. It’s this orchestration that makes Azure powerful. Users don’t need to maintain and upgrade any hardware. They can focus on their domain while Azure does the rest.  Azure covers 4 Different Areas:  Infrastructure as a service (IaaS) - You deploy data onto a server in Azure that you control. Microsoft takes care of the physical hardware.  Platform as a service (PaaS) - You manage your applications and databases, while Microsoft manages all other services required to run your application like middleware, virtual machines, storage and networking.  Software as a service (SaaS) - You use an application like Office 365 or Salesforce. Microsoft manages the actual application.  Serverless Computing - You write and deploy your application code without worrying about the underlying infrastructure. Useful Links:  What is Azure? Create your Azure free account today"
+    "body": "2021/02/06 - When I started my career as a developer in a start up company, we build a website that we hosted on a physical server that was running in a separate room with all of its infrastructure. That’s what we did back then, all companies did this. A business had its web server running on its own server hardware. When a business got more users onto their website more power was needed. The business would have to purchase more server hardware. More server hardware means more people that can maintain the server hardware and administrate all of its software running on the servers hardware. Another option was (still is - don’t know why), to outsource everything to a hosting company and pay them for their services. {% include articleAd. html %} Azure works differently. Rather than running your own server hardware and all of its infrastructure by yourself, you use the massive pool of computing resources that Azure provides. Azure got everything, virtual machines, databases, storage, and 200+ more products and services that you can use out of the box. The best, you pay only for what you need at a given time. If you need one virtual machine and one database today you will just pay for these instances. Tomorrow, when you run 10 instances you pay for 10 instances. You can decommission all your resources whenever you want and pay only for the time they where up and running. Azure is the name of Microsoft’ cloud platform. It was first announced under the name Windows Azure in 2008 but was renamed to Microsoft Azure in 2014. Today, Azure provides over 200 products and cloud services for building, managing and deploying your applications. Azure cloud is essentially a set of physical servers that run in over 150 data centers around the globe. You choose where you want to run your workload. Simplified, Azure is a large collection of servers and networking hardware running a complex set of distributed applications. These applications orchestrate the configuration and operation of virtualized hardware and software. It’s this orchestration that makes Azure powerful. Users don’t need to maintain and upgrade any hardware. They can focus on their domain while Azure does the rest. {% include articleAd. html %} Azure covers 4 Different Areas:  Infrastructure as a service (IaaS) - You deploy data onto a server in Azure that you control. Microsoft takes care of the physical hardware.  Platform as a service (PaaS) - You manage your applications and databases, while Microsoft manages all other services required to run your application like middleware, virtual machines, storage and networking.  Software as a service (SaaS) - You use an application like Office 365 or Salesforce. Microsoft manages the actual application.  Serverless Computing - You write and deploy your application code without worrying about the underlying infrastructure. {% include articleAd. html %} Useful Links:  What is Azure? Create your Azure free account today"
     }, {
     "id": 16,
     "url": "http://localhost:4000/azure-arm-asm/",
     "title": "How Virtual Machine Classic is Different to (Normal) VM in Azure",
-    "body": "2021/02/06 - Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is that? The short answer is that it’s the same virtual machine. What’s different is the way it was deployed. This post will explain the history behind classic virtual machines in Azure and what you need to know.  Two Different Deployment Models: Until recently in February 2020, a year ago, you could choose whether you wanted to deploy a VM with “classic” or with the “Resource Manager”. The Azure Resource Manager that we call ARM is the current deployment model in Azure where we describe the resources we are going to deploy in a JSON format called ARM template. ARM templates exists since 2014. One of the greatest features that came with ARM was Resource Groups that groups resources that share the same lifecycle. This wasn’t always possible in Azure. Before ARM was introduces, the deployment model was called Azure Service Management (ASM). When you had a set of 10 resources that shared the same lifecycle, you had to deploy all resources independently. Managing all resources independently was a lot of complexity to handle which wasn’t so much fun. ARM takes this burden away from us and make life easier. Today, we see classic deployed resources almost only for some VMs. It’s because it took some time to migrate all Azure resources from ASM to ARM. More specifically it means that resources that were deployed through the ASM API had to be changed to use the ARM API. This process took some years and will be finished soon. The complete retirement starts March, 2023.  ASM vs ARM: The ASM API had limited capabilities. It lacked access control, resource groups, dependency management, tags and more. With ARM you got the following capabilities that we are so used to today:  Deploy, manage, and monitor all resources as one group.  Deploy resources in a consistent state.  Apply access control to all resources.  Apply tags to resources.  Describe your infrastructure in JSON, the ARM template.  Define dependencies between resources to ensure the correct order. Useful Links:  Azure Resource Manager vs. classic deployment: Understand deployment models and the state of your resources"
+    "body": "2021/02/06 - Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is that? The short answer is that it’s the same virtual machine. What’s different is the way it was deployed. This post will explain the history behind classic virtual machines in Azure and what you need to know. {% include articleAd. html %} Two Different Deployment Models: Until recently in February 2020, a year ago, you could choose whether you wanted to deploy a VM with “classic” or with the “Resource Manager”. The Azure Resource Manager that we call ARM is the current deployment model in Azure where we describe the resources we are going to deploy in a JSON format called ARM template. ARM templates exists since 2014. One of the greatest features that came with ARM was Resource Groups that groups resources that share the same lifecycle. This wasn’t always possible in Azure. Before ARM was introduces, the deployment model was called Azure Service Management (ASM). When you had a set of 10 resources that shared the same lifecycle, you had to deploy all resources independently. Managing all resources independently was a lot of complexity to handle which wasn’t so much fun. ARM takes this burden away from us and make life easier. Today, we see classic deployed resources almost only for some VMs. It’s because it took some time to migrate all Azure resources from ASM to ARM. More specifically it means that resources that were deployed through the ASM API had to be changed to use the ARM API. This process took some years and will be finished soon. The complete retirement starts March, 2023. {% include articleAd. html %} ASM vs ARM: The ASM API had limited capabilities. It lacked access control, resource groups, dependency management, tags and more. With ARM you got the following capabilities that we are so used to today:  Deploy, manage, and monitor all resources as one group.  Deploy resources in a consistent state.  Apply access control to all resources.  Apply tags to resources.  Describe your infrastructure in JSON, the ARM template.  Define dependencies between resources to ensure the correct order. {% include articleAd. html %} Useful Links:  Azure Resource Manager vs. classic deployment: Understand deployment models and the state of your resources"
     }, {
     "id": 17,
     "url": "http://localhost:4000/azure-app-configuration-vs-key-vault/",
     "title": "How Azure Key Vault is Different to Azure App Configuration",
-    "body": "2021/02/05 - We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as well - just because it’s easy and close to the secrets. This post discusses why you should use Azure App Configuration for your non-sensitive configurations instead.  First things first - Azure App Configuration and Azure Key Vault are complementary services that should be used side by side. Azure App Configuration stores insensitive data like key-value pairs but also references secrets in Azure Key Vault. An entry in App Configuration that references such a secret stores the URI of a Key Vault value rather than the value itself. An App Configuration client provider that comes as an SDK for your application retrieves the Key Vault value reference of an entry, just as it does for any other keys stored in App Configuration. The client provider recognizes the keys as Key Vault references based on the content-type that every App Configuration entry gets. The client provider then asks the Key Vault to retrieve their secrets. Azure App Configuration and Azure Key Vault don’t communicate with each other and means that an application is still responsible for authenticating to both App Configuration and Key Vault.  Benefits of Azure App Configuration over Key Vault for Insensitive Data: Below is a list of features I came up with that distinguishes Azure App Configuration from Azure Key Vault. Compared to Azure Key Vault - App Configuration …  avoids Duplication supports feature flags supports flat and hierarchal key management categorizing keys using labels does point-in-time snapshots that can be replayed stores a complete timeline in key-value changes supports compare configuration values for different points in time integrates with Azure DevOps does data encryption at rest or in transitUseful Links:  Azure App Configuration Introduction Tutorial: Use Key Vault references in a Java Spring app"
+    "body": "2021/02/05 - We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as well - just because it’s easy and close to the secrets. This post discusses why you should use Azure App Configuration for your non-sensitive configurations instead. {% include articleAd. html %} First things first - Azure App Configuration and Azure Key Vault are complementary services that should be used side by side. Azure App Configuration stores insensitive data like key-value pairs but also references secrets in Azure Key Vault. An entry in App Configuration that references such a secret stores the URI of a Key Vault value rather than the value itself. An App Configuration client provider that comes as an SDK for your application retrieves the Key Vault value reference of an entry, just as it does for any other keys stored in App Configuration. The client provider recognizes the keys as Key Vault references based on the content-type that every App Configuration entry gets. The client provider then asks the Key Vault to retrieve their secrets. Azure App Configuration and Azure Key Vault don’t communicate with each other and means that an application is still responsible for authenticating to both App Configuration and Key Vault. {% include articleAd. html %} Benefits of Azure App Configuration over Key Vault for Insensitive Data: Below is a list of features I came up with that distinguishes Azure App Configuration from Azure Key Vault. Compared to Azure Key Vault - App Configuration …  avoids Duplication supports feature flags supports flat and hierarchal key management categorizing keys using labels does point-in-time snapshots that can be replayed stores a complete timeline in key-value changes supports compare configuration values for different points in time integrates with Azure DevOps does data encryption at rest or in transitUseful Links:  Azure App Configuration Introduction Tutorial: Use Key Vault references in a Java Spring app"
     }, {
     "id": 18,
     "url": "http://localhost:4000/azure-apim-key-vault/",
@@ -536,613 +539,856 @@ function lunr_search(term) {
 
     <!-- Content -->
     <main role="main" class="site-content">
-        <div class="container">
-    
-
-    
-    
-    
-<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
-<div class="row remove-site-content-margin">
-    
-    <!-- latest post -->
-    
-    <div class="col-md-6">
-    <div class="card border-0 mb-4 box-shadow">   
-    <a href="/azure-ddos-2020-review/">
-    <div class="topfirstimage" style="background-image: url(https://cdn.svenmalvik.com/images/azure-ddos-2020-review.jpg); height: 250px;    background-size: cover;    background-repeat: no-repeat;"></div>     
-    </a>
-    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
-    <h2 class="h4 font-weight-bold">
-    <a class="text-dark" href="/azure-ddos-2020-review/">Insights & Trends of DDoS Attacks in 2020 on Azure</a>
-    </h2>
-    <p class="excerpt">
-        2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from home and the internet traffic has exploded which makes it a lot easier for an attacker to launch a DDoS attack.
-    </p>
-    <div>
-        <small class="text-muted">
-            Ad <script type="text/javascript" language="javascript" src="https://www.jdoqocy.com/placeholder-46384674?target=_top&mouseover=N"></script>
-        </small>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    <div class="col-md-6">
         
-        <!-- second latest post --><div class="mb-3 d-flex align-items-center">                
+<div class="container d-none d-md-block" style="margin-bottom: 10px; text-align: center;">
+	<script type="text/javascript" language="javascript" src="https://www.anrdoezrs.net/placeholder-46382047?target=_top&mouseover=N"></script>
+</div>
+<div class="container d-md-none" style="margin-bottom: 10px; text-align: center;">
+    <script type="text/javascript" language="javascript" src="https://www.anrdoezrs.net/placeholder-46383864?target=_top&mouseover=N"></script>
+</div>
+
+<div class="container">
+
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row  justify-content-between ">
+				<div class=" col-md-6  pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+                        <span class="catlist">
+						
+                          <a class="sscroll text-dark" href="/categories.html#azure api management">azure api management</a><span class="sep">, </span>
+                        
+                        </span>
+					</p>
+					<h1 class="display-4 mb-4 article-headline">How to Reference Key Vault Secrets in Azure API Management</h1>
+					<div class="d-flex align-items-center">
+                        
+                        <img class="rounded-circle" src="https://cdn.svenmalvik.com/images/svenmalvik.jpg" alt="Sven Malvik" width="70"/>
+                        
+						<small class="ml-3"> Sven Malvik <span><a target="_blank" href="https://www.linkedin.com/in/svenmalvik/" class="btn btn-outline-success btn-sm btn-round ml-1">Connect</a></span>
+                            <span class="text-muted d-block mt-1">Feb 05, 2021 · <span class="reading-time">
+  
+  
+    3 mins read
+  
+</span>
+    </span>
+						</small>
+					</div>
+				</div>
                 
-                <div class="col-md-4 w-50">
-                <a href="/what-is-azure/">
-                 <img class="w-100" src="https://cdn.svenmalvik.com/images/what-is-azure.jpg" alt="What is Azure?">
-                </a>
-                </div>
-                                
-                <div class="w-50">
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="/what-is-azure/">What is Azure?</a>
-                    </h2>
-                    <small class="text-muted">
-                        Feb 06, 2021
-                    </small>
-                </div>
-            </div>
-        
-        <!-- third latest post --><div class="mb-3 d-flex align-items-center">                
+				<div class="col-md-6 pr-0 align-self-center">
+					<img class="rounded" src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg" alt="How to Reference Key Vault Secrets in Azure API Management">
+				</div>
                 
-                <div class="col-md-4 w-50">
-                <a href="/azure-arm-asm/">
-                 <img class="w-100" src="https://cdn.svenmalvik.com/images/azure-arm-asm.jpg" alt="How Virtual Machine Classic is Different to (Normal) VM in Azure">
-                </a>
-                </div>
-                                
-                <div class="w-50">
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="/azure-arm-asm/">How Virtual Machine Classic is Different to (Normal) VM in Azure</a>
-                    </h2>
-                    <small class="text-muted">
-                        Feb 06, 2021
-                    </small>
-                </div>
-            </div>
-        
-        <!-- fourth latest post --><div class="mb-3 d-flex align-items-center">                
-                
-                <div class="col-md-4 w-50">
-                <a href="/azure-app-configuration-vs-key-vault/">
-                <img class="w-100" src="https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jpg" alt="How Azure Key Vault is Different to Azure App Configuration">
-                </a>
-                </div>
-                                
-                <div class="w-50">
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="/azure-app-configuration-vs-key-vault/">How Azure Key Vault is Different to Azure App Configuration</a>
-                    </h2>
-                    <small class="text-muted">
-                        Feb 05, 2021
-                    </small>
-                </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-                <div class="col-md-4 w-50">
-                    <div>
-                        <a href="https://www.dpbolvw.net/click-100299205-13350263?url=https%3A%2F%2Fwww.apress.com%2Fde%2Fbook%2F9781484259573%3Futm_medium%3Daffiliate%26utm_source%3Dcommission_junction%26utm_campaign%3D3_nsn6445_product_PID%25zp%26utm_content%3Dde_05032018%23otherversion%3D9781484259580&cjsku=9781484259580" target="_top"><img src="https://covers.springernature.com/books/jpg_width_153_pixels/9781484259580.jpg" border="0" alt="Microsoft Azure"/></a><img src="https://www.awltovhc.com/image-100299205-13350263" width="1" height="1" border="0"/>
-                    </div>
-                </div>
-                <div class="w-50">
-                    <I style="font-size: 0.8em; color: #999;">Ad</I><br><b>A good study guide for the Azure Fundamentals exam AZ-900: </b><a href="https://www.anrdoezrs.net/click-100299205-13350263?url=https%3A%2F%2Fwww.apress.com%2Fde%2Fbook%2F9781484259573%3Futm_medium%3Daffiliate%26utm_source%3Dcommission_junction%26utm_campaign%3D3_nsn6445_product_PID%25zp%26utm_content%3Dde_05032018%23otherversion%3D9781484259580&cjsku=9781484259580" target="_top">
-						Microsoft Azure</a>
-                </div>
-            </div>
-        
-    </div>
-    
-</div>
-    
-<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
-    <div class="pl-4 pr-0 h-100 tofront">
-        <div class="row justify-content-between">
-            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">Azure API Management at Norway</h1>
-                <p class="mb-3 lead">
-                    How are Norwegian companies like Vipps, SATS, Orkla, Statsbygg, and DNV GL using Azure API Management? What experiences do they have,...
-                </p>
-                <a href="/azure-apim-at-norway/" class="btn btn-secondary">Read More</a>
-            </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url(https://cdn.svenmalvik.com/images/devreal-apim_yt_cover.jpg);">	
-            </div>
-        </div>
-    </div>
-</div> 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
-
-
-    
-
-
- <!--endif page url is / -->
-    
-
-
-<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skip the first 4 posts displayed above -->
-    
-<div class="row mt-3">
-   
-    <div class="col-md-8 main-loop">
-        
-        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
-        
-
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/azure-ddos-2020-review/">Insights & Trends of DDoS Attacks in 2020 on Azure</a>
-	</h2>
-	<p class="excerpt">
-	   2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from h...
-	</p>
-
-	<small class="text-muted">
-		Feb 07, 2021
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/azure-ddos-2020-review/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-ddos-2020-review.jpg" alt="Insights & Trends of DDoS Attacks in 2020 on Azure">
-	</a>
+			</div>
+		</div>
 	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/what-is-azure/">What is Azure?</a>
-	</h2>
-	<p class="excerpt">
-	   When I started my career as a developer in a start up company, we build a website that we hosted on a physical server that was running in...
-	</p>
-
-	<small class="text-muted">
-		Feb 06, 2021
-	</small>
 </div>
 
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/what-is-azure/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/what-is-azure.jpg" alt="What is Azure?">
-	</a>
-	</div>
 
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/azure-arm-asm/">How Virtual Machine Classic is Different to (Normal) VM in Azure</a>
-	</h2>
-	<p class="excerpt">
-	   Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is t...
-	</p>
 
-	<small class="text-muted">
-		Feb 06, 2021
-	</small>
-</div>
 
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/azure-arm-asm/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-arm-asm.jpg" alt="How Virtual Machine Classic is Different to (Normal) VM in Azure">
-	</a>
-	</div>
 
-</div>
+<div class="container-lg pt-4 pb-4">
+	<div class="row justify-content-center">
         
         
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/azure-app-configuration-vs-key-vault/">How Azure Key Vault is Different to Azure App Configuration</a>
-	</h2>
-	<p class="excerpt">
-	   We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as w...
-	</p>
-
-	<small class="text-muted">
-		Feb 05, 2021
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/azure-app-configuration-vs-key-vault/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jpg" alt="How Azure Key Vault is Different to Azure App Configuration">
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/azure-apim-key-vault/">How to Reference Key Vault Secrets in Azure API Management</a>
-	</h2>
-	<p class="excerpt">
-	   In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access ...
-	</p>
-
-	<small class="text-muted">
-		Feb 05, 2021
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/azure-apim-key-vault/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg" alt="How to Reference Key Vault Secrets in Azure API Management">
-	</a>
-	</div>
-
-</div>
+        <!-- Share -->
+		<div class="col-lg-2 pr-4 mb-4 col-md-12">
+			<div class="sticky-top sticky-top-offset text-center">
+				<div style="text-align: left;">
+					<I style="font-size: 0.8em; color: #999;">Ad</I>
+					<br>
+					<a href="https://www.kqzyfj.com/click-100299205-13350263?url=https%3A%2F%2Fwww.apress.com%2Fde%2Fbook%2F9781484244432%3Futm_medium%3Daffiliate%26utm_source%3Dcommission_junction%26utm_campaign%3D3_nsn6445_product_PID%25zp%26utm_content%3Dde_05032018%23otherversion%3D9781484244432&cjsku=9781484244432" target="_top">
+						Beginning Azure Functions</a><img src="https://www.awltovhc.com/image-100299205-13350263" width="1" height="1" border="0"/>
+				</div>
+				<div>
+					<a href="https://www.anrdoezrs.net/click-100299205-13350263?url=https%3A%2F%2Fwww.apress.com%2Fde%2Fbook%2F9781484244432%3Futm_medium%3Daffiliate%26utm_source%3Dcommission_junction%26utm_campaign%3D3_nsn6445_product_PID%25zp%26utm_content%3Dde_05032018%23otherversion%3D9781484244432&cjsku=9781484244432" target="_top"><img src="https://covers.springernature.com/books/jpg_width_153_pixels/9781484244432.jpg" border="0" alt="Beginning Azure Functions"/></a><img src="https://www.awltovhc.com/image-100299205-13350263" width="1" height="1" border="0"/>
+				</div>
+				<div class="text-muted mt-3">
+					Share this
+				</div>
+				<div class="share d-inline-block">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_twitter"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+			</div>
+		</div>
         
         
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/azure-nsg-vs-firewall/">How is Azure Firewall different from Network Security Groups?</a>
-	</h2>
-	<p class="excerpt">
-	   Azure provides two security features in Azure for managing inbound and outbound traffic to and from Azure resources like virtual machines...
-	</p>
-
-	<small class="text-muted">
-		Feb 04, 2021
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/azure-nsg-vs-firewall/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-firewall-vs-nsg.jpg" alt="How is Azure Firewall different from Network Security Groups?">
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/azure-icons/">Secret Behind Pretty Azure Architecture Diagrams</a>
-	</h2>
-	<p class="excerpt">
-	   One of my fellow cloud engineers in my team asked today in the morning about these pretty architecture diagrams that we nowadays have and...
-	</p>
-
-	<small class="text-muted">
-		Feb 04, 2021
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/azure-icons/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-icons.jpg" alt="Secret Behind Pretty Azure Architecture Diagrams">
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/azure-az900/">AZ-900 Self-Study Guide for Azure Fundamentals</a>
-	</h2>
-	<p class="excerpt">
-	   There are many good reasons to become Microsoft Azure Certified and take the Microsoft Azure AZ-900 exam. If you are reading this blog po...
-	</p>
-
-	<small class="text-muted">
-		Feb 03, 2021
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/azure-az900/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-900.jpg" alt="AZ-900 Self-Study Guide for Azure Fundamentals">
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/devreal-diversity-inclusion/">Diversity & Inclusion Tech Conversation</a>
-	</h2>
-	<p class="excerpt">
-	   How are organizations like Vipps, Microsoft and Tata Consultancy Services (TCS) establishing a diverse and inclusive workplace? What init...
-	</p>
-
-	<small class="text-muted">
-		Feb 03, 2021
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/devreal-diversity-inclusion/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/devreal-di-cover3.jpg" alt="Diversity & Inclusion Tech Conversation">
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/azure-apim-function-msi/">How to Secure Azure Functions App with Azure API Management</a>
-	</h2>
-	<p class="excerpt">
-	   How to use an Azure Managed Identity to authenticate against an Azure Functions app that is exposed through Azure API Management. Our Fun...
-	</p>
-
-	<small class="text-muted">
-		Feb 02, 2021
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/azure-apim-function-msi/">
-	<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-function-identity.jpg" alt="How to Secure Azure Functions App with Azure API Management">
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-        <div class="mt-5">
-         <!-- Pagination links -->
+		<div class="col-md-12 col-lg-8">
             
-            <ul class="pagination"> 
-              
-                <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
-              
+            <!-- Article -->
+			<article class="article-post">                
+			<p><em>In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access to all secrets stored in named values for using in policies for JWT token validation or because for sending passwords in authentication headers. It’s therefore best practice to store secrets in Azure Key Vault and not in named values. Azure API Management can then use its Managed Service Identity to access the secrets from this Azure Key Vault by referencing secrets. This post will show how to set a secret as the value in a response header.</em></p>
 
-              
-                
-                <li class="page-item disabled"><span class="webjeda page-link">1</span></li>
-                
-              
-                
-                <li class="page-item"><a class="page-link" href="/page2">2</a></li>
-                
-              
-                
-                <li class="page-item"><a class="page-link" href="/page3">3</a></li>
-                
-              
-                
-                <li class="page-item"><a class="page-link" href="/page4">4</a></li>
-                
-              
-                
-                <li class="page-item"><a class="page-link" href="/page5">5</a></li>
-                
-              
-                
-                <li class="page-item"><a class="page-link" href="/page6">6</a></li>
-                
-              
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-              
-                <li class="page-item"><a class="page-link" href="/page2">Next &raquo;</a></li>
-              
-            </ul>
-                  
-        </div>
-        
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5867637072125128" data-ad-slot="6992142934"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="enable-managed-identity-in-apim">Enable Managed Identity in APIM</h2>
+
+<p>In Azure, an AD identity can be assigned to a managed resource such as a Azure Function, App Service and also an instance of Azure API Management. A Resource with an identity has the capabilities to work with other resources that leverage Azure AD for authentication. We can easily enable a managed system identity (MSI) in APIM.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-6.jpg" alt="Enable managed system identity in Azure API Management" /><em>Enable managed system identity in Azure API Management</em></p>
+
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5867637072125128" data-ad-slot="6992142934"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="key-vault">Key Vault</h2>
+
+<p>To demonstrate how to access a secret from APIM, let’s first create a secret <code class="highlighter-rouge">mysecret</code> with a value <code class="highlighter-rouge">secretaccesscode</code>.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-1.jpg" alt="Create secret in Azure Key Vault" /><em>Create secret in Azure Key Vault</em></p>
+
+<p>Just to show you the value of the secret, here it’s visible.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-2.jpg" alt="Show secret value in Azure Key Vault" /><em>Show secret value in Azure Key Vault</em></p>
+
+<p>We need now to tell our Key Vault that our apim instance has permission to <code class="highlighter-rouge">Get</code> <code class="highlighter-rouge">mysecret</code>. We do this by adding a new access policy as shown below.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-3.jpg" alt="Add access policy in Azure Key Vault" /><em>Add access policy in Azure Key Vault</em></p>
+
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5867637072125128" data-ad-slot="6992142934"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Set the secret permission to <code class="highlighter-rouge">Get</code> and select the identity of your Azure API Management instance.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-4.jpg" alt="Configure access policy in Azure Key Vault" /><em>Configure access policy in Azure Key Vault</em></p>
+
+<p>Now we can see that we set up a new access policy. <strong>Remember to save :)</strong>.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-5.jpg" alt="Save access policy in Azure Key Vault" /><em>Save access policy in Azure Key Vault</em></p>
+
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5867637072125128" data-ad-slot="6992142934"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="referencing-a-key-vault-key-in-azure-api-management">Referencing a Key Vault Key in Azure API Management</h2>
+
+<p>Add a new named value in your APIM instance and select the type <code class="highlighter-rouge">Key Vault</code>. A new pane opens where you can select the key vault and secret you want to reference. In my case it’s <code class="highlighter-rouge">mysecret</code>.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-7.jpg" alt="Reference secret in apim named values" /><em>Reference secret in apim named values</em></p>
+
+<p>If everything went well you will see a green Success icon.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-8.jpg" alt="Referenced secret in apim named values" /><em>Referenced secret in apim named values</em></p>
+
+<p>Let’s now select a random API operation and open the policy so we can add a response header.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-9.jpg" alt="Edit API policy" /><em>Edit API policy</em></p>
+
+<p>I add a basic header with the named value that I called <code class="highlighter-rouge">secret-from-kv</code>.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-11.jpg" alt="Add customer header with secret value to API policy" /><em>Add customer header with secret value to API policy</em></p>
+
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5867637072125128" data-ad-slot="6992142934"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Finally, we test this endpoint and can see the value in the response.</p>
+
+<p><img src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets-10.jpg" alt="Retrieve customer header with secret value from API" /><em>Retrieve customer header with secret value from API</em></p>
+
+<blockquote>
+  <p>Developers that have access to this instance may be able to debug a policy, hence retrieve the secret.</p>
+</blockquote>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Referencing secrets from Azure Key Vaults in Named Values was introduced December 2020. That means that we don’t need to follow tutorials from many blog posts that were written before.</p>
+
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5867637072125128" data-ad-slot="6992142934"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="useful-links">Useful Links</h2>
+
+<p><a href="https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-properties#key-vault-secrets?WT.mc_id=AZ-MVP-5004080">Use named values in Azure API Management policies - Key vault secrets</a></p>
+                
+			</article>
+			
+			<!-- Tags -->
+			<div class="mb-4">
+				<span class="taglist">
+				
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure">azure</a>
+				
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure api management">azure api management</a>
+				
+				</span>
+			</div>
+
+ 
+            <!-- Mailchimp Subscribe Form -->
+            
+			<div class="border p-5 bg-lightblue">
+				<div class="row justify-content-between">
+					<div class="col-md-6 mb-2 mb-md-0">
+						<h5 class="font-weight-bold">Join Newsletter</h5>
+						 Get the latest updates right in your inbox. I never spam!
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+                            <form action="http://eepurl.com/hnE_Zf" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate w-100" target="_blank" novalidate>
+                            <div class="mc-field-group">
+							
+								<input type="email" placeholder="Enter e-mail address" name="EMAIL" class="required email form-control w-100" id="mce-EMAIL" autocomplete="on" required>
+							
+							
+								<button type="submit" value="Subscribe" name="subscribe" class="heart btn btn-success btn-block w-100 mt-2">Subscribe</button>
+							
+                            </div>
+                            </form>
+						</div>
+					</div>
+				</div>
+			</div>
+            
+            
+            
+             <!-- Author Box -->
+                				
+				<div class="row mt-5">
+					<div class="col-md-2 align-self-center">
+                         
+                        <img class="rounded-circle" src="https://cdn.svenmalvik.com/images/svenmalvik.jpg" alt="Sven Malvik" width="90"/>
+                         
+					</div>
+					<div class="col-md-10">		
+                        <h5 class="font-weight-bold">Written by Sven Malvik </h5>
+											
+					</div>
+				</div>				
+                
+            
+            <!-- Comments -->
+            
+                <!--  Don't edit anything here. Set your disqus id in _config.yml -->
+
+<div id="comments" class="mt-5">
+    <div id="disqus_thread">
     </div>
-    
-    <div class="col-md-4">
-        <div class="sticky-top sticky-top-offset">
-    <h4 class="font-weight-bold spanborder"><span>Featured</span></h4>  
-    <ol class="list-featured">				
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/azure-icons/" class="text-dark">Secret Behind Pretty Azure Architecture Diagrams</a>
-                </h6>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/azure-az900/" class="text-dark">AZ-900 Self-Study Guide for Azure Fundamentals</a>
-                </h6>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/azure-naming-conventions/" class="text-dark">Azure Naming Convention Best Practices</a>
-                </h6>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/azure-az304/" class="text-dark">AZ-304 Self-Study Guide for Becoming an Azure Solution Architect Expert</a>
-                </h6>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/azure-az303/" class="text-dark">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
-                </h6>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/azure-mvp/" class="text-dark">How I became a Microsoft Azure MVP</a>
-                </h6>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/azure-apim-policies/" class="text-dark">Understanding Policies in Azure API Management</a>
-                </h6>
-            </span>
-            </li>                
-                        
-            <li class="mb-4">
-            <span>
-                <h6 class="font-weight-bold">
-                    <a href="/azure-apim-with-eventhub/" class="text-dark">Logging in Azure API Management</a>
-                </h6>
-            </span>
-            </li>                
-           
-    </ol>
+    <script type="text/javascript">
+        var disqus_shortname = 'demowebsite'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>
+    Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</div>
+            
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- All Stories -->
+			<div class="d-none d-md-block col-md-12 main-loop mt-3">
+
+				<h4 class="font-weight-bold spanborder"><span>Latest Stories</span></h4>
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/azure-ddos-2020-review/">Insights & Trends of DDoS Attacks in 2020 on Azure</a>
+		</h2>
+		<p class="excerpt">
+		2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from h...
+		</p>
+
+		<small class="text-muted">
+			Feb 07, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/azure-ddos-2020-review/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-ddos-2020-review.jpg" alt="Insights & Trends of DDoS Attacks in 2020 on Azure">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/what-is-azure/">What is Azure?</a>
+		</h2>
+		<p class="excerpt">
+		When I started my career as a developer in a start up company, we build a website that we hosted on a physical server that was running in...
+		</p>
+
+		<small class="text-muted">
+			Feb 06, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/what-is-azure/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/what-is-azure.jpg" alt="What is Azure?">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/azure-arm-asm/">How Virtual Machine Classic is Different to (Normal) VM in Azure</a>
+		</h2>
+		<p class="excerpt">
+		Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is t...
+		</p>
+
+		<small class="text-muted">
+			Feb 06, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/azure-arm-asm/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-arm-asm.jpg" alt="How Virtual Machine Classic is Different to (Normal) VM in Azure">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/azure-app-configuration-vs-key-vault/">How Azure Key Vault is Different to Azure App Configuration</a>
+		</h2>
+		<p class="excerpt">
+		We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as w...
+		</p>
+
+		<small class="text-muted">
+			Feb 05, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/azure-app-configuration-vs-key-vault/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jpg" alt="How Azure Key Vault is Different to Azure App Configuration">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/azure-nsg-vs-firewall/">How is Azure Firewall different from Network Security Groups?</a>
+		</h2>
+		<p class="excerpt">
+		Azure provides two security features in Azure for managing inbound and outbound traffic to and from Azure resources like virtual machines...
+		</p>
+
+		<small class="text-muted">
+			Feb 04, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/azure-nsg-vs-firewall/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-firewall-vs-nsg.jpg" alt="How is Azure Firewall different from Network Security Groups?">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/azure-icons/">Secret Behind Pretty Azure Architecture Diagrams</a>
+		</h2>
+		<p class="excerpt">
+		One of my fellow cloud engineers in my team asked today in the morning about these pretty architecture diagrams that we nowadays have and...
+		</p>
+
+		<small class="text-muted">
+			Feb 04, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/azure-icons/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-icons.jpg" alt="Secret Behind Pretty Azure Architecture Diagrams">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/azure-az900/">AZ-900 Self-Study Guide for Azure Fundamentals</a>
+		</h2>
+		<p class="excerpt">
+		There are many good reasons to become Microsoft Azure Certified and take the Microsoft Azure AZ-900 exam. If you are reading this blog po...
+		</p>
+
+		<small class="text-muted">
+			Feb 03, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/azure-az900/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-900.jpg" alt="AZ-900 Self-Study Guide for Azure Fundamentals">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/devreal-diversity-inclusion/">Diversity & Inclusion Tech Conversation</a>
+		</h2>
+		<p class="excerpt">
+		How are organizations like Vipps, Microsoft and Tata Consultancy Services (TCS) establishing a diverse and inclusive workplace? What init...
+		</p>
+
+		<small class="text-muted">
+			Feb 03, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/devreal-diversity-inclusion/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/devreal-di-cover3.jpg" alt="Diversity & Inclusion Tech Conversation">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/azure-apim-function-msi/">How to Secure Azure Functions App with Azure API Management</a>
+		</h2>
+		<p class="excerpt">
+		How to use an Azure Managed Identity to authenticate against an Azure Functions app that is exposed through Azure API Management. Our Fun...
+		</p>
+
+		<small class="text-muted">
+			Feb 02, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/azure-apim-function-msi/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-function-identity.jpg" alt="How to Secure Azure Functions App with Azure API Management">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="/azure-naming-conventions/">Azure Naming Convention Best Practices</a>
+		</h2>
+		<p class="excerpt">
+		Structure helps us to be in control. That is very true also in Azure. Especially in larger organizations where many cloud engineers creat...
+		</p>
+
+		<small class="text-muted">
+			Feb 02, 2021
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="/azure-naming-conventions/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-naming-conventions.jpg" alt="Azure Naming Convention Best Practices">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+			
+			</div>
+
+			<div class="d-md-none col-md-12 main-loop mt-3">
+		
+				<h4 class="font-weight-bold spanborder"><span>Latest Stories</span></h4>
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/azure-ddos-2020-review/">Insights & Trends of DDoS Attacks in 2020 on Azure</a>
+		</h2>
+
+		
+		<a href="/azure-ddos-2020-review/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-ddos-2020-review.jpg" alt="Insights & Trends of DDoS Attacks in 2020 on Azure">
+		</a>
+		
+		
+		<p class="excerpt">
+		2020 was a rough year for the Azure DDoS Protection team in Microsoft. DDoS attacks has grown with 50% in 2020. We are all working from h...
+		</p>
+
+		<small class="text-muted">
+			Feb 07, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/what-is-azure/">What is Azure?</a>
+		</h2>
+
+		
+		<a href="/what-is-azure/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/what-is-azure.jpg" alt="What is Azure?">
+		</a>
+		
+		
+		<p class="excerpt">
+		When I started my career as a developer in a start up company, we build a website that we hosted on a physical server that was running in...
+		</p>
+
+		<small class="text-muted">
+			Feb 06, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/azure-arm-asm/">How Virtual Machine Classic is Different to (Normal) VM in Azure</a>
+		</h2>
+
+		
+		<a href="/azure-arm-asm/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-arm-asm.jpg" alt="How Virtual Machine Classic is Different to (Normal) VM in Azure">
+		</a>
+		
+		
+		<p class="excerpt">
+		Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is t...
+		</p>
+
+		<small class="text-muted">
+			Feb 06, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/azure-app-configuration-vs-key-vault/">How Azure Key Vault is Different to Azure App Configuration</a>
+		</h2>
+
+		
+		<a href="/azure-app-configuration-vs-key-vault/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jpg" alt="How Azure Key Vault is Different to Azure App Configuration">
+		</a>
+		
+		
+		<p class="excerpt">
+		We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as w...
+		</p>
+
+		<small class="text-muted">
+			Feb 05, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/azure-nsg-vs-firewall/">How is Azure Firewall different from Network Security Groups?</a>
+		</h2>
+
+		
+		<a href="/azure-nsg-vs-firewall/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-firewall-vs-nsg.jpg" alt="How is Azure Firewall different from Network Security Groups?">
+		</a>
+		
+		
+		<p class="excerpt">
+		Azure provides two security features in Azure for managing inbound and outbound traffic to and from Azure resources like virtual machines...
+		</p>
+
+		<small class="text-muted">
+			Feb 04, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/azure-icons/">Secret Behind Pretty Azure Architecture Diagrams</a>
+		</h2>
+
+		
+		<a href="/azure-icons/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-icons.jpg" alt="Secret Behind Pretty Azure Architecture Diagrams">
+		</a>
+		
+		
+		<p class="excerpt">
+		One of my fellow cloud engineers in my team asked today in the morning about these pretty architecture diagrams that we nowadays have and...
+		</p>
+
+		<small class="text-muted">
+			Feb 04, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/azure-az900/">AZ-900 Self-Study Guide for Azure Fundamentals</a>
+		</h2>
+
+		
+		<a href="/azure-az900/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-900.jpg" alt="AZ-900 Self-Study Guide for Azure Fundamentals">
+		</a>
+		
+		
+		<p class="excerpt">
+		There are many good reasons to become Microsoft Azure Certified and take the Microsoft Azure AZ-900 exam. If you are reading this blog po...
+		</p>
+
+		<small class="text-muted">
+			Feb 03, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/devreal-diversity-inclusion/">Diversity & Inclusion Tech Conversation</a>
+		</h2>
+
+		
+		<a href="/devreal-diversity-inclusion/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/devreal-di-cover3.jpg" alt="Diversity & Inclusion Tech Conversation">
+		</a>
+		
+		
+		<p class="excerpt">
+		How are organizations like Vipps, Microsoft and Tata Consultancy Services (TCS) establishing a diverse and inclusive workplace? What init...
+		</p>
+
+		<small class="text-muted">
+			Feb 03, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/azure-apim-function-msi/">How to Secure Azure Functions App with Azure API Management</a>
+		</h2>
+
+		
+		<a href="/azure-apim-function-msi/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-function-identity.jpg" alt="How to Secure Azure Functions App with Azure API Management">
+		</a>
+		
+		
+		<p class="excerpt">
+		How to use an Azure Managed Identity to authenticate against an Azure Functions app that is exposed through Azure API Management. Our Fun...
+		</p>
+
+		<small class="text-muted">
+			Feb 02, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="/azure-naming-conventions/">Azure Naming Convention Best Practices</a>
+		</h2>
+
+		
+		<a href="/azure-naming-conventions/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-naming-conventions.jpg" alt="Azure Naming Convention Best Practices">
+		</a>
+		
+		
+		<p class="excerpt">
+		Structure helps us to be in control. That is very true also in Azure. Especially in larger organizations where many cloud engineers creat...
+		</p>
+
+		<small class="text-muted">
+			Feb 02, 2021
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
+			
+			</div>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
@@ -1152,16 +1398,34 @@ function lunr_search(term) {
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</div> 
+            
+		</div>
 
-    
+
+        
+        
+	</div>
+</div>
+
+
+<!-- Aletbar Prev/Next -->
+<div class="alertbar">
+    <div class="container">
+        <div class="row prevnextlinks small font-weight-bold">
+          
+            <div class="col-md-6 rightborder pl-0">
+                <a class="text-dark" href="/azure-nsg-vs-firewall/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/azure-firewall-vs-nsg.jpg">  How is Azure Firewall different from Network Security Groups?</a>
+            </div>
+          
+          
+            <div class="col-md-6 text-right pr-0">
+                <a class="text-dark" href="/azure-app-configuration-vs-key-vault/"> How Azure Key Vault is Different to Azure App Configuration  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jpg"> </a>
+            </div>
+          
+        </div>
     </div>
-    
 </div>
 
-
-
-</div>
     </main>
 
 
