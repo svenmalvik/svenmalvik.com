@@ -1,7 +1,7 @@
 ---
 title: "Sven Malvik"
 layout: default
-permalink: "/author-sven-malvik"
+permalink: "/aboutme"
 ---
 
 <div class="container" style="margin-bottom: 10px; text-align: center;">
