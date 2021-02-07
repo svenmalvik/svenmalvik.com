@@ -454,27 +454,27 @@ var documents = [{
     "id": 65,
     "url": "/azure-apim-deploy-with-arm/",
     "title": "Azure API Management with ARM",
-    "body": "2020/03/28 - Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Management, BUT - there are a couple of things we need to be aware of. Deploy Azure API Management with ARM from GitHub: The Microsoft Azure API Management Product Team has provided some ARM templates with a nice button that let us with a click load some settings into Azure. What’s missing are some parameters like email address, name and SKU that we have to set manually. We want to automate this of course, and we’ll do that in a minute. First, we’ll look at how this manual process works. Azure API Management Templates Let’s Deploy to Azure, and see what happens. Create Azure API Management in the portal Since we have used a public available ARM template, we need to set some parameters. An interesting observation is that the default SKU is Developer. We know that from previous deployments. But if we want to change it to Consumption, we’ll see that it’s not available. This template is from 2017 where Consumption was not available. What I’ve done now is to fork the repo and made some changes in the ARM template. azuredeploy. json I’ve not only added two SKUs, but I’ve also added 0 to skuCount as an allowed value. 0 is the value we have to set for Consumption. Deploying from my fork svenmalvik/azure-quickstart-templates/101-azure-api-management-create will make it possible to choose Consumption as well. I’ve set Consumption as default. To fully automated the deployment of the ARM template, we need to set some more default values like email and name.  Deploy Azure API Management with ARM from a local machine: Instead of clicking a nice blue button on GitHub, I was wondering if I just can apply the ARM template with default values and without any interactions. The code below deploys the remote ARM template that doesn’t need our attention. # Create resource groupNew-AzResourceGroup -Name  apim-with-arm-rg  -Location  West Europe # Deploy remote ARM templateNew-AzResourceGroupDeployment -ResourceGroupName  apim-with-arm-rg  -TemplateUri https://raw. githubusercontent. com/svenmalvik/azure-quickstart-templates/master/101-azure-api-management-create/azuredeploy. jsonDeploy Azure API Management with remote ARM template Conclusion: Working with ARM templates is a bit more work that we’ve seen in a previous post where we deployed API Management with the Azure PowerShell module. The advantage with ARM is its completeness. There are certain configurations like setting a custom domain that we can’t do with PowerShell today and where ARM fits perfectly. "
+    "body": "2020/03/28 - Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Management, BUT - there are a couple of things we need to be aware of. Deploy Azure API Management with ARM from GitHub: The Microsoft Azure API Management Product Team has provided some ARM templates with a nice button that let us with a click load some settings into Azure. What’s missing are some parameters like email address, name and SKU that we have to set manually. We want to automate this of course, and we’ll do that in a minute. First, we’ll look at how this manual process works. Azure API Management Templates Let’s Deploy to Azure, and see what happens. Create Azure API Management in the portal Since we have used a public available ARM template, we need to set some parameters. An interesting observation is that the default SKU is Developer. We know that from previous deployments. But if we want to change it to Consumption, we’ll see that it’s not available. This template is from 2017 where Consumption was not available. What I’ve done now is to fork the repo and made some changes in the ARM template. azuredeploy. json I’ve not only added two SKUs, but I’ve also added 0 to skuCount as an allowed value. 0 is the value we have to set for Consumption. Deploying from my fork svenmalvik/azure-quickstart-templates/101-azure-api-management-create will make it possible to choose Consumption as well. I’ve set Consumption as default. To fully automated the deployment of the ARM template, we need to set some more default values like email and name. Deploy Azure API Management with ARM from a local machine: Instead of clicking a nice blue button on GitHub, I was wondering if I just can apply the ARM template with default values and without any interactions. The code below deploys the remote ARM template that doesn’t need our attention. # Create resource groupNew-AzResourceGroup -Name  apim-with-arm-rg  -Location  West Europe # Deploy remote ARM templateNew-AzResourceGroupDeployment -ResourceGroupName  apim-with-arm-rg  -TemplateUri https://raw. githubusercontent. com/svenmalvik/azure-quickstart-templates/master/101-azure-api-management-create/azuredeploy. jsonDeploy Azure API Management with remote ARM template Conclusion: Working with ARM templates is a bit more work that we’ve seen in a previous post where we deployed API Management with the Azure PowerShell module. The advantage with ARM is its completeness. There are certain configurations like setting a custom domain that we can’t do with PowerShell today and where ARM fits perfectly. "
     }, {
     "id": 66,
     "url": "/azure-apim-deploy-with-powershell/",
     "title": "Azure API Management with PowerShell",
-    "body": "2020/03/21 - We use a lot of PowerShell to provision the Azure infrastructure that powers Vipps AS today. PowerShell is actually a great choice for using working with APIM since it great supported. The PowerShell for Azure is actually using the REST API, so you can expect to get the same support. In case you would like to see the REST API in action for provisioning API Management, you can follow the link. I will use PowerShell to provision an instance of API Management today. Let’s start by connecting to our Azure account by executing this PowerShell code: Connect-AzAccount -SubscriptionId  &lt;SUBSCRIPTION_ID&gt;  -Tenant  &lt;TENANT_ID&gt; You will be redirected to Microsoft within your browser to login. When everything is correct, you can proceed in your PowerShell editor. Whenever we provision a resource, we need to add it to a resource group. In case you didn’t create one previously, you run this code: New-AzResourceGroup -Name  apim-rg  -Location  West Europe It’s always a good idea to tag your resources. We’ll cover this in a later post. Deploying API Management: Now it’s time to deploy an instance by executing this PowerShell code: New-AzApiManagement -ResourceGroupName  apim-rg  -Name  apim-service  -Location  West Europe  -Organization  &lt;ORGANIZATION&gt;  -AdminEmail  sven@malvik. de The deployment takes about 2 minutes. In case we’d deployed with SKU Developer, we’d need to wait up to an hour. You can verify this by going into your portal and navigate to your new instance.  Importing an API: It’s not part of this post, but I really want to show it because it’s very simple as well. What you need is a Swagger-file. There are many other options of creating an API, but that is part of a later post as well. I will use the public available Conference API and put the link to it in a variable. $SwaggerfileUrl =  https://conferenceapi. azurewebsites. net?format=json We need to create a context. We are basically telling what instance of APIM we want to use. Specify the resource group and the name of your instance. $apimContext = New-AzApiManagementContext -ResourceGroupName  apim-rg  -ServiceName  apim-service Finally, we can import the API by defining the url of our swagger file, a path that a request will use to reach the API, and an ApiId that you can choose yourself. Import-AzApiManagementApi -Context $apimContext -SpecificationFormat  Swagger  -SpecificationUrl $SwaggerfileUrl -Path  conference  -ApiId  conferenceAPI Click for the final PowerShell-code Conclusion: We used PowerShell to create an instance of API Management. As mentioned above, PowerShell is actually a great tool for working with API Management. But there are lots of other options to choose of when provisioning APIM. "
+    "body": "2020/03/21 - We use a lot of PowerShell to provision the Azure infrastructure that powers Vipps AS today. PowerShell is actually a great choice for using working with APIM since it great supported. The PowerShell for Azure is actually using the REST API, so you can expect to get the same support. In case you would like to see the REST API in action for provisioning API Management, you can follow the link. I will use PowerShell to provision an instance of API Management today. Let’s start by connecting to our Azure account by executing this PowerShell code: Connect-AzAccount -SubscriptionId  &lt;SUBSCRIPTION_ID&gt;  -Tenant  &lt;TENANT_ID&gt; You will be redirected to Microsoft within your browser to login. When everything is correct, you can proceed in your PowerShell editor. Whenever we provision a resource, we need to add it to a resource group. In case you didn’t create one previously, you run this code: New-AzResourceGroup -Name  apim-rg  -Location  West Europe It’s always a good idea to tag your resources. We’ll cover this in a later post. Deploying API Management: Now it’s time to deploy an instance by executing this PowerShell code: New-AzApiManagement -ResourceGroupName  apim-rg  -Name  apim-service  -Location  West Europe  -Organization  &lt;ORGANIZATION&gt;  -AdminEmail  sven@malvik. de The deployment takes about 2 minutes. In case we’d deployed with SKU Developer, we’d need to wait up to an hour. You can verify this by going into your portal and navigate to your new instance. Importing an API: It’s not part of this post, but I really want to show it because it’s very simple as well. What you need is a Swagger-file. There are many other options of creating an API, but that is part of a later post as well. I will use the public available Conference API and put the link to it in a variable. $SwaggerfileUrl =  https://conferenceapi. azurewebsites. net?format=json We need to create a context. We are basically telling what instance of APIM we want to use. Specify the resource group and the name of your instance. $apimContext = New-AzApiManagementContext -ResourceGroupName  apim-rg  -ServiceName  apim-service Finally, we can import the API by defining the url of our swagger file, a path that a request will use to reach the API, and an ApiId that you can choose yourself. Import-AzApiManagementApi -Context $apimContext -SpecificationFormat  Swagger  -SpecificationUrl $SwaggerfileUrl -Path  conference  -ApiId  conferenceAPI Click for the final PowerShell-code Conclusion: We used PowerShell to create an instance of API Management. As mentioned above, PowerShell is actually a great tool for working with API Management. But there are lots of other options to choose of when provisioning APIM. "
     }, {
     "id": 67,
     "url": "/azure-apim-deploy-with-rest/",
     "title": "Azure API Management with REST",
-    "body": "2020/03/14 - Today, we will provision Azure API Management by using Postman as an API client, sending plain web requests to Azure. We already provisioned an APIM instance in the last post from within the Azure Portal. This is the fastest way of getting an instance up and running to try out APIM. But if you want to put an instance into production, we should be able to automate this process. Provisioning with REST can be one step in that direction. Create a Service Principal with the Azure CLI: Whenever we send a request to Azure, we need to set an Authorization token in the header. We get this token by creating a Service Principal. Let’s first login. We use the Azure CLI for that. The Json response gives us two information that we need. Id which is our subscriptionId and the tenantId. The Json response gives us two information that we need. Id which is our subscriptionId and the tenantId. az login Then, we create the service principal and give it a name. Create service principal We got now also the password of the service principal that we’ll need for retrieving the access token. 2 Different Ways of Retrieving an Access Token: We will need Postman, so great if you can download and install Postman first. Otherwise, cURL works just fine of course. It’s just less work because I will share a pre-made collection of requests with you. When you have installed Postman, you can simply load a collection of requests into Postman. You should now see this in Postman. Postman Collection Click on the Settings icon of the “Azure REST”-collection in the top-right corner for setting the parameters like TenantId, ClientId (AppId), ClientSecret (Password) and SubscriptionId.  Postman Environment Variables We can now send the first request for retrieving an access token. Azure Access Token in Postman There we are. Actually, there is a simpler way of retrieving an access token through the Azure CLI directly. This works fine in case you just want to try out some API endpoints. az account get-access-token It’s now time to create an instance of API Management. Create an instance of API Management with Postman: Create a new request inside the Azure REST collection in Postman by copying the example request from the API Management documentation. Create a PUT request with the following url. Remember to replace the values. https://management. azure. com/subscriptions/YOUR_SUBSCRIPTIONID/resourceGroups/YOUR_RESOURCEGROUP/providers/Microsoft. ApiManagement/service/YOUR_APIM_INSTANCE_NAME?api-version=2019-01-01 Then, add an Authorization header with the following bearer token Bearer The bearer token gets picked up by Postman when we retrieve the access token. Take a look at the “Test” pane of this request. You could also paste in the access token directly of course. Last, put this json payload inside the body: {  properties : {   publisherEmail :  YOUR_EMAIL ,   publisherName :  YOUR_NAME  },  sku : {   name :  Consumption ,   capacity : 0 },  location :  West Europe ,  tags : {   Owner :  YOUR_NAME  }}Let’s now send the request. Postman send request That was a success and we can see the result in the portal. Created Azure API Management instance from Postman Conclusion: Provisioning an instance of API Management with REST is a pretty straightforward process. The only complicated task was to create a service principal (spn). This spn is not configured yet, and we should do this, but it’s content for another post. "
+    "body": "2020/03/14 - Today, we will provision Azure API Management by using Postman as an API client, sending plain web requests to Azure. We already provisioned an APIM instance in the last post from within the Azure Portal. This is the fastest way of getting an instance up and running to try out APIM. But if you want to put an instance into production, we should be able to automate this process. Provisioning with REST can be one step in that direction. Create a Service Principal with the Azure CLI: Whenever we send a request to Azure, we need to set an Authorization token in the header. We get this token by creating a Service Principal. Let’s first login. We use the Azure CLI for that. The Json response gives us two information that we need. Id which is our subscriptionId and the tenantId. The Json response gives us two information that we need. Id which is our subscriptionId and the tenantId. az login Then, we create the service principal and give it a name. Create service principal We got now also the password of the service principal that we’ll need for retrieving the access token. 2 Different Ways of Retrieving an Access Token: We will need Postman, so great if you can download and install Postman first. Otherwise, cURL works just fine of course. It’s just less work because I will share a pre-made collection of requests with you. When you have installed Postman, you can simply load a collection of requests into Postman. You should now see this in Postman. Postman Collection Click on the Settings icon of the “Azure REST”-collection in the top-right corner for setting the parameters like TenantId, ClientId (AppId), ClientSecret (Password) and SubscriptionId. Postman Environment Variables We can now send the first request for retrieving an access token. Azure Access Token in Postman There we are. Actually, there is a simpler way of retrieving an access token through the Azure CLI directly. This works fine in case you just want to try out some API endpoints. az account get-access-token It’s now time to create an instance of API Management. Create an instance of API Management with Postman: Create a new request inside the Azure REST collection in Postman by copying the example request from the API Management documentation. Create a PUT request with the following url. Remember to replace the values. https://management. azure. com/subscriptions/YOUR_SUBSCRIPTIONID/resourceGroups/YOUR_RESOURCEGROUP/providers/Microsoft. ApiManagement/service/YOUR_APIM_INSTANCE_NAME?api-version=2019-01-01 Then, add an Authorization header with the following bearer token Bearer The bearer token gets picked up by Postman when we retrieve the access token. Take a look at the “Test” pane of this request. You could also paste in the access token directly of course. Last, put this json payload inside the body: {  properties : {   publisherEmail :  YOUR_EMAIL ,   publisherName :  YOUR_NAME  },  sku : {   name :  Consumption ,   capacity : 0 },  location :  West Europe ,  tags : {   Owner :  YOUR_NAME  }}Let’s now send the request. Postman send request That was a success and we can see the result in the portal. Created Azure API Management instance from Postman Conclusion: Provisioning an instance of API Management with REST is a pretty straightforward process. The only complicated task was to create a service principal (spn). This spn is not configured yet, and we should do this, but it’s content for another post. "
     }, {
     "id": 68,
     "url": "/azure-apim-deploy-with-portal/",
     "title": "Azure API Management from the Portal",
-    "body": "2020/03/07 - We will provision Azure API Management. Creating an instance of it is just a click in the Azure Portal. We’ll do it once to show how easy it is before we move forward to some other ways that enable us to automate it. The first thing we will do is to “Create a resource”, type “Api Management” and click the resource that is shown in the drop down menu. Search Azure API Management in the Portal Then click create. Select Azure API Management in the Portal You will now see the pane where you set some important parameters. Azure API Management Form Chose the subscription you want to provision you instance to and a resource group. We will talk about resource groups later because they are interesting when it comes to global services that we spin up. They also need the resource group which gets a region. The most important parameter is the Pricing Tier (SKU). The default value is Developer. In case you just want to try out the service, Consumption is a good choice as we only pay per request, and we don’t need to delete it when we need a longer break. It’s also a good choice in case you are impatient. Creating an instance takes about a minute compared to the other choices that take up to an hour.  Do want to monitor your instance? If you just want to play with Azure API Management as we do, we probably don’t need it. We will save some money not enabling it for now. We got now a our first instance of Azure API Management! Azure API Management Overview You know already all values that we see in the Overview of it. There is just one value that is new “Gateway URL”. It’s the Url that we the clients will use to access APIs. Let’s try it out. Response from a test call to Azure API Management We have no API yet, so we won’t get a meaningful result back. But we will get to that part in a bit. For now we are just happy and wonder how we can provision an instance with either real code or with a proper REST call. Conclusion: We have now created an instance of Azure API Management that does nothing. But it seems to work. Before we will dive into all the menus on the left side, we should look at some better options to create an instance. Options that we can use to automate our set up. "
+    "body": "2020/03/07 - We will provision Azure API Management. Creating an instance of it is just a click in the Azure Portal. We’ll do it once to show how easy it is before we move forward to some other ways that enable us to automate it. The first thing we will do is to “Create a resource”, type “Api Management” and click the resource that is shown in the drop down menu. Search Azure API Management in the Portal Then click create. Select Azure API Management in the Portal You will now see the pane where you set some important parameters. Azure API Management Form Chose the subscription you want to provision you instance to and a resource group. We will talk about resource groups later because they are interesting when it comes to global services that we spin up. They also need the resource group which gets a region. The most important parameter is the Pricing Tier (SKU). The default value is Developer. In case you just want to try out the service, Consumption is a good choice as we only pay per request, and we don’t need to delete it when we need a longer break. It’s also a good choice in case you are impatient. Creating an instance takes about a minute compared to the other choices that take up to an hour. Do want to monitor your instance? If you just want to play with Azure API Management as we do, we probably don’t need it. We will save some money not enabling it for now. We got now a our first instance of Azure API Management! Azure API Management Overview You know already all values that we see in the Overview of it. There is just one value that is new “Gateway URL”. It’s the Url that we the clients will use to access APIs. Let’s try it out. Response from a test call to Azure API Management We have no API yet, so we won’t get a meaningful result back. But we will get to that part in a bit. For now we are just happy and wonder how we can provision an instance with either real code or with a proper REST call. Conclusion: We have now created an instance of Azure API Management that does nothing. But it seems to work. Before we will dive into all the menus on the left side, we should look at some better options to create an instance. Options that we can use to automate our set up. "
     }, {
     "id": 69,
     "url": "/azure-apim-key-parameters/",
     "title": "Azure API Management Key Parameters",
-    "body": "2020/02/29 - This post will start to discuss provisioning API Management. The simplest way of doing so is simply by signing into the portal and create it - we’ll do so in a minute - but this is not the only way we can and should provision API Management. There are other ways that are more effective depending on your environment. Before we can do all this, we need first take a look at some key parameters when creating an instance. Explain those API-M parameters that are key. : The most important parameter you need to set when provisioning API-M is the type of instance you want to provision, SKU. SKU stands for Stock Keeping Unit. There are 5 different SKUs to choose of. Azure API Management SKU Developer and Premium are pretty similar. Both can be put into an own private virtual network. It means we can set up a network security group and filter network traffic based on rules we set. We could for example say that we only allow traffic from another defined virtual network where an Application Gateway lives. We will talk about this service later, but in short, it is a load balancer operating on layer-7 with a public ip address. The main differences between those two SKUs is the capacity and the scaling option. Scaling is missing in the developer SKU -why would we need that :) Basic and Standard are also similar to each other -besides the capacity. What the basic SKU is missing is AAD integration. AAD stands for Azure Active Directory which is Microsoft’s cloud-based identity and access management service. It helps your employees to sign in and access resources. The newest SKU is Consumption which is a pretty good type when developing on your own. It runs on a shared infrastructure. It’s really nice for trying out your APIs for example where we pay only per request. Since it’s a shared type, provisioning takes only a few minutes compared to the other SKUs where we can watch an entire one hour conference-talk while waiting. But the real benefit comes in production in case where you have to handle spikes. Azure API Management will scale for you. It’s the perfect plan for low traffic APIs that might handle high-traffic sometimes. What does Capacity mean in this context?: Capacity is an indicator of load on an API Management instance. It reflects resources usage (CPU, memory) and network queue lengths. It’s an important metric that you must keep an eye on in the Azure Monitor. The default value when provisioning is “1” unit of the chosen SKU, so you might consider more units for production. It really depends on your load. If this metric shows a value above 60% load over approximately 30 minutes, Microsoft recommends to consider to scale up. This can take up to 45 minutes. What about the other parameters?: Name, Location, Organization, ResourceGroupName, Tag and some more are self explaining. But there are a few more like VirtualNetwork, AssignIdentity and CustomHostnameConfiguration that are interesting, and we will discuss all of them in detail in a later post. We ignore them for now and configure them later.  Conclusion: We got all the parameters we need to for provisioning an API-M instance. SKU was the most important parameter, the default is Developer which is a bit more expensive than Consumption. In the next post, we will provision an instance in 3 different ways and discuss advantages and disadvantages before we start to do some exciting stuff with it. "
+    "body": "2020/02/29 - This post will start to discuss provisioning API Management. The simplest way of doing so is simply by signing into the portal and create it - we’ll do so in a minute - but this is not the only way we can and should provision API Management. There are other ways that are more effective depending on your environment. Before we can do all this, we need first take a look at some key parameters when creating an instance. Explain those API-M parameters that are key. : The most important parameter you need to set when provisioning API-M is the type of instance you want to provision, SKU. SKU stands for Stock Keeping Unit. There are 5 different SKUs to choose of. Azure API Management SKU Developer and Premium are pretty similar. Both can be put into an own private virtual network. It means we can set up a network security group and filter network traffic based on rules we set. We could for example say that we only allow traffic from another defined virtual network where an Application Gateway lives. We will talk about this service later, but in short, it is a load balancer operating on layer-7 with a public ip address. The main differences between those two SKUs is the capacity and the scaling option. Scaling is missing in the developer SKU -why would we need that :) Basic and Standard are also similar to each other -besides the capacity. What the basic SKU is missing is AAD integration. AAD stands for Azure Active Directory which is Microsoft’s cloud-based identity and access management service. It helps your employees to sign in and access resources. The newest SKU is Consumption which is a pretty good type when developing on your own. It runs on a shared infrastructure. It’s really nice for trying out your APIs for example where we pay only per request. Since it’s a shared type, provisioning takes only a few minutes compared to the other SKUs where we can watch an entire one hour conference-talk while waiting. But the real benefit comes in production in case where you have to handle spikes. Azure API Management will scale for you. It’s the perfect plan for low traffic APIs that might handle high-traffic sometimes. What does Capacity mean in this context?: Capacity is an indicator of load on an API Management instance. It reflects resources usage (CPU, memory) and network queue lengths. It’s an important metric that you must keep an eye on in the Azure Monitor. The default value when provisioning is “1” unit of the chosen SKU, so you might consider more units for production. It really depends on your load. If this metric shows a value above 60% load over approximately 30 minutes, Microsoft recommends to consider to scale up. This can take up to 45 minutes. What about the other parameters?: Name, Location, Organization, ResourceGroupName, Tag and some more are self explaining. But there are a few more like VirtualNetwork, AssignIdentity and CustomHostnameConfiguration that are interesting, and we will discuss all of them in detail in a later post. We ignore them for now and configure them later. Conclusion: We got all the parameters we need to for provisioning an API-M instance. SKU was the most important parameter, the default is Developer which is a bit more expensive than Consumption. In the next post, we will provision an instance in 3 different ways and discuss advantages and disadvantages before we start to do some exciting stuff with it. "
     }];
 
 var idx = lunr(function () {
@@ -543,9 +543,12 @@ function lunr_search(term) {
     <!-- Content -->
     <main role="main" class="site-content">
         
+<!-- 
 <div class="container d-none d-md-block" style="margin-bottom: 10px; text-align: center;">
 	<script type="text/javascript" language="javascript" src="https://www.anrdoezrs.net/placeholder-46382047?target=_top&mouseover=N"></script>
 </div>
+
+-->
 <div class="container d-md-none" style="margin-bottom: 10px; text-align: center;">
     <script type="text/javascript" language="javascript" src="https://www.anrdoezrs.net/placeholder-46383864?target=_top&mouseover=N"></script>
 </div>
@@ -647,13 +650,6 @@ function lunr_search(term) {
 <p><img src="https://cdn.svenmalvik.com/images/azure-apim-deploy-with-arm-2.png" alt="azuredeploy.json" /><em>azuredeploy.json</em></p>
 
 <p>I’ve not only added two SKUs, but I’ve also added <code class="highlighter-rouge">0</code> to skuCount as an allowed value. <code class="highlighter-rouge">0</code> is the value we have to set for Consumption. Deploying from my fork <a href="https://github.com/svenmalvik/azure-quickstart-templates/tree/master/101-azure-api-management-create">svenmalvik/azure-quickstart-templates/101-azure-api-management-create</a> will make it possible to choose Consumption as well. I’ve set <em>Consumption</em> as default. To fully automated the deployment of the ARM template, we need to set some more default values like email and name.</p>
-
-<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5867637072125128" data-ad-slot="6992142934"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></p>
 
 <h2 id="deploy-azure-api-management-with-arm-from-a-local-machine">Deploy Azure API Management with ARM from a local machine</h2>
 
@@ -1007,33 +1003,6 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
-		</h2>
-		<p class="excerpt">
-		As many companies move their services to the cloud, the way we interact with the cloud, the tooling, becomes more important. In Azure we ...
-		</p>
-
-		<small class="text-muted">
-			Sep 26, 2020
-		</small>
-	</div>
-
-	
-	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-first-farmer-project/">
-		<img class="w-100" src="https://cdn.svenmalvik.com/images/farmer-4x4.jpg" alt="Introduction to Farmer - IaC with Azure">
-		</a>
-	</div>
-
-</div>
-
-	
-				
-				
-				
-					<div class="d-flex justify-content-between main-loop-card mb-3">
-	<div class="pr-3">
-		<h2 class="mb-1 h4 font-weight-bold">
 		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-self-hosted-gateway/">Using Azure API Management APIs with Docker</a>
 		</h2>
 		<p class="excerpt">
@@ -1049,6 +1018,33 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 	<div class="col-md-5 pr-0 text-right">
 		<a href="https://www.svenmalvik.com/azure-apim-self-hosted-gateway/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png" alt="Using Azure API Management APIs with Docker">
+		</a>
+	</div>
+
+</div>
+
+	
+				
+				
+				
+					<div class="d-flex justify-content-between main-loop-card mb-3">
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
+		</h2>
+		<p class="excerpt">
+		As many companies move their services to the cloud, the way we interact with the cloud, the tooling, becomes more important. In Azure we ...
+		</p>
+
+		<small class="text-muted">
+			Sep 26, 2020
+		</small>
+	</div>
+
+	
+	<div class="col-md-5 pr-0 text-right">
+		<a href="https://www.svenmalvik.com/azure-first-farmer-project/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/farmer-4x4.jpg" alt="Introduction to Farmer - IaC with Azure">
 		</a>
 	</div>
 
@@ -1331,35 +1327,6 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
-		</h2>
-
-		
-		<a href="https://www.svenmalvik.com/azure-first-farmer-project/">
-			<img class="w-100" src="https://cdn.svenmalvik.com/images/farmer-4x4.jpg" alt="Introduction to Farmer - IaC with Azure">
-		</a>
-		
-		
-		<p class="excerpt">
-		As many companies move their services to the cloud, the way we interact with the cloud, the tooling, becomes more important. In Azure we ...
-		</p>
-
-		<small class="text-muted">
-			Sep 26, 2020
-		</small>
-	</div>
-
-
-</div>
-
-	
-				
-				
-				
-					<div class="main-loop-card mb-3">
-
-	<div class="pr-3">
-		<h2 class="mb-1 h4 font-weight-bold">
 			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-self-hosted-gateway/">Using Azure API Management APIs with Docker</a>
 		</h2>
 
@@ -1384,19 +1351,39 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 	
 				
 				
+				
+					<div class="main-loop-card mb-3">
+
+	<div class="pr-3">
+		<h2 class="mb-1 h4 font-weight-bold">
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
+		</h2>
+
+		
+		<a href="https://www.svenmalvik.com/azure-first-farmer-project/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/farmer-4x4.jpg" alt="Introduction to Farmer - IaC with Azure">
+		</a>
+		
+		
+		<p class="excerpt">
+		As many companies move their services to the cloud, the way we interact with the cloud, the tooling, becomes more important. In Azure we ...
+		</p>
+
+		<small class="text-muted">
+			Sep 26, 2020
+		</small>
+	</div>
+
+
+</div>
+
+	
+				
+				
 			
 			</div>
 
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5867637072125128"
-     data-ad-slot="6992142934"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+			
             
 		</div>
 
