@@ -1,5 +1,7 @@
 ---
 layout: default
+pagination:
+    enabled: true
 ---
 {% assign author = site.authors[page.author] %}
 <div class="container d-none d-md-block" style="margin-bottom: 10px; text-align: center;">
@@ -93,6 +95,32 @@ layout: default
 				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
 				{% endfor %}
 				</span>
+			</div>
+
+
+			<!-- All Stories -->
+			<div class="d-none d-md-block col-md-12 main-loop">
+        
+				<h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+				
+				{% for post in site.related_posts %}
+				
+					{% include post-loop-card.html %}	
+				
+				{% endfor %}
+			
+			</div>
+
+			<div class="d-md-none col-md-12 main-loop">
+        
+				<h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+				
+				{% for post in site.related_posts %}
+				
+					{% include post-loop-card-mobile.html %}	
+				
+				{% endfor %}
+			
 			</div>
  
             <!-- Mailchimp Subscribe Form -->
