@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Virtual Machine Classic is Different to "Normal" VM in Azure
+title: How Virtual Machine Classic is Different to (Normal) VM in Azure
 tags: [Azure, ARM]
 categories: [ARM]
 comments: true
