@@ -8,7 +8,6 @@ comments: true
 published: true
 share-img: https://cdn.svenmalvik.com/images/farmer.png
 image: https://cdn.svenmalvik.com/images/farmer-4x4.jpg
-featured-image: https://cdn.svenmalvik.com/images/farmer-4x4.jpg
 ---
 
 *As many companies move their services to the cloud, the way we interact with the cloud, the tooling, becomes more important. In Azure we are used to deploy with the Azure CLI, REST API, or with ARM. Then came Terraform which abstracted away a lot of the complexity that comes with ARM. A very new member of the Infrastructure asd Code (IaC) family is [Farmer](https://compositionalit.github.io/farmer/). This blog post the first one of a series of Farmer blog post where I will show how to install it and get started. I also will talk briefly about Azure DevOps integration.*

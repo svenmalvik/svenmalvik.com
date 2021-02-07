@@ -6,9 +6,6 @@ tags: [Pulumi, Bash]
 categories: [IaC]
 comments: true
 published: true
-#share-img: https://cdn.svenmalvik.com/images/
-#image: https://cdn.svenmalvik.com/images/
-#featured-image: https://cdn.svenmalvik.com/images/
 ---
 
 *This post describes how we can add custom information to a bash prompt.*

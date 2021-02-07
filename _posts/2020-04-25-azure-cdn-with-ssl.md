@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serving Website Images from Azure CDN with SSL
-tags: [featured, Azure, Azure CDN, Azure Storage Account]
+tags: [Azure, Azure CDN, Azure Storage Account]
 categories: [Web]
 comments: true
 image: https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How is Azure Firewall different from Network Security Groups?
-tags: [Azure, Azure Firewall, Network Security Groups]
+tags: [featured, Azure, Azure Firewall, Network Security Groups]
 categories: [Security]
 comments: true
 published: true

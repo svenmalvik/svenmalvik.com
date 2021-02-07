@@ -2,7 +2,7 @@
 layout: post
 title: How to Use Azure Bastion as a Jump Host
 subtitle: Preparation for AZ-303 Exam for becoming an Azure Solution Architect - Azure Bastion
-tags: [featured, Azure, Bastion]
+tags: [Azure, Bastion]
 categories: [ AZ-303 ]
 comments: true
 published: true

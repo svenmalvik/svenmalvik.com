@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Secret Behind Pretty Azure Architecture Diagrams
-tags: [Azure]
+tags: [featured, Azure]
 categories: [Azure]
 comments: true
 published: true

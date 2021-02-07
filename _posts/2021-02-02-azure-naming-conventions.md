@@ -2,7 +2,7 @@
 layout: post
 title: Azure Naming Convention Best Practices
 subtitle: 
-tags: [Azure, Tagging]
+tags: [featured, Azure, Tagging]
 categories: [Azure]
 comments: true
 published: true
