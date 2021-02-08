@@ -1,8 +1,9 @@
 bundle exec jekyll serve --watch --incremental
 
 bundle exec jekyll build
-cp -r _site/* ../svenmalvik.com/
 Replace /https with https
+cp -r _site/* ../svenmalvik.com/
+
 
 
 main background

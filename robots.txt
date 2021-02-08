@@ -1,1 +1,1 @@
-Sitemap: /https://www.svenmalvik.com/sitemap.xml
+Sitemap: https://www.svenmalvik.com/sitemap.xml
