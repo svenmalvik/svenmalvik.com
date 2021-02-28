@@ -14,16 +14,18 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="We use Azure API Management in some cases for calling external services from Azure Kubernetes Service (AKS). Azure API Management acts in this case as a link between an internal service running on AKS and an external service running at a third-party. The third-party knows who we are, and has whitelisted our outgoing IP address which is the egress IP from Azure API Management. The problem is when redeploying Azure API Management. As we emphasize immutable infrastructure, this may happen at some point. Redeploying Azure API Management results then in a different IP address that the third-party has to whitelist again. This may take time and effort. Fortunately, Azure API Management has the concept of self-hosted gateways. This post will show how to use a self-hosted gateway with Docker." />
 <meta property="og:description" content="We use Azure API Management in some cases for calling external services from Azure Kubernetes Service (AKS). Azure API Management acts in this case as a link between an internal service running on AKS and an external service running at a third-party. The third-party knows who we are, and has whitelisted our outgoing IP address which is the egress IP from Azure API Management. The problem is when redeploying Azure API Management. As we emphasize immutable infrastructure, this may happen at some point. Redeploying Azure API Management results then in a different IP address that the third-party has to whitelist again. This may take time and effort. Fortunately, Azure API Management has the concept of self-hosted gateways. This post will show how to use a self-hosted gateway with Docker." />
+<link rel="canonical" href="http://localhost:4000/azure-apim-self-hosted-gateway/" />
+<meta property="og:url" content="http://localhost:4000/azure-apim-self-hosted-gateway/" />
 <meta property="og:site_name" content="Azure Blog" />
 <meta property="og:image" content="https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-06-27T00:00:00+02:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-06-27T00:00:00+02:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.svenmalvik.com/azure-apim-self-hosted-gateway/"},"url":"https://www.svenmalvik.com/azure-apim-self-hosted-gateway/","image":"https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png","description":"We use Azure API Management in some cases for calling external services from Azure Kubernetes Service (AKS). Azure API Management acts in this case as a link between an internal service running on AKS and an external service running at a third-party. The third-party knows who we are, and has whitelisted our outgoing IP address which is the egress IP from Azure API Management. The problem is when redeploying Azure API Management. As we emphasize immutable infrastructure, this may happen at some point. Redeploying Azure API Management results then in a different IP address that the third-party has to whitelist again. This may take time and effort. Fortunately, Azure API Management has the concept of self-hosted gateways. This post will show how to use a self-hosted gateway with Docker.","headline":"Using Azure API Management APIs with Docker","dateModified":"2020-06-27T00:00:00+02:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"datePublished":"2020-06-27T00:00:00+02:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/azure-apim-self-hosted-gateway/"},"url":"http://localhost:4000/azure-apim-self-hosted-gateway/","image":"https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png","description":"We use Azure API Management in some cases for calling external services from Azure Kubernetes Service (AKS). Azure API Management acts in this case as a link between an internal service running on AKS and an external service running at a third-party. The third-party knows who we are, and has whitelisted our outgoing IP address which is the egress IP from Azure API Management. The problem is when redeploying Azure API Management. As we emphasize immutable infrastructure, this may happen at some point. Redeploying Azure API Management results then in a different IP address that the third-party has to whitelist again. This may take time and effort. Fortunately, Azure API Management has the concept of self-hosted gateways. This post will show how to use a self-hosted gateway with Docker.","headline":"Using Azure API Management APIs with Docker","dateModified":"2020-06-27T00:00:00+02:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="https://www.svenmalvik.com/">
+    <link rel="shortcut icon" type="image/x-icon" href="/">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -32,10 +34,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap Modified -->
-    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/theme.css">
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
     <script
@@ -85,7 +87,7 @@
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="https://www.svenmalvik.com/index.html"><strong>Azure Blog</strong></a>
+        <a class="navbar-brand" href="/index.html"><strong>Azure Blog</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -94,19 +96,19 @@
                <!--  Replace menu links here -->
 
 <li class="nav-item">
-    <a class="nav-link" href="https://www.svenmalvik.com/index.html">Home</a>
+    <a class="nav-link" href="/index.html">Home</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="https://www.svenmalvik.com/categories.html#azure%20api%20management">APIM</a>
+    <a class="nav-link" href="/categories.html#azure%20api%20management">APIM</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="https://www.svenmalvik.com/aboutme">Me</a>
+    <a class="nav-link" href="/aboutme">Me</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="https://www.svenmalvik.com/contact.html">Contact</a>
+    <a class="nav-link" href="/contact.html">Contact</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="https://www.svenmalvik.com/privacy-policy.html">Privacy</a>
+    <a class="nav-link" href="/privacy-policy.html">Privacy</a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="https://www.dpbolvw.net/click-100299205-14411736">Apress books (10% off)</a>
@@ -114,7 +116,7 @@
 
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
-                <script src="https://www.svenmalvik.com/assets/js/lunr.js"></script>
+                <script src="/assets/js/lunr.js"></script>
 
 <script>
 $(function() {
@@ -219,12 +221,12 @@ var documents = [{
     "id": 18,
     "url": "/azure-app-configuration-vs-key-vault/",
     "title": "How Azure Key Vault is Different to Azure App Configuration",
-    "body": "2021/02/05 - We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as well - just because it’s easy and close to the secrets. This post discusses why you should use Azure App Configuration for your non-sensitive configurations instead. {% include articleAd. html %} First things first - Azure App Configuration and Azure Key Vault are complementary services that should be used side by side. Azure App Configuration stores insensitive data like key-value pairs but also references secrets in Azure Key Vault. An entry in App Configuration that references such a secret stores the URI of a Key Vault value rather than the value itself. An App Configuration client provider that comes as an SDK for your application retrieves the Key Vault value reference of an entry, just as it does for any other keys stored in App Configuration. The client provider recognizes the keys as Key Vault references based on the content-type that every App Configuration entry gets. The client provider then asks the Key Vault to retrieve their secrets. Azure App Configuration and Azure Key Vault don’t communicate with each other and means that an application is still responsible for authenticating to both App Configuration and Key Vault. {% include articleAd. html %} Benefits of Azure App Configuration over Key Vault for Insensitive Data: Below is a list of features I came up with that distinguishes Azure App Configuration from Azure Key Vault. Compared to Azure Key Vault - App Configuration …  avoids Duplication supports feature flags supports flat and hierarchal key management categorizing keys using labels does point-in-time snapshots that can be replayed stores a complete timeline in key-value changes supports compare configuration values for different points in time integrates with Azure DevOps does data encryption at rest or in transitUseful Links:  Azure App Configuration Introduction Tutorial: Use Key Vault references in a Java Spring app"
+    "body": "2021/02/05 - We store certificates and sensitive data as secrets in Azure Key Vault. I know that many store their application configuration there as well - just because it’s easy and close to the secrets. This post discusses why you should use Azure App Configuration for your non-sensitive configurations instead. First things first - Azure App Configuration and Azure Key Vault are complementary services that should be used side by side. Azure App Configuration stores insensitive data like key-value pairs but also references secrets in Azure Key Vault. An entry in App Configuration that references such a secret stores the URI of a Key Vault value rather than the value itself. An App Configuration client provider that comes as an SDK for your application retrieves the Key Vault value reference of an entry, just as it does for any other keys stored in App Configuration. The client provider recognizes the keys as Key Vault references based on the content-type that every App Configuration entry gets. The client provider then asks the Key Vault to retrieve their secrets. Azure App Configuration and Azure Key Vault don’t communicate with each other and means that an application is still responsible for authenticating to both App Configuration and Key Vault. Benefits of Azure App Configuration over Key Vault for Insensitive Data: Below is a list of features I came up with that distinguishes Azure App Configuration from Azure Key Vault. Compared to Azure Key Vault - App Configuration …  avoids Duplication supports feature flags supports flat and hierarchal key management categorizing keys using labels does point-in-time snapshots that can be replayed stores a complete timeline in key-value changes supports compare configuration values for different points in time integrates with Azure DevOps does data encryption at rest or in transitUseful Links:  Azure App Configuration Introduction Tutorial: Use Key Vault references in a Java Spring app"
     }, {
     "id": 19,
     "url": "/azure-apim-key-vault/",
     "title": "How to Reference Key Vault Secrets in Azure API Management",
-    "body": "2021/02/05 - In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access to all secrets stored in named values for using in policies for JWT token validation or because for sending passwords in authentication headers. It’s therefore best practice to store secrets in Azure Key Vault and not in named values. Azure API Management can then use its Managed Service Identity to access the secrets from this Azure Key Vault by referencing secrets. This post will show how to set a secret as the value in a response header. {% include articleAd. html %} Enable Managed Identity in APIM: In Azure, an AD identity can be assigned to a managed resource such as a Azure Function, App Service and also an instance of Azure API Management. A Resource with an identity has the capabilities to work with other resources that leverage Azure AD for authentication. We can easily enable a managed system identity (MSI) in APIM. Enable managed system identity in Azure API Management {% include articleAd. html %} Key Vault: To demonstrate how to access a secret from APIM, let’s first create a secret mysecret with a value secretaccesscode. Create secret in Azure Key Vault Just to show you the value of the secret, here it’s visible. Show secret value in Azure Key Vault We need now to tell our Key Vault that our apim instance has permission to Get mysecret. We do this by adding a new access policy as shown below. Add access policy in Azure Key Vault {% include articleAd. html %} Set the secret permission to Get and select the identity of your Azure API Management instance. Configure access policy in Azure Key Vault Now we can see that we set up a new access policy. Remember to save :). Save access policy in Azure Key Vault {% include articleAd. html %} Referencing a Key Vault Key in Azure API Management: Add a new named value in your APIM instance and select the type Key Vault. A new pane opens where you can select the key vault and secret you want to reference. In my case it’s mysecret. Reference secret in apim named values If everything went well you will see a green Success icon. Referenced secret in apim named values Let’s now select a random API operation and open the policy so we can add a response header. Edit API policy I add a basic header with the named value that I called secret-from-kv. Add customer header with secret value to API policy {% include articleAd. html %} Finally, we test this endpoint and can see the value in the response. Retrieve customer header with secret value from API  Developers that have access to this instance may be able to debug a policy, hence retrieve the secret. Conclusion: Referencing secrets from Azure Key Vaults in Named Values was introduced December 2020. That means that we don’t need to follow tutorials from many blog posts that were written before. {% include articleAd. html %} Useful Links: Use named values in Azure API Management policies - Key vault secrets "
+    "body": "2021/02/05 - In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access to all secrets stored in named values for using in policies for JWT token validation or because for sending passwords in authentication headers. It’s therefore best practice to store secrets in Azure Key Vault and not in named values. Azure API Management can then use its Managed Service Identity to access the secrets from this Azure Key Vault by referencing secrets. This post will show how to set a secret as the value in a response header. Enable Managed Identity in APIM: In Azure, an AD identity can be assigned to a managed resource such as a Azure Function, App Service and also an instance of Azure API Management. A Resource with an identity has the capabilities to work with other resources that leverage Azure AD for authentication. We can easily enable a managed system identity (MSI) in APIM. Enable managed system identity in Azure API Management Key Vault: To demonstrate how to access a secret from APIM, let’s first create a secret mysecret with a value secretaccesscode. Create secret in Azure Key Vault Just to show you the value of the secret, here it’s visible. Show secret value in Azure Key Vault We need now to tell our Key Vault that our apim instance has permission to Get mysecret. We do this by adding a new access policy as shown below. Add access policy in Azure Key Vault Set the secret permission to Get and select the identity of your Azure API Management instance. Configure access policy in Azure Key Vault Now we can see that we set up a new access policy. Remember to save :). Save access policy in Azure Key Vault Referencing a Key Vault Key in Azure API Management: Add a new named value in your APIM instance and select the type Key Vault. A new pane opens where you can select the key vault and secret you want to reference. In my case it’s mysecret. Reference secret in apim named values If everything went well you will see a green Success icon. Referenced secret in apim named values Let’s now select a random API operation and open the policy so we can add a response header. Edit API policy I add a basic header with the named value that I called secret-from-kv. Add customer header with secret value to API policy Finally, we test this endpoint and can see the value in the response. Retrieve customer header with secret value from API  Developers that have access to this instance may be able to debug a policy, hence retrieve the secret. Conclusion: Referencing secrets from Azure Key Vaults in Named Values was introduced December 2020. That means that we don’t need to follow tutorials from many blog posts that were written before. Useful Links: Use named values in Azure API Management policies - Key vault secrets "
     }, {
     "id": 20,
     "url": "/azure-nsg-vs-firewall/",
@@ -244,7 +246,7 @@ var documents = [{
     "id": 23,
     "url": "/devreal-diversity-inclusion/",
     "title": "Diversity & Inclusion Tech Conversation",
-    "body": "2021/02/03 - How are organizations like Vipps, Microsoft and Tata Consultancy Services (TCS) establishing a diverse and inclusive workplace? What initiatives are they driving and how can we all work together to create a positive impact? Join this free online event. {% include articleAd. html %} This event is about real experiences. We want to know why this topic matters so much to employees, students and companies. Join this free online event This event is split into 2 sections. In the first section the speakers will tell about their experiences. In the second section we’ll have a real conversation where we will get a lot of valuable insights. Thanks so much to the speakers for participating. It really means a lot to many that want to know more about the topic. I also want to send a special thanks to Ellie King who will moderate this event. This episodes guests are from well-known companies. In addition we have a student with us which will tell about what she expects from life.  Ellie King (Diversity &amp; Inclusion Advocate) Alex Warris (Male Engagement Strategist) Sibin Philip (TCS/Vipps) Aneesh MN (TCS/Vipps) Sherry List (Microsoft) Helena Løvdal Bjørbekk (NTNU) Jonah Andersson (Forefront Consulting)Join this free online event {% include articleAd. html %} "
+    "body": "2021/02/03 - How are organizations like Vipps, Microsoft and Tata Consultancy Services (TCS) establishing a diverse and inclusive workplace? What initiatives are they driving and how can we all work together to create a positive impact?. This event is about real experiences. We want to know why this topic matters so much to employees, students and companies. {% include yt. html %} This event is split into 2 sections. In the first section the speakers will tell about their experiences. In the second section we’ll have a real conversation where we will get a lot of valuable insights. Thanks so much to the speakers for participating. It really means a lot to many that want to know more about the topic. I also want to send a special thanks to Ellie King who will moderate this event. This episodes guests are from well-known companies. In addition we have a student with us which will tell about what she expects from life.  Ellie King (Diversity &amp; Inclusion Advocate) Alex Warris (Male Engagement Strategist) Sibin Philip (TCS/Vipps) Aneesh MN (TCS/Vipps) Sherry List (Microsoft) Helena Løvdal Bjørbekk (NTNU) Jonah Andersson (Forefront Consulting)"
     }, {
     "id": 24,
     "url": "/azure-apim-function-msi/",
@@ -562,7 +564,7 @@ function lunr_search(term) {
 					<p class="text-uppercase font-weight-bold">
                         <span class="catlist">
 						
-                          <a class="sscroll text-dark" href="https://www.svenmalvik.com/categories.html#azure api management">azure api management</a><span class="sep">, </span>
+                          <a class="sscroll text-dark" href="/categories.html#azure api management">azure api management</a><span class="sep">, </span>
                         
                         </span>
 					</p>
@@ -694,9 +696,9 @@ function lunr_search(term) {
 			<div class="mb-4">
 				<span class="taglist">
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#azure">azure</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure">azure</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#azure api management">azure api management</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure api management">azure api management</a>
 				
 				</span>
 			</div>
@@ -776,7 +778,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+		<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 		<p class="excerpt">
 		Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How coul...
@@ -789,7 +791,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
+		<a href="/event-driven-infrastructure-with-app-configuration/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 	</div>
@@ -803,7 +805,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-policies/">Understanding Policies in Azure API Management</a>
+		<a class="text-dark" href="/azure-apim-policies/">Understanding Policies in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		Policies are the heart of Azure API Management. They let us change the behavior of our APIs in a very flexible manner. Before I dive in t...
@@ -816,7 +818,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-apim-policies/">
+		<a href="/azure-apim-policies/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-policies-0.png" alt="Understanding Policies in Azure API Management">
 		</a>
 	</div>
@@ -830,7 +832,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-with-eventhub/">Logging in Azure API Management</a>
+		<a class="text-dark" href="/azure-apim-with-eventhub/">Logging in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		This post is a complete step-by-step guide on how to send logs from Azure API Management to Azure Event Hub with PowerShell. We start by ...
@@ -843,7 +845,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-apim-with-eventhub/">
+		<a href="/azure-apim-with-eventhub/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg" alt="Logging in Azure API Management">
 		</a>
 	</div>
@@ -857,7 +859,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-backup-restore/">Backup and Restore in Azure API Management</a>
+		<a class="text-dark" href="/azure-apim-backup-restore/">Backup and Restore in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		As infrastructure gets more complex, more parts will eventually break. This is even more true as we make frequently changes. Sometimes we...
@@ -870,7 +872,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-apim-backup-restore/">
+		<a href="/azure-apim-backup-restore/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-backup-restore.jpg" alt="Backup and Restore in Azure API Management">
 		</a>
 	</div>
@@ -884,7 +886,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-vm/">How To Manage Azure Virtual Machines</a>
+		<a class="text-dark" href="/azure-vm/">How To Manage Azure Virtual Machines</a>
 		</h2>
 		<p class="excerpt">
 		I will go through the first steps for managing Virtual Machines. We will create a Windows VM, start the Internet Information Service IIS,...
@@ -897,7 +899,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-vm/">
+		<a href="/azure-vm/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg" alt="How To Manage Azure Virtual Machines">
 		</a>
 	</div>
@@ -911,7 +913,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-introduction/">Introduction to Azure API Management</a>
+		<a class="text-dark" href="/azure-apim-introduction/">Introduction to Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		Azure API Management (APIM) is a way to create consistent and modern API gateways for existing backend services. It provides an interface...
@@ -924,7 +926,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-apim-introduction/">
+		<a href="/azure-apim-introduction/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-introduction.jpg" alt="Introduction to Azure API Management">
 		</a>
 	</div>
@@ -938,7 +940,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+		<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 		<p class="excerpt">
 		In this post I will show you step by step how to serve images on a website from Azure CDN with SSL enabled. My blog has a couple of Azure...
@@ -951,7 +953,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
+		<a href="/azure-cdn-with-ssl/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 	</div>
@@ -965,7 +967,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-policy-debugging/">How To Debug Policies in Azure API Management. A Step-by-Step Guide.</a>
+		<a class="text-dark" href="/azure-apim-policy-debugging/">How To Debug Policies in Azure API Management. A Step-by-Step Guide.</a>
 		</h2>
 		<p class="excerpt">
 		In this post I want to briefly go through the Azure API Management extension for VSCode and how we can debug policies. It’s one of the qu...
@@ -978,7 +980,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-apim-policy-debugging/">
+		<a href="/azure-apim-policy-debugging/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-policy-debugging-cover.jpg" alt="How To Debug Policies in Azure API Management. A Step-by-Step Guide.">
 		</a>
 	</div>
@@ -992,21 +994,21 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-key-vault/">How to Reference Key Vault Secrets in Azure API Management</a>
+		<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 		<p class="excerpt">
-		In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access ...
+		Microsoft updated it’s role based exam for AZ-300. It’s now called AZ-303 and launched last year. This certification is a great proof for...
 		</p>
 
 		<small class="text-muted">
-			Feb 05, 2021
+			Feb 01, 2021
 		</small>
 	</div>
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-apim-key-vault/">
-		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg" alt="How to Reference Key Vault Secrets in Azure API Management">
+		<a href="/azure-az303/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 	</div>
 
@@ -1019,7 +1021,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-function-msi/">How to Secure Azure Functions App with Azure API Management</a>
+		<a class="text-dark" href="/azure-apim-function-msi/">How to Secure Azure Functions App with Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		How to use an Azure Managed Identity to authenticate against an Azure Functions app that is exposed through Azure API Management. Our Fun...
@@ -1032,7 +1034,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-apim-function-msi/">
+		<a href="/azure-apim-function-msi/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-function-identity.jpg" alt="How to Secure Azure Functions App with Azure API Management">
 		</a>
 	</div>
@@ -1046,21 +1048,21 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+		<a class="text-dark" href="/azure-apim-deploy-with-terraform/">Azure API Management with Terraform</a>
 		</h2>
 		<p class="excerpt">
-		Microsoft updated it’s role based exam for AZ-300. It’s now called AZ-303 and launched last year. This certification is a great proof for...
+		Terraform is a popular tool for managing infrastructure resources. I counted about 120 supported providers. Azure is one of them. In this...
 		</p>
 
 		<small class="text-muted">
-			Feb 01, 2021
+			Apr 04, 2020
 		</small>
 	</div>
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="https://www.svenmalvik.com/azure-az303/">
-		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
+		<a href="/azure-apim-deploy-with-terraform/">
+		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg" alt="Azure API Management with Terraform">
 		</a>
 	</div>
 
@@ -1082,11 +1084,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+			<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
+		<a href="/event-driven-infrastructure-with-app-configuration/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 		
@@ -1111,11 +1113,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-policies/">Understanding Policies in Azure API Management</a>
+			<a class="text-dark" href="/azure-apim-policies/">Understanding Policies in Azure API Management</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-apim-policies/">
+		<a href="/azure-apim-policies/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-policies-0.png" alt="Understanding Policies in Azure API Management">
 		</a>
 		
@@ -1140,11 +1142,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-with-eventhub/">Logging in Azure API Management</a>
+			<a class="text-dark" href="/azure-apim-with-eventhub/">Logging in Azure API Management</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-apim-with-eventhub/">
+		<a href="/azure-apim-with-eventhub/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg" alt="Logging in Azure API Management">
 		</a>
 		
@@ -1169,11 +1171,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-backup-restore/">Backup and Restore in Azure API Management</a>
+			<a class="text-dark" href="/azure-apim-backup-restore/">Backup and Restore in Azure API Management</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-apim-backup-restore/">
+		<a href="/azure-apim-backup-restore/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-backup-restore.jpg" alt="Backup and Restore in Azure API Management">
 		</a>
 		
@@ -1198,11 +1200,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-vm/">How To Manage Azure Virtual Machines</a>
+			<a class="text-dark" href="/azure-vm/">How To Manage Azure Virtual Machines</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-vm/">
+		<a href="/azure-vm/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg" alt="How To Manage Azure Virtual Machines">
 		</a>
 		
@@ -1227,11 +1229,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-introduction/">Introduction to Azure API Management</a>
+			<a class="text-dark" href="/azure-apim-introduction/">Introduction to Azure API Management</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-apim-introduction/">
+		<a href="/azure-apim-introduction/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-introduction.jpg" alt="Introduction to Azure API Management">
 		</a>
 		
@@ -1256,11 +1258,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+			<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
+		<a href="/azure-cdn-with-ssl/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 		
@@ -1285,11 +1287,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-policy-debugging/">How To Debug Policies in Azure API Management. A Step-by-Step Guide.</a>
+			<a class="text-dark" href="/azure-apim-policy-debugging/">How To Debug Policies in Azure API Management. A Step-by-Step Guide.</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-apim-policy-debugging/">
+		<a href="/azure-apim-policy-debugging/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-policy-debugging-cover.jpg" alt="How To Debug Policies in Azure API Management. A Step-by-Step Guide.">
 		</a>
 		
@@ -1314,21 +1316,21 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-key-vault/">How to Reference Key Vault Secrets in Azure API Management</a>
+			<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-apim-key-vault/">
-			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg" alt="How to Reference Key Vault Secrets in Azure API Management">
+		<a href="/azure-az303/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 		
 		
 		<p class="excerpt">
-		In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access ...
+		Microsoft updated it’s role based exam for AZ-300. It’s now called AZ-303 and launched last year. This certification is a great proof for...
 		</p>
 
 		<small class="text-muted">
-			Feb 05, 2021
+			Feb 01, 2021
 		</small>
 	</div>
 
@@ -1343,11 +1345,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-function-msi/">How to Secure Azure Functions App with Azure API Management</a>
+			<a class="text-dark" href="/azure-apim-function-msi/">How to Secure Azure Functions App with Azure API Management</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-apim-function-msi/">
+		<a href="/azure-apim-function-msi/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-function-identity.jpg" alt="How to Secure Azure Functions App with Azure API Management">
 		</a>
 		
@@ -1372,21 +1374,21 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+			<a class="text-dark" href="/azure-apim-deploy-with-terraform/">Azure API Management with Terraform</a>
 		</h2>
 
 		
-		<a href="https://www.svenmalvik.com/azure-az303/">
-			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
+		<a href="/azure-apim-deploy-with-terraform/">
+			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg" alt="Azure API Management with Terraform">
 		</a>
 		
 		
 		<p class="excerpt">
-		Microsoft updated it’s role based exam for AZ-300. It’s now called AZ-303 and launched last year. This certification is a great proof for...
+		Terraform is a popular tool for managing infrastructure resources. I counted about 120 supported providers. Azure is one of them. In this...
 		</p>
 
 		<small class="text-muted">
-			Feb 01, 2021
+			Apr 04, 2020
 		</small>
 	</div>
 
@@ -1416,12 +1418,12 @@ function lunr_search(term) {
         <div class="row prevnextlinks small font-weight-bold">
           
             <div class="col-md-6 rightborder pl-0">
-                <a class="text-dark" href="https://www.svenmalvik.com/azure-appservice-nodejs/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/azure-appservice-nodejs.jpg">  ARM for NodeJS Azure Web App with App Configuration Integration</a>
+                <a class="text-dark" href="/azure-appservice-nodejs/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/azure-appservice-nodejs.jpg">  ARM for NodeJS Azure Web App with App Configuration Integration</a>
             </div>
           
           
             <div class="col-md-6 text-right pr-0">
-                <a class="text-dark" href="https://www.svenmalvik.com/azure-arm-deployscript/"> Running Scripts from ARM Templates </a>
+                <a class="text-dark" href="/azure-arm-deployscript/"> Running Scripts from ARM Templates </a>
             </div>
           
         </div>
@@ -1436,7 +1438,7 @@ function lunr_search(term) {
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="https://www.svenmalvik.com/assets/js/theme.js"></script>
+    <script src="/assets/js/theme.js"></script>
 
 
     <!-- Footer -->
