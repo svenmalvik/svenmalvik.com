@@ -14,18 +14,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Management, BUT - there are a couple of things we need to be aware of." />
 <meta property="og:description" content="Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Management, BUT - there are a couple of things we need to be aware of." />
-<link rel="canonical" href="http://localhost:4000/azure-apim-deploy-with-arm/" />
-<meta property="og:url" content="http://localhost:4000/azure-apim-deploy-with-arm/" />
 <meta property="og:site_name" content="Azure Blog" />
 <meta property="og:image" content="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-28T00:00:00+01:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-03-28T00:00:00+01:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/azure-apim-deploy-with-arm/"},"url":"http://localhost:4000/azure-apim-deploy-with-arm/","image":"https://cdn.svenmalvik.com/images/azure-apim-logo.jpg","description":"Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Management, BUT - there are a couple of things we need to be aware of.","headline":"Azure API Management with ARM","dateModified":"2020-03-28T00:00:00+01:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"datePublished":"2020-03-28T00:00:00+01:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.svenmalvik.com/azure-apim-deploy-with-arm/"},"url":"https://www.svenmalvik.com/azure-apim-deploy-with-arm/","image":"https://cdn.svenmalvik.com/images/azure-apim-logo.jpg","description":"Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Management, BUT - there are a couple of things we need to be aware of.","headline":"Azure API Management with ARM","dateModified":"2020-03-28T00:00:00+01:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="/">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.svenmalvik.com/">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -34,10 +32,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap Modified -->
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/main.css">
 
     <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/theme.css">
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
     <script
@@ -87,7 +85,7 @@
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/index.html"><strong>Azure Blog</strong></a>
+        <a class="navbar-brand" href="https://www.svenmalvik.com/index.html"><strong>Azure Blog</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -96,19 +94,19 @@
                <!--  Replace menu links here -->
 
 <li class="nav-item">
-    <a class="nav-link" href="/index.html">Home</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/index.html">Home</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/categories.html#azure%20api%20management">APIM</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/categories.html#azure%20api%20management">APIM</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/aboutme">Me</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/aboutme">Me</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/contact.html">Contact</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/contact.html">Contact</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/privacy-policy.html">Privacy</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/privacy-policy.html">Privacy</a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="https://www.dpbolvw.net/click-100299205-14411736">Apress books (10% off)</a>
@@ -116,7 +114,7 @@
 
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
-                <script src="/assets/js/lunr.js"></script>
+                <script src="https://www.svenmalvik.com/assets/js/lunr.js"></script>
 
 <script>
 $(function() {
@@ -564,7 +562,7 @@ function lunr_search(term) {
 					<p class="text-uppercase font-weight-bold">
                         <span class="catlist">
 						
-                          <a class="sscroll text-dark" href="/categories.html#azure api management">azure api management</a><span class="sep">, </span>
+                          <a class="sscroll text-dark" href="https://www.svenmalvik.com/categories.html#azure api management">azure api management</a><span class="sep">, </span>
                         
                         </span>
 					</p>
@@ -676,13 +674,13 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 			<div class="mb-4">
 				<span class="taglist">
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure">azure</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#azure">azure</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure api management">azure api management</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#azure api management">azure api management</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#arm">arm</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#arm">arm</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#github">github</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#github">github</a>
 				
 				</span>
 			</div>
@@ -762,7 +760,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 		<p class="excerpt">
 		Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How coul...
@@ -775,7 +773,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 	</div>
@@ -789,7 +787,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-with-eventhub/">Logging in Azure API Management</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-with-eventhub/">Logging in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		This post is a complete step-by-step guide on how to send logs from Azure API Management to Azure Event Hub with PowerShell. We start by ...
@@ -802,7 +800,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-with-eventhub/">
+		<a href="https://www.svenmalvik.com/azure-apim-with-eventhub/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg" alt="Logging in Azure API Management">
 		</a>
 	</div>
@@ -816,7 +814,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-policies/">Understanding Policies in Azure API Management</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-policies/">Understanding Policies in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		Policies are the heart of Azure API Management. They let us change the behavior of our APIs in a very flexible manner. Before I dive in t...
@@ -829,7 +827,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-policies/">
+		<a href="https://www.svenmalvik.com/azure-apim-policies/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-policies-0.png" alt="Understanding Policies in Azure API Management">
 		</a>
 	</div>
@@ -843,7 +841,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-arm-asm/">How Virtual Machine Classic is Different to (Normal) VM in Azure</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-arm-asm/">How Virtual Machine Classic is Different to (Normal) VM in Azure</a>
 		</h2>
 		<p class="excerpt">
 		Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is t...
@@ -856,7 +854,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-arm-asm/">
+		<a href="https://www.svenmalvik.com/azure-arm-asm/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-arm-asm.jpg" alt="How Virtual Machine Classic is Different to (Normal) VM in Azure">
 		</a>
 	</div>
@@ -870,7 +868,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 		<p class="excerpt">
 		In this post I will show you step by step how to serve images on a website from Azure CDN with SSL enabled. My blog has a couple of Azure...
@@ -883,7 +881,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-cdn-with-ssl/">
+		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 	</div>
@@ -897,7 +895,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-vm/">How To Manage Azure Virtual Machines</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-vm/">How To Manage Azure Virtual Machines</a>
 		</h2>
 		<p class="excerpt">
 		I will go through the first steps for managing Virtual Machines. We will create a Windows VM, start the Internet Information Service IIS,...
@@ -910,7 +908,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-vm/">
+		<a href="https://www.svenmalvik.com/azure-vm/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg" alt="How To Manage Azure Virtual Machines">
 		</a>
 	</div>
@@ -924,7 +922,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-backup-restore/">Backup and Restore in Azure API Management</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-backup-restore/">Backup and Restore in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		As infrastructure gets more complex, more parts will eventually break. This is even more true as we make frequently changes. Sometimes we...
@@ -937,7 +935,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-backup-restore/">
+		<a href="https://www.svenmalvik.com/azure-apim-backup-restore/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-backup-restore.jpg" alt="Backup and Restore in Azure API Management">
 		</a>
 	</div>
@@ -951,7 +949,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-introduction/">Introduction to Azure API Management</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-introduction/">Introduction to Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		Azure API Management (APIM) is a way to create consistent and modern API gateways for existing backend services. It provides an interface...
@@ -964,7 +962,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-introduction/">
+		<a href="https://www.svenmalvik.com/azure-apim-introduction/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-introduction.jpg" alt="Introduction to Azure API Management">
 		</a>
 	</div>
@@ -978,7 +976,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
 		</h2>
 		<p class="excerpt">
 		Knowing about Azure Bastion is part of the AZ-303 exam for becoming an Azure Solution Architect. Bastion is very useful in cases where yo...
@@ -991,7 +989,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-bastion/">
+		<a href="https://www.svenmalvik.com/azure-bastion/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-bastion-yt.jpg" alt="How to Use Azure Bastion as a Jump Host">
 		</a>
 	</div>
@@ -1005,7 +1003,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-self-hosted-gateway/">Using Azure API Management APIs with Docker</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-self-hosted-gateway/">Using Azure API Management APIs with Docker</a>
 		</h2>
 		<p class="excerpt">
 		We use Azure API Management in some cases for calling external services from Azure Kubernetes Service (AKS). Azure API Management acts in...
@@ -1018,7 +1016,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-self-hosted-gateway/">
+		<a href="https://www.svenmalvik.com/azure-apim-self-hosted-gateway/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png" alt="Using Azure API Management APIs with Docker">
 		</a>
 	</div>
@@ -1032,7 +1030,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
 		</h2>
 		<p class="excerpt">
 		As many companies move their services to the cloud, the way we interact with the cloud, the tooling, becomes more important. In Azure we ...
@@ -1045,7 +1043,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-first-farmer-project/">
+		<a href="https://www.svenmalvik.com/azure-first-farmer-project/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/farmer-4x4.jpg" alt="Introduction to Farmer - IaC with Azure">
 		</a>
 	</div>
@@ -1068,11 +1066,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 
 		
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 		
@@ -1097,11 +1095,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-with-eventhub/">Logging in Azure API Management</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-with-eventhub/">Logging in Azure API Management</a>
 		</h2>
 
 		
-		<a href="/azure-apim-with-eventhub/">
+		<a href="https://www.svenmalvik.com/azure-apim-with-eventhub/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg" alt="Logging in Azure API Management">
 		</a>
 		
@@ -1126,11 +1124,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-policies/">Understanding Policies in Azure API Management</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-policies/">Understanding Policies in Azure API Management</a>
 		</h2>
 
 		
-		<a href="/azure-apim-policies/">
+		<a href="https://www.svenmalvik.com/azure-apim-policies/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-policies-0.png" alt="Understanding Policies in Azure API Management">
 		</a>
 		
@@ -1155,11 +1153,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-arm-asm/">How Virtual Machine Classic is Different to (Normal) VM in Azure</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-arm-asm/">How Virtual Machine Classic is Different to (Normal) VM in Azure</a>
 		</h2>
 
 		
-		<a href="/azure-arm-asm/">
+		<a href="https://www.svenmalvik.com/azure-arm-asm/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-arm-asm.jpg" alt="How Virtual Machine Classic is Different to (Normal) VM in Azure">
 		</a>
 		
@@ -1184,11 +1182,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 
 		
-		<a href="/azure-cdn-with-ssl/">
+		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 		
@@ -1213,11 +1211,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-vm/">How To Manage Azure Virtual Machines</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-vm/">How To Manage Azure Virtual Machines</a>
 		</h2>
 
 		
-		<a href="/azure-vm/">
+		<a href="https://www.svenmalvik.com/azure-vm/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg" alt="How To Manage Azure Virtual Machines">
 		</a>
 		
@@ -1242,11 +1240,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-backup-restore/">Backup and Restore in Azure API Management</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-backup-restore/">Backup and Restore in Azure API Management</a>
 		</h2>
 
 		
-		<a href="/azure-apim-backup-restore/">
+		<a href="https://www.svenmalvik.com/azure-apim-backup-restore/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-backup-restore.jpg" alt="Backup and Restore in Azure API Management">
 		</a>
 		
@@ -1271,11 +1269,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-introduction/">Introduction to Azure API Management</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-introduction/">Introduction to Azure API Management</a>
 		</h2>
 
 		
-		<a href="/azure-apim-introduction/">
+		<a href="https://www.svenmalvik.com/azure-apim-introduction/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-introduction.jpg" alt="Introduction to Azure API Management">
 		</a>
 		
@@ -1300,11 +1298,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
 		</h2>
 
 		
-		<a href="/azure-bastion/">
+		<a href="https://www.svenmalvik.com/azure-bastion/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-bastion-yt.jpg" alt="How to Use Azure Bastion as a Jump Host">
 		</a>
 		
@@ -1329,11 +1327,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-self-hosted-gateway/">Using Azure API Management APIs with Docker</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-self-hosted-gateway/">Using Azure API Management APIs with Docker</a>
 		</h2>
 
 		
-		<a href="/azure-apim-self-hosted-gateway/">
+		<a href="https://www.svenmalvik.com/azure-apim-self-hosted-gateway/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png" alt="Using Azure API Management APIs with Docker">
 		</a>
 		
@@ -1358,11 +1356,11 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
 		</h2>
 
 		
-		<a href="/azure-first-farmer-project/">
+		<a href="https://www.svenmalvik.com/azure-first-farmer-project/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/farmer-4x4.jpg" alt="Introduction to Farmer - IaC with Azure">
 		</a>
 		
@@ -1402,12 +1400,12 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
         <div class="row prevnextlinks small font-weight-bold">
           
             <div class="col-md-6 rightborder pl-0">
-                <a class="text-dark" href="/azure-apim-deploy-with-powershell/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg">  Azure API Management with PowerShell</a>
+                <a class="text-dark" href="https://www.svenmalvik.com/azure-apim-deploy-with-powershell/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg">  Azure API Management with PowerShell</a>
             </div>
           
           
             <div class="col-md-6 text-right pr-0">
-                <a class="text-dark" href="/azure-apim-deploy-with-terraform/"> Azure API Management with Terraform  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg"> </a>
+                <a class="text-dark" href="https://www.svenmalvik.com/azure-apim-deploy-with-terraform/"> Azure API Management with Terraform  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg"> </a>
             </div>
           
         </div>
@@ -1422,7 +1420,7 @@ New-AzResourceGroupDeployment -ResourceGroupName <span class="s2">"apim-with-arm
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="/assets/js/theme.js"></script>
+    <script src="https://www.svenmalvik.com/assets/js/theme.js"></script>
 
 
     <!-- Footer -->

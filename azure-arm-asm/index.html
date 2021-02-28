@@ -14,18 +14,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is that? The short answer is that it’s the same virtual machine. What’s different is the way it was deployed. This post will explain the history behind classic virtual machines in Azure and what you need to know." />
 <meta property="og:description" content="Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is that? The short answer is that it’s the same virtual machine. What’s different is the way it was deployed. This post will explain the history behind classic virtual machines in Azure and what you need to know." />
-<link rel="canonical" href="http://localhost:4000/azure-arm-asm/" />
-<meta property="og:url" content="http://localhost:4000/azure-arm-asm/" />
 <meta property="og:site_name" content="Azure Blog" />
 <meta property="og:image" content="https://cdn.svenmalvik.com/images/azure-arm-asm.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-02-06T13:00:00+01:00" />
 <script type="application/ld+json">
-{"datePublished":"2021-02-06T13:00:00+01:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/azure-arm-asm/"},"url":"http://localhost:4000/azure-arm-asm/","image":"https://cdn.svenmalvik.com/images/azure-arm-asm.jpg","description":"Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is that? The short answer is that it’s the same virtual machine. What’s different is the way it was deployed. This post will explain the history behind classic virtual machines in Azure and what you need to know.","headline":"How Virtual Machine Classic is Different to (Normal) VM in Azure","dateModified":"2021-02-06T13:00:00+01:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"datePublished":"2021-02-06T13:00:00+01:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.svenmalvik.com/azure-arm-asm/"},"url":"https://www.svenmalvik.com/azure-arm-asm/","image":"https://cdn.svenmalvik.com/images/azure-arm-asm.jpg","description":"Have you ever wondered what a “classic” Virtual Machines in Azure is? Some virtual machines are classic and some others are not. Why is that? The short answer is that it’s the same virtual machine. What’s different is the way it was deployed. This post will explain the history behind classic virtual machines in Azure and what you need to know.","headline":"How Virtual Machine Classic is Different to (Normal) VM in Azure","dateModified":"2021-02-06T13:00:00+01:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="/">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.svenmalvik.com/">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -34,10 +32,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap Modified -->
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/main.css">
 
     <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/theme.css">
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
     <script
@@ -87,7 +85,7 @@
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/index.html"><strong>Azure Blog</strong></a>
+        <a class="navbar-brand" href="https://www.svenmalvik.com/index.html"><strong>Azure Blog</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -96,19 +94,19 @@
                <!--  Replace menu links here -->
 
 <li class="nav-item">
-    <a class="nav-link" href="/index.html">Home</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/index.html">Home</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/categories.html#azure%20api%20management">APIM</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/categories.html#azure%20api%20management">APIM</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/aboutme">Me</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/aboutme">Me</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/contact.html">Contact</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/contact.html">Contact</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/privacy-policy.html">Privacy</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/privacy-policy.html">Privacy</a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="https://www.dpbolvw.net/click-100299205-14411736">Apress books (10% off)</a>
@@ -116,7 +114,7 @@
 
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
-                <script src="/assets/js/lunr.js"></script>
+                <script src="https://www.svenmalvik.com/assets/js/lunr.js"></script>
 
 <script>
 $(function() {
@@ -564,7 +562,7 @@ function lunr_search(term) {
 					<p class="text-uppercase font-weight-bold">
                         <span class="catlist">
 						
-                          <a class="sscroll text-dark" href="/categories.html#arm">arm</a><span class="sep">, </span>
+                          <a class="sscroll text-dark" href="https://www.svenmalvik.com/categories.html#arm">arm</a><span class="sep">, </span>
                         
                         </span>
 					</p>
@@ -666,9 +664,9 @@ function lunr_search(term) {
 			<div class="mb-4">
 				<span class="taglist">
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure">azure</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#azure">azure</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#arm">arm</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#arm">arm</a>
 				
 				</span>
 			</div>
@@ -748,7 +746,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 		<p class="excerpt">
 		Microsoft updated it’s role based exam for AZ-300. It’s now called AZ-303 and launched last year. This certification is a great proof for...
@@ -761,7 +759,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-az303/">
+		<a href="https://www.svenmalvik.com/azure-az303/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 	</div>
@@ -775,7 +773,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-deploy-with-arm/">Azure API Management with ARM</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-deploy-with-arm/">Azure API Management with ARM</a>
 		</h2>
 		<p class="excerpt">
 		Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Managem...
@@ -788,7 +786,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-deploy-with-arm/">
+		<a href="https://www.svenmalvik.com/azure-apim-deploy-with-arm/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg" alt="Azure API Management with ARM">
 		</a>
 	</div>
@@ -802,7 +800,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/what-is-azure/">What is Azure?</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/what-is-azure/">What is Azure?</a>
 		</h2>
 		<p class="excerpt">
 		When I started my career as a developer in a start up company, we build a website that we hosted on a physical server that was running in...
@@ -815,7 +813,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/what-is-azure/">
+		<a href="https://www.svenmalvik.com/what-is-azure/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/what-is-azure.jpg" alt="What is Azure?">
 		</a>
 	</div>
@@ -829,7 +827,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 		<p class="excerpt">
 		Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How coul...
@@ -842,7 +840,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 	</div>
@@ -856,7 +854,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-az900/">AZ-900 Self-Study Guide for Azure Fundamentals</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-az900/">AZ-900 Self-Study Guide for Azure Fundamentals</a>
 		</h2>
 		<p class="excerpt">
 		There are many good reasons to become Microsoft Azure Certified and take the Microsoft Azure AZ-900 exam. If you are reading this blog po...
@@ -869,7 +867,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-az900/">
+		<a href="https://www.svenmalvik.com/azure-az900/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-900.jpg" alt="AZ-900 Self-Study Guide for Azure Fundamentals">
 		</a>
 	</div>
@@ -883,7 +881,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-deploy-with-terraform/">Azure API Management with Terraform</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-deploy-with-terraform/">Azure API Management with Terraform</a>
 		</h2>
 		<p class="excerpt">
 		Terraform is a popular tool for managing infrastructure resources. I counted about 120 supported providers. Azure is one of them. In this...
@@ -896,7 +894,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-deploy-with-terraform/">
+		<a href="https://www.svenmalvik.com/azure-apim-deploy-with-terraform/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg" alt="Azure API Management with Terraform">
 		</a>
 	</div>
@@ -910,7 +908,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-policies/">Understanding Policies in Azure API Management</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-policies/">Understanding Policies in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		Policies are the heart of Azure API Management. They let us change the behavior of our APIs in a very flexible manner. Before I dive in t...
@@ -923,7 +921,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-policies/">
+		<a href="https://www.svenmalvik.com/azure-apim-policies/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-policies-0.png" alt="Understanding Policies in Azure API Management">
 		</a>
 	</div>
@@ -937,7 +935,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-introduction/">Introduction to Azure API Management</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-introduction/">Introduction to Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		Azure API Management (APIM) is a way to create consistent and modern API gateways for existing backend services. It provides an interface...
@@ -950,7 +948,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-introduction/">
+		<a href="https://www.svenmalvik.com/azure-apim-introduction/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-introduction.jpg" alt="Introduction to Azure API Management">
 		</a>
 	</div>
@@ -964,7 +962,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-vm/">How To Manage Azure Virtual Machines</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-vm/">How To Manage Azure Virtual Machines</a>
 		</h2>
 		<p class="excerpt">
 		I will go through the first steps for managing Virtual Machines. We will create a Windows VM, start the Internet Information Service IIS,...
@@ -977,7 +975,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-vm/">
+		<a href="https://www.svenmalvik.com/azure-vm/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg" alt="How To Manage Azure Virtual Machines">
 		</a>
 	</div>
@@ -991,7 +989,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/my-azure-week-34/">My Azure Week 34</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/my-azure-week-34/">My Azure Week 34</a>
 		</h2>
 		<p class="excerpt">
 		This blog post is about my reflections on various topics around Azure, and what I have learned and worked on over the past week.
@@ -1012,7 +1010,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-appservice-nodejs/">ARM for NodeJS Azure Web App with App Configuration Integration</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-appservice-nodejs/">ARM for NodeJS Azure Web App with App Configuration Integration</a>
 		</h2>
 		<p class="excerpt">
 		Our Azure infrastructure has some configurations that our developers need to know like the name of the currently active AKS cluster and A...
@@ -1025,7 +1023,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-appservice-nodejs/">
+		<a href="https://www.svenmalvik.com/azure-appservice-nodejs/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appservice-nodejs.jpg" alt="ARM for NodeJS Azure Web App with App Configuration Integration">
 		</a>
 	</div>
@@ -1048,11 +1046,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 
 		
-		<a href="/azure-az303/">
+		<a href="https://www.svenmalvik.com/azure-az303/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 		
@@ -1077,11 +1075,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-deploy-with-arm/">Azure API Management with ARM</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-deploy-with-arm/">Azure API Management with ARM</a>
 		</h2>
 
 		
-		<a href="/azure-apim-deploy-with-arm/">
+		<a href="https://www.svenmalvik.com/azure-apim-deploy-with-arm/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg" alt="Azure API Management with ARM">
 		</a>
 		
@@ -1106,11 +1104,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/what-is-azure/">What is Azure?</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/what-is-azure/">What is Azure?</a>
 		</h2>
 
 		
-		<a href="/what-is-azure/">
+		<a href="https://www.svenmalvik.com/what-is-azure/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/what-is-azure.jpg" alt="What is Azure?">
 		</a>
 		
@@ -1135,11 +1133,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 
 		
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 		
@@ -1164,11 +1162,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-az900/">AZ-900 Self-Study Guide for Azure Fundamentals</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-az900/">AZ-900 Self-Study Guide for Azure Fundamentals</a>
 		</h2>
 
 		
-		<a href="/azure-az900/">
+		<a href="https://www.svenmalvik.com/azure-az900/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-900.jpg" alt="AZ-900 Self-Study Guide for Azure Fundamentals">
 		</a>
 		
@@ -1193,11 +1191,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-deploy-with-terraform/">Azure API Management with Terraform</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-deploy-with-terraform/">Azure API Management with Terraform</a>
 		</h2>
 
 		
-		<a href="/azure-apim-deploy-with-terraform/">
+		<a href="https://www.svenmalvik.com/azure-apim-deploy-with-terraform/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg" alt="Azure API Management with Terraform">
 		</a>
 		
@@ -1222,11 +1220,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-policies/">Understanding Policies in Azure API Management</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-policies/">Understanding Policies in Azure API Management</a>
 		</h2>
 
 		
-		<a href="/azure-apim-policies/">
+		<a href="https://www.svenmalvik.com/azure-apim-policies/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-policies-0.png" alt="Understanding Policies in Azure API Management">
 		</a>
 		
@@ -1251,11 +1249,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-introduction/">Introduction to Azure API Management</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-introduction/">Introduction to Azure API Management</a>
 		</h2>
 
 		
-		<a href="/azure-apim-introduction/">
+		<a href="https://www.svenmalvik.com/azure-apim-introduction/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-introduction.jpg" alt="Introduction to Azure API Management">
 		</a>
 		
@@ -1280,11 +1278,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-vm/">How To Manage Azure Virtual Machines</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-vm/">How To Manage Azure Virtual Machines</a>
 		</h2>
 
 		
-		<a href="/azure-vm/">
+		<a href="https://www.svenmalvik.com/azure-vm/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg" alt="How To Manage Azure Virtual Machines">
 		</a>
 		
@@ -1309,7 +1307,7 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/my-azure-week-34/">My Azure Week 34</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/my-azure-week-34/">My Azure Week 34</a>
 		</h2>
 
 		
@@ -1334,11 +1332,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-appservice-nodejs/">ARM for NodeJS Azure Web App with App Configuration Integration</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-appservice-nodejs/">ARM for NodeJS Azure Web App with App Configuration Integration</a>
 		</h2>
 
 		
-		<a href="/azure-appservice-nodejs/">
+		<a href="https://www.svenmalvik.com/azure-appservice-nodejs/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appservice-nodejs.jpg" alt="ARM for NodeJS Azure Web App with App Configuration Integration">
 		</a>
 		
@@ -1378,12 +1376,12 @@ function lunr_search(term) {
         <div class="row prevnextlinks small font-weight-bold">
           
             <div class="col-md-6 rightborder pl-0">
-                <a class="text-dark" href="/azure-app-configuration-vs-key-vault/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jpg">  How Azure Key Vault is Different to Azure App Configuration</a>
+                <a class="text-dark" href="https://www.svenmalvik.com/azure-app-configuration-vs-key-vault/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/azure-app-configuration-vs-key-vault.jpg">  How Azure Key Vault is Different to Azure App Configuration</a>
             </div>
           
           
             <div class="col-md-6 text-right pr-0">
-                <a class="text-dark" href="/what-is-azure/"> What is Azure?  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/what-is-azure.jpg"> </a>
+                <a class="text-dark" href="https://www.svenmalvik.com/what-is-azure/"> What is Azure?  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/what-is-azure.jpg"> </a>
             </div>
           
         </div>
@@ -1398,7 +1396,7 @@ function lunr_search(term) {
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="/assets/js/theme.js"></script>
+    <script src="https://www.svenmalvik.com/assets/js/theme.js"></script>
 
 
     <!-- Footer -->

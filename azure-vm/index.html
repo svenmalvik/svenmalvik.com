@@ -14,18 +14,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="I will go through the first steps for managing Virtual Machines. We will create a Windows VM, start the Internet Information Service IIS, attach a new disk, resize the vm, create new network interface, and finally create a new image from our custom VM. Managing Azure Virtual Machines is part of the AZ-303 exam for becoming an Azure Solution Architect." />
 <meta property="og:description" content="I will go through the first steps for managing Virtual Machines. We will create a Windows VM, start the Internet Information Service IIS, attach a new disk, resize the vm, create new network interface, and finally create a new image from our custom VM. Managing Azure Virtual Machines is part of the AZ-303 exam for becoming an Azure Solution Architect." />
-<link rel="canonical" href="http://localhost:4000/azure-vm/" />
-<meta property="og:url" content="http://localhost:4000/azure-vm/" />
 <meta property="og:site_name" content="Azure Blog" />
 <meta property="og:image" content="https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-12-26T00:00:00+01:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-12-26T00:00:00+01:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/azure-vm/"},"url":"http://localhost:4000/azure-vm/","image":"https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg","description":"I will go through the first steps for managing Virtual Machines. We will create a Windows VM, start the Internet Information Service IIS, attach a new disk, resize the vm, create new network interface, and finally create a new image from our custom VM. Managing Azure Virtual Machines is part of the AZ-303 exam for becoming an Azure Solution Architect.","headline":"How To Manage Azure Virtual Machines","dateModified":"2020-12-26T00:00:00+01:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"datePublished":"2020-12-26T00:00:00+01:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.svenmalvik.com/azure-vm/"},"url":"https://www.svenmalvik.com/azure-vm/","image":"https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg","description":"I will go through the first steps for managing Virtual Machines. We will create a Windows VM, start the Internet Information Service IIS, attach a new disk, resize the vm, create new network interface, and finally create a new image from our custom VM. Managing Azure Virtual Machines is part of the AZ-303 exam for becoming an Azure Solution Architect.","headline":"How To Manage Azure Virtual Machines","dateModified":"2020-12-26T00:00:00+01:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="/">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.svenmalvik.com/">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -34,10 +32,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap Modified -->
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/main.css">
 
     <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/theme.css">
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
     <script
@@ -87,7 +85,7 @@
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/index.html"><strong>Azure Blog</strong></a>
+        <a class="navbar-brand" href="https://www.svenmalvik.com/index.html"><strong>Azure Blog</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -96,19 +94,19 @@
                <!--  Replace menu links here -->
 
 <li class="nav-item">
-    <a class="nav-link" href="/index.html">Home</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/index.html">Home</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/categories.html#azure%20api%20management">APIM</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/categories.html#azure%20api%20management">APIM</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/aboutme">Me</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/aboutme">Me</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/contact.html">Contact</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/contact.html">Contact</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/privacy-policy.html">Privacy</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/privacy-policy.html">Privacy</a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="https://www.dpbolvw.net/click-100299205-14411736">Apress books (10% off)</a>
@@ -116,7 +114,7 @@
 
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
-                <script src="/assets/js/lunr.js"></script>
+                <script src="https://www.svenmalvik.com/assets/js/lunr.js"></script>
 
 <script>
 $(function() {
@@ -564,7 +562,7 @@ function lunr_search(term) {
 					<p class="text-uppercase font-weight-bold">
                         <span class="catlist">
 						
-                          <a class="sscroll text-dark" href="/categories.html#az-303">az-303</a><span class="sep">, </span>
+                          <a class="sscroll text-dark" href="https://www.svenmalvik.com/categories.html#az-303">az-303</a><span class="sep">, </span>
                         
                         </span>
 					</p>
@@ -843,11 +841,11 @@ function lunr_search(term) {
 			<div class="mb-4">
 				<span class="taglist">
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure">azure</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#azure">azure</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#az-303">az-303</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#az-303">az-303</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#virtual machines">virtual machines</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#virtual machines">virtual machines</a>
 				
 				</span>
 			</div>
@@ -927,7 +925,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
 		</h2>
 		<p class="excerpt">
 		Knowing about Azure Bastion is part of the AZ-303 exam for becoming an Azure Solution Architect. Bastion is very useful in cases where yo...
@@ -940,7 +938,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-bastion/">
+		<a href="https://www.svenmalvik.com/azure-bastion/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-bastion-yt.jpg" alt="How to Use Azure Bastion as a Jump Host">
 		</a>
 	</div>
@@ -954,7 +952,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-vnet-peering/">How to Peer Virtual Networks in Azure</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-vnet-peering/">How to Peer Virtual Networks in Azure</a>
 		</h2>
 		<p class="excerpt">
 		When we have two services running in two different virtual networks, they cannot communicate. To fix this, both VNet’s have to be peered....
@@ -967,7 +965,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-vnet-peering/">
+		<a href="https://www.svenmalvik.com/azure-vnet-peering/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-peerings.jpg" alt="How to Peer Virtual Networks in Azure">
 		</a>
 	</div>
@@ -981,7 +979,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-point-to-site-connection/">How to Establish a VPN Point to Site Connection in Azure</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-point-to-site-connection/">How to Establish a VPN Point to Site Connection in Azure</a>
 		</h2>
 		<p class="excerpt">
 		I will demonstrate how to establish a point to site connection in Azure, and connect from a Windows workstation to a virtual machine via ...
@@ -994,7 +992,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-point-to-site-connection/">
+		<a href="https://www.svenmalvik.com/azure-point-to-site-connection/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-p2s.jpg" alt="How to Establish a VPN Point to Site Connection in Azure">
 		</a>
 	</div>
@@ -1008,7 +1006,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-custom-routes/">How to Create Custom Routes in Azure</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-custom-routes/">How to Create Custom Routes in Azure</a>
 		</h2>
 		<p class="excerpt">
 		Custom Routes, or user defined routing, is part of the az-303 certification for becoming an Azure Solution Architect. In this video I tel...
@@ -1021,7 +1019,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-custom-routes/">
+		<a href="https://www.svenmalvik.com/azure-custom-routes/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-udr.jpg" alt="How to Create Custom Routes in Azure">
 		</a>
 	</div>
@@ -1035,7 +1033,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-service-endpoints/">How to configure Azure Storage Accounts to Allow Access from Specific Subnets</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-service-endpoints/">How to configure Azure Storage Accounts to Allow Access from Specific Subnets</a>
 		</h2>
 		<p class="excerpt">
 		Sometimes we store items in a storage account and want to restrict the access to certain services or clients. I will demonstrate how to r...
@@ -1048,7 +1046,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-service-endpoints/">
+		<a href="https://www.svenmalvik.com/azure-service-endpoints/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-se.jpg" alt="How to configure Azure Storage Accounts to Allow Access from Specific Subnets">
 		</a>
 	</div>
@@ -1062,7 +1060,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 		<p class="excerpt">
 		Microsoft updated it’s role based exam for AZ-300. It’s now called AZ-303 and launched last year. This certification is a great proof for...
@@ -1075,7 +1073,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-az303/">
+		<a href="https://www.svenmalvik.com/azure-az303/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 	</div>
@@ -1089,7 +1087,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 		<p class="excerpt">
 		Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How coul...
@@ -1102,7 +1100,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 	</div>
@@ -1116,7 +1114,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-site-recovery-virtual-machines/">How to do a Failover of a Windows Server VM with Azure Site Recovery</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-site-recovery-virtual-machines/">How to do a Failover of a Windows Server VM with Azure Site Recovery</a>
 		</h2>
 		<p class="excerpt">
 		In this post I will create a Windows Server 2016 Datacenter and then do an automatic failover to another region with Azure Site Recovery....
@@ -1129,7 +1127,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-site-recovery-virtual-machines/">
+		<a href="https://www.svenmalvik.com/azure-site-recovery-virtual-machines/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr-yt.jpg" alt="How to do a Failover of a Windows Server VM with Azure Site Recovery">
 		</a>
 	</div>
@@ -1143,7 +1141,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-backup-service/">How to Recover a Virtual Machine with Azure Backup Service</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-backup-service/">How to Recover a Virtual Machine with Azure Backup Service</a>
 		</h2>
 		<p class="excerpt">
 		This episode is about the Azure Backup Service, and how we can restore a virtual machine. I have already a Windows Server 2016 Datacenter...
@@ -1156,7 +1154,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-backup-service/">
+		<a href="https://www.svenmalvik.com/azure-backup-service/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service.jpg" alt="How to Recover a Virtual Machine with Azure Backup Service">
 		</a>
 	</div>
@@ -1170,7 +1168,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 		<p class="excerpt">
 		In this post I will show you step by step how to serve images on a website from Azure CDN with SSL enabled. My blog has a couple of Azure...
@@ -1183,7 +1181,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-cdn-with-ssl/">
+		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 	</div>
@@ -1197,7 +1195,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-with-eventhub/">Logging in Azure API Management</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-with-eventhub/">Logging in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		This post is a complete step-by-step guide on how to send logs from Azure API Management to Azure Event Hub with PowerShell. We start by ...
@@ -1210,7 +1208,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-with-eventhub/">
+		<a href="https://www.svenmalvik.com/azure-apim-with-eventhub/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg" alt="Logging in Azure API Management">
 		</a>
 	</div>
@@ -1233,11 +1231,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
 		</h2>
 
 		
-		<a href="/azure-bastion/">
+		<a href="https://www.svenmalvik.com/azure-bastion/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-bastion-yt.jpg" alt="How to Use Azure Bastion as a Jump Host">
 		</a>
 		
@@ -1262,11 +1260,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-vnet-peering/">How to Peer Virtual Networks in Azure</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-vnet-peering/">How to Peer Virtual Networks in Azure</a>
 		</h2>
 
 		
-		<a href="/azure-vnet-peering/">
+		<a href="https://www.svenmalvik.com/azure-vnet-peering/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-peerings.jpg" alt="How to Peer Virtual Networks in Azure">
 		</a>
 		
@@ -1291,11 +1289,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-point-to-site-connection/">How to Establish a VPN Point to Site Connection in Azure</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-point-to-site-connection/">How to Establish a VPN Point to Site Connection in Azure</a>
 		</h2>
 
 		
-		<a href="/azure-point-to-site-connection/">
+		<a href="https://www.svenmalvik.com/azure-point-to-site-connection/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-p2s.jpg" alt="How to Establish a VPN Point to Site Connection in Azure">
 		</a>
 		
@@ -1320,11 +1318,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-custom-routes/">How to Create Custom Routes in Azure</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-custom-routes/">How to Create Custom Routes in Azure</a>
 		</h2>
 
 		
-		<a href="/azure-custom-routes/">
+		<a href="https://www.svenmalvik.com/azure-custom-routes/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-udr.jpg" alt="How to Create Custom Routes in Azure">
 		</a>
 		
@@ -1349,11 +1347,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-service-endpoints/">How to configure Azure Storage Accounts to Allow Access from Specific Subnets</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-service-endpoints/">How to configure Azure Storage Accounts to Allow Access from Specific Subnets</a>
 		</h2>
 
 		
-		<a href="/azure-service-endpoints/">
+		<a href="https://www.svenmalvik.com/azure-service-endpoints/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-se.jpg" alt="How to configure Azure Storage Accounts to Allow Access from Specific Subnets">
 		</a>
 		
@@ -1378,11 +1376,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 
 		
-		<a href="/azure-az303/">
+		<a href="https://www.svenmalvik.com/azure-az303/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 		
@@ -1407,11 +1405,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 
 		
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 		
@@ -1436,11 +1434,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-site-recovery-virtual-machines/">How to do a Failover of a Windows Server VM with Azure Site Recovery</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-site-recovery-virtual-machines/">How to do a Failover of a Windows Server VM with Azure Site Recovery</a>
 		</h2>
 
 		
-		<a href="/azure-site-recovery-virtual-machines/">
+		<a href="https://www.svenmalvik.com/azure-site-recovery-virtual-machines/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/az-303-azure-asr-yt.jpg" alt="How to do a Failover of a Windows Server VM with Azure Site Recovery">
 		</a>
 		
@@ -1465,11 +1463,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-backup-service/">How to Recover a Virtual Machine with Azure Backup Service</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-backup-service/">How to Recover a Virtual Machine with Azure Backup Service</a>
 		</h2>
 
 		
-		<a href="/azure-backup-service/">
+		<a href="https://www.svenmalvik.com/azure-backup-service/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service.jpg" alt="How to Recover a Virtual Machine with Azure Backup Service">
 		</a>
 		
@@ -1494,11 +1492,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 
 		
-		<a href="/azure-cdn-with-ssl/">
+		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 		
@@ -1523,11 +1521,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-with-eventhub/">Logging in Azure API Management</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-with-eventhub/">Logging in Azure API Management</a>
 		</h2>
 
 		
-		<a href="/azure-apim-with-eventhub/">
+		<a href="https://www.svenmalvik.com/azure-apim-with-eventhub/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg" alt="Logging in Azure API Management">
 		</a>
 		
@@ -1567,12 +1565,12 @@ function lunr_search(term) {
         <div class="row prevnextlinks small font-weight-bold">
           
             <div class="col-md-6 rightborder pl-0">
-                <a class="text-dark" href="/azure-service-endpoints/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/az-303/azure-se.jpg">  How to configure Azure Storage Accounts to Allow Access from Specific Subnets</a>
+                <a class="text-dark" href="https://www.svenmalvik.com/azure-service-endpoints/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/az-303/azure-se.jpg">  How to configure Azure Storage Accounts to Allow Access from Specific Subnets</a>
             </div>
           
           
             <div class="col-md-6 text-right pr-0">
-                <a class="text-dark" href="/azure-friday-in-pictures-purview/"> Azure Friday in Pictures &#35;1  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-0.jpg"> </a>
+                <a class="text-dark" href="https://www.svenmalvik.com/azure-friday-in-pictures-purview/"> Azure Friday in Pictures &#35;1  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/azure-friday/azure-friday-purview-0.jpg"> </a>
             </div>
           
         </div>
@@ -1587,7 +1585,7 @@ function lunr_search(term) {
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="/assets/js/theme.js"></script>
+    <script src="https://www.svenmalvik.com/assets/js/theme.js"></script>
 
 
     <!-- Footer -->

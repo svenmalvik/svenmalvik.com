@@ -14,18 +14,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="One questions we might ask us when we move our properties files from an application to Azure App Configuration is how we can do this without introducing extra complexity when updating our configurations suddenly in a different way. GitHub Actions has an action that synchronizes properties files with Azure App Configuration automatically. It means that we can keep updating our configurations as before, in properties files that are under version control. This blog post is a preparation for my talk on Azure App Configuration and demonstrates this behavior i action." />
 <meta property="og:description" content="One questions we might ask us when we move our properties files from an application to Azure App Configuration is how we can do this without introducing extra complexity when updating our configurations suddenly in a different way. GitHub Actions has an action that synchronizes properties files with Azure App Configuration automatically. It means that we can keep updating our configurations as before, in properties files that are under version control. This blog post is a preparation for my talk on Azure App Configuration and demonstrates this behavior i action." />
-<link rel="canonical" href="http://localhost:4000/azure-app-cofiguration-sync-github-actions/" />
-<meta property="og:url" content="http://localhost:4000/azure-app-cofiguration-sync-github-actions/" />
 <meta property="og:site_name" content="Azure Blog" />
 <meta property="og:image" content="https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-09-05T00:00:00+02:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-09-05T00:00:00+02:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/azure-app-cofiguration-sync-github-actions/"},"url":"http://localhost:4000/azure-app-cofiguration-sync-github-actions/","image":"https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png","description":"One questions we might ask us when we move our properties files from an application to Azure App Configuration is how we can do this without introducing extra complexity when updating our configurations suddenly in a different way. GitHub Actions has an action that synchronizes properties files with Azure App Configuration automatically. It means that we can keep updating our configurations as before, in properties files that are under version control. This blog post is a preparation for my talk on Azure App Configuration and demonstrates this behavior i action.","headline":"Sync Azure App Configuration with GitHub Actions","dateModified":"2020-09-05T00:00:00+02:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"datePublished":"2020-09-05T00:00:00+02:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.svenmalvik.com/azure-app-cofiguration-sync-github-actions/"},"url":"https://www.svenmalvik.com/azure-app-cofiguration-sync-github-actions/","image":"https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png","description":"One questions we might ask us when we move our properties files from an application to Azure App Configuration is how we can do this without introducing extra complexity when updating our configurations suddenly in a different way. GitHub Actions has an action that synchronizes properties files with Azure App Configuration automatically. It means that we can keep updating our configurations as before, in properties files that are under version control. This blog post is a preparation for my talk on Azure App Configuration and demonstrates this behavior i action.","headline":"Sync Azure App Configuration with GitHub Actions","dateModified":"2020-09-05T00:00:00+02:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="/">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.svenmalvik.com/">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -34,10 +32,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap Modified -->
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/main.css">
 
     <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/theme.css">
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
     <script
@@ -87,7 +85,7 @@
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/index.html"><strong>Azure Blog</strong></a>
+        <a class="navbar-brand" href="https://www.svenmalvik.com/index.html"><strong>Azure Blog</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -96,19 +94,19 @@
                <!--  Replace menu links here -->
 
 <li class="nav-item">
-    <a class="nav-link" href="/index.html">Home</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/index.html">Home</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/categories.html#azure%20api%20management">APIM</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/categories.html#azure%20api%20management">APIM</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/aboutme">Me</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/aboutme">Me</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/contact.html">Contact</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/contact.html">Contact</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/privacy-policy.html">Privacy</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/privacy-policy.html">Privacy</a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="https://www.dpbolvw.net/click-100299205-14411736">Apress books (10% off)</a>
@@ -116,7 +114,7 @@
 
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
-                <script src="/assets/js/lunr.js"></script>
+                <script src="https://www.svenmalvik.com/assets/js/lunr.js"></script>
 
 <script>
 $(function() {
@@ -564,7 +562,7 @@ function lunr_search(term) {
 					<p class="text-uppercase font-weight-bold">
                         <span class="catlist">
 						
-                          <a class="sscroll text-dark" href="/categories.html#azure app configuration">azure app configuration</a><span class="sep">, </span>
+                          <a class="sscroll text-dark" href="https://www.svenmalvik.com/categories.html#azure app configuration">azure app configuration</a><span class="sep">, </span>
                         
                         </span>
 					</p>
@@ -677,13 +675,13 @@ function lunr_search(term) {
 			<div class="mb-4">
 				<span class="taglist">
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure">azure</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#azure">azure</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure app configuration">azure app configuration</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#azure app configuration">azure app configuration</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#github actions">github actions</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#github actions">github actions</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#devops">devops</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#devops">devops</a>
 				
 				</span>
 			</div>
@@ -763,7 +761,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-app-configuration-devops/">Using App Configuration in Azure DevOps</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-app-configuration-devops/">Using App Configuration in Azure DevOps</a>
 		</h2>
 		<p class="excerpt">
 		Application deployments dependent often on environment specific data like the name of a resource group, location or flags for certain use...
@@ -776,7 +774,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-app-configuration-devops/">
+		<a href="https://www.svenmalvik.com/azure-app-configuration-devops/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png" alt="Using App Configuration in Azure DevOps">
 		</a>
 	</div>
@@ -790,7 +788,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 		<p class="excerpt">
 		Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How coul...
@@ -803,7 +801,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 	</div>
@@ -817,7 +815,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-appconfiguration-configserver/">Azure App Configuration Introduction &#35;3</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration-configserver/">Azure App Configuration Introduction &#35;3</a>
 		</h2>
 		<p class="excerpt">
 		After playing around with Azure App Configuration Service and how to read a configuration entry with REST, and then using feature flags i...
@@ -830,7 +828,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-appconfiguration-configserver/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration-configserver/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration-configserver-0.png" alt="Azure App Configuration Introduction &#35;3">
 		</a>
 	</div>
@@ -844,7 +842,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-appconfiguration-feature-flags/">Using Feature Flags with Azure App Configuration</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration-feature-flags/">Using Feature Flags with Azure App Configuration</a>
 		</h2>
 		<p class="excerpt">
 		Sometimes we would like to test a new feature of an application. Or we would like to disable code junks because they are not fully implem...
@@ -857,7 +855,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-appconfiguration-feature-flags/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration-feature-flags/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration-feature-flags.jpg" alt="Using Feature Flags with Azure App Configuration">
 		</a>
 	</div>
@@ -871,7 +869,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-vm/">How To Manage Azure Virtual Machines</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-vm/">How To Manage Azure Virtual Machines</a>
 		</h2>
 		<p class="excerpt">
 		I will go through the first steps for managing Virtual Machines. We will create a Windows VM, start the Internet Information Service IIS,...
@@ -884,7 +882,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-vm/">
+		<a href="https://www.svenmalvik.com/azure-vm/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg" alt="How To Manage Azure Virtual Machines">
 		</a>
 	</div>
@@ -898,7 +896,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 		<p class="excerpt">
 		Microsoft updated it’s role based exam for AZ-300. It’s now called AZ-303 and launched last year. This certification is a great proof for...
@@ -911,7 +909,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-az303/">
+		<a href="https://www.svenmalvik.com/azure-az303/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 	</div>
@@ -925,7 +923,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-appconfiguration/">Azure App Configuration Introduction</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration/">Azure App Configuration Introduction</a>
 		</h2>
 		<p class="excerpt">
 		We build this great application that we configure exactly the way it fits into our environments, and then we realize that changing a conf...
@@ -938,7 +936,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-appconfiguration/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration.jpg" alt="Azure App Configuration Introduction">
 		</a>
 	</div>
@@ -952,7 +950,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-with-eventhub/">Logging in Azure API Management</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-with-eventhub/">Logging in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		This post is a complete step-by-step guide on how to send logs from Azure API Management to Azure Event Hub with PowerShell. We start by ...
@@ -965,7 +963,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-with-eventhub/">
+		<a href="https://www.svenmalvik.com/azure-apim-with-eventhub/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg" alt="Logging in Azure API Management">
 		</a>
 	</div>
@@ -979,7 +977,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
 		</h2>
 		<p class="excerpt">
 		Knowing about Azure Bastion is part of the AZ-303 exam for becoming an Azure Solution Architect. Bastion is very useful in cases where yo...
@@ -992,7 +990,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-bastion/">
+		<a href="https://www.svenmalvik.com/azure-bastion/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-bastion-yt.jpg" alt="How to Use Azure Bastion as a Jump Host">
 		</a>
 	</div>
@@ -1006,7 +1004,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/my-azure-week-34/">My Azure Week 34</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/my-azure-week-34/">My Azure Week 34</a>
 		</h2>
 		<p class="excerpt">
 		This blog post is about my reflections on various topics around Azure, and what I have learned and worked on over the past week.
@@ -1027,7 +1025,7 @@ function lunr_search(term) {
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 		<p class="excerpt">
 		In this post I will show you step by step how to serve images on a website from Azure CDN with SSL enabled. My blog has a couple of Azure...
@@ -1040,7 +1038,7 @@ function lunr_search(term) {
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-cdn-with-ssl/">
+		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 	</div>
@@ -1063,11 +1061,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-app-configuration-devops/">Using App Configuration in Azure DevOps</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-app-configuration-devops/">Using App Configuration in Azure DevOps</a>
 		</h2>
 
 		
-		<a href="/azure-app-configuration-devops/">
+		<a href="https://www.svenmalvik.com/azure-app-configuration-devops/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png" alt="Using App Configuration in Azure DevOps">
 		</a>
 		
@@ -1092,11 +1090,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 
 		
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 		
@@ -1121,11 +1119,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-appconfiguration-configserver/">Azure App Configuration Introduction &#35;3</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration-configserver/">Azure App Configuration Introduction &#35;3</a>
 		</h2>
 
 		
-		<a href="/azure-appconfiguration-configserver/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration-configserver/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration-configserver-0.png" alt="Azure App Configuration Introduction &#35;3">
 		</a>
 		
@@ -1150,11 +1148,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-appconfiguration-feature-flags/">Using Feature Flags with Azure App Configuration</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration-feature-flags/">Using Feature Flags with Azure App Configuration</a>
 		</h2>
 
 		
-		<a href="/azure-appconfiguration-feature-flags/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration-feature-flags/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration-feature-flags.jpg" alt="Using Feature Flags with Azure App Configuration">
 		</a>
 		
@@ -1179,11 +1177,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-vm/">How To Manage Azure Virtual Machines</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-vm/">How To Manage Azure Virtual Machines</a>
 		</h2>
 
 		
-		<a href="/azure-vm/">
+		<a href="https://www.svenmalvik.com/azure-vm/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-vm.jpg" alt="How To Manage Azure Virtual Machines">
 		</a>
 		
@@ -1208,11 +1206,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 
 		
-		<a href="/azure-az303/">
+		<a href="https://www.svenmalvik.com/azure-az303/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 		
@@ -1237,11 +1235,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-appconfiguration/">Azure App Configuration Introduction</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration/">Azure App Configuration Introduction</a>
 		</h2>
 
 		
-		<a href="/azure-appconfiguration/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration.jpg" alt="Azure App Configuration Introduction">
 		</a>
 		
@@ -1266,11 +1264,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-with-eventhub/">Logging in Azure API Management</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-with-eventhub/">Logging in Azure API Management</a>
 		</h2>
 
 		
-		<a href="/azure-apim-with-eventhub/">
+		<a href="https://www.svenmalvik.com/azure-apim-with-eventhub/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-with-eventhub-video-1.jpg" alt="Logging in Azure API Management">
 		</a>
 		
@@ -1295,11 +1293,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-bastion/">How to Use Azure Bastion as a Jump Host</a>
 		</h2>
 
 		
-		<a href="/azure-bastion/">
+		<a href="https://www.svenmalvik.com/azure-bastion/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/azure-bastion-yt.jpg" alt="How to Use Azure Bastion as a Jump Host">
 		</a>
 		
@@ -1324,7 +1322,7 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/my-azure-week-34/">My Azure Week 34</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/my-azure-week-34/">My Azure Week 34</a>
 		</h2>
 
 		
@@ -1349,11 +1347,11 @@ function lunr_search(term) {
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 
 		
-		<a href="/azure-cdn-with-ssl/">
+		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 		
@@ -1393,12 +1391,12 @@ function lunr_search(term) {
         <div class="row prevnextlinks small font-weight-bold">
           
             <div class="col-md-6 rightborder pl-0">
-                <a class="text-dark" href="/jekyll-cookie-consent/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/jekyll-logo.png">  Cookie Consent on my Azure Blog</a>
+                <a class="text-dark" href="https://www.svenmalvik.com/jekyll-cookie-consent/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/jekyll-logo.png">  Cookie Consent on my Azure Blog</a>
             </div>
           
           
             <div class="col-md-6 text-right pr-0">
-                <a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/"> Event-Driven Infrastructure with App Configuration  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png"> </a>
+                <a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/"> Event-Driven Infrastructure with App Configuration  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png"> </a>
             </div>
           
         </div>
@@ -1413,7 +1411,7 @@ function lunr_search(term) {
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="/assets/js/theme.js"></script>
+    <script src="https://www.svenmalvik.com/assets/js/theme.js"></script>
 
 
     <!-- Footer -->

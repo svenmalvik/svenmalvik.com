@@ -14,17 +14,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Why would we want t execute code within an ARM template? Sometimes we need some value in an ARM template that we don’t want to copy and paste around, like secrets. Evgeny Borzenin describes in one of his blog posts how to create a password in ARM, and then create a database with this password. This post will show how we can use the deploymentScript in ARM in its purest form." />
 <meta property="og:description" content="Why would we want t execute code within an ARM template? Sometimes we need some value in an ARM template that we don’t want to copy and paste around, like secrets. Evgeny Borzenin describes in one of his blog posts how to create a password in ARM, and then create a database with this password. This post will show how we can use the deploymentScript in ARM in its purest form." />
-<link rel="canonical" href="http://localhost:4000/azure-arm-deployscript/" />
-<meta property="og:url" content="http://localhost:4000/azure-arm-deployscript/" />
 <meta property="og:site_name" content="Azure Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-11T00:00:00+02:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-07-11T00:00:00+02:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/azure-arm-deployscript/"},"url":"http://localhost:4000/azure-arm-deployscript/","description":"Why would we want t execute code within an ARM template? Sometimes we need some value in an ARM template that we don’t want to copy and paste around, like secrets. Evgeny Borzenin describes in one of his blog posts how to create a password in ARM, and then create a database with this password. This post will show how we can use the deploymentScript in ARM in its purest form.","headline":"Running Scripts from ARM Templates","dateModified":"2020-07-11T00:00:00+02:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"datePublished":"2020-07-11T00:00:00+02:00","author":{"@type":"Person","name":"svenmalvik"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.svenmalvik.com/azure-arm-deployscript/"},"url":"https://www.svenmalvik.com/azure-arm-deployscript/","description":"Why would we want t execute code within an ARM template? Sometimes we need some value in an ARM template that we don’t want to copy and paste around, like secrets. Evgeny Borzenin describes in one of his blog posts how to create a password in ARM, and then create a database with this password. This post will show how we can use the deploymentScript in ARM in its purest form.","headline":"Running Scripts from ARM Templates","dateModified":"2020-07-11T00:00:00+02:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="/">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.svenmalvik.com/">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -33,10 +31,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap Modified -->
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/main.css">
 
     <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="https://www.svenmalvik.com/assets/css/theme.css">
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
     <script
@@ -86,7 +84,7 @@
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/index.html"><strong>Azure Blog</strong></a>
+        <a class="navbar-brand" href="https://www.svenmalvik.com/index.html"><strong>Azure Blog</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -95,19 +93,19 @@
                <!--  Replace menu links here -->
 
 <li class="nav-item">
-    <a class="nav-link" href="/index.html">Home</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/index.html">Home</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/categories.html#azure%20api%20management">APIM</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/categories.html#azure%20api%20management">APIM</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/aboutme">Me</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/aboutme">Me</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/contact.html">Contact</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/contact.html">Contact</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/privacy-policy.html">Privacy</a>
+    <a class="nav-link" href="https://www.svenmalvik.com/privacy-policy.html">Privacy</a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="https://www.dpbolvw.net/click-100299205-14411736">Apress books (10% off)</a>
@@ -115,7 +113,7 @@
 
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
-                <script src="/assets/js/lunr.js"></script>
+                <script src="https://www.svenmalvik.com/assets/js/lunr.js"></script>
 
 <script>
 $(function() {
@@ -563,7 +561,7 @@ function lunr_search(term) {
 					<p class="text-uppercase font-weight-bold">
                         <span class="catlist">
 						
-                          <a class="sscroll text-dark" href="/categories.html#iac">iac</a><span class="sep">, </span>
+                          <a class="sscroll text-dark" href="https://www.svenmalvik.com/categories.html#iac">iac</a><span class="sep">, </span>
                         
                         </span>
 					</p>
@@ -724,9 +722,9 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 			<div class="mb-4">
 				<span class="taglist">
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#azure">azure</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#azure">azure</a>
 				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#arm">arm</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="https://www.svenmalvik.com/tags.html#arm">arm</a>
 				
 				</span>
 			</div>
@@ -806,7 +804,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
 		</h2>
 		<p class="excerpt">
 		As many companies move their services to the cloud, the way we interact with the cloud, the tooling, becomes more important. In Azure we ...
@@ -819,7 +817,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-first-farmer-project/">
+		<a href="https://www.svenmalvik.com/azure-first-farmer-project/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/farmer-4x4.jpg" alt="Introduction to Farmer - IaC with Azure">
 		</a>
 	</div>
@@ -833,7 +831,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 		<p class="excerpt">
 		Azure App Configuration is great for externalizing application configurations. But what if an application is our infrastructure? How coul...
@@ -846,7 +844,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 	</div>
@@ -860,7 +858,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-key-vault/">How to Reference Key Vault Secrets in Azure API Management</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-key-vault/">How to Reference Key Vault Secrets in Azure API Management</a>
 		</h2>
 		<p class="excerpt">
 		In an enterprise, an Azure API Management instance is often shared by many teams and many developers. The developers may all have access ...
@@ -873,7 +871,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-key-vault/">
+		<a href="https://www.svenmalvik.com/azure-apim-key-vault/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg" alt="How to Reference Key Vault Secrets in Azure API Management">
 		</a>
 	</div>
@@ -887,7 +885,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-app-configuration-devops/">Using App Configuration in Azure DevOps</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-app-configuration-devops/">Using App Configuration in Azure DevOps</a>
 		</h2>
 		<p class="excerpt">
 		Application deployments dependent often on environment specific data like the name of a resource group, location or flags for certain use...
@@ -900,7 +898,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-app-configuration-devops/">
+		<a href="https://www.svenmalvik.com/azure-app-configuration-devops/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png" alt="Using App Configuration in Azure DevOps">
 		</a>
 	</div>
@@ -914,7 +912,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-appconfiguration-feature-flags/">Using Feature Flags with Azure App Configuration</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration-feature-flags/">Using Feature Flags with Azure App Configuration</a>
 		</h2>
 		<p class="excerpt">
 		Sometimes we would like to test a new feature of an application. Or we would like to disable code junks because they are not fully implem...
@@ -927,7 +925,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-appconfiguration-feature-flags/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration-feature-flags/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration-feature-flags.jpg" alt="Using Feature Flags with Azure App Configuration">
 		</a>
 	</div>
@@ -941,7 +939,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-apim-deploy-with-arm/">Azure API Management with ARM</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-deploy-with-arm/">Azure API Management with ARM</a>
 		</h2>
 		<p class="excerpt">
 		Deploying an ARM template (Azure Resource Management)-template from GitHub is the simplest way of provisioning an instance of API Managem...
@@ -954,7 +952,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-apim-deploy-with-arm/">
+		<a href="https://www.svenmalvik.com/azure-apim-deploy-with-arm/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg" alt="Azure API Management with ARM">
 		</a>
 	</div>
@@ -968,7 +966,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 		<p class="excerpt">
 		Microsoft updated it’s role based exam for AZ-300. It’s now called AZ-303 and launched last year. This certification is a great proof for...
@@ -981,7 +979,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-az303/">
+		<a href="https://www.svenmalvik.com/azure-az303/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 	</div>
@@ -995,7 +993,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 		<p class="excerpt">
 		In this post I will show you step by step how to serve images on a website from Azure CDN with SSL enabled. My blog has a couple of Azure...
@@ -1008,7 +1006,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-cdn-with-ssl/">
+		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 	</div>
@@ -1022,7 +1020,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-appconfiguration/">Azure App Configuration Introduction</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration/">Azure App Configuration Introduction</a>
 		</h2>
 		<p class="excerpt">
 		We build this great application that we configure exactly the way it fits into our environments, and then we realize that changing a conf...
@@ -1035,7 +1033,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-appconfiguration/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration.jpg" alt="Azure App Configuration Introduction">
 		</a>
 	</div>
@@ -1049,7 +1047,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-appservice-nodejs/">ARM for NodeJS Azure Web App with App Configuration Integration</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-appservice-nodejs/">ARM for NodeJS Azure Web App with App Configuration Integration</a>
 		</h2>
 		<p class="excerpt">
 		Our Azure infrastructure has some configurations that our developers need to know like the name of the currently active AKS cluster and A...
@@ -1062,7 +1060,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-appservice-nodejs/">
+		<a href="https://www.svenmalvik.com/azure-appservice-nodejs/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appservice-nodejs.jpg" alt="ARM for NodeJS Azure Web App with App Configuration Integration">
 		</a>
 	</div>
@@ -1076,7 +1074,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 					<div class="d-flex justify-content-between main-loop-card mb-3">
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-		<a class="text-dark" href="/azure-backup-service/">How to Recover a Virtual Machine with Azure Backup Service</a>
+		<a class="text-dark" href="https://www.svenmalvik.com/azure-backup-service/">How to Recover a Virtual Machine with Azure Backup Service</a>
 		</h2>
 		<p class="excerpt">
 		This episode is about the Azure Backup Service, and how we can restore a virtual machine. I have already a Windows Server 2016 Datacenter...
@@ -1089,7 +1087,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	
 	<div class="col-md-5 pr-0 text-right">
-		<a href="/azure-backup-service/">
+		<a href="https://www.svenmalvik.com/azure-backup-service/">
 		<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service.jpg" alt="How to Recover a Virtual Machine with Azure Backup Service">
 		</a>
 	</div>
@@ -1112,11 +1110,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-first-farmer-project/">Introduction to Farmer - IaC with Azure</a>
 		</h2>
 
 		
-		<a href="/azure-first-farmer-project/">
+		<a href="https://www.svenmalvik.com/azure-first-farmer-project/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/farmer-4x4.jpg" alt="Introduction to Farmer - IaC with Azure">
 		</a>
 		
@@ -1141,11 +1139,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">Event-Driven Infrastructure with App Configuration</a>
 		</h2>
 
 		
-		<a href="/event-driven-infrastructure-with-app-configuration/">
+		<a href="https://www.svenmalvik.com/event-driven-infrastructure-with-app-configuration/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/appc-apim-autmation-eventgrid-logos.png" alt="Event-Driven Infrastructure with App Configuration">
 		</a>
 		
@@ -1170,11 +1168,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-key-vault/">How to Reference Key Vault Secrets in Azure API Management</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-key-vault/">How to Reference Key Vault Secrets in Azure API Management</a>
 		</h2>
 
 		
-		<a href="/azure-apim-key-vault/">
+		<a href="https://www.svenmalvik.com/azure-apim-key-vault/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-kv-secrets.jpg" alt="How to Reference Key Vault Secrets in Azure API Management">
 		</a>
 		
@@ -1199,11 +1197,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-app-configuration-devops/">Using App Configuration in Azure DevOps</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-app-configuration-devops/">Using App Configuration in Azure DevOps</a>
 		</h2>
 
 		
-		<a href="/azure-app-configuration-devops/">
+		<a href="https://www.svenmalvik.com/azure-app-configuration-devops/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png" alt="Using App Configuration in Azure DevOps">
 		</a>
 		
@@ -1228,11 +1226,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-appconfiguration-feature-flags/">Using Feature Flags with Azure App Configuration</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration-feature-flags/">Using Feature Flags with Azure App Configuration</a>
 		</h2>
 
 		
-		<a href="/azure-appconfiguration-feature-flags/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration-feature-flags/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration-feature-flags.jpg" alt="Using Feature Flags with Azure App Configuration">
 		</a>
 		
@@ -1257,11 +1255,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-apim-deploy-with-arm/">Azure API Management with ARM</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-apim-deploy-with-arm/">Azure API Management with ARM</a>
 		</h2>
 
 		
-		<a href="/azure-apim-deploy-with-arm/">
+		<a href="https://www.svenmalvik.com/azure-apim-deploy-with-arm/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-apim-logo.jpg" alt="Azure API Management with ARM">
 		</a>
 		
@@ -1286,11 +1284,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-az303/">AZ-303 Self-Study Guide for Becoming an Azure Solution Architect</a>
 		</h2>
 
 		
-		<a href="/azure-az303/">
+		<a href="https://www.svenmalvik.com/azure-az303/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-az-303.jpg" alt="AZ-303 Self-Study Guide for Becoming an Azure Solution Architect">
 		</a>
 		
@@ -1315,11 +1313,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-cdn-with-ssl/">Serving Website Images from Azure CDN with SSL</a>
 		</h2>
 
 		
-		<a href="/azure-cdn-with-ssl/">
+		<a href="https://www.svenmalvik.com/azure-cdn-with-ssl/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-cdn-with-ssl.jpg" alt="Serving Website Images from Azure CDN with SSL">
 		</a>
 		
@@ -1344,11 +1342,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-appconfiguration/">Azure App Configuration Introduction</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-appconfiguration/">Azure App Configuration Introduction</a>
 		</h2>
 
 		
-		<a href="/azure-appconfiguration/">
+		<a href="https://www.svenmalvik.com/azure-appconfiguration/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appconfiguration.jpg" alt="Azure App Configuration Introduction">
 		</a>
 		
@@ -1373,11 +1371,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-appservice-nodejs/">ARM for NodeJS Azure Web App with App Configuration Integration</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-appservice-nodejs/">ARM for NodeJS Azure Web App with App Configuration Integration</a>
 		</h2>
 
 		
-		<a href="/azure-appservice-nodejs/">
+		<a href="https://www.svenmalvik.com/azure-appservice-nodejs/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/azure-appservice-nodejs.jpg" alt="ARM for NodeJS Azure Web App with App Configuration Integration">
 		</a>
 		
@@ -1402,11 +1400,11 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
 	<div class="pr-3">
 		<h2 class="mb-1 h4 font-weight-bold">
-			<a class="text-dark" href="/azure-backup-service/">How to Recover a Virtual Machine with Azure Backup Service</a>
+			<a class="text-dark" href="https://www.svenmalvik.com/azure-backup-service/">How to Recover a Virtual Machine with Azure Backup Service</a>
 		</h2>
 
 		
-		<a href="/azure-backup-service/">
+		<a href="https://www.svenmalvik.com/azure-backup-service/">
 			<img class="w-100" src="https://cdn.svenmalvik.com/images/az-303/az-303-azure-backup-service.jpg" alt="How to Recover a Virtual Machine with Azure Backup Service">
 		</a>
 		
@@ -1446,12 +1444,12 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
         <div class="row prevnextlinks small font-weight-bold">
           
             <div class="col-md-6 rightborder pl-0">
-                <a class="text-dark" href="/azure-apim-self-hosted-gateway/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png">  Using Azure API Management APIs with Docker</a>
+                <a class="text-dark" href="https://www.svenmalvik.com/azure-apim-self-hosted-gateway/"> <img height="30px" class="mr-1" src="https://cdn.svenmalvik.com/images/azure-apim-gw-diagram.png">  Using Azure API Management APIs with Docker</a>
             </div>
           
           
             <div class="col-md-6 text-right pr-0">
-                <a class="text-dark" href="/azure-app-configuration-devops/"> Using App Configuration in Azure DevOps  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png"> </a>
+                <a class="text-dark" href="https://www.svenmalvik.com/azure-app-configuration-devops/"> Using App Configuration in Azure DevOps  <img height="30px" class="ml-1" src="https://cdn.svenmalvik.com/images/azure-app-configuration-icon.png"> </a>
             </div>
           
         </div>
@@ -1466,7 +1464,7 @@ az deployment group create <span class="nt">--name</span> <span class="s2">"depl
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="/assets/js/theme.js"></script>
+    <script src="https://www.svenmalvik.com/assets/js/theme.js"></script>
 
 
     <!-- Footer -->
