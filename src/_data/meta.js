@@ -1,5 +1,5 @@
 export const url = process.env.URL || "http://localhost:8080";
-export const siteName = "Eleventy Excellent";
+export const siteName = "Sven Malvik";
 export const siteDescription =
   "Eleventy starter for building modern, resilient websites";
 export const siteType = "Person"; // schema

@@ -1,4 +1,4 @@
-# Eleventy Excellent
+# Sven Malvik
 
 Easy to use Eleventy starter, based on the workflow suggested by Andy Bell's
 [buildexcellentwebsit.es](https://buildexcellentwebsit.es/).
@@ -9,7 +9,7 @@ Easy to use Eleventy starter, based on the workflow suggested by Andy Bell's
 If you end up using this starter, feel free to send me a link, I'd love to see
 it!
 
-- [Eleventy Excellent](#eleventy-excellent)
+- [Sven Malvik](#eleventy-excellent)
   - [Preview](#preview)
   - [Features](#features)
   - [First steps](#first-steps)

@@ -14,10 +14,10 @@ This starter generates these images for your blog posts automatically. They take
 in the title and date of the post.
 
 {% image "./src/assets/images/blog/og-preview.jpeg", "Open Graph image preview
-of a blog Post. 'Eleventy Excellent 2.0' is written as a large title in the
-center, the date is shown above and the name and URL of the website is seen on
-the bottom. The backgrpund consists of layered pink color areas resembling a
-city skyline", "This is what an OG image for a blog posts looks right now" %}
+of a blog Post. 'Sven Malvik 2.0' is written as a large title in the center, the
+date is shown above and the name and URL of the website is seen on the bottom.
+The backgrpund consists of layered pink color areas resembling a city skyline",
+"This is what an OG image for a blog posts looks right now" %}
 
 The fallback and default image for all other pages is the image set as
 `opengraph_default` in the `meta.js` global data file.
