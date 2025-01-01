@@ -142,9 +142,9 @@
 :root {
   --color-base-dark: #343434;
   --color-base-light: #fbfbfb;
-  --color-primary-highlight: #001a66;
-  --color-secondary-highlight: #4467dd;
-  --color-tertiary-highlight: #fbbe25;
+  --color-primary-highlight: #4129d6;
+  --color-secondary-highlight: #d62967;
+  --color-tertiary-highlight: #bed629;
   --space-2xs: clamp(0.1875rem, 0.15rem + 0.19vw, 0.3125rem);
   --space-xs: clamp(0.3125rem, 0.27rem + 0.19vw, 0.4375rem);
   --space-s: clamp(0.625rem, 0.55rem + 0.38vw, 0.875rem);

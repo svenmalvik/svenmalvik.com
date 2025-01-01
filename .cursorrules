@@ -55,6 +55,11 @@ Current 11ty folder structure:
 - Colors:
   - Base colors defined in colors.json
   - Custom CSS properties:
+    - Base Dark: #343434
+    - Base Light: #FBFBFB
+    - Primary Highlight: #4129D6 (Royal Blue)
+    - Secondary Highlight: #D62967 (Deep Pink)
+    - Tertiary Highlight: #BED629 (Lime Green)
     - --color-text
     - --color-text-accent
     - --color-bg
