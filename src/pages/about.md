@@ -15,6 +15,18 @@ amazing tool called Vippsi - imagine having an AI assistant that actually
 understands your company's knowledge and helps everyone work smarter. Pretty
 cool, right?
 
+## Background & Expertise
+
+As a former Microsoft Azure MVP and author of "Mastering Azure API Management",
+I've spent years helping teams build better cloud solutions. I led the Azure
+platform merger of MobilePay and Vipps, creating a unified foundation that
+handles millions of transactions across the Nordics.
+
+Want to learn more about API Management? Check out my book
+["Mastering Azure API Management"](https://www.amazon.com/Mastering-Azure-API-Management-Implementing/dp/1484280105) -
+a practical guide to designing and implementing an API-centric enterprise
+architecture.
+
 Every day is different, but here's what gets me excited:
 
 - Crafting Vippsi using TypeScript and Python

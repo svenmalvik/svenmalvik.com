@@ -1,34 +1,35 @@
 ---
 title: Trance Music
 permalink: /trance-music/index.html
-description: 'My trance music productions and mixes on YouTube and other platforms'
+description: Weekly trance mixes featuring the best trance tracks
 layout: page
 sizes: '(max-width: 615px) 50vw, 100vw'
 widths: [400, 520]
 ---
 
-<p>
-  Welcome to my trance music collection. Here you can find my weekly mixes featuring the best trance tracks. Most of my work is available on 
-  <a href="https://www.youtube.com/@svenmalvik" rel="noopener">YouTube</a>. Every week, I curate and mix energetic trance sets that blend 
-  classic anthems with the latest releases from top trance producers.
-</p>
-
 <article class="full section" style="--spot-color: var(--color-bg-accent)">
   {% svg "divider/soft-top", null, "seperator" %}
 
   <section class="feature section__inner wrapper">
-    <h2>Latest Trance Productions & Mixes:</h2>
+    <p>
+      Welcome to my trance music collection. Here you can find my weekly mixes featuring
+      the best trance tracks. Most of my work is available on <a href="https://www.youtube.com/@svenmalvik" rel="noopener">YouTube</a>. Every week, I curate
+      and mix energetic trance sets that blend classic anthems with the latest releases from
+      top trance producers.
+    </p>
+
+    <h2>Latest Productions & Mixes:</h2>
     <div
       class="feature grid region"
       style="--region-space-top: var(--space-xl); --gutter: var(--space-xl) var(--space-xs)"
     >
       <!-- Loop through trance music entries -->
-      {% for track in tranceTracks | shuffle %}
+      {% for track in tranceTracks %}
         <custom-card clickable img-square class="text-step-min-1" style="--card-bg: var(--color-bg)">
           {% if track.youtube %}
             <custom-youtube-link video-id="{{ track.youtube }}" style="width: 100%; aspect-ratio: 16/9;"></custom-youtube-link>
           {% endif %}
-          <h3 class="text-step-0" slot="headline">{{ track.title }}</h3>
+          <h3 class="text-step-0" slot="headline">{{ track.title | safe }}</h3>
 
           <p slot="content">{{ track.description }}</p>
           <footer slot="footer" class="repel">
