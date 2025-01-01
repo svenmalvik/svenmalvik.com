@@ -53,9 +53,7 @@ h3 {
 /* Text formatting */
 p,
 li,
-blockquote:not([class]) {
-  max-inline-size: 65ch;
-}
+blockquote:not([class]) {}
 
 blockquote {
   padding: var(--space-m-l);

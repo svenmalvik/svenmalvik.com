@@ -400,9 +400,6 @@ h2 {
 h3 {
   font-size: var(--size-step-2);
 }
-blockquote:not([class]), li, p {
-  max-inline-size: 65ch;
-}
 blockquote {
   border-inline-start: 0.5rem solid var(--color-primary);
   font-size: var(--size-step-2);
