@@ -8,12 +8,12 @@ class CustomMasonry extends HTMLElement {
     // Defer initial layout to ensure styles are applied
     requestAnimationFrame(() => {
       this.layoutMasonry();
-      window.addEventListener('resize', this.debounceLayout.bind(this, 100));
+      window.addEventListener("resize", this.debounceLayout.bind(this, 100));
     });
   }
 
   disconnectedCallback() {
-    window.removeEventListener('resize', this.debounceLayout);
+    window.removeEventListener("resize", this.debounceLayout);
   }
 
   debounceLayout(delay) {
@@ -22,14 +22,15 @@ class CustomMasonry extends HTMLElement {
   }
 
   layoutMasonry() {
-    const columnCount = getComputedStyle(this).gridTemplateColumns.split(' ').length;
+    const columnCount =
+      getComputedStyle(this).gridTemplateColumns.split(" ").length;
     const items = Array.from(this.children);
     items.forEach((item, index) => {
-      item.style.marginTop = '0px'; // Reset before calculation
+      item.style.marginTop = "0px"; // Reset before calculation
       if (index >= columnCount) {
         const previousItem = items[index - columnCount];
-        const previousItemBottom =
-          previousItem.offsetTop + previousItem.offsetHeight + parseFloat(getComputedStyle(this).rowGap);
+        const previousItemBottom = previousItem.offsetTop +
+          previousItem.offsetHeight + parseFloat(getComputedStyle(this).rowGap);
         const currentItemTop = item.offsetTop;
         const marginTop = previousItemBottom - currentItemTop;
         item.style.marginTop = `${marginTop}px`;
@@ -38,4 +39,4 @@ class CustomMasonry extends HTMLElement {
   }
 }
 
-customElements.define('custom-masonry', CustomMasonry);
+customElements.define("custom-masonry", CustomMasonry);

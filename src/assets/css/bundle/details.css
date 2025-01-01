@@ -40,7 +40,7 @@ is-land:not(:defined) .details .control {
 }
 
 .details summary::before {
-  content: '+';
+  content: "+";
   display: block;
   color: var(--color-primary);
   font-family: var(--font-mono);
@@ -53,7 +53,7 @@ is-land:not(:defined) .details .control {
 }
 
 .details details[open] summary::before {
-  content: '–';
+  content: "–";
 }
 
 .details details > :is(h2, h3) {
@@ -73,7 +73,7 @@ is-land:not(:defined) .details .control {
 /* Hide default marker */
 .details summary::-webkit-details-marker,
 .details summary::marker {
-  content: '';
+  content: "";
   display: none;
 }
 

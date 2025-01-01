@@ -17,8 +17,8 @@ pre {
   border-radius: var(--border-radius);
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
@@ -40,12 +40,12 @@ pre {
   padding: 0.1em 0.4em;
 }
 
-pre[class*='language-'] {
+pre[class*="language-"] {
   overflow: auto;
   position: relative;
 }
 
-[class*='language-'] .namespace {
+[class*="language-"] .namespace {
   opacity: 0.7;
 }
 
@@ -220,7 +220,7 @@ pre[class*='language-'] {
   overflow: auto;
   display: grid;
   place-items: center;
-  grid-template-areas: 'container';
+  grid-template-areas: "container";
   resize: horizontal;
 }
 

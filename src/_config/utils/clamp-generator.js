@@ -11,12 +11,12 @@
  * @returns {array} {name: string, value: string}
  */
 
-import viewports from '../../_data/designTokens/viewports.json';
+import viewports from "../../_data/designTokens/viewports.json";
 
-export const clampGenerator = tokens => {
+export const clampGenerator = (tokens) => {
   const rootSize = 16;
 
-  return tokens.map(({name, min, max}) => {
+  return tokens.map(({ name, min, max }) => {
     if (min === max) {
       return `${min / rootSize}rem`;
     }
@@ -35,9 +35,11 @@ export const clampGenerator = tokens => {
 
     return {
       name,
-      value: `clamp(${minSize}rem, ${intersection.toFixed(2)}rem + ${(slope * 100).toFixed(
-        2
-      )}vw, ${maxSize}rem)`
+      value: `clamp(${minSize}rem, ${intersection.toFixed(2)}rem + ${
+        (slope * 100).toFixed(
+          2,
+        )
+      }vw, ${maxSize}rem)`,
     };
   });
 };

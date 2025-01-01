@@ -1,5 +1,5 @@
 export const splitlines = (input, maxCharLength) => {
-  const parts = input.split(' ');
+  const parts = input.split(" ");
   const lines = parts.reduce(function (acc, cur) {
     if (!acc.length) {
       return [cur];
@@ -11,7 +11,7 @@ export const splitlines = (input, maxCharLength) => {
       return [...acc, cur];
     }
 
-    acc[acc.length - 1] = lastOne + ' ' + cur;
+    acc[acc.length - 1] = lastOne + " " + cur;
 
     return acc;
   }, []);

@@ -39,12 +39,12 @@
 }
 
 /* List styles */
-:where(ul[role='list'], ol[role='list']) {
+:where(ul[role="list"], ol[role="list"]) {
   list-style: none;
 }
 
 /* Padding for lists */
-:where([role='list']) {
+:where([role="list"]) {
   padding: 0;
 }
 
@@ -87,7 +87,7 @@
 }
 
 /* Cursor styles */
-:where(button, label, select, summary, [role='button'], [role='option']) {
+:where(button, label, select, summary, [role="button"], [role="option"]) {
   cursor: pointer;
 }
 

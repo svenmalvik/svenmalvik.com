@@ -10,11 +10,13 @@ credit: Lene took this photo.
 
 This starter uses Eleventy's build-time image transformations.
 
-Find more info on https://www.11ty.dev/docs/plugins/image/ and edit settings in `config/shortcodes/image`.
+Find more info on https://www.11ty.dev/docs/plugins/image/ and edit settings in
+`config/shortcodes/image`.
 
 ## Syntax
 
-In the most basic version it contains the path to the image, alt text (can be an empty string if the image is decorative), and may hold a caption.
+In the most basic version it contains the path to the image, alt text (can be an
+empty string if the image is decorative), and may hold a caption.
 
 {% raw %}
 
@@ -24,11 +26,14 @@ In the most basic version it contains the path to the image, alt text (can be an
 
 {% endraw %}
 
-It defaults to `loading = 'lazy'`, the picture element gets its set of images from `widths = [440, 880, 1024, 1360]` and compares to a condition of `90vw`.
+It defaults to `loading = 'lazy'`, the picture element gets its set of images
+from `widths = [440, 880, 1024, 1360]` and compares to a condition of `90vw`.
 
-If you want to be very specific, you can pass in manually all the conditions, add `null` to skip.
+If you want to be very specific, you can pass in manually all the conditions,
+add `null` to skip.
 
-The class names are passed in the outer container, the `<picture>` or `<figure>` element (`<figure>` is added if you set a caption).
+The class names are passed in the outer container, the `<picture>` or `<figure>`
+element (`<figure>` is added if you set a caption).
 
 {% raw %}
 
@@ -49,7 +54,9 @@ The class names are passed in the outer container, the `<picture>` or `<figure>`
 
 {% endraw %}
 
-{% image "./src/assets/images/gallery/asturias-2.jpg", "Close-up of a delicate white flower with a yellow center, surrounded by green leaves", "Jasmine nightshades blooming in July" %}
+{% image "./src/assets/images/gallery/asturias-2.jpg", "Close-up of a delicate
+white flower with a yellow center, surrounded by green leaves", "Jasmine
+nightshades blooming in July" %}
 
 ### Example image with all the arguments
 
@@ -61,11 +68,17 @@ The class names are passed in the outer container, the `<picture>` or `<figure>`
 
 {% endraw %}
 
-{% image "./src/assets/images/gallery/asturias-3.jpg", "A traditional Asturian village with it's raised granaries, surrounded by lush green hills and mountains", null, "lazy", "class-that-does-nothing", "(min-width:30em) 50vw, 100vw", [200, 400] %}
+{% image "./src/assets/images/gallery/asturias-3.jpg", "A traditional Asturian
+village with it's raised granaries, surrounded by lush green hills and
+mountains", null, "lazy", "class-that-does-nothing", "(min-width:30em) 50vw,
+100vw", [200, 400] %}
 
 ## Markdown syntax
 
-Thanks to the [markdown-it-eleventy-img](https://github.com/solution-loisir/markdown-it-eleventy-img) package markdown also has it own image syntax. `src` is already prepended here, see `config/plugins/markdown.js`.
+Thanks to the
+[markdown-it-eleventy-img](https://github.com/solution-loisir/markdown-it-eleventy-img)
+package markdown also has it own image syntax. `src` is already prepended here,
+see `config/plugins/markdown.js`.
 
 ### Picture element
 

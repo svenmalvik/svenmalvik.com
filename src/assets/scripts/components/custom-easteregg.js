@@ -2,25 +2,26 @@ class customEasteregg extends HTMLElement {
   constructor() {
     super();
     // Initialize with default keywords
-    this.keywords = ['eleventy', 'excellent'];
+    this.keywords = ["eleventy", "excellent"];
     // Add any custom keyword passed as an attribute
-    const customKeyword = this.getAttribute('keyword');
+    const customKeyword = this.getAttribute("keyword");
     if (customKeyword) {
       this.keywords.push(customKeyword);
     }
 
-    this.shape = this.getAttribute('shape') || '⭐️';
-    this.particleCount = parseInt(this.getAttribute('particle-count'), 10) || 30;
-    this.codes = this.keywords.map(keyword => keyword.split(''));
+    this.shape = this.getAttribute("shape") || "⭐️";
+    this.particleCount = parseInt(this.getAttribute("particle-count"), 10) ||
+      30;
+    this.codes = this.keywords.map((keyword) => keyword.split(""));
     this.indexes = new Array(this.keywords.length).fill(0);
   }
 
   connectedCallback() {
-    document.addEventListener('keydown', this.handleKeydown.bind(this));
+    document.addEventListener("keydown", this.handleKeydown.bind(this));
   }
 
   disconnectedCallback() {
-    document.removeEventListener('keydown', this.handleKeydown.bind(this));
+    document.removeEventListener("keydown", this.handleKeydown.bind(this));
   }
 
   handleKeydown(event) {
@@ -40,17 +41,17 @@ class customEasteregg extends HTMLElement {
 
   triggerEffect(keyword) {
     console.log(`Hooray ${keyword}!`);
-    import('https://esm.run/canvas-confetti').then(({default: confetti}) => {
+    import("https://esm.run/canvas-confetti").then(({ default: confetti }) => {
       const scalar = 4;
-      const customShape = confetti.shapeFromText({text: this.shape, scalar});
+      const customShape = confetti.shapeFromText({ text: this.shape, scalar });
 
       confetti({
         shapes: [customShape],
         scalar,
-        particleCount: this.particleCount
+        particleCount: this.particleCount,
       });
     });
   }
 }
 
-customElements.define('custom-easteregg', customEasteregg);
+customElements.define("custom-easteregg", customEasteregg);

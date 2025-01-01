@@ -5,15 +5,18 @@ date: 2022-09-01
 tags: ['syntax highlighting', 'feature']
 ---
 
-This theme uses 11ty's [Syntax Highlighting Plugin](https://www.11ty.dev/docs/plugins/syntaxhighlight/), a pack of Eleventy plugins for PrismJS syntax highlighting. No browser/client JavaScript, highlight transformations are all done at build-time.
+This theme uses 11ty's
+[Syntax Highlighting Plugin](https://www.11ty.dev/docs/plugins/syntaxhighlight/),
+a pack of Eleventy plugins for PrismJS syntax highlighting. No browser/client
+JavaScript, highlight transformations are all done at build-time.
 
 ```js
-const cards = [...document.querySelectorAll('.card')];
-cards.forEach(card => {
-  card.style.cursor = 'pointer';
+const cards = [...document.querySelectorAll(".card")];
+cards.forEach((card) => {
+  card.style.cursor = "pointer";
   let down,
     up,
-    link = card.querySelector('a');
+    link = card.querySelector("a");
   card.onmousedown = () => (down = +new Date());
   card.onmouseup = () => {
     up = +new Date();

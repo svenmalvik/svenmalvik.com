@@ -1,34 +1,34 @@
 export default {
   top: [
     {
-      text: 'About',
-      url: '/about/'
+      text: "About",
+      url: "/about/",
     },
     {
-      text: 'Docs',
-      url: '/get-started/'
+      text: "Docs",
+      url: "/get-started/",
     },
     {
-      text: 'Built with',
-      url: '/built-with/'
+      text: "Built with",
+      url: "/built-with/",
     },
     {
-      text: 'Blog',
-      url: '/blog/'
-    }
+      text: "Blog",
+      url: "/blog/",
+    },
   ],
   bottom: [
     {
-      text: 'Style guide',
-      url: '/styleguide/'
+      text: "Style guide",
+      url: "/styleguide/",
     },
     {
-      text: 'Imprint',
-      url: '/imprint/'
+      text: "Imprint",
+      url: "/imprint/",
     },
     {
-      text: 'Privacy',
-      url: '/privacy/'
-    }
-  ]
+      text: "Privacy",
+      url: "/privacy/",
+    },
+  ],
 };

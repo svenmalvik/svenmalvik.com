@@ -4,7 +4,7 @@
   inset-inline-end: 0;
 }
 
-.mainnav:has([aria-expanded='true']) {
+.mainnav:has([aria-expanded="true"]) {
   --nav-position: fixed;
   inset-inline-end: var(--gap);
 }
@@ -61,7 +61,7 @@
   }
 }
 
-.mainnav [aria-expanded='true'] + ul {
+.mainnav [aria-expanded="true"] + ul {
   --nav-list-visibility: visible;
   --nav-list-transform: translateX(0);
   opacity: 1;
@@ -90,7 +90,7 @@
   stroke-width: 3;
 }
 
-.mainnav [aria-expanded='true'] svg {
+.mainnav [aria-expanded="true"] svg {
   transform: rotate(45deg);
 }
 
@@ -118,8 +118,8 @@
   --nav-item-decoration-color: var(--color-text);
 }
 
-.mainnav [aria-current='page'],
-.mainnav [data-state='active'] {
+.mainnav [aria-current="page"],
+.mainnav [data-state="active"] {
   --nav-item-background: var(--color-primary);
   --nav-item-text-color: var(--color-light);
   --nav-item-decoration-color: transparent;
@@ -142,8 +142,8 @@
     --nav-list-transform: translateX(0);
   }
 
-  .mainnav [aria-current='page'],
-  .mainnav [data-state='active'] {
+  .mainnav [aria-current="page"],
+  .mainnav [data-state="active"] {
     --nav-item-background: transparent;
     --nav-item-text-color: var(--color-primary);
     --nav-item-decoration-color: var(--color-primary);
@@ -165,8 +165,8 @@ assumes that the button doesn’t exist without JS, making the list the first ch
   margin-block-end: var(--space-2xs);
 }
 
-.mainnav ul:first-child [aria-current='page'],
-.mainnav ul:first-child [data-state='active'] {
+.mainnav ul:first-child [aria-current="page"],
+.mainnav ul:first-child [data-state="active"] {
   --nav-item-background: transparent;
   --nav-item-text-color: var(--color-primary);
   --nav-item-decoration-color: var(--color-primary);

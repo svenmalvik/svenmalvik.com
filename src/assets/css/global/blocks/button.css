@@ -12,9 +12,9 @@
 }
 
 .button:hover,
-.button[aria-current='page'],
-.button[aria-pressed='true'],
-.button[data-state='active'] {
+.button[aria-current="page"],
+.button[aria-pressed="true"],
+.button[data-state="active"] {
   background-size: 150% 150%;
   --button-bg: var(--color-text);
   --button-text: var(--color-bg);

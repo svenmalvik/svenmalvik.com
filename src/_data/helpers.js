@@ -7,15 +7,17 @@
  * @returns {String} - The attributes or empty.
  */
 export function getLinkActiveState(itemUrl, pageUrl) {
-  let response = '';
+  let response = "";
 
   // Ensure pageUrl is a string before proceeding
-  if (typeof pageUrl === 'string') {
+  if (typeof pageUrl === "string") {
     if (itemUrl === pageUrl) {
       response = ' aria-current="page"';
     }
 
-    if (itemUrl.length > 1 && pageUrl.startsWith(itemUrl.replace('/page-0/', ''))) {
+    if (
+      itemUrl.length > 1 && pageUrl.startsWith(itemUrl.replace("/page-0/", ""))
+    ) {
       response += ' data-state="active"';
     }
   }
@@ -33,7 +35,7 @@ export function getLinkActiveState(itemUrl, pageUrl) {
  * @returns {Array} - Result collection or empty.
  */
 export function filterCollectionByKeys(collection, keys) {
-  return collection.filter(x => keys.includes(x.data.key));
+  return collection.filter((x) => keys.includes(x.data.key));
 }
 
 /**

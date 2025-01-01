@@ -4,7 +4,7 @@
   text-align: left;
 
   &:after {
-    content: '';
+    content: "";
     flex-grow: 1;
     block-size: 1px;
     background: var(--color-bg-accent-2);
