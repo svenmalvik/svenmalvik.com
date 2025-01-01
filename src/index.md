@@ -1,13 +1,13 @@
 ---
 layout: base
-title: HomeMD
+title: Home
 ---
 
 # Welcome to my Trance & AI Portfolio
 
 Exploring the intersection of electronic music and artificial intelligence.
 
-## Latest Trance
+## Latest Trance 2
 
 Coming soon...
 
