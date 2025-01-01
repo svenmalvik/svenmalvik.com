@@ -1192,6 +1192,12 @@ is-land:not(:defined) .theme-switch {
 .static {
   position: static;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
 .my-s-m {
   margin-bottom: clamp(0.625rem, 0.41rem + 1.06vw, 1.3125rem);
   margin-top: clamp(0.625rem, 0.41rem + 1.06vw, 1.3125rem);
