@@ -1,0 +1,22 @@
+{
+  "name": "svenmalvik.com",
+  "version": "1.0.0",
+  "description": "Portfolio showcasing trance music production and generative AI work",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [
+    "trance",
+    "ai",
+    "portfolio",
+    "11ty"
+  ],
+  "author": "German Tech Leader",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

@@ -1,0 +1,102 @@
+// .cursorrules for Trance Music & AI Portfolio using 11ty
+// Author: German Tech Leader from Norway
+
+// Project Context
+- This is an 11ty-based portfolio website showcasing trance music production and generative AI work
+- The site uses a folder-based i18n structure
+- Main sections include music portfolio, AI projects, and blog
+
+// Site Structure
+Follow 11ty's recommended folder structure:
+- src/
+  - _data/        // Global data files
+  - _includes/    // Templates and partials
+  - assets/       // Static assets (music, images)
+  - en/          // English content (default)
+  - blog/        // Blog posts
+  - music/       // Music portfolio
+  - ai/          // AI projects
+
+// Coding Standards
+- Use modern JavaScript (ES6+) for any custom functionality
+- Follow 11ty's data cascade patterns for content organization
+- Implement responsive design patterns for all templates
+- Use semantic HTML5 elements throughout templates
+- Follow BEM methodology for CSS class naming
+
+// Music Content Guidelines
+- Music mixes are locates at https://www.youtube.com/@svenmalvik
+- Include proper metadata for all music tracks and mixes
+- Implement audio player components with proper fallbacks
+- Structure music collections using 11ty's collection API
+
+// AI Content Guidelines
+- Document AI projects with clear methodology explanations
+- Include interactive demos where possible
+- Maintain proper documentation for AI implementations
+- Use proper code highlighting for AI-related code snippets
+
+// Templating Rules
+- Use Nunjucks as the primary templating language
+- Implement proper template inheritance
+- Create reusable components for common elements
+- Follow DRY principles in template creation
+
+// Performance Guidelines
+- Implement proper image optimization
+- Use responsive images with srcset
+- Implement lazy loading for media content
+- Follow JAMstack best practices for optimal performance
+
+// Internationalization
+- Use 11ty's built-in i18n capabilities
+- Maintain consistent URL structure across languages
+- Use JSON files for translation strings
+
+// Content Management
+- Store music metadata in _data directory as JSON/YAML
+- Implement proper tagging for blog posts and projects
+- Use frontmatter for page-specific metadata
+- Follow consistent naming conventions for content files
+
+// Build Process
+- Use proper environment variables for different builds
+- Implement proper asset bundling
+- Follow 11ty's build optimization guidelines
+- Include proper error handling in build scripts
+
+// SEO Guidelines
+- Implement proper meta tags
+- Create dynamic sitemap
+- Include structured data for music content
+- Optimize for search engine visibility
+
+// Accessibility
+- Maintain WCAG 2.1 compliance
+- Implement proper ARIA labels
+- Ensure keyboard navigation
+- Provide proper alt text for images
+
+// Documentation
+- Document all custom implementations
+- Maintain clear README files
+- Include setup instructions
+- Document deployment procedures
+
+// Error Handling
+- Implement proper 404 pages
+- Handle audio playback errors gracefully
+- Provide fallbacks for unsupported features
+- Include proper error messaging
+
+// Security
+- Implement proper CSP headers
+- Secure external resource loading
+- Protect against common web vulnerabilities
+- Follow security best practices for audio content
+
+// Development Workflow
+- Use proper Git branching strategy
+- Implement proper testing procedures
+- Follow semantic versioning
+- Maintain changelog

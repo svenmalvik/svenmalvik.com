@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang or 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/trance/">Trance</a></li>
+        <li><a href="/ai/">AI Projects</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.author.name }} {{ page.date.getFullYear() or ("" | date("YYYY")) }}</p>
+  </footer>
+</body>
+</html> 
