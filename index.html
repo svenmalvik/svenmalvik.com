@@ -1,66 +1,36 @@
----
-layout: page
-title: Beautiful Jekyll
-subtitle: Build a beautiful and simple website in minutes
-fb-img: "http://deanattali.com/img/blog/beautiful-jekyll.png"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Trance &amp; AI Portfolio</title>
+  <meta name="description" content="A portfolio showcasing trance music production and generative AI work">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/trance/">Trance</a></li>
+        <li><a href="/ai/">AI Projects</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="main-explain-area jumbotron">
-  <p>This website is powered by GitHub Pages/Jekyll and can be built in <strong>under 5 minutes</strong>. Literally.</p>
-  <div class="get-started-wrap">
-    <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/daattali/beautiful-jekyll#readme">Get Started!</a>
-  </div>
-  <p>Designed to look great on both desktops and mobile devices.</p>
-  <p>Below are sample blog posts for illustration purposes.</p>
-  <p>If you like this theme, please consider supporting me :)</p>
-  <p align="center">
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EG5Q5483TTWCN">
-      <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" />
-    </a>
-  </p>
-</div>
+  <main>
+    <h1>Welcome to my Trance &amp; AI Portfolio</h1>
+<p>Exploring the intersection of electronic music and artificial intelligence.</p>
+<h2>Latest Trance</h2>
+<p>Coming soon...</p>
+<h2>Recent AI Projects</h2>
+<p>Coming soon...</p>
 
-<div id="deancarbonads">
-  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=deanattalicom" id="_carbonads_js"></script>
-</div>
+  </main>
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-	
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}  
-    </a>
-
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-  
-    <div class="post-entry">
-      {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">Read More</a>
-    </div>
-  
-   </article>
-  {% endfor %}
-</div>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+  <footer>
+    <p>&copy; Sven Malvik 2025</p>
+  </footer>
+</body>
+</html> 
