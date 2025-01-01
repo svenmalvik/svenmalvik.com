@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-excellent",
+  "name": "svenmalvik",
   "version": "3.7.4",
   "description": "Eleventy starter built around the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
   "author": "Lene Saile",
@@ -21,7 +21,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "git+https://github.com/svenmalvik/svenmalvik.com.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",

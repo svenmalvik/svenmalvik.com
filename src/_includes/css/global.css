@@ -1195,16 +1195,6 @@ is-land:not(:defined) .theme-switch {
 .static {
   position: static;
 }
-.fixed {
-  position: fixed;
-}
-.sticky {
-  position: sticky;
-}
-.my-m-l {
-  margin-bottom: clamp(0.875rem, 0.55rem + 1.63vw, 1.9375rem);
-  margin-top: clamp(0.875rem, 0.55rem + 1.63vw, 1.9375rem);
-}
 .my-s-m {
   margin-bottom: clamp(0.625rem, 0.41rem + 1.06vw, 1.3125rem);
   margin-top: clamp(0.625rem, 0.41rem + 1.06vw, 1.3125rem);
@@ -1218,9 +1208,6 @@ is-land:not(:defined) .theme-switch {
 .mt-xs {
   margin-top: clamp(0.3125rem, 0.27rem + 0.19vw, 0.4375rem);
 }
-.mt-xs-s {
-  margin-top: clamp(0.3125rem, 0.14rem + 0.87vw, 0.875rem);
-}
 .block {
   display: block;
 }
@@ -1229,9 +1216,6 @@ is-land:not(:defined) .theme-switch {
 }
 .flex {
   display: flex;
-}
-.table {
-  display: table;
 }
 .grid {
   display: grid;
@@ -1262,9 +1246,6 @@ is-land:not(:defined) .theme-switch {
 .capitalize {
   text-transform: capitalize;
 }
-.italic {
-  font-style: italic;
-}
 .text-base-light {
   color: #fbfbfb;
 }
@@ -1273,9 +1254,4 @@ is-land:not(:defined) .theme-switch {
     --tw-grayscale
   ) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia)
     var(--tw-drop-shadow);
-}
-@media (min-width: 1000px) {
-  .md\:text-right {
-    text-align: right;
-  }
 }

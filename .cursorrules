@@ -50,7 +50,44 @@ Current 11ty folder structure:
 - Color tokens in _data/designTokens
 - CSS custom properties for theming
 - Persistent theme selection
-- Styles are described in styleguide.njk
+
+// Design Tokens (src/_data/designTokens/)
+- Colors:
+  - Base colors defined in colors.json
+  - Custom CSS properties:
+    - --color-text
+    - --color-text-accent
+    - --color-bg
+    - --color-bg-accent
+    - --color-bg-accent-2
+    - --color-primary
+    - --color-secondary
+    - --color-tertiary
+- Gradients:
+  - --gradient-rainbow
+  - --gradient-conic
+  - --gradient-stripes
+
+// Typography
+- Fluid type scale (generated with Utopia)
+- Font families defined in fonts.json
+- Text sizes from min to max pixels
+
+// Spacing
+- Fluid space scale (generated with Utopia)
+- Consistent spacing units
+- Responsive spacing variables
+
+// Layout
+- Flexible layouts using modern CSS
+- Custom properties for consistent spacing
+- Responsive design patterns
+
+// Components
+- Custom cards
+- Tables
+- Color swatches
+- Typography specimens
 
 // Performance
 - Optimized assets
