@@ -25,7 +25,7 @@ export const themeBgColor = "#FBFBFB"; // Manifest: defines a placeholder backgr
 export const opengraph_default =
   "/assets/images/template/opengraph-default.jpg"; // fallback/default meta image
 export const opengraph_default_alt =
-  "Visible content: An Eleventy starter with CUBE CSS, Cube CSS, Every Layout, Design Tokens and Tailwind for uitility classes. A workflow for building modern and resilient websites, introduced by Andy Bell's project buildexcellentwebsit.es"; // alt text for default meta image"
+  "Tech Leader and Trance Music DJ - Sharing insights about AI and weekly trance mixes"; // alt text for default meta image"
 export const blog = {
   // RSS feed
   name: "My Web Development Blog",
