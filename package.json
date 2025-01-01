@@ -6,7 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "clean": "rm -rf docs"
+    "clean": "rm -rf _site"
   },
   "keywords": [
     "trance",
