@@ -4,7 +4,7 @@ dist/
 
 # Dependencies
 node_modules/
-package-lock.json
+
 
 # Cache
 .cache/
@@ -30,3 +30,17 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify 
+
+# Node modules
+node_modules
+
+# generated files
+_site
+src/_includes/css
+src/_includes/scripts
+
+# cache
+.cache
+
+# secret data
+.env
