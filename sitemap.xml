@@ -9,7 +9,7 @@
 
       <url>
         <loc>http://localhost:8080/blog/welcome-to-my-new-digital-home/</loc>
-        <lastmod>2024-01-30T00:00:00.000Z</lastmod>
+        <lastmod>2025-01-01T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -22,7 +22,7 @@
 
       <url>
         <loc>http://localhost:8080/tags/</loc>
-        <lastmod>2025-01-01T21:07:28.503Z</lastmod>
+        <lastmod>2025-01-01T21:49:08.492Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -35,7 +35,7 @@
 
       <url>
         <loc>http://localhost:8080/about/</loc>
-        <lastmod>2025-01-01T21:07:28.503Z</lastmod>
+        <lastmod>2025-01-01T21:49:08.492Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -48,7 +48,7 @@
 
       <url>
         <loc>http://localhost:8080/blog/</loc>
-        <lastmod>2025-01-01T21:07:28.503Z</lastmod>
+        <lastmod>2025-01-01T21:49:08.492Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -61,7 +61,7 @@
 
       <url>
         <loc>http://localhost:8080/</loc>
-        <lastmod>2025-01-01T21:07:28.503Z</lastmod>
+        <lastmod>2025-01-01T21:49:08.492Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -74,7 +74,7 @@
 
       <url>
         <loc>http://localhost:8080/imprint/</loc>
-        <lastmod>2025-01-01T21:07:28.504Z</lastmod>
+        <lastmod>2025-01-01T21:49:08.492Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -87,7 +87,7 @@
 
       <url>
         <loc>http://localhost:8080/privacy/</loc>
-        <lastmod>2025-01-01T21:07:28.504Z</lastmod>
+        <lastmod>2025-01-01T21:49:08.492Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -100,7 +100,7 @@
 
       <url>
         <loc>http://localhost:8080/trance-music/</loc>
-        <lastmod>2025-01-01T21:07:28.504Z</lastmod>
+        <lastmod>2025-01-01T21:49:08.492Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
