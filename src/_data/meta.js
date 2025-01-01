@@ -19,8 +19,8 @@ export const creator = {
   website: "https://www.svenmalvik.com",
   social: "https://www.linkedin.com/in/svenmalvik",
 };
-export const pathToSvgLogo = "src/assets/svg/misc/logo.svg";
-export const themeColor = "#DD4462";
+export const pathToSvgLogo = "src/assets/images/favicon.svg";
+export const themeColor = "#4129D6";
 export const themeBgColor = "#FBFBFB";
 export const opengraph_default =
   "/assets/images/template/opengraph-default.jpg";
