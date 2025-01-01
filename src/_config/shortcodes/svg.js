@@ -17,7 +17,9 @@ export const svgShortcode = async (
   className = "",
   styleName = "",
 ) => {
-  const svgData = readFileSync(`./src/assets/svg/${svgName}.svg`, "utf8");
+  const fileName = svgName.toLowerCase();
+  const filePath = `./src/assets/svg/${fileName}.svg`;
+  const svgData = readFileSync(filePath, "utf8");
 
   const { data } = await optimize(svgData);
 

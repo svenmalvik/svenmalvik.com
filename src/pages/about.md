@@ -43,9 +43,9 @@ I'm always up for a chat about:
 - Tech leadership experiences
 - Or just life in general!
 
-Find me on [LinkedIn](https://www.linkedin.com/in/svenmalvik) for the tech
-stuff, [YouTube](https://www.youtube.com/@svenmalvik) for the trance vibes, or
-check out my [blog](/blog) where I share thoughts about both worlds.
+Find me on [LinkedIn](https://www.linkedin.com/in/svenmalvik) for the tech stuff
+or [YouTube](https://www.youtube.com/@svenmalvik) for the trance vibes. Check
+out my [blog](/blog) where I share thoughts about both worlds.
 
 Whether it's through code or music, I believe in creating experiences that make
 a difference. That's what drives me every day!
