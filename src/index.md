@@ -7,7 +7,7 @@ title: Home
 
 Exploring the intersection of electronic music and artificial intelligence.
 
-## Latest Trance 3
+## Latest Trance 4
 
 Coming soon...
 
