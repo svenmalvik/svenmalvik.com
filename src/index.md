@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Home
+title: HomeMD
 ---
 
 # Welcome to my Trance & AI Portfolio
