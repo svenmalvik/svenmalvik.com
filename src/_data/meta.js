@@ -1,7 +1,7 @@
 export const url = process.env.URL || "http://localhost:8080";
 export const siteName = "Sven Malvik";
 export const siteDescription =
-  "Eleventy starter for building modern, resilient websites";
+  "Tech Leader and Trance Music DJ - Mixing the best trance tracks every week";
 export const siteType = "Person"; // schema
 export const locale = "en_EN";
 export const lang = "en";
@@ -62,10 +62,14 @@ export const details = {
 };
 export const navigation = {
   navLabel: "Menu",
-  ariaTop: "Main",
-  ariaBottom: "Complementary",
-  ariaPlatforms: "Platforms",
+  ariaTop: "Main menu",
+  ariaBottom: "Legal",
+  ariaPlatforms: "Social platforms",
   drawerNav: false,
+  tranceMusic: {
+    title: "Trance Music",
+    url: "/trance-music/",
+  },
 };
 export const themeSwitch = {
   title: "Theme",

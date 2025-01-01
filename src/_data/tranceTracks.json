@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Weekly Trance Mix #42",
+    "description": "This week's journey features tracks from Armin van Buuren, Paul van Dyk, and Giuseppe Ottaviani, taking you through a perfect blend of uplifting and tech trance.",
+    "youtube": "YOUR_YOUTUBE_VIDEO_ID",
+    "link": "https://www.youtube.com/watch?v=YOUR_YOUTUBE_VIDEO_ID",
+    "duration": "1:20:00"
+  },
+  {
+    "title": "Classic Trance Journey Mix",
+    "description": "A special mix dedicated to the golden era of trance, featuring timeless tracks from 1998-2004 that shaped the genre.",
+    "youtube": "ANOTHER_VIDEO_ID",
+    "link": "https://www.youtube.com/watch?v=ANOTHER_VIDEO_ID",
+    "duration": "2:00:00"
+  }
+]

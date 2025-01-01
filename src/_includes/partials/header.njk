@@ -7,6 +7,23 @@
 
       <span class="font-display">{{ meta.siteName }}</span>
     </a>
-    {% include "partials/main-nav.njk" %}
+    <nav class="cluster" aria-label="{{ meta.navigation.ariaTop }}">
+      <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>{{ meta.siteName }}</a>
+
+      {% for item in navigation.top %}
+        {% if item.text != "Style guide" %}  {# Skip the Style guide link #}
+          <a
+            href="{{ item.url }}"
+            {{
+              helpers.getLinkActiveState(item.url,
+              page.url)
+              |
+              safe
+            }}
+            >{{ item.text }}</a
+          >
+        {% endif %}
+      {% endfor %}
+    </nav>
   </div>
 </header>

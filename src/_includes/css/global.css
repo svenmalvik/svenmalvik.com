@@ -142,7 +142,7 @@
 :root {
   --color-base-dark: #343434;
   --color-base-light: #fbfbfb;
-  --color-primary-highlight: #dd4462;
+  --color-primary-highlight: #001a66;
   --color-secondary-highlight: #4467dd;
   --color-tertiary-highlight: #fbbe25;
   --space-2xs: clamp(0.1875rem, 0.15rem + 0.19vw, 0.3125rem);

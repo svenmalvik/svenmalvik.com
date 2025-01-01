@@ -1,102 +1,84 @@
-// .cursorrules for Trance Music & AI Portfolio using 11ty
-// Author: German Tech Leader from Norway
+// .cursorrules for Personal Tech Portfolio using 11ty
+// Author: Sven Malvik - German Tech Leader from Norway
 
 // Project Context
-- This is an 11ty-based portfolio website showcasing trance music production and generative AI work
-- The site uses a folder-based i18n structure
-- Main sections include music portfolio, AI projects, and blog
+- This is an 11ty-based portfolio website showcasing tech leadership, trance music, and AI work
+- Focus on clean, modern design with dark/light theme support
+- Main sections include blog, docs, and trance music showcase
 
 // Site Structure
-Follow 11ty's recommended folder structure:
+Current 11ty folder structure:
 - src/
-  - _data/        // Global data files
-  - _includes/    // Templates and partials
-  - assets/       // Static assets (music, images)
-  - en/          // English content (default)
-  - blog/        // Blog posts
-  - music/       // Music portfolio
-  - ai/          // AI projects
+  - _data/          // Site metadata, navigation, personal info
+  - _includes/      // Templates, partials, CSS, scripts
+    - css/         // Component and global styles
+    - partials/    // Header, footer, navigation components
+    - scripts/     // JavaScript components
+    - webc/        // Web components
+  - assets/         // Static assets
+    - css/         // Global CSS
+    - fonts/       // Custom fonts
+    - images/      // Site images
+    - scripts/     // Site scripts
+    - svg/         // SVG icons and graphics
+  - common/         // Shared content (404, robots.txt, etc.)
+  - docs/          // Documentation pages
+  - pages/         // Main site pages
+  - posts/         // Blog posts
 
 // Coding Standards
-- Use modern JavaScript (ES6+) for any custom functionality
-- Follow 11ty's data cascade patterns for content organization
-- Implement responsive design patterns for all templates
-- Use semantic HTML5 elements throughout templates
-- Follow BEM methodology for CSS class naming
+- Modern JavaScript (ES6+) modules
+- Nunjucks templating
+- CSS custom properties for theming
+- BEM methodology for CSS
+- WebC for custom components
 
-// Music Content Guidelines
-- Music mixes are locates at https://www.youtube.com/@svenmalvik
-- Include proper metadata for all music tracks and mixes
-- Implement audio player components with proper fallbacks
-- Structure music collections using 11ty's collection API
-
-// AI Content Guidelines
-- Document AI projects with clear methodology explanations
-- Include interactive demos where possible
-- Maintain proper documentation for AI implementations
-- Use proper code highlighting for AI-related code snippets
-
-// Templating Rules
-- Use Nunjucks as the primary templating language
-- Implement proper template inheritance
-- Create reusable components for common elements
-- Follow DRY principles in template creation
-
-// Performance Guidelines
-- Implement proper image optimization
-- Use responsive images with srcset
-- Implement lazy loading for media content
-- Follow JAMstack best practices for optimal performance
-
-// Internationalization
-- Use 11ty's built-in i18n capabilities
-- Maintain consistent URL structure across languages
-- Use JSON files for translation strings
-
-// Content Management
-- Store music metadata in _data directory as JSON/YAML
-- Implement proper tagging for blog posts and projects
-- Use frontmatter for page-specific metadata
-- Follow consistent naming conventions for content files
+// Content Guidelines
+- Blog posts in markdown with frontmatter
+- Documentation with code examples
+- SVG icons for platform links
+- Responsive images using 11ty-img
 
 // Build Process
-- Use proper environment variables for different builds
-- Implement proper asset bundling
-- Follow 11ty's build optimization guidelines
-- Include proper error handling in build scripts
+- Development: npm run start (live reload)
+- Production: npm run build
+- Favicon generation
+- Asset optimization
 
-// SEO Guidelines
-- Implement proper meta tags
-- Create dynamic sitemap
-- Include structured data for music content
-- Optimize for search engine visibility
+// Theme Support
+- Light/dark mode toggle
+- Color tokens in _data/designTokens
+- CSS custom properties for theming
+- Persistent theme selection
+- Styles are described in styleguide.njk
 
-// Accessibility
-- Maintain WCAG 2.1 compliance
-- Implement proper ARIA labels
-- Ensure keyboard navigation
-- Provide proper alt text for images
+// Performance
+- Optimized assets
+- Lazy-loaded images
+- Minified CSS/JS
+- Responsive images
 
 // Documentation
-- Document all custom implementations
-- Maintain clear README files
-- Include setup instructions
-- Document deployment procedures
+- Component documentation in /docs
+- Getting started guide
+- Style guide
+- Built-with showcase
 
-// Error Handling
-- Implement proper 404 pages
-- Handle audio playback errors gracefully
-- Provide fallbacks for unsupported features
-- Include proper error messaging
+// Deployment
+- GitHub Pages deployment
+- GitHub Actions for CI/CD
+- Environment-specific builds
+- Asset caching
 
-// Security
-- Implement proper CSP headers
-- Secure external resource loading
-- Protect against common web vulnerabilities
-- Follow security best practices for audio content
+// SEO & Accessibility
+- Meta tags and Open Graph
+- Semantic HTML
+- ARIA labels
+- Keyboard navigation
+- Sitemap generation
 
 // Development Workflow
-- Use proper Git branching strategy
-- Implement proper testing procedures
-- Follow semantic versioning
-- Maintain changelog
+- Git-based workflow
+- npm scripts for common tasks
+- Cross-env for environment variables
+- Proper error handling

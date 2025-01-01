@@ -9,8 +9,8 @@ export default {
       url: "/get-started/",
     },
     {
-      text: "Built with",
-      url: "/built-with/",
+      text: "Trance Music",
+      url: "/trance-music/",
     },
     {
       text: "Blog",
@@ -18,10 +18,6 @@ export default {
     },
   ],
   bottom: [
-    {
-      text: "Style guide",
-      url: "/styleguide/",
-    },
     {
       text: "Imprint",
       url: "/imprint/",
