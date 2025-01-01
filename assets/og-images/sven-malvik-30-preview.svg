@@ -45,7 +45,7 @@
     letter-spacing="-1"
   >
     <tspan x="160" y="220">
-      01 / 02 / 2024
+      03 / 06 / 2024
     </tspan>
   </text>
 
@@ -59,7 +59,7 @@
     letter-spacing="-3"
   >
     
-      <tspan x="160" y="320"> Eleventy Excellent 2.0 </tspan>
+      <tspan x="160" y="320"> Sven Malvik 3.0 </tspan>
     
   </text>
 
@@ -71,7 +71,7 @@
     fill="#FBFBFB"
     letter-spacing="-0.5"
   >
-    <!-- <tspan x="160" y="580">Eleventy Excellent · localhost:8080</tspan> -->
-    <tspan x="160" y="580">Eleventy Excellent — eleventy-excellent.netlify.app</tspan>
+    <!-- <tspan x="160" y="580">Sven Malvik · localhost:8080</tspan> -->
+    <tspan x="160" y="580">Sven Malvik — eleventy-excellent.netlify.app</tspan>
   </text>
 </svg>
