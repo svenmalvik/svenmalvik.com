@@ -28,9 +28,6 @@ else
     commit_message="$*"
 fi
 
-# Format files
-deno fmt
-
 # Add all changes
 git add .
 
