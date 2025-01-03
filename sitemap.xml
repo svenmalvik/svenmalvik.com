@@ -34,8 +34,21 @@
       
 
       <url>
+        <loc>http://localhost:8080/blog/azure-api-management-challenges-finding-the-right-path/</loc>
+        <lastmod>2025-01-03T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
         <loc>http://localhost:8080/tags/</loc>
-        <lastmod>2025-01-02T21:15:17.054Z</lastmod>
+        <lastmod>2025-01-03T18:13:02.793Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -48,7 +61,7 @@
 
       <url>
         <loc>http://localhost:8080/about/</loc>
-        <lastmod>2025-01-02T21:15:17.054Z</lastmod>
+        <lastmod>2025-01-03T18:13:02.793Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -61,7 +74,7 @@
 
       <url>
         <loc>http://localhost:8080/blog/</loc>
-        <lastmod>2025-01-02T21:15:17.054Z</lastmod>
+        <lastmod>2025-01-03T18:13:02.793Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -74,7 +87,7 @@
 
       <url>
         <loc>http://localhost:8080/</loc>
-        <lastmod>2025-01-02T21:15:17.054Z</lastmod>
+        <lastmod>2025-01-03T18:13:02.793Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -87,7 +100,7 @@
 
       <url>
         <loc>http://localhost:8080/imprint/</loc>
-        <lastmod>2025-01-02T21:15:17.054Z</lastmod>
+        <lastmod>2025-01-03T18:13:02.793Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -100,7 +113,7 @@
 
       <url>
         <loc>http://localhost:8080/privacy/</loc>
-        <lastmod>2025-01-02T21:15:17.054Z</lastmod>
+        <lastmod>2025-01-03T18:13:02.793Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -113,7 +126,7 @@
 
       <url>
         <loc>http://localhost:8080/trance-music/</loc>
-        <lastmod>2025-01-02T21:15:17.054Z</lastmod>
+        <lastmod>2025-01-03T18:13:02.793Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
