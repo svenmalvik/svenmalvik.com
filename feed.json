@@ -11,6 +11,13 @@
     }
   ],
   "items": [{
+      "id": "http://localhost:8080/blog/how-i-write-git-commit-messages/",
+      "url": "http://localhost:8080/blog/how-i-write-git-commit-messages/",
+      "title": "How I write Git commit messages",
+      "content_html": "<h1 id=\"crafting-better-git-commit-messages-with-ai-🚀\"><a href=\"#crafting-better-git-commit-messages-with-ai-🚀\" class=\"heading-anchor\">Crafting Better Git Commit Messages with AI 🚀</a></h1><p>Hey fellow developers! Today, I want to share something that’s been a game-changer in my daily workflow - how I craft meaningful Git commit messages using AI, without relying on GitHub Copilot.</p><h2 id=\"the-traditional-method-using-cursor-chat\"><a href=\"#the-traditional-method-using-cursor-chat\" class=\"heading-anchor\">The Traditional Method: Using Cursor Chat</a></h2><p>Here’s how I’ve been doing it until recently:</p><ol class=\"list\"><li>📝 Open Cursor’s Chat</li><li>🔍 Ensure no file is in the context</li><li>⚡️ Type <code>@PR</code> and hit Enter (this adds @PR (Diff with Main Branch) to the context)</li><li>💬 Use this magic prompt:<pre class=\"language-plaintext\"><code class=\"language-plaintext\">You are an engineer who wants to commit changes to the remote codebase. Your job is it to provide a short commit message about the recent changes as a one-liner.</code></pre></li><li>✨ Hit Enter and voilà - perfect commit messages every time!</li></ol><h2 id=\"the-quick-method-i-just-discovered\"><a href=\"#the-quick-method-i-just-discovered\" class=\"heading-anchor\">The Quick Method I Just Discovered!</a></h2><p>Listen! 🎯 While writing this post, I stumbled upon an even faster way to achieve the same result:</p><ol class=\"list\"><li>Open Cursor’s Source Control panel (look for the branch/Y-shaped icon in the sidebar)</li><li>Find the commit message input field</li><li>Click the AI-generated commit message button (it looks like a star ⭐)</li></ol><p>And that’s it! Same great results, but much faster.</p><p>Both methods work equally well, but the new approach saves you a few clicks. Choose whichever fits your workflow better - there’s no wrong choice here!</p>",
+      "date_published": "2025-01-05T00:00:00Z"
+    }
+    ,{
       "id": "http://localhost:8080/blog/azure-api-management-challenges-finding-the-right-path/",
       "url": "http://localhost:8080/blog/azure-api-management-challenges-finding-the-right-path/",
       "title": "Azure API Management Challenges: Finding the Right Path",

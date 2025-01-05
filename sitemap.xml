@@ -47,8 +47,21 @@
       
 
       <url>
+        <loc>http://localhost:8080/blog/how-i-write-git-commit-messages/</loc>
+        <lastmod>2025-01-05T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
         <loc>http://localhost:8080/tags/</loc>
-        <lastmod>2025-01-05T19:31:56.681Z</lastmod>
+        <lastmod>2025-01-05T20:07:36.091Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -61,7 +74,7 @@
 
       <url>
         <loc>http://localhost:8080/about/</loc>
-        <lastmod>2025-01-05T19:31:56.681Z</lastmod>
+        <lastmod>2025-01-05T20:07:36.091Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -74,7 +87,7 @@
 
       <url>
         <loc>http://localhost:8080/blog/</loc>
-        <lastmod>2025-01-05T19:31:56.681Z</lastmod>
+        <lastmod>2025-01-05T20:07:36.091Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -87,7 +100,7 @@
 
       <url>
         <loc>http://localhost:8080/</loc>
-        <lastmod>2025-01-05T19:31:56.681Z</lastmod>
+        <lastmod>2025-01-05T20:07:36.091Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -100,7 +113,7 @@
 
       <url>
         <loc>http://localhost:8080/imprint/</loc>
-        <lastmod>2025-01-05T19:31:56.681Z</lastmod>
+        <lastmod>2025-01-05T20:07:36.091Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -113,7 +126,7 @@
 
       <url>
         <loc>http://localhost:8080/privacy/</loc>
-        <lastmod>2025-01-05T19:31:56.681Z</lastmod>
+        <lastmod>2025-01-05T20:07:36.091Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -126,7 +139,7 @@
 
       <url>
         <loc>http://localhost:8080/trance-music/</loc>
-        <lastmod>2025-01-05T19:31:56.682Z</lastmod>
+        <lastmod>2025-01-05T20:07:36.091Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
