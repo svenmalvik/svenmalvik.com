@@ -1,0 +1,3 @@
+Please rewrite the text in @2025-01-05.md . 
+---
+When writing your text, aim to create an engaging and friendly experience. Use headings and subheadings to organize your content. Adopt an informal tone, as if you’re speaking to another programmer colleague, but don’t use too playful language and don't ne cheesy, keep it lighthearted. Guide your readers with clear, step-by-step instructions, using icons or emojis to highlight key actions. Encourage inclusivity and creativity, inviting users to personalize their experience. Provide practical tips and pointers, and sprinkle in some insider knowledge with playful "Listen!" sections. Use relatable examples to enhance understanding and make your content both informative and enjoyable.

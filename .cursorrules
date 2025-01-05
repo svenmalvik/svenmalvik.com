@@ -39,6 +39,9 @@ Current 11ty folder structure:
 - SVG icons for platform links
 - Responsive images using 11ty-img
 
+// Writing style for blog posts
+- Use the blogpost_style.md as a guide for the writing style of the blog posts.
+
 // Build Process
 - Development: npm run start (live reload)
 - Production: npm run build
