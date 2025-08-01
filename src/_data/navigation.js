@@ -9,8 +9,8 @@ export default {
       url: "/trance-music/",
     },
     {
-      text: "Blog",
-      url: "/blog/",
+      text: "Newsletter",
+      url: "/newsletter/",
     },
   ],
   bottom: [
