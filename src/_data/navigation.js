@@ -5,10 +5,6 @@ export default {
       url: "/about/",
     },
     {
-      text: "Trance Music",
-      url: "/trance-music/",
-    },
-    {
       text: "Newsletter",
       url: "/newsletter/",
     },

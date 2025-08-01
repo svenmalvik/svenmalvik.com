@@ -46,6 +46,6 @@ I'm always up for interesting conversations about:
 Find me on:
 - [LinkedIn](https://www.linkedin.com/in/svenmalvik) for tech talks
 - [YouTube](https://www.youtube.com/@svenmalvik) for trance vibes
-- [Blog](/blog) for thoughts on both worlds
+- [Newsletter](/newsletter) for thoughts on both worlds
 
 Whether it's through lines of code or beats per minute, I believe in creating experiences that make a difference. That's what keeps me going every day! 💫
