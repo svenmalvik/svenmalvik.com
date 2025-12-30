@@ -1,6 +1,6 @@
 ---
 title: "Malfi Support"
-layout: "layouts/page.njk"
+layout: "page.njk"
 permalink: "/malfi-support.html"
 eleventyExcludeFromCollections: true
 ---

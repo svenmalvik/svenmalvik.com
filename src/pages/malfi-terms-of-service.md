@@ -1,6 +1,6 @@
 ---
 title: "Malfi Terms of Service"
-layout: "layouts/page.njk"
+layout: "page.njk"
 permalink: "/malfi-terms-of-service.html"
 eleventyExcludeFromCollections: true
 ---

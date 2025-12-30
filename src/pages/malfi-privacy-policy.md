@@ -1,6 +1,6 @@
 ---
 title: "Malfi Privacy Policy"
-layout: "layouts/page.njk"
+layout: "page.njk"
 permalink: "/malfi-privacy-policy.html"
 eleventyExcludeFromCollections: true
 ---
