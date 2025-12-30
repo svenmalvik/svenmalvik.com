@@ -5,100 +5,48 @@ permalink: "/malfi-terms-of-service.html"
 eleventyExcludeFromCollections: true
 ---
 
-## Malfi Terms of Service
+## Terms of Service
 
-**Last Updated: January 1, 2026**
+**Last updated: January 1, 2026**
 
-### 1. Acceptance of Terms
+By using Malfi, you agree to these terms.
 
-By downloading, installing, or using Malfi ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
+### 1. Service Description
 
-### 2. Description of Service
+Malfi is a personal finance application for tracking mortgages, bank accounts, stocks, and cryptocurrency. The app provides tools for organizing and visualizing your financial information.
 
-Malfi is a personal finance application that provides:
-- Mortgage planning and calculation tools
-- Portfolio tracking for stocks, cryptocurrencies, and bank accounts
-- Currency exchange rate information (NOK/EUR/USD)
-- AI-powered financial news summaries
+### 2. Not Financial Advice
 
-### 3. Not Financial Advice
+Malfi is for informational purposes only. Nothing in this app constitutes financial, investment, tax, or legal advice. Always consult qualified professionals before making financial decisions. We are not responsible for any decisions you make based on information displayed in the app.
 
-**IMPORTANT:** Malfi is an informational tool only. The App does not provide financial, investment, tax, legal, or accounting advice. All information displayed in the App is for general informational purposes only.
+### 3. Data Accuracy
 
-- You should not make any financial decisions based solely on information from this App
-- Always consult qualified financial professionals before making investment decisions
-- Past performance of any asset does not guarantee future results
-- The developers of Malfi are not licensed financial advisors
+Market prices, exchange rates, and other financial data are provided by third-party sources (including Coinbase and Stooq). We do not guarantee the accuracy, completeness, or timeliness of this data. Prices may be delayed or unavailable. Always verify critical information with official sources.
 
-### 4. Data Accuracy and Third-Party Sources
+### 4. Your Responsibilities
 
-Malfi retrieves financial data from third-party sources including market data providers and exchange rate services. We do not guarantee:
+You are responsible for:
+- The accuracy of data you enter into the app
+- Maintaining the security of your device and Apple ID
+- Backing up your data
+- Complying with applicable laws in your jurisdiction
 
-- The accuracy, completeness, or timeliness of any data
-- That data will be available without interruption
-- That exchange rates, stock prices, or cryptocurrency values are real-time or accurate
+### 5. Your Data
 
-Data may be delayed, incorrect, or unavailable. You acknowledge that financial markets are volatile and displayed values may not reflect actual market conditions.
+You own your data. We do not collect, access, or sell your financial information. Data is stored locally on your device and, if enabled, in your private iCloud account. See our [Privacy Policy](/malfi-privacy-policy.html) for details.
 
-### 5. AI-Generated Content
+### 6. No Warranty
 
-The App uses artificial intelligence to generate financial news summaries. AI-generated content:
+Malfi is provided "as is" without warranties of any kind, express or implied. We do not warrant that the app will be error-free, uninterrupted, or meet your specific requirements.
 
-- May contain errors, inaccuracies, or outdated information
-- Should not be relied upon as the sole source of financial news
-- Does not constitute professional analysis or recommendations
+### 7. Limitation of Liability
 
-### 6. User Responsibilities
+To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill arising from your use of the app.
 
-You agree to:
-- Provide accurate information when using the App
-- Keep your device and App access secure
-- Use the App only for lawful purposes
-- Not attempt to reverse engineer, modify, or exploit the App
+### 8. Changes to Terms
 
-### 7. Privacy and Data Security
+We may update these terms from time to time. Continued use of the app after changes constitutes acceptance of the new terms.
 
-Your privacy is important to us. Please review our Privacy Policy for information about how we collect, use, and protect your data.
+### 9. Contact
 
-- Financial data you enter is stored locally on your device with encryption
-- We do not have access to your portfolio holdings or financial information
-- API calls to retrieve market data do not transmit your personal financial details
-
-### 8. Intellectual Property
-
-All content, features, and functionality of the App are owned by Sven Malvik and are protected by international copyright, trademark, and other intellectual property laws.
-
-### 9. Limitation of Liability
-
-**TO THE MAXIMUM EXTENT PERMITTED BY LAW:**
-
-- The App is provided "AS IS" without warranties of any kind
-- We disclaim all warranties, express or implied, including merchantability and fitness for a particular purpose
-- We are not liable for any financial losses, damages, or decisions made based on information from the App
-- Our total liability shall not exceed the amount you paid for the App
-
-### 10. Indemnification
-
-You agree to indemnify and hold harmless Sven Malvik from any claims, damages, or expenses arising from your use of the App or violation of these Terms.
-
-### 11. Termination
-
-We reserve the right to terminate or suspend your access to the App at any time, without notice, for any reason.
-
-### 12. Changes to Terms
-
-We may modify these Terms at any time. Continued use of the App after changes constitutes acceptance of the new Terms. We will notify users of significant changes through the App or other reasonable means.
-
-### 13. Governing Law
-
-These Terms are governed by the laws of Norway, without regard to conflict of law principles. Any disputes shall be resolved in the courts of Akershus, Norway.
-
-### 14. Severability
-
-If any provision of these Terms is found unenforceable, the remaining provisions will continue in effect.
-
-### 15. Contact
-
-For questions about these Terms, contact us at:
-
-**sven@malvik.de**
+Questions about these terms? Contact us at **sven@malvik.de**.
