@@ -11,9 +11,9 @@ eleventyExcludeFromCollections: true
 
 ### Introduction
 
-This Privacy Policy explains how Malfi ("the App", "we", "our") handles your information. We are committed to protecting your privacy and being transparent about our data practices.
+This Privacy Policy explains how Malfi handles your information. We are committed to protecting your privacy and being transparent about our data practices.
 
-**Key Point:** Malfi is designed with privacy first. Your financial data is stored locally on your device with encryption and is never transmitted to our servers.
+**Key Point:** Malfi is designed with privacy first. Your financial data is stored locally on your device with encryption. If you enable iCloud sync, your data is stored in your private iCloud account—we do not operate servers and have no access to your data.
 
 ### Information We Collect
 
@@ -22,11 +22,6 @@ This Privacy Policy explains how Malfi ("the App", "we", "our") handles your inf
 - **Portfolio Data:** Stocks, cryptocurrencies, and bank account balances you enter
 - **Mortgage Information:** Loan amounts, interest rates, and terms you input
 - **Currency Preferences:** Your preferred currencies for display
-
-#### Information Collected Automatically
-
-- **App Usage Data:** Basic analytics about feature usage to improve the App
-- **Crash Reports:** Technical information when the App crashes, to fix bugs
 
 #### Information We Do NOT Collect
 
@@ -39,25 +34,39 @@ This Privacy Policy explains how Malfi ("the App", "we", "our") handles your inf
 
 #### Local Storage
 
-All your financial data is stored locally on your device only:
+All your financial data is stored locally on your device:
 
 - **Encryption:** Your data is encrypted using SQLCipher (AES-256 encryption)
 - **Secure Key Storage:** Encryption keys are stored in the iOS Keychain
-- **No Cloud Sync:** Your portfolio data is not uploaded to any cloud service
 - **Your Control:** Deleting the App removes all your data from the device
+
+#### iCloud Sync
+
+Malfi uses Apple's CloudKit to sync your financial data across your devices. When iCloud is enabled:
+
+- **What we sync:** Your accounts, mortgages, stock holdings, and cryptocurrency holdings are synced to your private iCloud account.
+- **Where it's stored:** Your data is stored in Apple's iCloud infrastructure, protected by your Apple ID. We do not operate our own servers and have no access to your synced data.
+- **Sharing:** If you choose to share your portfolio with a partner, they receive read-only access through iCloud's secure sharing feature. You can revoke access at any time.
+- **Your control:** You can disable iCloud sync in your device's Settings → [Your Name] → iCloud → Malfi. Disabling sync keeps your data local to each device.
+- **Local encryption:** Before syncing, your data is stored locally in an encrypted database. The encryption key never leaves your device and is not synced to iCloud.
+
+For more information about how Apple protects your iCloud data, see [Apple's iCloud security overview](https://support.apple.com/en-us/102651).
 
 #### We Cannot Access Your Data
 
-Because your financial information is stored only on your device with encryption keys we don't possess, we have no ability to view, access, or recover your data.
+Because your financial information is stored only on your device (and optionally in your private iCloud account) with encryption keys we don't possess, we have no ability to view, access, or recover your data.
 
 ### Third-Party Services
 
 The App connects to third-party services to retrieve market data:
 
-| Service  | Purpose                                       | Data Sent                                                                         |
-|----------|-----------------------------------------------|-----------------------------------------------------------------------------------|
-| Coinbase | Cryptocurrency prices and fiat exchange rates | Asset symbols (e.g., "BTC", "ETH") and currency codes (e.g., "NOK", "EUR", "USD") |
-| Stooq    | Stock quotes                                  | Ticker symbols (e.g., "AAPL.US", "TSLA.US")                                       |
+**Coinbase**
+- Purpose: Cryptocurrency prices and fiat exchange rates
+- Data sent: Asset symbols (e.g., "BTC", "ETH") and currency codes (e.g., "NOK", "EUR", "USD")
+
+**Stooq**
+- Purpose: Stock quotes
+- Data sent: Ticker symbols (e.g., "AAPL.US", "TSLA.US")
 
 **Important:** These services receive only the symbols/tickers needed to fetch prices. Your portfolio quantities, account balances, and personal financial details are never transmitted.
 
@@ -96,7 +105,7 @@ We implement strong security measures:
 - **Encryption at Rest:** All local data encrypted with AES-256 via SQLCipher
 - **Secure Key Management:** iOS Keychain protects encryption keys
 - **Memory Protection:** Sensitive data cleared from memory after use
-- **No Data Transmission:** Your financial data never leaves your device
+- **No Server Transmission:** Your financial data is never sent to our servers
 - **HTTPS:** All API communications use encrypted connections
 
 ### Children's Privacy
@@ -109,9 +118,7 @@ The App may connect to servers located in various countries to retrieve market d
 
 ### Changes to This Policy
 
-We may update this Privacy Policy periodically. We will notify you of significant changes through:
-- An in-app notification
-- Updating the "Last Updated" date above
+We may update this Privacy Policy periodically. We will notify you of significant changes by updating the "Last Updated" date above.
 
 Continued use of the App after changes constitutes acceptance of the updated policy.
 
@@ -123,8 +130,7 @@ As required by Apple, here is a summary of our data practices:
 - Contact Info, Health & Fitness, Financial Info, Location, Contacts, User Content, Browsing History, Search History, Identifiers, Purchases, Sensitive Info
 
 **Data Not Linked to You:**
-- Usage Data (anonymous analytics)
-- Diagnostics (crash reports)
+- None
 
 ### Contact Us
 
